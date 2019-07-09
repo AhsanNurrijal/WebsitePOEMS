@@ -1,0 +1,225 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+
+}
+
+header{
+
+}
+
+/* --- Sidebar ---*/
+.sidebar {
+	height: 100%;
+  	width: 0;
+  	position: fixed;
+  	z-index: 1;
+  	top: 0;
+  	left: 0;
+  	background-color: #fff;
+  	overflow-x: hidden;
+  	transition: 0.5s;
+  	padding-top: 60px;
+}
+
+.sidebar a {
+  	padding: 8px 8px 8px 32px;
+  	text-decoration: none;
+  	font-size: 18px;
+  	color: #000;
+  	display: block;
+  	transition: 0.3s;
+}
+
+.sidebar a:hover {
+  	color: #003466;
+}
+
+.sidebar .closebtn {
+  	position: absolute;
+  	top: 0;
+  	right: 25px;
+  	font-size: 20px;
+  	margin-left: 50px;
+}
+
+.openbtn {
+  	font-size: 30px;
+  	cursor: pointer;
+  	background-color: #fff;
+  	color: #006DD7;
+  	padding: 10px 15px;
+  	border: none;
+  	margin-left: 20px;
+}
+
+.openbtn:hover {
+  	color: #003466;
+}
+
+#main {
+  	transition: margin-left .5s;
+  	padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  	.sidebar {
+  		padding-top: 15px;
+  	}
+  	.sidebar a {
+  		font-size: 18px;
+  	}
+}
+
+/*--- Poems Logo ---*/
+.logo img{
+	width: 280px;
+	height: 100px;
+}
+
+/*--- Login ---*/
+.loginbutton{
+	width: 120px;
+	height: 50px;
+	margin: 50px 50px 0px 50px;
+}
+/*--- Navbar Style ---*/
+
+.navbar{
+	background-color: #006DD7;
+	margin-left: 50px;
+	margin-right: 50px;
+	height: 40px;
+}
+
+.navbar .nav-item a{
+    color: #FFF !important;
+    font-family: Roboto;
+	font-style: normal;
+	margin-right: 30px;
+	margin-left: 30px;
+}
+
+.navbar .nav-item a:link,
+.navbar .nav-item a:visited{
+	text-decoration: none;
+	transition: all 0.2s;
+}
+
+.navbar .nav-item a:hover,
+.navbar .nav-item a:active{
+	background-color: #003466;
+	color: #003466;
+	padding-right: 35px;
+	padding-left: 35px;
+}
+
+/*--- Main Body Area ---*/
+section{
+	width: 70%;
+	margin-top: 20px;
+	margin-left: 50px;
+}
+
+/*--- Card ---*/
+.main{
+	margin: 2%;
+}
+
+.card{
+    width: 230px;
+    height: 230px;
+    display: inline-block;
+    box-shadow: 2px 2px 5px grey;
+    border-radius: 5px; 
+    margin: 5%;
+}
+
+.image img{
+	width: 100%;
+  	border-top-right-radius: 5px;
+  	border-top-left-radius: 5px;
+}
+
+.title{
+  	text-align: center;
+  	padding: 10px;
+}
+
+h5{
+  	font-family: Roboto;
+  	font-style: bold;
+  	font-size: 18px;
+  	color: #003466;
+}
+
+h3{
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 42px;
+	color: #003466;
+	margin-left: 50px;
+}
+
+/*--- News ---*/
+.newsarea section{
+	box-shadow: 2px 2px 5px grey;
+    border-radius: 5px;
+}
+
+.imagenews img{
+	width: 275px;
+	height: 150px;
+  	margin: 10px;
+  	position: center;
+}
+
+.videoarea section{
+	box-shadow: 2px 2px 5px grey;
+    border-radius: 5px;
+}
+
+.video iframe{
+	width: 275px;
+	height: 150px;
+  	margin: 10px;
+  	position: center;
+}
+
+
+/*--- Right Bar ---*/
+aside{
+	background-color: #efef;
+	float: right;
+	margin-top: 20px;
+	margin-right: 50px;
+	width: 20%
+}
+
+aside h3{
+	text-align: center;
+	background-color: #ffff;
+	color: #003466;
+}
+
+/*--- Footer ---*/
+footer{
+	background-color: #003466;
+	clear: both;
+	margin-top: 30px;
+}
+
+h6{
+	font-family: Roboto;
+	font-size: 14px;
+	line-height: 16px;
+	display: flex;
+	align-items: center;
+	color: #fff;
+}
