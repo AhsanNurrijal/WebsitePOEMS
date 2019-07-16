@@ -207,7 +207,7 @@ section {
 }
 
 .articleinfo h3 {
-	font-family: sans-serif;
+  font-family: sans-serif;
 	font-weight: bold;
 	font-size: 20px;
 	color: #003466;
@@ -264,6 +264,18 @@ section {
 	border-top-left-radius: 5px;
 }
 
+.inner{
+  overflow: hidden;
+}
+
+.inner img{
+  transition: all 0.7s ease;
+}
+
+.inner:hover img{
+  transform: scale(1.2);
+}
+
 .title h5 {
   text-align: center;
   font-size: 16px;
@@ -274,10 +286,22 @@ section {
   font-weight: bold;
 }
 
+.title h6 {
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #003466;
+  padding: 5px;
+  font-family: Helvetica;
+  font-weight: bold;
+  margin-top: 35px;
+}
+
 .title p {
 	text-align: center;
   font-size: 12px;
   font-family: sans-serif;
+  color: #000;
 }
 
 .cardevents {
@@ -579,4 +603,59 @@ table {
   font-size: 12px;
   text-align: center;
   font-weight: bold;
+}
+
+.pdf img{
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+}
+
+.categorylist section{
+  margin-bottom: 30px;
+  border-style: solid;
+  border-color: #eee;
+  border-radius: 5px;
+}
+
+.categorylist img{
+  width: 30px;
+  height: 30px;
+}
+
+.categorylist li:hover{
+  background-image: linear-gradient(#eee, #fff);
+}
+
+.categorylist h3{
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  text-align: center;
+  }
+
+.categorylist h4{
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  margin-left: 10px;
+  color: #000;
+}
+
+.categorylist h5{
+  font-family: sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.categorylist h6{
+  font-family: sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-bottom: 20px;
 }
