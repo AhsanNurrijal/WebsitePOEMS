@@ -48,6 +48,11 @@ a {
   font-size: 20px;
 }
 
+.sidebar img{
+  width: 20px;
+  height: 20px;
+}
+
 .openbtn {
   font-size: 30px;
   cursor: pointer;
@@ -506,6 +511,38 @@ footer {
   color: black;
   font-size: 10px;
   padding-left: 20px;
+}
+
+.panel table#t05{
+  margin : 10px;
+}
+
+.panel table#t05 th {
+  background-color: #ccc;
+  color: black;
+  font-size: 10px;
+  text-align: center;
+  border-style: solid;
+  border-color: #eee;
+}
+
+.panel table#t05 td {
+  color: black;
+  font-size: 10px;
+  padding-left: 20px;
+}
+
+.panel table#t05 tr:nth-child(even) {
+  background-color: #ddd;
+}
+
+.panel table#t05 tr:nth-child(odd) {
+ background-color: #eee;
+}
+
+.panel img{
+  margin: 10px;
+  position: center;
 }
 
 .column section {
