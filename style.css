@@ -48,6 +48,11 @@ a {
   font-size: 20px;
 }
 
+.sidebar img{
+  width: 20px;
+  height: 20px;
+}
+
 .openbtn {
   font-size: 30px;
   cursor: pointer;
@@ -104,8 +109,9 @@ a {
   font-family: sans-serif;
 	font-style: normal;
 	font-size: 12px;
-	margin-right: 15px;
-	margin-left: 15px;
+  font-weight: bold;
+	margin-right: 20px;
+	margin-left: 20px;
 }
 
 .navbar .nav-item a:link,
@@ -118,8 +124,8 @@ a {
 .navbar .nav-item a:active {
 	background-image: linear-gradient(#003466, #006DD7);
 	color: #003466;
-	padding-right: 15px;
-	padding-left: 15px;
+	padding-right: 50px;
+	padding-left: 50px;
   transition: 0.5s;
 }
 
@@ -304,19 +310,6 @@ section {
   color: #000;
 }
 
-.cardevents {
-  width: 100%;
-  display: inline-block;
-  border-radius: 30px; 
-}
-
-.cardevents:hover {
-  width: 100%;
-  display: inline-block;
-  border-radius: 30px;
-  box-shadow: 2px 2px 5px grey; 
-}
-
 .menutitle h3 {
 	font-family: sans-serif;
 	font-size: 30px;
@@ -427,7 +420,7 @@ footer {
   font-style: italic;
 }
 
-.accordion {
+.column .accordion {
   background-color: #003466;
   color: #fff;
   cursor: pointer;
@@ -441,7 +434,7 @@ footer {
   transition: 0.4s;
 }
 
-.active, .accordion:hover {
+.column .active, .accordion:hover {
   background-image: linear-gradient(#006DD7, #003466);
 }
 
@@ -452,7 +445,7 @@ footer {
 }
 
 .panel table {
-  width:100%;
+  width: 100%;
 }
 
 .panel th, td {
@@ -520,6 +513,38 @@ footer {
   padding-left: 20px;
 }
 
+.panel table#t05{
+  margin : 10px;
+}
+
+.panel table#t05 th {
+  background-color: #ccc;
+  color: black;
+  font-size: 10px;
+  text-align: center;
+  border-style: solid;
+  border-color: #eee;
+}
+
+.panel table#t05 td {
+  color: black;
+  font-size: 10px;
+  padding-left: 20px;
+}
+
+.panel table#t05 tr:nth-child(even) {
+  background-color: #ddd;
+}
+
+.panel table#t05 tr:nth-child(odd) {
+ background-color: #eee;
+}
+
+.panel img{
+  margin: 10px;
+  position: center;
+}
+
 .column section {
 	border-radius: 5px;
 	border-color: #eee;
@@ -550,11 +575,11 @@ footer {
   background-image: linear-gradient(#eee, #bbb);
 }
 
-input[name=tabs] {
+.profunds input[name=tabs] {
   display:none;
 }
 
-input[name=tabs] + label {
+.profunds input[name=tabs] + label {
   margin-top: 20px;
   padding: 10px;
   background: #eee;
@@ -563,10 +588,41 @@ input[name=tabs] + label {
   font-size: 14px;
 }
 
-input[name=tabs]:checked + label {
+.profunds input[name=tabs]:checked + label {
   font-weight:bold;
   border:solid 2px #aaa;
   background-image: linear-gradient(#bbb, #fff);
+}
+
+.glossary input[name=tabs] {
+  display:none;
+}
+
+.glossary input[name=tabs] + label {
+  margin-top: 10px;
+  padding: 8px;
+  background: #eee;
+  border-radius: 5px;
+  color: #000;
+  font-size: 12px;
+  border:solid 1px #aaa;
+}
+
+.glossary input[name=tabs]:checked + label {
+  font-weight: bold;
+  border:solid 1px #aaa;
+  background-image: linear-gradient(#aaa, #eee);
+}
+
+.glossary h4{
+  font-size: 14px;
+  font-weight: bold;
+  color: #006DD7;
+  margin-top: 10px;
+}
+
+.glossary p{
+  font-size: 12px;
 }
 
 .tab-content {
@@ -574,7 +630,32 @@ input[name=tabs]:checked + label {
   width: 100%;
 }
 
-#tab1:checked ~ #tab-content1, #tab2:checked ~ #tab-content2,  #tab3:checked ~ #tab-content3, #tab4:checked ~ #tab-content4, #tab5:checked ~ #tab-content5 {
+#tab1:checked ~ #tab-content1,
+#tab2:checked ~ #tab-content2, 
+#tab3:checked ~ #tab-content3, 
+#tab4:checked ~ #tab-content4, 
+#tab5:checked ~ #tab-content5,
+#tab6:checked ~ #tab-content6,
+#tab7:checked ~ #tab-content7, 
+#tab8:checked ~ #tab-content8, 
+#tab9:checked ~ #tab-content9, 
+#tab10:checked ~ #tab-content10,
+#tab11:checked ~ #tab-content11,
+#tab12:checked ~ #tab-content12, 
+#tab13:checked ~ #tab-content13, 
+#tab14:checked ~ #tab-content14, 
+#tab15:checked ~ #tab-content15,
+#tab16:checked ~ #tab-content16,
+#tab17:checked ~ #tab-content17, 
+#tab18:checked ~ #tab-content18, 
+#tab19:checked ~ #tab-content19, 
+#tab20:checked ~ #tab-content20,
+#tab21:checked ~ #tab-content21,
+#tab22:checked ~ #tab-content22, 
+#tab23:checked ~ #tab-content23, 
+#tab24:checked ~ #tab-content24, 
+#tab25:checked ~ #tab-content25,
+#tab26:checked ~ #tab-content26 {
   display:block;
 }
 
@@ -658,4 +739,103 @@ table {
   font-weight: bold;
   margin-left: 10px;
   margin-bottom: 20px;
+}
+
+.contact img{
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+}
+
+.contactcity h4{
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #006DD7;
+  color: #fff;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.contact h5{
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #006DD7;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.contact h6{
+  font-family: sans-serif;
+  font-size: 12px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.contact p{
+  font-family: sans-serif;
+  font-size: 12px;
+  color: #006DD7;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.cardcontact {
+  width: 250px;
+  height: 200px;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.faq input[name=tabs] {
+  display:none;
+}
+
+.faq input[name=tabs] + label {
+  margin-top: 10px;
+  padding: 8px;
+  background: #ccc;
+  border-radius: 5px;
+  color: #000;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.faq input[name=tabs]:checked + label {
+  border:solid 1px #aaa;
+  background-image: linear-gradient(#bbb, #eee);
+  font-weight: bold;
+}
+
+.faq p{
+  font-size: 12px;
+  margin :20px;
+  text-align: justify;
+}
+
+.faq li{
+  font-size: 12px;
+  margin :20px;
+  text-align: justify;
+}
+
+.faq .accordion {
+  background-image: linear-gradient(#ccc, #fff);
+  color: #000;
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+  width: 100%;
+  outline: none;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: left;
+  transition: 0.4s;
+  font-family: sans-serif;
+  border-radius: 5px;
+}
+
+.faq .panel{
+  background-color: #fff;
 }
