@@ -52,18 +52,20 @@
 							<button type="button" data-toggle="modal" data-target="#myModal">Login</button>
 						</div>
 					</div>
-					<div class="modal" id="myModal">
+					<<div class="modal" id="myModal">
     					<div class="modal-dialog">
       						<div class="modal-content">
-        						<div class="modal-header">
-          							<h4 class="modal-title">Login Form</h4>
-          							<button type="button" class="close" data-dismiss="modal">&times;</button>
-        						</div>
-        						<div class="modal-body">
-        						</div>
-        						<div class="modal-footer">
-          							<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-        						</div>
+        						<img src="Assets\logo.png">
+        						<form action="/action_page.php">
+									<input type="text" placeholder="Username"><br>
+									<input type="Password" placeholder="Password"><br>
+									<input type="text" placeholder="PIN CODE"><br>
+									<input type="submit" value="Desktop Login">
+									<p><a href="#">Forgot Password ?</a>&emsp;|&emsp;<a href="#" data-toggle="modal" data-target="#disclaimers">Disclaimer</a></p>
+									<div class="openaccount">
+										<button type="button">Open An Account</button>
+									</div>
+								</form> 
         					</div>
     					</div>
  					</div>
@@ -107,7 +109,7 @@
 				</div>
 				<div class="col-sm-6">
 					<div class="articletitle">
-	        			<h2>Frequently Asked Question</h2>
+	        			<h2>Technical Support</h2>
 	    			</div>
 				    <div class="article">
 				      	<section>
@@ -118,201 +120,210 @@
 				        	</div>
 				        	<div class="articleinfo">
 				            	<div class="faq">
-									<input type="radio" name="tabs" id="tab1" checked="checked">
-									<label for="tab1">Basic Support</label>
-									<input type="radio" name="tabs" id="tab2">
-									<label for="tab2">Login Problems</label>
-									<input type="radio" name="tabs" id="tab3">
-									<label for="tab3">Live Prices Problems</label>
-									<div id="tab-content1" class="tab-content">
-										<button class="accordion active">&emsp;Clearing Temporary Internet Files And Cookies</button>
-										<div class="panel">
-											<p>Clearing the Temporary Internet Files is just freeing your computer of unwanted temporary files that have been saved to your computer as you surf from one page to another. You will not be deleting any important files, so long as you did not deliberately save them there. The benefit of clearing the Temporary Internet Files is to free up additional space. On top of that, everytime you visit POEMS or other webpages, your computer will display the most current data available.</p>
-											<ul>
-												<li>Open Internet Explorer</li>
-												<li>Click on "Tools".</li>
-												<li>Click on "Internet Options".</li>
-												<li>Click on "General" tab.</li>
-												<img src="Assets\Ts1.png" style="width: 414px; height:463px;">
-												<li>Click on "Delete Cookies" button.</li>
-												<li>Click "OK" in the prompt message to begin deleting the cookies.</li>
-												<img src="Assets\Ts2.png" style="width: 416px; height:463px;">
-												<li>Click on "Delete Files..." button.</li>
-												<li>In the prompt message place tick on "Delete all offline content", then click OK.</li>
-												<li>Click on "Apply" button to save the changes.</li>
-											</ul>
+									<div class="toggle">
+				            			<ul class="nav nav-pills nav-justified" role="tablist">
+                            				<li class="nav-item">
+                                				<a class="nav-link active" data-toggle="pill" href="#bs">Basic Support</a>
+                            				</li>
+                            				<li class="nav-item">
+                                				<a class="nav-link" data-toggle="pill" href="#lp">Login Problem</a>
+                            				</li>
+                            				<li class="nav-item">
+                                				<a class="nav-link" data-toggle="pill" href="#lpp">Live Prices Problem</a>
+                            				</li>
+                        				</ul>
+                        			</div>
+									<div class="tab-content">
+                                		<div id="bs" class="tab-pane active">
+											<button class="accordion">&emsp;Clearing Temporary Internet Files And Cookies</button>
+											<div class="panel">
+												<p>Clearing the Temporary Internet Files is just freeing your computer of unwanted temporary files that have been saved to your computer as you surf from one page to another. You will not be deleting any important files, so long as you did not deliberately save them there. The benefit of clearing the Temporary Internet Files is to free up additional space. On top of that, everytime you visit POEMS or other webpages, your computer will display the most current data available.</p>
+												<ul>
+													<li>Open Internet Explorer</li>
+													<li>Click on "Tools".</li>
+													<li>Click on "Internet Options".</li>
+													<li>Click on "General" tab.</li>
+													<img src="Assets\Ts1.png" style="width: 414px; height:463px;">
+													<li>Click on "Delete Cookies" button.</li>
+													<li>Click "OK" in the prompt message to begin deleting the cookies.</li>
+													<img src="Assets\Ts2.png" style="width: 416px; height:463px;">
+													<li>Click on "Delete Files..." button.</li>
+													<li>In the prompt message place tick on "Delete all offline content", then click OK.</li>
+													<li>Click on "Apply" button to save the changes.</li>
+												</ul>
+											</div>
+											<button class="accordion">&emsp;Automatic Celaring Of Temporary Internet Files</button>
+											<div class="panel">
+												<p>Automatically empty Temporary Internet Files folder everytime you closed the Internet Explorer browser.</p>
+												<ul>
+													<li>Open Internet Explorer</li>
+													<li>Click on "Tools".</li>
+													<li>Click on "Internet Options".</li>
+													<li>Click on "Advance" tab.</li>
+													<li>Scroll all the way down the list.</li>
+													<li>Under "Security", place a tick in "Empty Temporary Internet Files Folder when browser is closed".</li>
+													<li>Click on "Aplly" button.</li>
+													<img src="Assets\Ts3.png" style="width: 416px; height:462px;">
+												</ul>
+											</div>
+											<button class="accordion">&emsp;Security And Privacy Settings</button>
+											<div class="panel">
+												<p>Recommended Security and Privacy Settings for POEMS.</p>
+												<p>Please try the following steps.</p>
+												<ul>
+													<li>Open your internet explorer browser.</li>
+													<li>Click on "Tools".</li>
+													<li>Click on "Internet Options".</li>
+													<img src="Assets\Ts4.png" style="width: 416px; height:462px;">
+													<li>Click on "Security" tab.</li>
+													<li>Click once on "Internet" icon.</li>
+													<li>Click on "Default Level" button</li>
+													<img src="Assets\Ts5.png" style="width: 416px; height:462px;">
+													<li>It will show "Medium".</li>
+													<li>Click on "Apply".</li>
+													<p>If you are using through a Local Area Network (LAN) or Intranet, do the following as well:</p>
+													<li>Click once on "Local Intranet" icon.</li>
+													<li>Click on "Default Level" button.</li>
+													<li>It will show "Medium-Low".</li>
+													<li>Click on "Apply".</li>
+													<img src="Assets\Ts6.png" style="width: 416px; height:462px;">
+													<p>If you are using Microsoft Internet Explorer version 6.0, do the following:</p>
+													<li>In "Internet Options", click on "Privacy".</li>
+													<li>If the settings is "Custom", click on the "Default Level" button.</li>
+													<li>If the settings is "Medium", shift the slider down to "Low".</li>
+													<li>Click on "Apply".</li>
+													<img src="Assets\Ts7.png" style="width: 416px; height:462px;">
+													<p>Click OK button. After doing all of the above, you have to clear Temporary Internet Files.</p>
+												</ul>
+											</div>
 										</div>
-										<button class="accordion">&emsp;Automatic Celaring Of Temporary Internet Files</button>
-										<div class="panel">
-											<p>Automatically empty Temporary Internet Files folder everytime you closed the Internet Explorer browser.</p>
-											<ul>
-												<li>Open Internet Explorer</li>
-												<li>Click on "Tools".</li>
-												<li>Click on "Internet Options".</li>
-												<li>Click on "Advance" tab.</li>
-												<li>Scroll all the way down the list.</li>
-												<li>Under "Security", place a tick in "Empty Temporary Internet Files Folder when browser is closed".</li>
-												<li>Click on "Aplly" button.</li>
-												<img src="Assets\Ts3.png" style="width: 416px; height:462px;">
-											</ul>
+										<div id="lp" class="tab-pane fade">
+											<button class="accordion">&emsp;Change Password</button>
+											<div class="panel">
+												<p>At Member Login Page, Klik "Change Password" in yellow circle</p>
+												<img src="Assets\Ts8.png" style="width: 212px; height:294px;">
+												<p>At Change Password Page, insert your POEMS ID, Current Password, New Password, and Confirm Password. The length of the password is 6 to 8 characters.</p>
+												<img src="Assets\Ts9.png" style="width: 480px; height:227px;">
+												<p>Once you click on the "OK" button, the password is change immediately.</p>
+											</div>
+											<button class="accordion">&emsp;Error Message</button>
+											<div class="panel">
+												<p>Due to certain computer settings, you may experience an error that is not described in this troubleshooting guide. For us to better understand your situation, please follow these simple steps to capture the screenshot of the page with the error.</p>
+												<ul>
+													<li>When on the error page, Press the "Print Scrn" Button found on your keyboard. The picture below shows the common location of the "PrintScrn" button on your keyboard.</li>
+													<li>Go to "Start", "Programs", open "Microsoft Word".</li>
+													<li>When in "Microsoft Word", click on "Edit" and "Paste".</li>
+													<li>The exact error page should appear in your "Microsoft Word" document now.</li>
+													<li>Save this and email the error message to feedback@phillip.co.id</li>
+													<li>Alternatively, you may contact us at 57900900 for assistance.</li>
+													<img src="Assets\Ts10.png" style="width: 228px; height:256px;">
+												</ul>
+											</div>
+											<button class="accordion">&emsp;ID Suspended</button>
+											<div class="panel">
+				  								<img src="Assets\Ts11.png" style="width: 480px; height:204px;">
+				  								<p>Please take note that as part of the security feature for online trading, you will be logged out and the account suspended after 3 unsuccessful tries. </p>
+				  								<p>You may re-activate your account to retry your password by calling our customer service officers at 57900900 during office hours. Or, you may download New Password Request Form and email it to feedback@phillip.co.id. </p>
+				  								<p>In the email, please state your Full Name, ID Card Number and POEMS ID.</p>
+											</div>
+											<button class="accordion">&emsp;You Have Been Log Out</button>
+											<div class="panel">
+												<p>Please try the following steps.</p>
+												<ul>
+													<li>Open your internet explorer browser.</li>
+													<li>Click on "Tools".</li>
+													<li>Click on "Internet Options".</li>
+													<img src="Assets\Ts12.png" style="width: 419px; height:463px;">
+													<li>Click on "Security" tab.</li>
+													<li>Click once on "Internet" icon.</li>
+													<li>Click on "Default Level" button</li>
+													<img src="Assets\Ts13.png" style="width: 419px; height:463px;">
+													<li>It will show "Medium".</li>
+													<li>Click on "Apply".</li>
+													<p>If you are using through a Local Area Network (LAN) or Intranet, do the following as well:</p>
+													<li>Click once on "Local Intranet" icon.</li>
+													<li>Click on "Default Level" button.</li>
+													<li>It will show "Medium-Low".</li>
+													<li>Click on "Apply".</li>
+													<img src="Assets\Ts14.png" style="width: 419px; height:463px;">
+													<p>If you are using Microsoft Internet Explorer version 6.0, do the following:</p>
+													<li>In "Internet Options", click on "Privacy".</li>
+													<li>If the settings is "Custom", click on the "Default Level" button.</li>
+													<li>If the settings is "Medium", shift the slider down to "Low".</li>
+													<li>Click on "Apply".</li>
+													<img src="Assets\Ts15.png" style="width: 419px; height:463px;">
+													<p>Click OK button. After doing all of the above, you have to clear Temporary Internet Files.</p>
+												</ul>
+											</div>
+											<button class="accordion">&emsp;HTTP Error 403/Security Library Error</button>
+											<div class="panel">
+												<p>"HTTP Error 403, 403.5 Forbidden: SSL128 Required"</p>
+												<p>This message, showing in "Member Login", is a result of your browser version not supporting the higher 128bit Encryption security level used in the secure site. To find out more information or upgrade, click on Security 128bit Encryption.</p>
+											</div>
 										</div>
-										<button class="accordion">&emsp;Security And Privacy Settings</button>
-										<div class="panel">
-											<p>Recommended Security and Privacy Settings for POEMS.</p>
-											<p>Please try the following steps.</p>
-											<ul>
-												<li>Open your internet explorer browser.</li>
-												<li>Click on "Tools".</li>
-												<li>Click on "Internet Options".</li>
-												<img src="Assets\Ts4.png" style="width: 416px; height:462px;">
-												<li>Click on "Security" tab.</li>
-												<li>Click once on "Internet" icon.</li>
-												<li>Click on "Default Level" button</li>
-												<img src="Assets\Ts5.png" style="width: 416px; height:462px;">
-												<li>It will show "Medium".</li>
-												<li>Click on "Apply".</li>
-												<p>If you are using through a Local Area Network (LAN) or Intranet, do the following as well:</p>
-												<li>Click once on "Local Intranet" icon.</li>
-												<li>Click on "Default Level" button.</li>
-												<li>It will show "Medium-Low".</li>
-												<li>Click on "Apply".</li>
-												<img src="Assets\Ts6.png" style="width: 416px; height:462px;">
-												<p>If you are using Microsoft Internet Explorer version 6.0, do the following:</p>
-												<li>In "Internet Options", click on "Privacy".</li>
-												<li>If the settings is "Custom", click on the "Default Level" button.</li>
-												<li>If the settings is "Medium", shift the slider down to "Low".</li>
-												<li>Click on "Apply".</li>
-												<img src="Assets\Ts7.png" style="width: 416px; height:462px;">
-												<p>Click OK button. After doing all of the above, you have to clear Temporary Internet Files.</p>
-											</ul>
-										</div>
-									</div>
-									<div id="tab-content2" class="tab-content">
-										<button class="accordion">&emsp;Change Password</button>
-										<div class="panel">
-											<p>At Member Login Page, Klik "Change Password" in yellow circle</p>
-											<img src="Assets\Ts8.png" style="width: 212px; height:294px;">
-											<p>At Change Password Page, insert your POEMS ID, Current Password, New Password, and Confirm Password. The length of the password is 6 to 8 characters.</p>
-											<img src="Assets\Ts9.png" style="width: 480px; height:227px;">
-											<p>Once you click on the "OK" button, the password is change immediately.</p>
-										</div>
-										<button class="accordion">&emsp;Error Message</button>
-										<div class="panel">
-											<p>Due to certain computer settings, you may experience an error that is not described in this troubleshooting guide. For us to better understand your situation, please follow these simple steps to capture the screenshot of the page with the error.</p>
-											<ul>
-												<li>When on the error page, Press the "Print Scrn" Button found on your keyboard. The picture below shows the common location of the "PrintScrn" button on your keyboard.</li>
-												<li>Go to "Start", "Programs", open "Microsoft Word".</li>
-												<li>When in "Microsoft Word", click on "Edit" and "Paste".</li>
-												<li>The exact error page should appear in your "Microsoft Word" document now.</li>
-												<li>Save this and email the error message to feedback@phillip.co.id</li>
-												<li>Alternatively, you may contact us at 57900900 for assistance.</li>
-												<img src="Assets\Ts10.png" style="width: 228px; height:256px;">
-											</ul>
-										</div>
-										<button class="accordion">&emsp;ID Suspended</button>
-										<div class="panel">
-			  								<img src="Assets\Ts11.png" style="width: 480px; height:204px;">
-			  								<p>Please take note that as part of the security feature for online trading, you will be logged out and the account suspended after 3 unsuccessful tries. </p>
-			  								<p>You may re-activate your account to retry your password by calling our customer service officers at 57900900 during office hours. Or, you may download New Password Request Form and email it to feedback@phillip.co.id. </p>
-			  								<p>In the email, please state your Full Name, ID Card Number and POEMS ID.</p>
-										</div>
-										<button class="accordion">&emsp;You Have Been Log Out</button>
-										<div class="panel">
-											<p>Please try the following steps.</p>
-											<ul>
-												<li>Open your internet explorer browser.</li>
-												<li>Click on "Tools".</li>
-												<li>Click on "Internet Options".</li>
-												<img src="Assets\Ts12.png" style="width: 419px; height:463px;">
-												<li>Click on "Security" tab.</li>
-												<li>Click once on "Internet" icon.</li>
-												<li>Click on "Default Level" button</li>
-												<img src="Assets\Ts13.png" style="width: 419px; height:463px;">
-												<li>It will show "Medium".</li>
-												<li>Click on "Apply".</li>
-												<p>If you are using through a Local Area Network (LAN) or Intranet, do the following as well:</p>
-												<li>Click once on "Local Intranet" icon.</li>
-												<li>Click on "Default Level" button.</li>
-												<li>It will show "Medium-Low".</li>
-												<li>Click on "Apply".</li>
-												<img src="Assets\Ts14.png" style="width: 419px; height:463px;">
-												<p>If you are using Microsoft Internet Explorer version 6.0, do the following:</p>
-												<li>In "Internet Options", click on "Privacy".</li>
-												<li>If the settings is "Custom", click on the "Default Level" button.</li>
-												<li>If the settings is "Medium", shift the slider down to "Low".</li>
-												<li>Click on "Apply".</li>
-												<img src="Assets\Ts15.png" style="width: 419px; height:463px;">
-												<p>Click OK button. After doing all of the above, you have to clear Temporary Internet Files.</p>
-											</ul>
-										</div>
-										<button class="accordion">&emsp;HTTP Error 403/Security Library Error</button>
-										<div class="panel">
-											<p>"HTTP Error 403, 403.5 Forbidden: SSL128 Required"</p>
-											<p>This message, showing in "Member Login", is a result of your browser version not supporting the higher 128bit Encryption security level used in the secure site. To find out more information or upgrade, click on Security 128bit Encryption.</p>
-										</div>
-									</div>
-									<div id="tab-content3" class="tab-content">
-										<button class="accordion">&emsp;Display "Loading Data, Please Wait..." for a long time</button>
-										<div class="panel">
-											<p>To access liveprices or charts, you will have to ensure that all forms of Java is enabled and the CSK slingshot program is downloaded from our site. Whenever you access liveprices, the CSK pop-up box will automatically be displayed for download.</p>
-											<p>If it doesn't automatically download /display, you will have to check the following:</p>
-											<p>STEP 1: Check and Enable Java Plus Remove CSK Entries.</p>
-											<ul>
-												<li>Open Internet Explorer</li>
-												<li>Click on "Tools".</li>
-												<li>Click on "Internet Options".</li>
-												<li>Click on "Security" tab.</li>
-												<img src="Assets\Ts16.png" style="width: 419px; height:463px;">
-												<li>Click once on "Internet" icon.</li>
-												<li>Click on "Default Level" button</li>
-												<li>Click on "Advance" tab</li>
-												<li>Scroll down to find "Microsoft VM."</li>
-												<img src="Assets\Ts17.png" style="width: 419px; height:463px;">
-												<li>Scroll down and look for "Microsoft VM".</li>
-												<li>As shown above, place 3 ticks in the boxes: "Java Console", "Java Logging", "JIT Compiler", if any remove the tick in "Java (Sun)".</li>
-												<li>Click on "Apply" button to save the changes.</li>
-												<img src="Assets\Ts18.png" style="width: 419px; height:463px;">
-												<li>Click on "Content" tab</li>
-												<li>Click on "Publisher" button</li>
-												<img src="Assets\Ts19.png" style="width: 419px; height:463px;">
-												<li>Click on "Trusted publishers" tab.</li>
-												<li>Check if there is any "CSK" entries listed in the box.</li>
-												<li>Click on "Remove" button.</li>
-												<li>Repeat Steps 15-16 to remove any "CSK" entries left.</li>
-												<li>Click on "Tools".</li>
-												<li>Click Close to close window and "Internet Options" to complete.</li>
-											</ul>
-											<br>
-											<p>STEP 2: Clear Temporary Internet Files</p>
-											<ul>
-												<li>Open Internet Explorer</li>
-												<li>Click on "Tools".</li>
-												<li>Click on "Internet Options".</li>
-												<li>Click on "General" tab.</li>
-												<img src="Assets\Ts20.png" style="width: 419px; height:463px;">
-												<li>Click on "Delete Cookies" button.</li>
-												<li>Click "OK" in the prompt message to begin deleting the cookies.</li>
-												<img src="Assets\Ts3.png" style="width: 419px; height:463px;">
-												<li>Click on "Delete Files..." button.</li>
-												<li>In the prompt message place tick on "Delete all offline content", then click OK.</li>
-												<li>Click on "Apply" button to save the changes.</li>
-											</ul>
-										</div>
-										<button class="accordion">&emsp;Blank Screen (Viewer Not Found)</button>
-										<div class="panel">
-											<p>The cause of Blank Screen (Viewer Not Found) when loading the Live Prices could be due to lack of a Java software in your computer or outdated Java software.</p>
-										</div>
-										<button class="accordion">&emsp;Connection Time-Out Reconnecting</button>
-										<div class="panel">
-			  								<p>After clicking on live prices, the program seems to be downloading the quotes but after some time it comes up with a message "Connection Time-out Reconnecting".</p>
-			  								<p>Solution :</p>
-			  								<ul>
-			  									<li>Press the "Stop" button found on your browser.</li>
-			  									<li>Click on "Live Price" again to let the browser reload the page.</li>
-			  									<li>Do not click on anything else meanwhile and wait 4-5 mins.</li>
-			  								</ul>
-			  								<p>If the live prices still do not load up within 4 - 5 mins, you will have to check on the ISP (internet service provider - Indonet, Biznet, CBN etc) that you are using and contact our technical officers at 57900900 or email to feedback@phillip.co.id for further assistance.</p>
-			  								<p>Take note that for users behind the Company Firewall, ie. accessing POEMS liveprices through their company connection, live prices are usually disabled by the individual company firewall. You may wish to contact your company's system administrator regarding this.</p>
+										<div id="lpp" class="tab-pane fade">
+											<button class="accordion">&emsp;Display "Loading Data, Please Wait..." for a long time</button>
+											<div class="panel">
+												<p>To access liveprices or charts, you will have to ensure that all forms of Java is enabled and the CSK slingshot program is downloaded from our site. Whenever you access liveprices, the CSK pop-up box will automatically be displayed for download.</p>
+												<p>If it doesn't automatically download /display, you will have to check the following:</p>
+												<p>STEP 1: Check and Enable Java Plus Remove CSK Entries.</p>
+												<ul>
+													<li>Open Internet Explorer</li>
+													<li>Click on "Tools".</li>
+													<li>Click on "Internet Options".</li>
+													<li>Click on "Security" tab.</li>
+													<img src="Assets\Ts16.png" style="width: 419px; height:463px;">
+													<li>Click once on "Internet" icon.</li>
+													<li>Click on "Default Level" button</li>
+													<li>Click on "Advance" tab</li>
+													<li>Scroll down to find "Microsoft VM."</li>
+													<img src="Assets\Ts17.png" style="width: 419px; height:463px;">
+													<li>Scroll down and look for "Microsoft VM".</li>
+													<li>As shown above, place 3 ticks in the boxes: "Java Console", "Java Logging", "JIT Compiler", if any remove the tick in "Java (Sun)".</li>
+													<li>Click on "Apply" button to save the changes.</li>
+													<img src="Assets\Ts18.png" style="width: 419px; height:463px;">
+													<li>Click on "Content" tab</li>
+													<li>Click on "Publisher" button</li>
+													<img src="Assets\Ts19.png" style="width: 419px; height:463px;">
+													<li>Click on "Trusted publishers" tab.</li>
+													<li>Check if there is any "CSK" entries listed in the box.</li>
+													<li>Click on "Remove" button.</li>
+													<li>Repeat Steps 15-16 to remove any "CSK" entries left.</li>
+													<li>Click on "Tools".</li>
+													<li>Click Close to close window and "Internet Options" to complete.</li>
+												</ul>
+												<br>
+												<p>STEP 2: Clear Temporary Internet Files</p>
+												<ul>
+													<li>Open Internet Explorer</li>
+													<li>Click on "Tools".</li>
+													<li>Click on "Internet Options".</li>
+													<li>Click on "General" tab.</li>
+													<img src="Assets\Ts20.png" style="width: 419px; height:463px;">
+													<li>Click on "Delete Cookies" button.</li>
+													<li>Click "OK" in the prompt message to begin deleting the cookies.</li>
+													<img src="Assets\Ts3.png" style="width: 419px; height:463px;">
+													<li>Click on "Delete Files..." button.</li>
+													<li>In the prompt message place tick on "Delete all offline content", then click OK.</li>
+													<li>Click on "Apply" button to save the changes.</li>
+												</ul>
+											</div>
+											<button class="accordion">&emsp;Blank Screen (Viewer Not Found)</button>
+											<div class="panel">
+												<p>The cause of Blank Screen (Viewer Not Found) when loading the Live Prices could be due to lack of a Java software in your computer or outdated Java software.</p>
+											</div>
+											<button class="accordion">&emsp;Connection Time-Out Reconnecting</button>
+											<div class="panel">
+				  								<p>After clicking on live prices, the program seems to be downloading the quotes but after some time it comes up with a message "Connection Time-out Reconnecting".</p>
+				  								<p>Solution :</p>
+				  								<ul>
+				  									<li>Press the "Stop" button found on your browser.</li>
+				  									<li>Click on "Live Price" again to let the browser reload the page.</li>
+				  									<li>Do not click on anything else meanwhile and wait 4-5 mins.</li>
+				  								</ul>
+				  								<p>If the live prices still do not load up within 4 - 5 mins, you will have to check on the ISP (internet service provider - Indonet, Biznet, CBN etc) that you are using and contact our technical officers at 57900900 or email to feedback@phillip.co.id for further assistance.</p>
+				  								<p>Take note that for users behind the Company Firewall, ie. accessing POEMS liveprices through their company connection, live prices are usually disabled by the individual company firewall. You may wish to contact your company's system administrator regarding this.</p>
+											</div>
 										</div>
 									</div>
 				    			</div>
@@ -323,77 +334,102 @@
 				<div class="col-sm-3">
 					<div class="row">
 						<div class="col-sm-12">
-							<div class="column">
+							<div class="rightcolumn">
+								<section>
+									<h3>Top List Updates</h3>
+							  		<ul class="nav nav-pills nav-justified" role="tablist">
+							    		<li class="nav-item">
+							      			<a class="nav-link active" data-toggle="pill" href="#topfreq">Top Frequency</a>
+							    		</li>
+							    		<li class="nav-item">
+							      			<a class="nav-link" data-toggle="pill" href="#topgain">Top Gainers</a>
+							    		</li>
+							    		<li class="nav-item">
+							      			<a class="nav-link" data-toggle="pill" href="#toplos">Top Losers</a>
+							    		</li>
+							    		<li class="nav-item">
+							      			<a class="nav-link" data-toggle="pill" href="#topval">Top Value</a>
+							    		</li>
+							    		<li class="nav-item">
+							      			<a class="nav-link" data-toggle="pill" href="#topvol">Top Volume</a>
+							    		</li>
+							  		</ul>
+							  		<div class="tab-content">
+							    		<div id="topfreq" class="tab-pane active">
+							      			<table id="t01">
+								  			<tr>
+									    		<th>Stock</th>
+									    		<th>Price</th> 
+									    		<th>Change</th>
+									  		</tr>
+									  		<tr>
+                                				<td colspan="3">The Service is Temporarily Unvavailable</td>
+                           					</tr>
+										</table>
+							    		</div>
+							    		<div id="topgain" class="tab-pane fade">
+							      			<table id="t01">
+								  			<tr>
+									    		<th>Stock</th>
+									    		<th>Price</th> 
+									    		<th>Change</th>
+									  		</tr>
+									  		<tr>
+                                				<td colspan="3">The Service is Temporarily Unvavailable</td>
+                           					</tr>
+										</table>
+										</div>
+										<div id="toplos" class="tab-pane fade">
+							      			<table id="t01">
+								  			<tr>
+									    		<th>Stock</th>
+									    		<th>Price</th> 
+									    		<th>Change</th>
+									  		</tr>
+									  		<tr>
+                                				<td colspan="3">The Service is Temporarily Unvavailable</td>
+                           					</tr>
+										</table>
+										</div>
+										<div id="topval" class="tab-pane fade">
+							      			<table id="t01">
+								  			<tr>
+									    		<th>Stock</th>
+									    		<th>Price</th> 
+									    		<th>Change</th>
+									  		</tr>
+									  		<tr>
+                                				<td colspan="3">The Service is Temporarily Unvavailable</td>
+                           					</tr>
+										</table>
+										</div>
+										<div id="topvol" class="tab-pane fade">
+							      			<table id="t01">
+								  			<tr>
+									    		<th>Stock</th>
+									    		<th>Price</th> 
+									    		<th>Change</th>
+									  		</tr>
+									  		<tr>
+                                				<td colspan="3">The Service is Temporarily Unvavailable</td>
+                           					</tr>
+										</table>
+										</div>
+									</div>
+								</section>
 								<section>
 									<h3>Market Updates</h3>
-									<button class="accordion active">Top Frequency</button>
-									<div class="panel" style="max-height: 63px;">
-									  	<table id="t01">
-									  		<tr>
-									    		<th>Stock</th>
-									    		<th>Price</th> 
-									    		<th>Change</th>
-									  		</tr>
-									  		<tr>
-                                				<td colspan="3">The Service is Temporarily Unvavailable</td>
-                           					</tr>
-										</table>
-									</div>
-									<button class="accordion">Top Gainers</button>
-									<div class="panel">
-		  								<table id="t01">
-									  		<tr>
-									    		<th>Stock</th>
-									    		<th>Price</th> 
-									    		<th>Change</th>
-											</tr>
-											<tr>
-                                				<td colspan="3">The Service is Temporarily Unvavailable</td>
-                           					</tr>
-										</table>
-									</div>
-									<button class="accordion">Top Losers</button>
-									<div class="panel">
-								  		<table id="t01">
-								  			<tr>
-									    		<th>Stock</th>
-									    		<th>Price</th> 
-									    		<th>Change</th>
-									  		</tr>
-									  		<tr>
-                                				<td colspan="3">The Service is Temporarily Unvavailable</td>
-                           					</tr>
-										</table>
-									</div>
-									<button class="accordion">Top Volume</button>
-									<div class="panel">
-								  		<table id="t01">
-								  			<tr>
-									    		<th>Stock</th>
-									    		<th>Price</th> 
-									    		<th>Change</th>
-									  		</tr>
-									  		<tr>
-                                				<td colspan="3">The Service is Temporarily Unvavailable</td>
-                           					</tr>
-										</table>
-									</div>
-									<button class="accordion">Top Value</button>
-									<div class="panel">
-								  		<table id="t01">
-								  			<tr>
-									    		<th>Stock</th>
-									    		<th>Price</th> 
-									    		<th>Change</th>
-									  		</tr>
-									  		<tr>
-                                				<td colspan="3">The Service is Temporarily Unvavailable</td>
-                           					</tr>
-										</table>
-									</div>
-									<button class="accordion">Market Indices</button>
-									<div class="panel">
-								  		<table id="t01">
+									<ul class="nav nav-pills nav-justified" role="tablist">
+										<li class="nav-item">
+							      			<a class="nav-link active" data-toggle="pill" href="#marin">Market Indices</a>
+							    		</li>
+							    		<li class="nav-item">
+							      			<a class="nav-link" data-toggle="pill" href="#exrat">Exchanges Rates</a>
+							    		</li>
+							    	</ul>
+							    	<div class="tab-content">
+							    		<div id="marin" class="tab-pane active">
+							      			<table id="t01">
 								  			<tr>
 									    		<th>Index</th>
 									    		<th>Last</th> 
@@ -450,10 +486,9 @@
 									    		<td>1.58</td>
 									  		</tr>
 										</table>
-									</div>
-									<button class="accordion">Exchanges Rates</button>
-									<div class="panel">
-								  		<table id="t01">
+										</div>
+										<div id="exrat" class="tab-pane fade">
+							      			<table id="t01">
 								  			<tr>
 									    		<th>Name</th>
 									    		<th>Last</th>
@@ -483,14 +518,21 @@
 									    		<td>Rp. 2,216.03</td>
 									  		</tr>
 										</table>
-									</div>
-								</section>
-								<div class="column">
-									<section>
-										<h3>Reksadana</h3>
-										<button class="accordion active">PMMF</button>
-										<div class="panel" style="max-height: 436px;">
-										  	<table id="t02">
+										</div>
+							    </section>
+								<section>
+									<h3>Reksadana</h3>
+							  		<ul class="nav nav-pills nav-justified" role="tablist">
+							    		<li class="nav-item">
+							      			<a class="nav-link active" data-toggle="pill" href="#pmmf">PMMF</a>
+							    		</li>
+							    		<li class="nav-item">
+							      			<a class="nav-link" data-toggle="pill" href="#prbf">PRBF</a>
+							    		</li>
+							  		</ul>
+							  		<div class="tab-content">
+							    		<div id="pmmf" class="tab-pane active">
+							      			<table id="t02">
 										  		<tr>
 										    		<td>Fund Name</td>
 										    		<td>Phillip Money Market Fund</td>
@@ -532,10 +574,9 @@
 										    		<td>5.08</td>
 										  		</tr>
 											</table>
-										</div>
-										<button class="accordion">PRBF</button>
-										<div class="panel">
-										  	<table id="t02">
+							    		</div>
+							    		<div id="prbf" class="tab-pane fade">
+							      			<table id="t02">
 										  		<tr>
 										    		<td>Fund Name</td>
 										    		<td>Phillip Balance Rupiah Fund</td>
@@ -578,12 +619,21 @@
 										  		</tr>
 											</table>
 										</div>
-									</section>
-									<section> 
-										<h3>Corporate Action</h3>
-										<button class="accordion active">Stocks</button>
-										<div class="panel" style="max-height: 207px;">
-										  	<table id="t03">
+									</div>
+								</section>
+								<section>
+									<h3>Corporate Action</h3>
+							  		<ul class="nav nav-pills nav-justified" role="tablist">
+							    		<li class="nav-item">
+							      			<a class="nav-link active" data-toggle="pill" href="#stocks">Stocks</a>
+							    		</li>
+							    		<li class="nav-item">
+							      			<a class="nav-link" data-toggle="pill" href="#warrant">Warrant</a>
+							    		</li>
+							  		</ul>
+							  		<div class="tab-content">
+							    		<div id="stocks" class="tab-pane active">
+							      			<table id="t03">
 										  		<tr>
 										    		<th>Stock</th>
 										    		<th>Exercise Price</th>
@@ -615,10 +665,9 @@
 										    		<td>Mar 13, 2020</td>
 										  		</tr>
 											</table>
-										</div>
-										<button class="accordion">Warrant</button>
-										<div class="panel">
-										  	<table id="t03">
+							    		</div>
+							    		<div id="warrant" class="tab-pane fade">
+							      			<table id="t03">
 										  		<tr>
 											   		<th>Stock</th>
 										    		<th>Action</th>
@@ -651,24 +700,8 @@
 										  		</tr>
 											</table>
 										</div>
-									</section>
-								</div>
-								<script>
-									var acc = document.getElementsByClassName("accordion");
-									var i;
-									for (i = 0; i < acc.length; i++) {
-									  	acc[i].addEventListener("click", function() {
-									    	this.classList.toggle("active");
-									    	var panel = this.nextElementSibling;
-									    	if (panel.style.maxHeight){
-									      		panel.style.maxHeight = null;
-									    	}
-									    	else {
-									      		panel.style.maxHeight = panel.scrollHeight + "px";
-									    	} 
-									  	});
-									}
-								</script>
+									</div>
+								</section>
 							</div>
 						</div>
 					</div>
@@ -682,7 +715,7 @@
 	    		<div class="row">
 	     			<div class="col-sm-2">
 			   			<h6><u><b>Accounts</b></u></h6>
-			   			<p><a href="#">Free Trial</p></a>
+			   			<p><a href="https://www.poems.co.id/asp/start/frontpage/promo/promomicrosite.asp?ref=poemsdev">Free Trial</p></a>
 			   			<p><a href="#">Open an Account</p></a>
 		   			</div>
 			   		<div class="col-sm-2">
@@ -708,11 +741,18 @@
 			    	</div>
 			    	<div class="col-sm-2">
 				    	<h6><u><b>Help & Support</b></u></h6>
-				   		<p><a href="#">Knowledge Base</p></a>
-				   		<p><a href="#">IDX Calendar</p></a>
-				   		<p><a href="#">Download</p></a>
-				   		<p><a href="#">Privacy Policy</p></a>
-				   		<p><a href="#">Term of Use</p></a>
+				   		<p><a href="Knowledge-Base.html">Knowledge Base</p></a>
+				   		<p><a href="https://www.idx.co.id/berita/jadwal-libur-bursa">IDX Calendar</p></a>
+				   		<p><a href="Download.html">Download</p></a>
+				   		<p><a href="#" data-toggle="modal" data-target="#disclaimers">Privacy Policy</p></a>
+				   		<p><a href="#" data-toggle="modal" data-target="#disclaimers">Term of Use</p></a>
+				   		<div class="modal" id="disclaimers">
+    						<div class="modal-dialog modal-lg">
+      							<div class="modal-content">
+        							<iframe src="Disclaimer.html" height="1100" width="800"></iframe>
+    							</div>
+ 							</div>
+ 						</div>
 					</div>
 				   	<div class="col-sm-2">
 				   		<h6><u><b>Contact Us</b></u></h6>

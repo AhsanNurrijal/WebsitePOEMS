@@ -49,7 +49,7 @@
 					</div>
 					<div class=col-sm-2>
 						<div class=loginbutton>
-							<button type="button" data-toggle="modal" data-target="#myModal">Login</button>
+							<button type="button" data-toggle="modal" data-target="#myModal" data-toggle="modal" data-target="#disclaimers">Login</button>
 						</div>
 					</div>
 					<div class="modal" id="myModal">
@@ -98,219 +98,253 @@
 	        			<h2>Initial Public Offering</h2>
 	    			</div>
 				    <div class="profunds">
-						<input type="radio" name="tabs" id="tab1" checked="checked">
-						<label for="tab1">Current IPO</label>
-						<input type="radio" name="tabs" id="tab2">
-						<label for="tab2">IPO Plan</label>
-						<input type="radio" name="tabs" id="tab3">
-						<label for="tab3">Historical IPO</label>
-						<div id="tab-content1" class="tab-content">
-							<h3>Stocks</h3>
-							<table id="t05">
-								<tr>
-	                                <th>No.</th>
-	                                <th>Company</th>
-	                                <th>BookBuilding</th>
-	                                <th>Pooling</th>
-	                                <th>Listing</th>
-                           		</tr>
-                           		<tr>
-                                	<td colspan="5">There is no current IPO at this moment.</td>
-                           		</tr>
-							</table>
-							<h3>Bond</h3>
-			                <table id="t05">
-			                	<tr>
-	                                <th>No.</th>
-	                                <th>Company</th>
-	                                <th>BookBuilding</th>
-	                                <th>Pooling</th>
-	                                <th>Listing</th>
-                            	</tr>
-                            	<td colspan="5">There is no current IPO at this moment.</td>
-			                </table>
-						</div>
-						<div id="tab-content2" class="tab-content">
-							<h3>List of Issuers with Initial Public Offering (IPO) Plan</h3>
-							<table id="t05">
-				                <tr>
-	                                <th>No.</th>
-	                                <th>Company</th>
-	                                <th>Business Sector</th>
-	                                <th>Schedule Estimate IPO & Listing</th>
-	                                <th>Lead Underwritter</th>
-	                                <th>IPO Size & IPO usage</th>
-	                                <th>IPO Value IDR/ US$</th>
-                            	</tr>
-	                            <tr>
-	                                <td>1</td>
-	                                <td>Aneka Minera Indonesia</td>
-	                                <td>Perambangan Emas</td>
-	                                <td>2019</td>
-	                                <td>Artha Sekuritas Indonesia</td>
-	                                <td></td>
-	                                <td></td>
-	                            </tr>
-	                            <tr>
-	                                <td>2</td>
-	                                <td>Kencana Energi Lestari</td>
-	                                <td>Pembangkit Listrik</td>
-	                                <td>2019</td>
-	                                <td></td>
-	                                <td></td>
-	                                <td></td>
-	                            </tr>
-	                            <tr>
-	                                <td>3</td>
-	                                <td>Gunung Raja Paksi</td>
-	                                <td>Produksi Baja</td>
-	                                <td>2019</td>
-	                                <td>Kresna Sekuritas</td>
-	                                <td>0,22% atau sebanyak 1,238 miliar saham, akan digunakan untuk modal kerja dan refinancing</td>
-	                                <td></td>
-	                            </tr>
-	                            <tr>
-	                                <td>4</td>
-	                                <td>DMS Propertindo</td>
-	                                <td>Properti</td>
-	                                <td>2019</td>
-	                                <td></td>
-	                                <td></td>
-	                                <td></td>
-	                            </tr>
-	                            <tr>
-	                                <td>5</td>
-	                                <td>Arkha Jayanti Persada</td>
-	                                <td>Engineering, Procurement & Construction</td>
-	                                <td>2019</td>
-	                                <td>UOB Kay Hian Sekuritas</td>
-	                                <td></td>
-	                                <td></td>
-	                            </tr>
-	                            <tr>
-	                                <td>6</td>
-	                                <td>PT Jasnita Telekomindo Tbk</td>
-	                                <td>Bergerak di bidang telekomunikasi, komunikasi dan layanan jaringan</td>
-	                                <td>Listing : 16 Mei 2019</td>
-	                                <td>UOB Kay Hian Sekuritas</td>
-	                                <td>203.406.700 lembar saham</td>
-	                                <td>Rp.50.038.048.200,-</td>
-	                            </tr>
-	                            <tr>
-	                                <td>7</td>
-	                                <td>PT Hotel Fitra International Tbk</td>
-	                                <td>Properti (Hotel)</td>
-	                                <td></td>
-	                                <td></td>
-	                                <td></td>
-	                                <td></td>
-	                            </tr>
-	                        </table>
-						</div>
-						<div id="tab-content3" class="tab-content">
-							<h3>Stocks</h3>
-							<table id="t05">
-								<tr>
-                                	<th colspan="3">2019</th>
-                           		</tr>
-	                            <tr>
-	                                <th>No</th>
-	                                <th>Company</th>
-	                                <th>Listed</th>
-	  							</tr>
-	                            <tr>
-	                                <td>1</td>
-	                                <td>PT Indonesian Tobacco Tbk</td>
-	                                <td>Jul 4, 2019</td>
-	                            </tr>
-	                            <tr>
-	                                <td>2</td>
-	                                <td>PT. Fuji Finance Indonesia Tbk</td>
-	                                <td>Jul 9, 2019</td>
-	                            </tr>
-	                            <tr>
-	                                <td>3</td>
-	                                <td>PT. Envy Technologies Indonesia Tbk</td>
-	                                <td>Jul 8, 2019</td>
-	                            </tr>
-							</table>
-						</div>
-				    </div>
-				</div>
+						<ul class="nav nav-pills nav-justified" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="pill" href="#cipo">Current IPO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="pill" href="#ipop">IPO Plan</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="pill" href="#hipo">Historical IPO</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div id="cipo" class="tab-pane active">
+                               	<h3>Stocks</h3>
+              					<table id="t05">
+                					<tr>
+		                                <th>No.</th>
+		                                <th>Company</th>
+		                                <th>BookBuilding</th>
+		                                <th>Pooling</th>
+		                                <th>Listing</th>
+                              		</tr>
+                              		<tr>
+                                  		<td colspan="5">There is no current IPO at this moment.</td>
+                              		</tr>
+              					</table>
+              					<h3>Bond</h3>
+                      			<table id="t05">
+	                       			<tr>
+		                                <th>No.</th>
+		                                <th>Company</th>
+		                                <th>BookBuilding</th>
+		                                <th>Pooling</th>
+		                                 <th>Listing</th>
+	                              	</tr>
+	                              	<tr>
+	                              		<td colspan="5">There is no current IPO at this moment.</td>
+	                              	</tr>
+	                      		</table>
+                            </div>
+                            <div id="ipop" class="tab-pane fade">
+                                <h3>List of Issuers with Initial Public Offering (IPO) Plan</h3>
+              					<table id="t05">
+                       				<tr>
+		                                <th>No.</th>
+		                                <th>Company</th>
+		                                <th>Business Sector</th>
+		                                <th>Schedule Estimate IPO & Listing</th>
+		                                <th>Lead Underwritter</th>
+		                                <th>IPO Size & IPO usage</th>
+		                                <th>IPO Value IDR/ US$</th>
+                             		</tr>
+			                        <tr>
+			                            <td>1</td>
+			                            <td>Aneka Minera Indonesia</td>
+			                            <td>Perambangan Emas</td>
+			                            <td>2019</td>
+			                            <td>Artha Sekuritas Indonesia</td>
+			                            <td></td>
+			                            <td></td>
+			                        </tr>
+                              		<tr>
+		                                <td>2</td>
+		                                <td>Kencana Energi Lestari</td>
+		                                <td>Pembangkit Listrik</td>
+		                                <td>2019</td>
+		                                <td></td>
+		                                <td></td>
+		                                <td></td>
+                              		</tr>
+		                            <tr>
+		                                <td>3</td>
+		                                <td>Gunung Raja Paksi</td>
+		                                <td>Produksi Baja</td>
+		                                <td>2019</td>
+		                                <td>Kresna Sekuritas</td>
+		                                <td>0,22% atau sebanyak 1,238 miliar saham, akan digunakan untuk modal kerja dan refinancing</td>
+		                                <td></td>
+		                            </tr>
+                              		<tr>
+		                                <td>4</td>
+		                                <td>DMS Propertindo</td>
+		                                <td>Properti</td>
+		                                <td>2019</td>
+		                                <td></td>
+		                                <td></td>
+		                                <td></td>
+		                            </tr>
+                              		<tr>
+		                                <td>5</td>
+		                                <td>Arkha Jayanti Persada</td>
+		                                <td>Engineering, Procurement & Construction</td>
+		                                <td>2019</td>
+		                                <td>UOB Kay Hian Sekuritas</td>
+		                                <td></td>
+		                                <td></td>
+                              		</tr>
+		                            <tr>
+		                                <td>6</td>
+		                                <td>PT Jasnita Telekomindo Tbk</td>
+		                                <td>Bergerak di bidang telekomunikasi, komunikasi dan layanan jaringan</td>
+		                                <td>Listing : 16 Mei 2019</td>
+		                                <td>UOB Kay Hian Sekuritas</td>
+		                                <td>203.406.700 lembar saham</td>
+		                                <td>Rp.50.038.048.200,-</td>
+		                            </tr>
+		                            <tr>
+		                                <td>7</td>
+		                                <td>PT Hotel Fitra International Tbk</td>
+		                                <td>Properti (Hotel)</td>
+		                                <td></td>
+		                                <td></td>
+		                                <td></td>
+		                                <td></td>
+		                            </tr>
+                          		</table>
+                            </div>
+                            <div id="hipo" class="tab-pane fade">
+                            	<h3>Stocks</h3>
+              					<table id="t05">
+                					<tr>
+                                  		<th colspan="3">2019</th>
+                              		</tr>
+                              		<tr>
+	                                  	<th>No</th>
+	                                  	<th>Company</th>
+	                                  	<th>Listed</th>
+                  					</tr>	
+                              		<tr>
+                                  		<td>1</td>
+                                  		<td>PT Indonesian Tobacco Tbk</td>
+                                  		<td>Jul 4, 2019</td>
+                              		</tr>
+                              		<tr>
+                                  		<td>2</td>
+                                  		<td>PT. Fuji Finance Indonesia Tbk</td>
+                                  		<td>Jul 9, 2019</td>
+                              		</tr>
+                              		<tr>
+		                                <td>3</td>
+                                  		<td>PT. Envy Technologies Indonesia Tbk</td>
+                                  		<td>Jul 8, 2019</td>
+                              		</tr>
+              					</table>
+                            </div>
+                        </div>
+            		</div>
+            	</div>
 				<div class="col-sm-3">
 					<div class="row">
 						<div class="col-sm-12">
-							<div class="column">
+							<div class="rightcolumn">
+								<section>
+									<h3>Top List Updates</h3>
+							  		<ul class="nav nav-pills nav-justified" role="tablist">
+							    		<li class="nav-item">
+							      			<a class="nav-link active" data-toggle="pill" href="#topfreq">Top Frequency</a>
+							    		</li>
+							    		<li class="nav-item">
+							      			<a class="nav-link" data-toggle="pill" href="#topgain">Top Gainers</a>
+							    		</li>
+							    		<li class="nav-item">
+							      			<a class="nav-link" data-toggle="pill" href="#toplos">Top Losers</a>
+							    		</li>
+							    		<li class="nav-item">
+							      			<a class="nav-link" data-toggle="pill" href="#topval">Top Value</a>
+							    		</li>
+							    		<li class="nav-item">
+							      			<a class="nav-link" data-toggle="pill" href="#topvol">Top Volume</a>
+							    		</li>
+							  		</ul>
+							  		<div class="tab-content">
+							    		<div id="topfreq" class="tab-pane active">
+							      			<table id="t01">
+								  			<tr>
+									    		<th>Stock</th>
+									    		<th>Price</th> 
+									    		<th>Change</th>
+									  		</tr>
+									  		<tr>
+                                				<td colspan="3">The Service is Temporarily Unvavailable</td>
+                           					</tr>
+										</table>
+							    		</div>
+							    		<div id="topgain" class="tab-pane fade">
+							      			<table id="t01">
+								  			<tr>
+									    		<th>Stock</th>
+									    		<th>Price</th> 
+									    		<th>Change</th>
+									  		</tr>
+									  		<tr>
+                                				<td colspan="3">The Service is Temporarily Unvavailable</td>
+                           					</tr>
+										</table>
+										</div>
+										<div id="toplos" class="tab-pane fade">
+							      			<table id="t01">
+								  			<tr>
+									    		<th>Stock</th>
+									    		<th>Price</th> 
+									    		<th>Change</th>
+									  		</tr>
+									  		<tr>
+                                				<td colspan="3">The Service is Temporarily Unvavailable</td>
+                           					</tr>
+										</table>
+										</div>
+										<div id="topval" class="tab-pane fade">
+							      			<table id="t01">
+								  			<tr>
+									    		<th>Stock</th>
+									    		<th>Price</th> 
+									    		<th>Change</th>
+									  		</tr>
+									  		<tr>
+                                				<td colspan="3">The Service is Temporarily Unvavailable</td>
+                           					</tr>
+										</table>
+										</div>
+										<div id="topvol" class="tab-pane fade">
+							      			<table id="t01">
+								  			<tr>
+									    		<th>Stock</th>
+									    		<th>Price</th> 
+									    		<th>Change</th>
+									  		</tr>
+									  		<tr>
+                                				<td colspan="3">The Service is Temporarily Unvavailable</td>
+                           					</tr>
+										</table>
+										</div>
+									</div>
+								</section>
 								<section>
 									<h3>Market Updates</h3>
-									<button class="accordion active">Top Frequency</button>
-									<div class="panel" style="max-height: 63px;">
-									  	<table id="t01">
-									  		<tr>
-									    		<th>Stock</th>
-									    		<th>Price</th> 
-									    		<th>Change</th>
-									  		</tr>
-									  		<tr>
-                                				<td colspan="3">The Service is Temporarily Unvavailable</td>
-                           					</tr>
-										</table>
-									</div>
-									<button class="accordion">Top Gainers</button>
-									<div class="panel">
-		  								<table id="t01">
-									  		<tr>
-									    		<th>Stock</th>
-									    		<th>Price</th> 
-									    		<th>Change</th>
-											</tr>
-											<tr>
-                                				<td colspan="3">The Service is Temporarily Unvavailable</td>
-                           					</tr>
-										</table>
-									</div>
-									<button class="accordion">Top Losers</button>
-									<div class="panel">
-								  		<table id="t01">
-								  			<tr>
-									    		<th>Stock</th>
-									    		<th>Price</th> 
-									    		<th>Change</th>
-									  		</tr>
-									  		<tr>
-                                				<td colspan="3">The Service is Temporarily Unvavailable</td>
-                           					</tr>
-										</table>
-									</div>
-									<button class="accordion">Top Volume</button>
-									<div class="panel">
-								  		<table id="t01">
-								  			<tr>
-									    		<th>Stock</th>
-									    		<th>Price</th> 
-									    		<th>Change</th>
-									  		</tr>
-									  		<tr>
-                                				<td colspan="3">The Service is Temporarily Unvavailable</td>
-                           					</tr>
-										</table>
-									</div>
-									<button class="accordion">Top Value</button>
-									<div class="panel">
-								  		<table id="t01">
-								  			<tr>
-									    		<th>Stock</th>
-									    		<th>Price</th> 
-									    		<th>Change</th>
-									  		</tr>
-									  		<tr>
-                                				<td colspan="3">The Service is Temporarily Unvavailable</td>
-                           					</tr>
-										</table>
-									</div>
-									<button class="accordion">Market Indices</button>
-									<div class="panel">
-								  		<table id="t01">
+									<ul class="nav nav-pills nav-justified" role="tablist">
+										<li class="nav-item">
+							      			<a class="nav-link active" data-toggle="pill" href="#marin">Market Indices</a>
+							    		</li>
+							    		<li class="nav-item">
+							      			<a class="nav-link" data-toggle="pill" href="#exrat">Exchanges Rates</a>
+							    		</li>
+							    	</ul>
+							    	<div class="tab-content">
+							    		<div id="marin" class="tab-pane active">
+							      			<table id="t01">
 								  			<tr>
 									    		<th>Index</th>
 									    		<th>Last</th> 
@@ -367,10 +401,9 @@
 									    		<td>1.58</td>
 									  		</tr>
 										</table>
-									</div>
-									<button class="accordion">Exchanges Rates</button>
-									<div class="panel">
-								  		<table id="t01">
+										</div>
+										<div id="exrat" class="tab-pane fade">
+							      			<table id="t01">
 								  			<tr>
 									    		<th>Name</th>
 									    		<th>Last</th>
@@ -400,14 +433,21 @@
 									    		<td>Rp. 2,216.03</td>
 									  		</tr>
 										</table>
-									</div>
-								</section>
-								<div class="column">
-									<section>
-										<h3>Reksadana</h3>
-										<button class="accordion active">PMMF</button>
-										<div class="panel" style="max-height: 436px;">
-										  	<table id="t02">
+										</div>
+							    </section>
+								<section>
+									<h3>Reksadana</h3>
+							  		<ul class="nav nav-pills nav-justified" role="tablist">
+							    		<li class="nav-item">
+							      			<a class="nav-link active" data-toggle="pill" href="#pmmf">PMMF</a>
+							    		</li>
+							    		<li class="nav-item">
+							      			<a class="nav-link" data-toggle="pill" href="#prbf">PRBF</a>
+							    		</li>
+							  		</ul>
+							  		<div class="tab-content">
+							    		<div id="pmmf" class="tab-pane active">
+							      			<table id="t02">
 										  		<tr>
 										    		<td>Fund Name</td>
 										    		<td>Phillip Money Market Fund</td>
@@ -449,10 +489,9 @@
 										    		<td>5.08</td>
 										  		</tr>
 											</table>
-										</div>
-										<button class="accordion">PRBF</button>
-										<div class="panel">
-										  	<table id="t02">
+							    		</div>
+							    		<div id="prbf" class="tab-pane fade">
+							      			<table id="t02">
 										  		<tr>
 										    		<td>Fund Name</td>
 										    		<td>Phillip Balance Rupiah Fund</td>
@@ -495,12 +534,21 @@
 										  		</tr>
 											</table>
 										</div>
-									</section>
-									<section> 
-										<h3>Corporate Action</h3>
-										<button class="accordion active">Stocks</button>
-										<div class="panel" style="max-height: 207px;">
-										  	<table id="t03">
+									</div>
+								</section>
+								<section>
+									<h3>Corporate Action</h3>
+							  		<ul class="nav nav-pills nav-justified" role="tablist">
+							    		<li class="nav-item">
+							      			<a class="nav-link active" data-toggle="pill" href="#stocks">Stocks</a>
+							    		</li>
+							    		<li class="nav-item">
+							      			<a class="nav-link" data-toggle="pill" href="#warrant">Warrant</a>
+							    		</li>
+							  		</ul>
+							  		<div class="tab-content">
+							    		<div id="stocks" class="tab-pane active">
+							      			<table id="t03">
 										  		<tr>
 										    		<th>Stock</th>
 										    		<th>Exercise Price</th>
@@ -532,10 +580,9 @@
 										    		<td>Mar 13, 2020</td>
 										  		</tr>
 											</table>
-										</div>
-										<button class="accordion">Warrant</button>
-										<div class="panel">
-										  	<table id="t03">
+							    		</div>
+							    		<div id="warrant" class="tab-pane fade">
+							      			<table id="t03">
 										  		<tr>
 											   		<th>Stock</th>
 										    		<th>Action</th>
@@ -568,24 +615,8 @@
 										  		</tr>
 											</table>
 										</div>
-									</section>
-								</div>
-								<script>
-									var acc = document.getElementsByClassName("accordion");
-									var i;
-									for (i = 0; i < acc.length; i++) {
-									  	acc[i].addEventListener("click", function() {
-									    	this.classList.toggle("active");
-									    	var panel = this.nextElementSibling;
-									    	if (panel.style.maxHeight){
-									      		panel.style.maxHeight = null;
-									    	}
-									    	else {
-									      		panel.style.maxHeight = panel.scrollHeight + "px";
-									    	} 
-									  	});
-									}
-								</script>
+									</div>
+								</section>
 							</div>
 						</div>
 					</div>
@@ -599,7 +630,7 @@
 	    		<div class="row">
 	     			<div class="col-sm-2">
 			   			<h6><u><b>Accounts</b></u></h6>
-			   			<p><a href="#">Free Trial</p></a>
+			   			<p><a href="https://www.poems.co.id/asp/start/frontpage/promo/promomicrosite.asp?ref=poemsdev">Free Trial</p></a>
 			   			<p><a href="#">Open an Account</p></a>
 		   			</div>
 			   		<div class="col-sm-2">
@@ -625,11 +656,18 @@
 			    	</div>
 			    	<div class="col-sm-2">
 				    	<h6><u><b>Help & Support</b></u></h6>
-				   		<p><a href="#">Knowledge Base</p></a>
-				   		<p><a href="#">IDX Calendar</p></a>
-				   		<p><a href="#">Download</p></a>
-				   		<p><a href="#">Privacy Policy</p></a>
-				   		<p><a href="#">Term of Use</p></a>
+				   		<p><a href="Knowledge-Base.html">Knowledge Base</p></a>
+				   		<p><a href="https://www.idx.co.id/berita/jadwal-libur-bursa">IDX Calendar</p></a>
+				   		<p><a href="Download.html">Download</p></a>
+				   		<p><a href="#" data-toggle="modal" data-target="#disclaimers">Privacy Policy</p></a>
+				   		<p><a href="#" data-toggle="modal" data-target="#disclaimers">Term of Use</p></a>
+				   		<div class="modal" id="disclaimers">
+    						<div class="modal-dialog modal-lg">
+      							<div class="modal-content">
+        							<iframe src="Disclaimer.html" height="1100" width="800"></iframe>
+    							</div>
+ 							</div>
+ 						</div>
 					</div>
 				   	<div class="col-sm-2">
 				   		<h6><u><b>Contact Us</b></u></h6>

@@ -61,7 +61,7 @@
 									<input type="Password" placeholder="Password"><br>
 									<input type="text" placeholder="PIN CODE"><br>
 									<input type="submit" value="Desktop Login">
-									<p><a href="#">Forgot Password ?</a>&emsp;|&emsp;<a href="#">Disclaimer</a></p>
+									<p><a href="#">Forgot Password ?</a>&emsp;|&emsp;<a href="#" data-toggle="modal" data-target="#disclaimers">Disclaimer</a></p>
 									<div class="openaccount">
 										<button type="button">Open An Account</button>
 									</div>
@@ -120,475 +120,498 @@
 				        	</div>
 				        	<div class="articleinfo">
 				            	<div class="faq">
-									<input type="radio" name="tabs" id="tab1" checked="checked">
-									<label for="tab1">POEMS</label>
-									<input type="radio" name="tabs" id="tab2">
-									<label for="tab2">Reksadana</label>
-									<div id="tab-content1" class="tab-content">
-										<button class="accordion active">&emsp;Apakah Phillip Online Electronic Mart System (POEMS)?</button>
-										<div class="panel" style="max-height: 130px;">
-											<p>Phillip Online Electronic Mart System (POEMS), secara khusus dikembangkan pertama kali di Singapura tahun 1996 dan menjadi salah satu yang terbaik di Asia Tenggara. Sistem ini dirancang agar investor lebih leluasa dalam bertransaksi secara online. Nasabah dapat melakukan sendiri transaksi beli atau jual saham secara aman, real time dan mudah melalui perangkat komputer pribadi dimana saja dan kapan saja.</p>
-										</div>
-										<button class="accordion">&emsp;Apa perbedaan POEMS dengan online trading lain?</button>
-										<div class="panel">
-											<p>POEMS online trading dapat digunakan di berbagai platform, mulai dari smartphone, Blackberry, Android, iPhone, Ipad. POEMS berbasis web, Nasabah tidak perlu menginstall software tertentu. Jadi Nasabah bisa mengakses POEMS dimanapun asalkan ada jaringan internet. POEMS ProTrader adalah POEMS berbasis aplikasi, Nasabah menginstall software dan mengakses dengan berbagai fitur menarik dengan fitur stop loss yang dapat diandalkan. POEMS Mobile adalah POEMS berbasis web yang dapat diakses oleh berbagai perangkat mobile selama terkoneksi dengan internet. POEMS Mobile Apps adalah POEMS berbasis aplikasi untuk diinstall dan digunakan di berbagai smartphone, Blackberry , Android, iPhone dan Ipad.</p>
-										</div>
-										<button class="accordion">&emsp;Apakah keunggulan POEMS?</button>
-										<div class="panel">
-											<p><b>Aman:</b> Nasabah tidak perlu khawatir dalam melakukan transaksi menggunakan jaringan internet, karena setiap input atau order yang di lakukan melalui POEMS akan di enkripsi dengan teknologi SSL ( Secure Socket Layer) 128 Bit, seperti yang digunakan pada internet banking.</p>
-											<p><b>Real Time:</b>  Nasabah dapat mengikuti perkembangan harga yang terjadi, dan memasukan order beli maupun jual yang sedang diperdagangkan saat itu juga, tanpa melalui perantara.</p>
-											<p><b>Fleksibel:</b> Dengan POEMS Nasabah dapat mengakses informasi saham-saham, posisi portofolio dan bertransaksi saham dengan perangkat mobile yang terhubung dengan jaringan internet.</p>
-										</div>
-										<button class="accordion">&emsp;Cara Pendaftaran Nasabah POEMS</button>
-										<div class="panel">
-											<p><b>A. Langkah-langkah Pembukaan Rekening POEMS</b></p>
-											<ul>
-												<li>Kunjungi website POEMS :<a href="www.poems.co.id"> www.poems.co.id</a>, www.poems.web.id klik menu "<a href="#">Open An Account</a>" dapat diakses melalui PC maupun Mobile.</li>
-												<li>Pilih jenis rekening efek REGULAR atau SHARIA.</li>
-												<li>Isi data-data di formulir pendaftaran online.</li>
-												<li>Upload dokumen yang diminta atau lampirkan pada formulir saat dikirim.</li>
-												<li>Print formulir.</li>
-												<li>Paraf pada setiap halaman formulir dan tandatangan pada kolom yang tersedia.
-													<ol>
-														<li>Perjanjian Pembukaan Rekening Efek, disertai materai Rp 6.000,-</li>
-														<li>Formulir Pembukaan Rekening Dana Investor (RDI), disertai materai Rp 6.000,- Formulir ini digunakan untuk membuka rekening dana di bank RDI yang telah ditentukan oleh Regulator dan telah bekerjasama dengan PT Phillip Sekuritas Indonesia. Saat ini terdapat 5 bank pilihan, yaitu BCA, Mandiri, PermataBank, Sinarmas dan BCA Syariah.</li>
-													</ol></li>
-												<li>Kirimkan Formulir yang telah dilengkapi ke alamat kantor PT Phillip Sekuritas Indonesia.</li>
-											</ul>
-											<p><b>B. Dokumen yang Harus Diserahkan</b></p>
-											<ul>
-												<li>Fotokopi KTP (Kartu Tanda Penduduk) yang masih berlaku bagi Warga Negara Indonesia atau Paspor bagi Warga Negara Asing.</li>
-												<li>Fotokopi NPWP bagi calon Nasabah yang wajib memiliki NPWP.</li>
-												<li>Fotokopi halaman depan buku tabungan Bank.</li>
-												<li>”Surat Kuasa Transaksi” yang dilampiri dengan KTP/Paspor terbaru apabila Pemilik Rekening menunjuk orang lain (pihak kedua) untuk melakukan setiap transaksi atas nama pemilik rekening.</li>
-												<li>Formulir Identifikasi Pihak Lain apabila Pemilik Rekening bertindak bukan sebagai Diri Sendiri.</li>
-												<li>Formulir terkait penerapan FATCA apabila Nasabah adalah Warga Negara Amerika Serikat atau memiliki ijin tinggal tetap (greencard) di Amerika Serikat atau memiliki kewajiban pembayaran pajak ke Amerika Serikat.</li>
-											</ul>
-											<p><b>C. Proses Pengaktifan Rekening</b></p>
-											<ul>
-												<li>Setelah pengajuan Formulir Rekening Efek sudah lengkap, maka perusahaan efek akan melakukan pengajuan pembuatan Sub Rekening Efek dan Single Investor Identity (SID) di KSEI dalam waktu 1 hari kerja.</li>
-												<li>Setelah Sub Rekening Efek dan Single Investor Identity (SID) sudah aktif, maka dilakukan pengajuan Rekening Dana Investor (RDI) di Bank yang terpilih dalam waktu 3 hari kerja.</li>
-												<li>Setelah Rekening Dana Investor (RDI) sudah aktif, maka Nasabah akan menerima email yang menginformasikan nomor rekening dari RDI tersebut, dan Nasabah dapat langsung melakukan transfer dana ke RDI atas nama Nasabah sebagai deposit, sebesar minimal Rp 500.000,- (Lima Ratus Ribu Rupiah), di mana deposit tersebut dapat digunakan secara langsung untuk pembelian saham. Selain tunai, deposit awal juga bisa dalam bentuk perpindahan saham dari perusahaan efek lain. Setelah melakukan transfer, mohon bukti tersebut di Whatsapp ke<b> 0812 82 900</b>  900 atau email ke<a href="#"> poemsadmin@phillip.co.id</a> , untuk pengaktifan Rekening Efek tersebut. Bila Rekening Efek sudah aktif, maka Nasabah akan menerima User Id, Password , dan PinCode melalui email, yang bisa digunakan untuk mengakses berbagai aplikasi POEMS.</li>
-											</ul>
-										</div>
-										<button class="accordion">&emsp;Cara Pembayaran</button>
-										<div class="panel">
-											<p>Setoran Tunai atau Transfer antar ATM di bank Rekening Dana Investor (RDI) atas nama Investor tersebut</p>
-										</div>
-										<button class="accordion">&emsp;Cara Pembayaran</button>
-										<div class="panel">
-											<p>Setoran Tunai atau Transfer antar ATM di bank Rekening Dana Investor (RDI) atas nama Investor tersebut</p>
-										</div>
-										<button class="accordion">&emsp;Komisi atau Fee</button>
-										<div class="panel">
-											<table id="t05">
-												<tr>
-													<th colspan="3">Tabel Fee Transaksi</th>
-												</tr>
-										  		<tr>
-										    		<th>Action</th>
-										    		<th>Online</th> 
-										    		<th>Non Online</th>
-										  		</tr>
-										  		<tr>
-	                                				<td>Beli</td>
-	                                				<td>0.20%</td>
-	                                				<td>0.25%</td>
-	                           					</tr>
-	                           					<tr>
-	                                				<td>Jual</td>
-	                                				<td>0.30%</td>
-	                                				<td>0.35%</td>
-	                           					</tr>
-											</table>
-											<p><b>Untuk Nasabah yang Melakukan transaksi</b></p>
-											<ol>
-												<li>Beli : T+2 pagi hari bursa sebelum pk. 9.00 pagi</li>
-												<li>Jual : T+2 Hari bursa, di Rekening Dana Investor (RDI).</li>
-											</ol>
-											<ul>
-												<li>Keterlambatan pembayaran transaksi beli akan dikenakan denda (24% pertahun) yang dihitung secara harian. </li>
-												<li>Jika pada T+5 kewajiban bayar tidak di penuhi, maka kami akan melakukan force sell sejumlah outstanding Nasabah.</li>
-												<li>Limit transaksi adalah minimal 1 x dan maksimal 2.86 x dari ekuiti (tergantung dari haircut suatu saham).</li>
-												<li></li>
-											</ul>
-											<p>Ekuiti = dana + saham setelah haircut</p>
-											<p>Haircut = nilai jaminan dari suatu saham yang dapat diakui oleh sekuritas, sesuai peraturan BEI dan tim Risk Management PT. Phillip Sekuritas Indonesia.</p>
-											<p>Force Sell = suatu kondisi di mana Nasabah diharuskan menjual saham-saham outstandingnya</p>
-										</div>
-										<button class="accordion">&emsp;Cara Menghitung Fee</button>
-										<div class="panel">
-											<table id="t05">
-												<tr>
-													<th colspan="3">Fee Remote 0.20%</th>
-												</tr>
-										  		<tr>
-										    		<th></th>
-										    		<th>Beli</th> 
-										    		<th>Jual</th>
-										  		</tr>
-										  		<tr>
-	                                				<td>Comm</td>
-	                                				<td>0.14% dari total value</td>
-	                                				<td>0.14% dari total value</td>
-	                           					</tr>
-	                           					<tr>
-	                                				<td>VAT</td>
-	                                				<td>10% dari Comm</td>
-	                                				<td>10% dari Comm</td>
-	                           					</tr>
-	                           					<tr>
-	                                				<td>IDX Free</td>
-	                                				<td>0,043% dari total Value</td>
-	                                				<td>0,043% dari total Value</td>
-	                           					</tr>
-	                           					<tr>
-	                                				<td>Selling Tax</td>
-	                                				<td></td>
-	                                				<td>0,1% dari total Value</td>
-	                           					</tr>
-											</table>
-											<table id="t05">
-												<tr>
-													<th colspan="3">Fee Dealer 0.25%</th>
-												</tr>
-										  		<tr>
-										    		<th></th>
-										    		<th>Beli</th> 
-										    		<th>Jual</th>
-										  		</tr>
-										  		<tr>
-	                                				<td>Comm</td>
-	                                				<td>0.1882% dari total value</td>
-	                                				<td>0.1882% dari total value</td>
-	                           					</tr>
-	                           					<tr>
-	                                				<td>VAT</td>
-	                                				<td>10% dari Comm</td>
-	                                				<td>10% dari Comm</td>
-	                           					</tr>
-	                           					<tr>
-	                                				<td>IDX Free</td>
-	                                				<td>0,043% dari total Value</td>
-	                                				<td>0,043% dari total Value</td>
-	                           					</tr>
-	                           					<tr>
-	                                				<td>Selling Tax</td>
-	                                				<td></td>
-	                                				<td>0,1% dari total Value</td>
-	                           					</tr>
-											</table>
-										</div>
-										<button class="accordion">&emsp;Bagaimana Prosedur Pengiriman User ID, Password dan PIN?</button>
-										<div class="panel">
-											<ol>
-												<li>Instruksi Pemberian User ID, Password dan Personal Identification Number (PIN) dilakukan secara personal melalui E-mail.</li>
-												<li>Bila sudah menerima Password, maka Nasabah harus segera mengubah password tersebut.</li>
-												<li>Password terdiri dari minimal 6 karakter, maksimal 8 karakter, yang bisa terdiri dari angka, huruf , maupun kombinasi keduanya.</li>
-												<li>User Id dan PIN tidak dapat diubah.</li>
-												<li>Nasabah juga diharuskan mengubah Password demi keamanan rekening Nasabah.</li>
-											</ol>
-										</div>
-										<button class="accordion">&emsp;Bagaimana Meng-update atau Menaikkan Limit?</button>
-										<div class="panel">
-											<p><b>Mentransfer/setor dana ke Rekening Dana Investor (RDI):</b></p>
-											<ul>
-												<li>Setelah anda melakukan transfer/setor dana, harap mengkonfirmasi kepada kami dengan cara : mengisi data secara lengkap di Payment Confirmation di menu Account Management di<a href="www.POEMS.co.id"> www.POEMS.co.id</a> atau aplikasi POEMS lainnya, atau melalui email ke<a href="#"> customercare@phillip.co.id</a></li>
-											</ul>
-										</div>
-										<button class="accordion">&emsp;Bagaimana melakukan perubahan data</button>
-										<div class="panel">
-											<p>Lakukan login terlebih dahulu di www.POEMS.co.id atau aplikasi POEMS lainnya. Pilih menu <b>Contact Us</b>, lalu pilih <b>Feedback</b>.</p>
-											<p><b>Perubahan data yang tersedia:</b></p>
-											<ol>
-												<li>Alamat ? Address</li>
-												<li>Bank Account</li>
-												<li>Telp / Fax / Hp</li>
-												<li>Email</li>
-											</ol>
-										</div>
-										<button class="accordion">&emsp;Perhitungan Bunga Outstanding</button>
-										<div class="panel">
-											<p>(jumlah outstanding x jumlah hari keterlambatan x 24%) / 360 hari.</p>
-											<p>Hari keterlambatan adalah hari kalender</p>
-										</div>
-										<button class="accordion">&emsp;Bagaimana bila ada gangguan koneksi internet?</button>
-										<div class="panel">
-											<p>Apabila terjadi gangguan koneksi internet, sehingga Nasabah tidak dapat mengakses POEMS, Nasabah tetap dapat melakukan transaksi dengan melakukan order jual/beli melalui telepon. Nasabah cukup menghubungi dealing team di 021-57 900 909.</p>
-										</div>
-										<button class="accordion">&emsp;Get POEMS ProTrader</button>
-										<div class="panel">
-											<ol>
-												<li>Aplikasi online trading ini dapat diinstall pada laptop atau PC yang mempunyai Operating System Windows, yang dikembangkan khusus untuk mempermudah Nasabah dalam bertransaksi dengan konsep high tech high touch serta beberapa keunggulan yang belum pernah ada pada online trading sebelumnya.</li>
-												<li>Untuk mendapatkan installer ini, maka masuk ke<a href="www.POEMS.co.id"></a> www.POEMS.co.id, pilih menu Download dan pilih<b> ProTrader Download POEMS ProTrader</b></li>
-												<li>Pilih installer 32 bit atau 64 bit sesuai dengan versi OS Windows dari laptop atau PC yang akan diinstal.</li>
-												<li>Untuk mendapatkan<b> Free Trial</b>, maka kunjungi<a href="http://www.phillip.co.id/id/freetrial"> http://www.phillip.co.id/id/freetrial</a>, isi data Anda dan Anda akan mendapatkan<b> Voucher Trial</b> melalui email Anda.</li>
-												<li>Untuk lengkapnya kunjungi<a href="http://www.phillip.co.id/id/POEMSprotrader"></a> http://www.phillip.co.id/id/POEMSprotrader</li>
-											</ol>
-										</div>
-										<button class="accordion">&emsp;POEMS Mobile</button>
-										<div class="panel">
-											<p>Masuk ke browser di handphone/PDA dan ketikkan www.POEMS.co.id/mobile, maka muncul tampilan seperti di bawah ini.</p>
-											<img src="Assets\Faq1.png" style="width: 256px; height: 346px;">
-											<p>Masukkan POEMS ID, Password, dan Pin Code Nasabah. Bila belum menjadi Nasabah, maka bisa meminta user id demo. Setelah login, maka muncul layar: </p>
-											<img src="Assets\Faq2.png" style="width: 250px; height: 247px;">
-											<p>Untuk lengkapnya kunjungi<a href="http://www.phillip.co.id/id/poemsmobile"></a> http://www.phillip.co.id/id/poemsmobile.</p>
-										</div>
-										<button class="accordion">&emsp;POEMS PRIMA On Android</button>
-										<div class="panel">
-											<p>Masuk ke "Safari", ketik www.poems.co.id/.</p>
-											<p>Masukkan POEMS Id, Password, PinCode.</p>
-											<img src="Assets\Faq3.png" style="width: 480px; height: 417px;">
-											<p>Masukkan POEMS ID, Password, dan Pin Code Nasabah. Bila belum menjadi Nasabah, maka bisa meminta user id demo. Setelah login, maka muncul layar: </p>
-											<img src="Assets\Faq4.png" style="width: 480px; height: 489px;">
-											<p>Bagi yang belum menjadi nasabah, bisa menghubungi Customer Care kami di 62-21-57900900 atau </p>
-											<p><a href="#">customercare@phillip.co.id</a></p>
-										</div>
-										<button class="accordion">&emsp;POEMS on iPad</button>
-										<div class="panel">
-											<img src="Assets\Faq5.png" style="width: 480px; height: 539px;">
-										</div>
-										<button class="accordion">&emsp;Waran & Option</button>
-										<div class="panel">
-											<p>Waran biasanya sebagai pemanis, pada saat suatu emiten, melakukan IPO atau mengeluarkan right issue, supaya Nasabah atau investor mau membeli sahamnya maupun menebus right issue.</p>
-											<p>Waran adalah produk turunan saham, dimana waran tersebut dapat diperjualbelikan, di-exercise menjadi saham serta memliki batas waktu tertentu untuk perdagangannya.</p>
-											<p>Jika suatu waran sudah expired, maka waran tersebut sudah hangus/tidak berlaku kembali, oleh karena itu umumnya jika Nasabah mempunyai waran tersebut Nasabah akan melihat perbandingan antara harga exercise warannya, di bandingkan harga saham.</p>
-											<p><b>Contoh:</b></p>
-											<ul>
-												<li>Saham ABCD di perdagangkan di harga Rp 1000,-</li>
-												<li>ABCD-W diperdagangkan dihargaRp 100,-</li>
-												<li>Harga exercise/tebus ABCD-W menjadi saham ABCD adalah Rp 700,-</li>
-												<li>Artinya jika Nasabah ingin exercise saham maka Nasabah harus mengitung, harga ABCD-W di tambah dengan harga exercise,dikurangi dengan harga market, jika hasilnya lebih murah dari pada harga market, biasanya Nasabah melakukan exercise, jika harganya lebih mahal biasanya Nasabah membiarkan waran tersebut hangus.</li>
-											</ul>
-											<p>Setiap lembar waran yang dimiliki berhak untuk di-exercise menjadi saham oleh Nasabah.</p>
-											<p>Jika Nasabah ingin melakukan exercise, maka exercise tersebut harus dilakukan beberapa hari sebelum masa berlaku waran tersebut berakhir.</p>
-											<p>POEMS tidak menampilkan kapan waktu waran diterbitkan, dan berapa harga awalnya, POEMS hanya menampilkan tanggal expired-nya, jika ada Nasabah yang memiliki waran dan waran tersebut sudah mau expired, pihak Customer Care akan memberitahukannya melalui email kepada Nasabah.</p>
-											<p>Persamaan Option dengan waran adalah bahwa keduanya mempunyai saham induk, hanya saja jika membeli option, Nasabah mempunyai pilihan untuk membeli put option atau long option, yang memungkinkan Nasabah untuk membeli atau menjual terlebih dahulu Untuk waran, Nasabah harus membelinya terlebih dahulu baru bisa dijual.</p>
-											<p>Option biasanya mempunyai waktu yang relatif singkat, sedangkan waran mempunyai periode perdagangan sekitar 3 tahun.</p>
-										</div>
-										<button class="accordion">&emsp;Haircut</button>
-										<div class="panel">
-											<p>Haircut adalah pemotongan nilai saham yang dijadikan sebagai jaminan.</p>
-											<p>Jika di dalam porfolio terdapat saham yang terkena pemotongan nilai, maka limit yang bisa digunakan untuk transaksi menjadi lebih kecil, karena saham yang dijadikan jaminan dinilai lebih kecil dari harga pasar yang sebenarnya.</p>
-											<p>Pemotongan nilai saham tersebut dapat lihat pada list hair cut (list bisa dilihat pd advtrade di menu POEMS ).</p>
-											<p>Semakin besar Hair cut yang diterapkan maka pemotongan nilai untuk limit akan semakin besar.</p>
-											<p>Walaupun saham tersebut mengalami pemotongan nilai, disini hanya berarti untuk jaminan saja. Nilai kepemilikan sebenarnya sesuai dengan harga di pasar.</p>
-											<ol>
-												<li>HR Value adalah Haircut value. Ini adalah nilai untuk patokan kami memberikan limit dari porfolio Nasabah. Jadi limit dari jaminan portfolio bukan diambil dari cost value ataupun market value, tetapi diambil dari haircut value.</li>
-												<li>
-													Cost Value = nilai yang dikeluarkan secara average ketika membeli<br>
-													market Value = nilai saham secara average pada harga market<br>
-													Haircut value = nilai saham yang telah dikurangi dengan haircut.<br>
-													Jadi jika Nasabah menjual saham dengan harga market berarti nilai uang +/- adalah market value.
-												</li>
-											</ol>
-										</div>
-										<button class="accordion">&emsp;Istilah dalam Corporate Action</button>
-										<div class="panel">
-											<ol>
-												<li>Cum date di pasar reguler adalah Tanggal terakhir pembelian saham di pasar reguler dan memegang saham tersebut yang mendapatkan hak corporate action</li>
-												<li>Ex date di pasar reguler adalah Awal pembelian saham di pasar reguler tanpa / tidak mendapatkan hak corporate action</li>
-												<li>Recording date adalah Tanggal pencatatan saham bagi Nasabah yang mendapatkan hak corporate action</li>
-												<li>Payment date adalah Tanggal pembayaran hak corporate action Nasabah dari KSEI kepada perusahaan efek, sehingga hak corporate action akan diterima di Rekening Dana Investor pada T+1 dari Payment Date</li>
-											</ol>
-										</div>
-									</div>
-									<div id="tab-content2" class="tab-content">
-										<button class="accordion">&emsp;Apa itu Reksadana</button>
-										<div class="panel" style="max-height: 392px;">
-											<p>Reksa Dana: Wadah yang dipergunakan untuk menghimpun dana dari masyarakat pemodal untuk selanjutnya diinvestasikan dalam portofolio Efek oleh Manajer Investasi (UU No. 8 Tahun 1995 mengenai Pasar Modal).</p>
-											<p>Ada 4 jenis produk Reksadana:</p>
-											<ul>
-												<li><b>Reksa Dana Saham/Index (Saham):</b> Reksa dana yang investasinya sebagian besar dalam bentuk Efek Ekuitas (Saham).</li>
-												<li><b>Reksa Dana Campuran (Saham, Obligasi, Pasar Uang):</b> Reksa dana yang investasinya berbentuk Efek Ekuitas dan Efek Utang / Efek di Pasar Uang dengan komposisi proporsional.</li>
-												<li><b>Reksa Dana Pendapatan Tetap (80% Obligasi):</b> Reksa dana yang investasinya sebagian besar dalam Efek Utang yang bersifat jangka panjang.</li>
-												<li><b>Reksa Dana Pasar Uang (100% instrumen Pasar Uang):</b> Reksadana yang investasinya ditanam pada efek bersifat hutang dengan jatuh tempo yang kurang dari satu tahun (Deposito, SBI, SBPU).</li>
-											</ul>
-										</div>
-										<button class="accordion">&emsp;Apa saja istilah di Reksadana</button>
-										<div class="panel">
-											<ul>
-												<li><b>Manajer Investasi:</b> Pihak yang kegiatan usahanya mengelola Portofolio Efek untuk para nasabah atau mengelola portofolio investasi kolektif untuk sekelompok nasabah, kecuali perusahaan asuransi, dana pensiun dan bank yang melakukan sendiri kegiatan usahanya berdasarkan peraturan perundang-undangan yang berlaku.</li>
-												<li><b>Agen Penjual:</b> Perusahaan penjual Reksadana diluar Manajer Investasi, Bisa juga disebut sebagai agen untuk menjual Reksadana dan sudah mendapat ijin dari pihak berwenang seperti BAPEPAM dan BI untuk Bank.</li>
-												<li><b>Bank Kustodian:</b> Pihak yang memberikan jasa penitipan Efek dan harta lain yang berkaitan dengan Efek serta jasa lain, termasuk menerima deviden, bunga dan hak-hak lain menyelesaikan transaksi Efek dan mewakili pemegang rekening yang menjadi nasabahnya.</li>
-												<li><b>Prospektus:</b> informasi tertulis mengenai produk reksa dana yang ditawarkan kepada publik.</li>
-												<li><b>Fund Fact Sheet,</b> merupakan Informasi tertulis tentang produk Reksadana, biasanya berisi dengan, Nama Perusahaan Aset Manajemen, Nama Reksadana, Harga NAB/ Unit = Nilai Aktiva Bersih, Profil Perusahaan dan Reksadana, Kebijakan Investasi, Kinerja Reksadana, Alokasi Aset, Disclaimer.</li>
-												<li><b>Unit Penyertaan (UP):</b> Satuan ukuran yang menunjukkan bagian kepentingan setiap Pihak dalam portofolio. Jika disaham hitungannya dengan Lot, maka di Reksadana dengan Unit.</li>
-												<li><b>Nilai Aktiva Bersih (NAB):</b> Portofolio Besaran yang menggambarkan nilai asset suatu Reksa Dana pada suatu saat, setelah dikurangi dengan seluruh kewajibannya.</li>
-												<li><b>NAB Per Unit Total:</b> NAB dibagi dengan jumlah Unit Penyertaan yang dimiliki oleh seluruh pemegang Unit Penyertaan. NAB per Unit dihitung setiap Hari Bursa oleh bank Kustodian berdasarkan ketentuan Bepepam yang berlaku, kemudian di umumkan kepada publik.</li>
-												<li><b>Outstanding Unit Penyertaan:</b> Outstanding Unit Penyertaan merupakan jumlah unit penyertaan yang telah diterbitkan Reksa Dana.</li>
-												<li><b>Pembelian (Subscription):</b> Subscription adalah pembelian atau pemesanan unit penyertaan.</li>
-												<li><b>Penjualan (Redemption):</b> Redemption adalah pencairan atau Penjualan (Redemption) kembali unit penyertaan.</li>
-												<li><b>Biaya Pembelian (Subscription Fee):</b> Biaya yang timbul dari transaksi pembelian atau subscription Reksa Dana.</li>
-												<li><b>Biaya Penjualan (Redemption Fee):</b> Biaya yang timbul dari transaksi Penjualan (Redemption) atau redemption Reksa Dana.</li>
-											</ul>
-										</div>
-										<button class="accordion">&emsp;Bagaimana cara memilih Reksadana?</button>
-										<div class="panel">
-			  								<ul>
-                                				<li>Kenali Profil Resiko Anda, Profil resiko dibagi menjadi 3:
-	                                    		<ol>
-			                                        <li>Konvensional: tidak dapat menerima resiko.</li>
-			                                        <li>Moderat: Mampu menerima resiko dalam jumlah kecil.</li>
-			                                        <li>Agresif: Mampu menerima resiko tinggi.</li>
-	                                    		</ol>
-                                				</li>
-				                                <li>Tentukan Time-frame (periode) Investasi Anda.
-				                                <ol>
-				                                    <li>Tentukan tujuan Anda dalam berinvestasi atau membeli reksadana.</li>
-				                                    <li>Berdasarkan tujuan itu, maka Anda dapat menentukan jangka waktu atau periode Anda berinvestasi.</li>
-				                                </ol>
-				                                </li>
-                                				<li>Kenali tipe Reksadana yang akan Anda beli.</li>
-                                				<li>Berikut ini ilustrasi dalam pemilihan Reksadana:
-                                    			<ol>
-			                                        <li>Pasangan muda yang memiliki sisa pendapatan  setiap bulannya dan lebih siap menerima resiko tinggi, disarankan menginvestasikan sisa pendapatan mereka di Reksadana Saham.</li>
-			                                        <li>Orang tua pensiunan yang hanya memiliki dana pensiun untuk kebutuhan hari tuanya, biasanya tidak berani untuk mengambil resiko, disarankan cukup berinvestasi di Pasar Uang saja atau Reksadana Pendapatan Tetap.</li>
-			                                        <li>Akan tetapi bila ada orang tua hendak memberi warisan Reksadana kepada keturunannya dari sebagian kecukupan harta yang dimilikinya, disarankan berinvestasi pada Reksadana Saham untuk hasil yang lebih baik dengan periode waktu lebih panjang.</li>
-                                    			</ol>
-                                				</li>
-                           					</ul>
-										</div>
-										<button class="accordion">&emsp;Apa saja tipe-tipe reksadana yang ada dan bagaimana perbedaan antara tiap reksadana?</button>
-										<div class="panel">
-											<table id="t05">
-										  		<tr>
-										    		<th>Tipe Reksadana </th>
-										    		<th>Tingkat Resiko</th> 
-										    		<th>Tingkat Pengembalian</th>
-										    		<th>Jangka Waktu Investasi</th>
-										    		<th>Komposisi</th>
-										  		</tr>
-										  		<tr>
-	                                				<td>Reksadana Pasar Uang</td>
-	                                				<td>Rendah</td>
-	                                				<td>Rendah</td>
-	                                				<td><= 1 tahun</td>
-	                                				<td>Efek bersifat Utang dengan jatuh tempo kurang dari 1 (satu) tahun</td>
-	                           					</tr>
-	                           					<tr>
-	                                				<td>Reksadana Pendapatan Tetap</td>
-	                                				<td>Rendah - Sedang</td>
-	                                				<td>Rendah - Sedang</td>
-	                                				<td>1 - 3 tahun</td>
-	                                				<td>sekurang-kurangnya 80% dari aktivanya dalam bentuk Efek bersifat Utang.</td>
-	                           					</tr>
-	                           					<tr>
-	                                				<td>Reksadana Campuran</td>
-	                                				<td>Sedang</td>
-	                                				<td>Sedang</td>
-	                                				<td>3 - 10 tahun</td>
-	                                				<td>Efek bersifat Ekuitas dan Efek bersifat Utang.</td>
-	                           					</tr>
-	                           					<tr>
-	                                				<td>Reksadana Saham</td>
-	                                				<td>Tinggi</td>
-	                                				<td>Tinggi</td>
-	                                				<td>>= 10 tahun</td>
-	                                				<td>sekurang-kurangnya 80% dari aktivanya dalam bentuk Efek bersifat Ekuitas.</td>
-	                           					</tr>
-											</table>
-										</div>
-										<button class="accordion">&emsp;Bagaimana cara berinvestasi di Reksadana</button>
-										<div class="panel">
-											<p>Cara berinvestasi Reksadana adalah dengan mendatangi langsung Manajer Investasi atau agen penjual Reksadana seperti bank dan sekuritas, datang mengisi form dan data-data yang diperlukan. Hal itu dilakukan setiap ingin melakukan pembelian (subcription) dan Penjualan (Redemption) Reksadana (redemption).</p>
-										</div>
-										<button class="accordion">&emsp;Apa itu POEMS ProFunds online?</button>
-										<div class="panel">
-											<p>POEMS ProFunds Online adalah produk yang memberi kemudahan bagi semua strata Investor dalam memilih dan berinvestasi Reksadana secara online kapan saja dan di mana saja melalui sistem online trading (POEMS) milik PT. Phillip Sekuritas Indonesia.</p>
-										</div>
-										<button class="accordion">&emsp;Apa saja keunggulan POEMS ProFunds?</button>
-										<div class="panel">
-											<ul>
-												<li>Sistem terintegrasi dengan POEMS sehingga dengan platform yang sama dapat digunakan untuk bertransaksi saham.</li>
-												<li>Memudahkan nasabah untuk memaksimalkan pendapatan dari dana yang mengendap ketika tidak dipergunakan untuk membeli saham.</li>
-												<li>Menggunakan Rekening Dana Investor (RDI) sebagai rekening pembayaran sehingga lebih aman dan transparan.</li>
-												<li>Biaya Pembelian (subscription fee) yang rendah sekali.</li>
-												<li>Menampilkan berbagai pilihan Reksadana dari perusahaan asset manajemen terkemuka yang dapat dibeli.</li>
-												<li>Menampilkan informasi kinerja dan prospektus dari setiap Reksadana-Reksadana pilihan secara online dakam satu platform sehingga lebih efektif dan efisien.</li>
-												<li>Pembelian (Subscription) dan Penjualan (Redemption) dilakukan secara Online, sehingga menghemat biaya dan waktu.</li>
-												<li>Memudahkan dalam memantau kinerja Reksadana yang dimiliki untuk mempermudah dalam pengambilan keputusan.</li>
-											</ul>
-										</div>
-										<button class="accordion">&emsp;Siapa saja yang boleh menjadi nasabah POEMS ProFunds online?</button>
-										<div class="panel">
-											<p>Siapa saja dapat menjadi Nasabah POEMS ProFunds, baik nasabah baru ataupun nasabah existing Phillip Sekuritas.</p>
-										</div>
-										<button class="accordion">&emsp;Bagaimana Cara menjadi nasabah ProFunds?</button>
-										<div class="panel">
-											<ul>
-												<li>Untuk nasabah existing PT. Phillip Sekuritas Indonesia, cukup login ke dalam www.POEMS.co.id | www,POEMS.web.id, lalu klik menu ‘ProFunds’ dan lakukan pendaftaran di tombol ‘Sign Up’. Saat mendaftar, maka Anda harus menyetujui ‘Term & Condition’ yang berlaku, dan mengisi formulir ‘Profil Risiko’ untuk mengetahui profil resiko Anda dan dapat membantu menentukan jenis reksadana yang dipilih. </li>
-												<p>Setelah selesai proses pendaftaran, maka system akan mengirimkan dokumen-dokumen pendukung, yaitu:</p>
-												<ol>
-													<li>Formulir Profil Resiko yang sudah terisi.</li>
-													<li>Surat Pernyataan Nasabah untuk menyatakan bahwa Nasabah akan melakukan investasi Reksadana secara online dan hasil penjualan kembali reksadana ditransfer ke Rekening Dana Investor atas nama Nasabah.</li>
-													<li>Surat Kuasa Pendebetan RDI, yaitu surat untuk menguasakan kepada PT Phillip Sekuritas Indonesia untuk mendebet dana di RDI untuk penyelesaian instruksi pembelian reksadana.</li>
-													<li>Surat Kuasa Penjualan, yaitu surat untuk menguasakan kepada PT Phillip Sekuritas Indonesia untuk menjual saham dan/atau saham untuk penyelesaian hutang-hutang.menutupi semua kewajiban akibat transaksi saham, bila Nasabah bersedia reksadananya dapat digunakan untuk menambah equity.</li>
-												</ol>
-												<p>Setelah membaca dan menandatangani dokumen-dokumen pendukung, maka Nasabah wajib memberikan dokumen-dokumen tersebut ke Kantor Pusat PT Phillip Sekuritas Indonesia, ANZ Tower lantai 23B, Jl. Jend. Sudirman Kav. 33A, Jakarta 10220.</p>
-												<p>Lampirkan juga fotokopi KTP yang berlaku dan NPWP , bila sebelumnya belum ada.</p>
-												<li>Untuk nasabah baru, harap menghubungi marketing PT Phillip Sekuritas Indonesia di lokasi terdekat dengan Anda untuk mengisi formulir pembukaan dengan dilengkapi dokumen-dokumen pendukung, seperti KTP yang masih berlaku, NPWP.</li>
-											</ul>
-										</div>
-										<button class="accordion">&emsp;Bagaimana cara berinvestasi di POEMS ProFunds?</button>
-										<div class="panel">
-											<p>Setelah terdaftar sebagai nasabah PT. Phillip Sekuritas Indonesia dan mendapatkan login POEMS (online trading) yaitu berupa User Id, Password, Pincode, maka nasabah tersebut sudah dapat berinvestasi reksadana melalui POEMS.</p>
-											<ul>
-												<li>Minimum pembelian awal dimulai dengan Rp. 250.000, (disesuaikan dengan produk Reksadana masing-masing).</li>
-												<li>Saat akan memulai melakukan transaksi baik untuk pembelian/ subscribe ataupun penjualan kembali / redeem, maka lakukan Login di www.poems.co.id menu "ProFunds".</li>
-												<li>Pilih Reksadana yang sesuai dengan Profil Resiko</li>
-												<li>Klik "Submit" selambat-lambatnya pk. 11.00 WIB untuk mendapatkan NAB (Nilai Aktiva Bersih) di hari yang sama.</li>
-											</ul>
-										</div>
-										<button class="accordion">&emsp;Produk Reksadana apa saja yang ada di POEMS ProFunds?</button>
-										<div class="panel">
-											<p>Anda dapat membeli Produk Reksadana dari beberapa manajer Investasi ternama di Indonesia.</p>
-										</div>
-										<button class="accordion">&emsp;Produk Reksadana apa saja yang ada di POEMS ProFunds?</button>
-										<div class="panel">
-											<p>Semua kemudahan bertransaksi ada pada ProFunds, untuk mempelajarinya silahkan mendownload manual book di<a href="www.poems.co.id"></a> www.poems.co.id.</p>
-										</div>
-										<button class="accordion">&emsp;Biaya apa saja yang dikenakan di dalam ProFunds?</button>
-										<div class="panel">
-											<p>Biaya yang dikenakan adalah biaya/ fee pembelian dan Penjualan (Redemption) (bila ada), dan masing-masing produk Reksadana mempunyai fee yang berbeda tergantung dari kebijakan Manajer Investasi. Dan pada ProFunds semua biaya / fee sudah dicantumkan secara transparan pada tiap informasi produk.</p>
-										</div>
-										<button class="accordion">&emsp;Apakah dana unutk berinvestasi saham dengan Reksadana di Rekening Dana Investor (RDI) menjadi satu?</button>
-										<div class="panel">
-											<p>Ya, untuk dana Rekening Dana Investor (RDI) tetap menjadi satu.</p>
-										</div>
-										<button class="accordion">&emsp;Salah satu keunggulan ProFunds adalah dapat melakukan pembelian/subscribe meskipun dana di Rekening Dana Investor (RDI) belum cukup, dan akan diproses setelah dana mencukupi. Pertanyaannya apakah NAV yang digunakan pada saat pembelian/subscribe atau NAV saat dana Rekening Dana Investor (RDI) telah mencukupi?</button>
-										<div class="panel">
-											<p>NAV yang digunakan adalah NAV pada tanggal saat dana telah tercukupi dan didebet oleh PT Phillip Sekuritas Indonesia.</p>
-											<p>Misalnya, pada tanggal 1 April 2014, seorang Investor akan melakukan pembelian/subscribe Reksadana produk X sebesar Rp. 500.000,00, tetapi dana Rekening Dana Investor (RDI) yang tersedia tidak mencukupi. Maka instruksi pembelian itu ditangguhkan dengan status ‘Waiting for Payment’ dan ditunggu hingga 4 April 2014 ( 3 hari bursa setelah tanggal submit instruksi).</p>
-											<p>Pada tanggal 3 April 2014, dana di Rekening Dana Investor (RDI) sudah mencukupi dan berhasil di-debet oleh PSI sebelum pk 11.00 WIB, maka instruksi pembelian/subscribe diproses ke Bank Kustodi, dan NAV yang didapat oleh investor adalah NAV tanggal 3 April 2014, dan akan mendapatkan konfirmasi jumlah unit yang didapat 1 hari bursa sesudahnya.</p>
-										</div>
-										<button class="accordion">&emsp;Berapakah dana minimal melakukan pembelian/subscribe? Dan Apakah berlaku kelipatan?</button>
-										<div class="panel">
-											<p>Dana minimal melakukan pembelian/subscribe berbeda-beda, tergantung pada kebijakan produk Reksadana tersebut. Untuk melakukan pembelian/subscribe tidak berlaku kelipatan, jadi Nasabah dapat melakukan pembelian/subscribe secara bebas, yang terpenting sama dengan atau melebihi minimal pembelian/ subscribe.</p>
-										</div>
-										<button class="accordion">&emsp;Apakah nasabah Reksadana dikenakan pajak?</button>
-										<div class="panel">
-											<p>Untuk saat ini nasabah Reksadana blm menjadi objek pajak.</p>
-										</div>
-										<button class="accordion">&emsp;Berapa lama dana hasil Penjualan (Redemption) kembali masuk ke Rekening Dana Investor (RDI)</button>
-										<div class="panel">
-											<ul>
-												<li>Maksimal T+2 untuk Reksadana Pasar uang (money market)</li>
-												<li>Maksimal T+7 untuk Reksadana non pasar uang (money market)</li>
-											</ul>
-										</div>
-										<button class="accordion">&emsp;Dalam bertransaksi ProFunds melalui poems harus menggunakan Rekening Dana Investor (RDI). Pertanyaannya bila Bank Rekening Dana Investor (RDI) berbeda dengan bank Produk, apakah ada biaya transfer antar rekening tersebut?</button>
-										<div class="panel">
-											<p>Ya, terkena biaya transfer kecuali jika memang dalam produk Reksadana tersebut mempunyai beberapa Bank Produk. Misal, Produk Reksadana Pasar Uang milik Phillip Asset Management, yaitu Phillip Money Market Fund. Reksadana ini memiliki 3 bank yang sama dengan bank Rekening Dana Investor (RDI) jadi nasabah tidak perlu dikenakan biaya transfer</p>
-										</div>
-										<button class="accordion">&emsp;Berapa lama dana hasil Penjualan (Redemption) kembali masuk ke Rekening Dana Investor (RDI)</button>
-										<div class="panel">
-											<ul>
-												<li>Keharusan pembukaan RDI adalah untuk memudahkan nasabah ProFunds dalam berinvestasi. Biasanya setiap produk reksadana memiliki rekening yang berbeda.</li>
-												<li>Ilustrasi kasus: Pak Phillip sangat sadar akan pentingnya investasi reksadana, maka dengan itu Dia akan membeli 4 produk reksadana yang berbeda misal A,B,C dan D. Untuk mendapatkan produk reksadana tersebut, dia harus mentransfer dana kepada tiap-tiap rekening produk reksadana yang dipilih, Hal ini memungkinkan terjadi resiko kesalahan dalam melakukan transfer dana, serta membuang waktu karena harus mentransfer satu-persatu . Berbeda dengan ProFunds Online, dengan menggunakan RDI maka Nasabah hanya perlu mengingat 1 nomor rekening saja, yaitu nomor RDI miliknya sendiri. Sedangkan untuk transfer ke tiap-tiap rekening produk tersebut akan dilakukan oleh sistem POEMS ProFunds.</li>
-											</ul>
-										</div>
-									</div>
+				            		<div class="toggle">
+				            			<ul class="nav nav-pills nav-justified" role="tablist">
+                            				<li class="nav-item">
+                                				<a class="nav-link active" data-toggle="pill" href="#poems">POEMS</a>
+                            				</li>
+                            				<li class="nav-item">
+                                				<a class="nav-link" data-toggle="pill" href="#reksa">Reksadana</a>
+                            				</li>
+                        				</ul>
+                        			</div>
+                            		<div class="tab-content">
+                                		<div id="poems" class="tab-pane active">
+                                  			<button class="accordion active">&emsp;Apakah Phillip Online Electronic Mart System (POEMS)?</button>
+                    						<div class="panel" style="max-height: 130px;">
+                      							<p>Phillip Online Electronic Mart System (POEMS), secara khusus dikembangkan pertama kali di Singapura tahun 1996 dan menjadi salah satu yang terbaik di Asia Tenggara. Sistem ini dirancang agar investor lebih leluasa dalam bertransaksi secara online. Nasabah dapat melakukan sendiri transaksi beli atau jual saham secara aman, real time dan mudah melalui perangkat komputer pribadi dimana saja dan kapan saja.</p>
+                    						</div>
+						                    <button class="accordion">&emsp;Apa perbedaan POEMS dengan online trading lain?</button>
+						                    <div class="panel">
+						                      	<p>POEMS online trading dapat digunakan di berbagai platform, mulai dari smartphone, Blackberry, Android, iPhone, Ipad. POEMS berbasis web, Nasabah tidak perlu menginstall software tertentu. Jadi Nasabah bisa mengakses POEMS dimanapun asalkan ada jaringan internet. POEMS ProTrader adalah POEMS berbasis aplikasi, Nasabah menginstall software dan mengakses dengan berbagai fitur menarik dengan fitur stop loss yang dapat diandalkan. POEMS Mobile adalah POEMS berbasis web yang dapat diakses oleh berbagai perangkat mobile selama terkoneksi dengan internet. POEMS Mobile Apps adalah POEMS berbasis aplikasi untuk diinstall dan digunakan di berbagai smartphone, Blackberry , Android, iPhone dan Ipad.</p>
+						                    </div>
+						                    <button class="accordion">&emsp;Apakah keunggulan POEMS?</button>
+						                    <div class="panel">
+						                      	<p><b>Aman:</b> Nasabah tidak perlu khawatir dalam melakukan transaksi menggunakan jaringan internet, karena setiap input atau order yang di lakukan melalui POEMS akan di enkripsi dengan teknologi SSL ( Secure Socket Layer) 128 Bit, seperti yang digunakan pada internet banking.</p>
+						                      	<p><b>Real Time:</b>  Nasabah dapat mengikuti perkembangan harga yang terjadi, dan memasukan order beli maupun jual yang sedang diperdagangkan saat itu juga, tanpa melalui perantara.</p>
+						                      	<p><b>Fleksibel:</b> Dengan POEMS Nasabah dapat mengakses informasi saham-saham, posisi portofolio dan bertransaksi saham dengan perangkat mobile yang terhubung dengan jaringan internet.</p>
+						                    </div>
+						                    <button class="accordion">&emsp;Cara Pendaftaran Nasabah POEMS</button>
+						                    <div class="panel">
+						                      	<p><b>A. Langkah-langkah Pembukaan Rekening POEMS</b></p>
+						                      	<ul>
+						                        	<li>Kunjungi website POEMS :<a href="www.poems.co.id"> www.poems.co.id</a>, www.poems.web.id klik menu "<a href="#">Open An Account</a>" dapat diakses melalui PC maupun Mobile.</li>
+						                        	<li>Pilih jenis rekening efek REGULAR atau SHARIA.</li>
+						                        	<li>Isi data-data di formulir pendaftaran online.</li>
+						                        	<li>Upload dokumen yang diminta atau lampirkan pada formulir saat dikirim.</li>
+						                        	<li>Print formulir.</li>
+						                        	<li>Paraf pada setiap halaman formulir dan tandatangan pada kolom yang tersedia.
+						                          	<ol>
+						                            	<li>Perjanjian Pembukaan Rekening Efek, disertai materai Rp 6.000,-</li>
+						                            	<li>Formulir Pembukaan Rekening Dana Investor (RDI), disertai materai Rp 6.000,- Formulir ini digunakan untuk membuka rekening dana di bank RDI yang telah ditentukan oleh Regulator dan telah bekerjasama dengan PT Phillip Sekuritas Indonesia. Saat ini terdapat 5 bank pilihan, yaitu BCA, Mandiri, PermataBank, Sinarmas dan BCA Syariah.</li>
+						                          	</ol></li>
+						                        	<li>Kirimkan Formulir yang telah dilengkapi ke alamat kantor PT Phillip Sekuritas Indonesia.</li>
+						                      	</ul>
+						                      	<p><b>B. Dokumen yang Harus Diserahkan</b></p>
+						                      	<ul>
+							                        <li>Fotokopi KTP (Kartu Tanda Penduduk) yang masih berlaku bagi Warga Negara Indonesia atau Paspor bagi Warga Negara Asing.</li>
+							                        <li>Fotokopi NPWP bagi calon Nasabah yang wajib memiliki NPWP.</li>
+							                        <li>Fotokopi halaman depan buku tabungan Bank.</li>
+							                        <li>”Surat Kuasa Transaksi” yang dilampiri dengan KTP/Paspor terbaru apabila Pemilik Rekening menunjuk orang lain (pihak kedua) untuk melakukan setiap transaksi atas nama pemilik rekening.</li>
+							                        <li>Formulir Identifikasi Pihak Lain apabila Pemilik Rekening bertindak bukan sebagai Diri Sendiri.</li>
+							                        <li>Formulir terkait penerapan FATCA apabila Nasabah adalah Warga Negara Amerika Serikat atau memiliki ijin tinggal tetap (greencard) di Amerika Serikat atau memiliki kewajiban pembayaran pajak ke Amerika Serikat.</li>
+						                      	</ul>
+						                      	<p><b>C. Proses Pengaktifan Rekening</b></p>
+						                      	<ul>
+							                        <li>Setelah pengajuan Formulir Rekening Efek sudah lengkap, maka perusahaan efek akan melakukan pengajuan pembuatan Sub Rekening Efek dan Single Investor Identity (SID) di KSEI dalam waktu 1 hari kerja.</li>
+							                        <li>Setelah Sub Rekening Efek dan Single Investor Identity (SID) sudah aktif, maka dilakukan pengajuan Rekening Dana Investor (RDI) di Bank yang terpilih dalam waktu 3 hari kerja.</li>
+							                        <li>Setelah Rekening Dana Investor (RDI) sudah aktif, maka Nasabah akan menerima email yang menginformasikan nomor rekening dari RDI tersebut, dan Nasabah dapat langsung melakukan transfer dana ke RDI atas nama Nasabah sebagai deposit, sebesar minimal Rp 500.000,- (Lima Ratus Ribu Rupiah), di mana deposit tersebut dapat digunakan secara langsung untuk pembelian saham. Selain tunai, deposit awal juga bisa dalam bentuk perpindahan saham dari perusahaan efek lain. Setelah melakukan transfer, mohon bukti tersebut di Whatsapp ke<b> 0812 82 900</b>  900 atau email ke<a href="#"> poemsadmin@phillip.co.id</a> , untuk pengaktifan Rekening Efek tersebut. Bila Rekening Efek sudah aktif, maka Nasabah akan menerima User Id, Password , dan PinCode melalui email, yang bisa digunakan untuk mengakses berbagai aplikasi POEMS.</li>
+						                      	</ul>
+						                    </div>
+						                    <button class="accordion">&emsp;Cara Pembayaran</button>
+						                    <div class="panel">
+						                      	<p>Setoran Tunai atau Transfer antar ATM di bank Rekening Dana Investor (RDI) atas nama Investor tersebut</p>
+						                    </div>
+						                    <button class="accordion">&emsp;Cara Pembayaran</button>
+						                    <div class="panel">
+						                      	<p>Setoran Tunai atau Transfer antar ATM di bank Rekening Dana Investor (RDI) atas nama Investor tersebut</p>
+						                    </div>
+						                    <button class="accordion">&emsp;Komisi atau Fee</button>
+						                    <div class="panel">
+						                      	<table id="t05">
+						                        	<tr>
+						                          		<th colspan="3">Tabel Fee Transaksi</th>
+						                       	 	</tr>
+						                          	<tr>
+							                            <th>Action</th>
+							                            <th>Online</th> 
+							                            <th>Non Online</th>
+						                          	</tr>
+						                          	<tr>
+						                                <td>Beli</td>
+						                                <td>0.20%</td>
+						                                <td>0.25%</td>
+						                            </tr>
+						                            <tr>
+						                                <td>Jual</td>
+						                                <td>0.30%</td>
+						                                <td>0.35%</td>
+						                            </tr>
+						                      	</table>
+						                     	<p><b>Untuk Nasabah yang Melakukan transaksi</b></p>
+						                      	<ol>
+						                        	<li>Beli : T+2 pagi hari bursa sebelum pk. 9.00 pagi</li>
+						                        	<li>Jual : T+2 Hari bursa, di Rekening Dana Investor (RDI).</li>
+						                      	</ol>
+						                      	<ul>
+						                        	<li>Keterlambatan pembayaran transaksi beli akan dikenakan denda (24% pertahun) yang dihitung secara harian. </li>
+						                        	<li>Jika pada T+5 kewajiban bayar tidak di penuhi, maka kami akan melakukan force sell sejumlah outstanding Nasabah.</li>
+						                       		<li>Limit transaksi adalah minimal 1 x dan maksimal 2.86 x dari ekuiti (tergantung dari haircut suatu saham).</li>
+						                        	<li></li>
+						                      	</ul>
+						                      	<p>Ekuiti = dana + saham setelah haircut</p>
+						                      	<p>Haircut = nilai jaminan dari suatu saham yang dapat diakui oleh sekuritas, sesuai peraturan BEI dan tim Risk Management PT. Phillip Sekuritas Indonesia.</p>
+						                      	<p>Force Sell = suatu kondisi di mana Nasabah diharuskan menjual saham-saham outstandingnya</p>
+						                    </div>
+						                    <button class="accordion">&emsp;Cara Menghitung Fee</button>
+						                    <div class="panel">
+						                      	<table id="t05">
+						                        	<tr>
+						                          		<th colspan="3">Fee Remote 0.20%</th>
+						                       		</tr>
+						                          	<tr>
+							                            <th></th>
+							                            <th>Beli</th> 
+							                            <th>Jual</th>
+						                          	</tr>
+						                          	<tr>
+						                                <td>Comm</td>
+						                                <td>0.14% dari total value</td>
+						                                <td>0.14% dari total value</td>
+						                            </tr>
+						                            <tr>
+						                                <td>VAT</td>
+						                                <td>10% dari Comm</td>
+						                                <td>10% dari Comm</td>
+						                            </tr>
+						                            <tr>
+						                                <td>IDX Free</td>
+						                                <td>0,043% dari total Value</td>
+						                                <td>0,043% dari total Value</td>
+						                            </tr>
+						                            <tr>
+						                                <td>Selling Tax</td>
+						                                <td></td>
+						                                <td>0,1% dari total Value</td>
+						                            </tr>
+						                      	</table>
+						                      	<table id="t05">
+						                        	<tr>
+						                          		<th colspan="3">Fee Dealer 0.25%</th>
+						                        	</tr>
+						                          	<tr>
+						                            	<th></th>
+						                            	<th>Beli</th> 
+						                           		<th>Jual</th>
+						                          	</tr>
+						                          	<tr>
+						                                <td>Comm</td>
+						                                <td>0.1882% dari total value</td>
+						                                <td>0.1882% dari total value</td>
+						                            </tr>
+						                            <tr>
+						                                <td>VAT</td>
+						                                <td>10% dari Comm</td>
+						                                <td>10% dari Comm</td>
+						                            </tr>
+						                            <tr>
+						                                <td>IDX Free</td>
+						                                <td>0,043% dari total Value</td>
+						                                <td>0,043% dari total Value</td>
+						                            </tr>
+						                            <tr>
+						                                <td>Selling Tax</td>
+						                                <td></td>
+						                                <td>0,1% dari total Value</td>
+						                            </tr>
+						                      </table>
+						                    </div>
+						                    <button class="accordion">&emsp;Bagaimana Prosedur Pengiriman User ID, Password dan PIN?</button>
+						                    <div class="panel">
+						                      	<ol>
+						                        	<li>Instruksi Pemberian User ID, Password dan Personal Identification Number (PIN) dilakukan secara personal melalui E-mail.</li>
+						                        	<li>Bila sudah menerima Password, maka Nasabah harus segera mengubah password tersebut.</li>
+						                        	<li>Password terdiri dari minimal 6 karakter, maksimal 8 karakter, yang bisa terdiri dari angka, huruf , maupun kombinasi keduanya.</li>
+						                        	<li>User Id dan PIN tidak dapat diubah.</li>
+						                        	<li>Nasabah juga diharuskan mengubah Password demi keamanan rekening Nasabah.</li>
+						                     	</ol>
+						                    </div>
+						                    <button class="accordion">&emsp;Bagaimana Meng-update atau Menaikkan Limit?</button>
+						                    <div class="panel">
+						                      	<p><b>Mentransfer/setor dana ke Rekening Dana Investor (RDI):</b></p>
+						                      	<ul>
+						                        	<li>Setelah anda melakukan transfer/setor dana, harap mengkonfirmasi kepada kami dengan cara : mengisi data secara lengkap di Payment Confirmation di menu Account Management di<a href="www.POEMS.co.id"> www.POEMS.co.id</a> atau aplikasi POEMS lainnya, atau melalui email ke<a href="#"> customercare@phillip.co.id</a></li>
+						                      	</ul>
+						                    </div>
+						                    <button class="accordion">&emsp;Bagaimana melakukan perubahan data</button>
+						                    <div class="panel">
+						                      	<p>Lakukan login terlebih dahulu di www.POEMS.co.id atau aplikasi POEMS lainnya. Pilih menu <b>Contact Us</b>, lalu pilih <b>Feedback</b>.</p>
+						                      	<p><b>Perubahan data yang tersedia:</b></p>
+						                      	<ol>
+						                        	<li>Alamat ? Address</li>
+						                        	<li>Bank Account</li>
+						                        	<li>Telp / Fax / Hp</li>
+						                        	<li>Email</li>
+						                      	</ol>
+						                    </div>
+						                    <button class="accordion">&emsp;Perhitungan Bunga Outstanding</button>
+						                    <div class="panel">
+						                      	<p>(jumlah outstanding x jumlah hari keterlambatan x 24%) / 360 hari.</p>
+						                      	<p>Hari keterlambatan adalah hari kalender</p>
+						                    </div>
+						                    <button class="accordion">&emsp;Bagaimana bila ada gangguan koneksi internet?</button>
+						                    <div class="panel">
+						                      	<p>Apabila terjadi gangguan koneksi internet, sehingga Nasabah tidak dapat mengakses POEMS, Nasabah tetap dapat melakukan transaksi dengan melakukan order jual/beli melalui telepon. Nasabah cukup menghubungi dealing team di 021-57 900 909.</p>
+						                    </div>
+						                    <button class="accordion">&emsp;Get POEMS ProTrader</button>
+						                    <div class="panel">
+						                      	<ol>
+							                        <li>Aplikasi online trading ini dapat diinstall pada laptop atau PC yang mempunyai Operating System Windows, yang dikembangkan khusus untuk mempermudah Nasabah dalam bertransaksi dengan konsep high tech high touch serta beberapa keunggulan yang belum pernah ada pada online trading sebelumnya.</li>
+							                        <li>Untuk mendapatkan installer ini, maka masuk ke<a href="www.POEMS.co.id"></a> www.POEMS.co.id, pilih menu Download dan pilih<b> ProTrader Download POEMS ProTrader</b></li>
+							                        <li>Pilih installer 32 bit atau 64 bit sesuai dengan versi OS Windows dari laptop atau PC yang akan diinstal.</li>
+							                        <li>Untuk mendapatkan<b> Free Trial</b>, maka kunjungi<a href="http://www.phillip.co.id/id/freetrial"> http://www.phillip.co.id/id/freetrial</a>, isi data Anda dan Anda akan mendapatkan<b> Voucher Trial</b> melalui email Anda.</li>
+							                        <li>Untuk lengkapnya kunjungi<a href="http://www.phillip.co.id/id/POEMSprotrader"></a> http://www.phillip.co.id/id/POEMSprotrader</li>
+						                      	</ol>
+						                    </div>
+						                    <button class="accordion">&emsp;POEMS Mobile</button>
+						                    <div class="panel">
+							                    <p>Masuk ke browser di handphone/PDA dan ketikkan www.POEMS.co.id/mobile, maka muncul tampilan seperti di bawah ini.</p>
+							                    <img src="Assets\Faq1.png" style="width: 256px; height: 346px;">
+							                    <p>Masukkan POEMS ID, Password, dan Pin Code Nasabah. Bila belum menjadi Nasabah, maka bisa meminta user id demo. Setelah login, maka muncul layar: </p>
+							                    <img src="Assets\Faq2.png" style="width: 250px; height: 247px;">
+							                    <p>Untuk lengkapnya kunjungi<a href="http://www.phillip.co.id/id/poemsmobile"></a> http://www.phillip.co.id/id/poemsmobile.</p>
+						                    </div>
+						                    <button class="accordion">&emsp;POEMS PRIMA On Android</button>
+						                    <div class="panel">
+						                      	<p>Masuk ke "Safari", ketik www.poems.co.id/.</p>
+						                      	<p>Masukkan POEMS Id, Password, PinCode.</p>
+						                      	<img src="Assets\Faq3.png" style="width: 480px; height: 417px;">
+						                     	 <p>Masukkan POEMS ID, Password, dan Pin Code Nasabah. Bila belum menjadi Nasabah, maka bisa meminta user id demo. Setelah login, maka muncul layar: </p>
+						                      	<img src="Assets\Faq4.png" style="width: 480px; height: 489px;">
+						                      	<p>Bagi yang belum menjadi nasabah, bisa menghubungi Customer Care kami di 62-21-57900900 atau </p>
+						                      	<p><a href="#">customercare@phillip.co.id</a></p>
+						                    </div>
+						                    <button class="accordion">&emsp;POEMS on iPad</button>
+						                    <div class="panel">
+						                      	<img src="Assets\Faq5.png" style="width: 480px; height: 539px;">
+						                    </div>
+						                    <button class="accordion">&emsp;Waran & Option</button>
+						                    <div class="panel">
+						                      	<p>Waran biasanya sebagai pemanis, pada saat suatu emiten, melakukan IPO atau mengeluarkan right issue, supaya Nasabah atau investor mau membeli sahamnya maupun menebus right issue.</p>
+						                      	<p>Waran adalah produk turunan saham, dimana waran tersebut dapat diperjualbelikan, di-exercise menjadi saham serta memliki batas waktu tertentu untuk perdagangannya.</p>
+						                      	<p>Jika suatu waran sudah expired, maka waran tersebut sudah hangus/tidak berlaku kembali, oleh karena itu umumnya jika Nasabah mempunyai waran tersebut Nasabah akan melihat perbandingan antara harga exercise warannya, di bandingkan harga saham.</p>
+						                      	<p><b>Contoh:</b></p>
+						                      	<ul>
+						                        	<li>Saham ABCD di perdagangkan di harga Rp 1000,-</li>
+						                        	<li>ABCD-W diperdagangkan dihargaRp 100,-</li>
+						                        	<li>Harga exercise/tebus ABCD-W menjadi saham ABCD adalah Rp 700,-</li>
+						                        	<li>Artinya jika Nasabah ingin exercise saham maka Nasabah harus mengitung, harga ABCD-W di tambah dengan harga exercise,dikurangi dengan harga market, jika hasilnya lebih murah dari pada harga market, biasanya Nasabah melakukan exercise, jika harganya lebih mahal biasanya Nasabah membiarkan waran tersebut hangus.</li>
+						                      	</ul>
+						                      	<p>Setiap lembar waran yang dimiliki berhak untuk di-exercise menjadi saham oleh Nasabah.</p>
+						                      	<p>Jika Nasabah ingin melakukan exercise, maka exercise tersebut harus dilakukan beberapa hari sebelum masa berlaku waran tersebut berakhir.</p>
+						                      	<p>POEMS tidak menampilkan kapan waktu waran diterbitkan, dan berapa harga awalnya, POEMS hanya menampilkan tanggal expired-nya, jika ada Nasabah yang memiliki waran dan waran tersebut sudah mau expired, pihak Customer Care akan memberitahukannya melalui email kepada Nasabah.</p>
+						                      	<p>Persamaan Option dengan waran adalah bahwa keduanya mempunyai saham induk, hanya saja jika membeli option, Nasabah mempunyai pilihan untuk membeli put option atau long option, yang memungkinkan Nasabah untuk membeli atau menjual terlebih dahulu Untuk waran, Nasabah harus membelinya terlebih dahulu baru bisa dijual.</p>
+						                      	<p>Option biasanya mempunyai waktu yang relatif singkat, sedangkan waran mempunyai periode perdagangan sekitar 3 tahun.</p>
+						                    </div>
+						                    <button class="accordion">&emsp;Haircut</button>
+						                    <div class="panel">
+						                      	<p>Haircut adalah pemotongan nilai saham yang dijadikan sebagai jaminan.</p>
+						                      	<p>Jika di dalam porfolio terdapat saham yang terkena pemotongan nilai, maka limit yang bisa digunakan untuk transaksi menjadi lebih kecil, karena saham yang dijadikan jaminan dinilai lebih kecil dari harga pasar yang sebenarnya.</p>
+						                      	<p>Pemotongan nilai saham tersebut dapat lihat pada list hair cut (list bisa dilihat pd advtrade di menu POEMS ).</p>
+						                      	<p>Semakin besar Hair cut yang diterapkan maka pemotongan nilai untuk limit akan semakin besar.</p>
+						                      	<p>Walaupun saham tersebut mengalami pemotongan nilai, disini hanya berarti untuk jaminan saja. Nilai kepemilikan sebenarnya sesuai dengan harga di pasar.</p>
+						                      	<ol>
+						                        	<li>HR Value adalah Haircut value. Ini adalah nilai untuk patokan kami memberikan limit dari porfolio Nasabah. Jadi limit dari jaminan portfolio bukan diambil dari cost value ataupun market value, tetapi diambil dari haircut value.</li>
+						                        	<li>Cost Value = nilai yang dikeluarkan secara average ketika membeli<br>
+						                          		market Value = nilai saham secara average pada harga market<br>
+						                          		Haircut value = nilai saham yang telah dikurangi dengan haircut.<br>
+						                          		Jadi jika Nasabah menjual saham dengan harga market berarti nilai uang +/- adalah market value.
+						                        	</li>
+						                      	</ol>
+						                    </div>
+						                    <button class="accordion">&emsp;Istilah dalam Corporate Action</button>
+						                    <div class="panel">
+						                      	<ol>
+						                        	<li>Cum date di pasar reguler adalah Tanggal terakhir pembelian saham di pasar reguler dan memegang saham tersebut yang mendapatkan hak corporate action</li>
+						                        	<li>Ex date di pasar reguler adalah Awal pembelian saham di pasar reguler tanpa / tidak mendapatkan hak corporate action</li>
+						                        	<li>Recording date adalah Tanggal pencatatan saham bagi Nasabah yang mendapatkan hak corporate action</li>
+						                        	<li>Payment date adalah Tanggal pembayaran hak corporate action Nasabah dari KSEI kepada perusahaan efek, sehingga hak corporate action akan diterima di Rekening Dana Investor pada T+1 dari Payment Date</li>
+						                      	</ol>
+						                    </div>
+                                		</div>
+                                		<div id="reksa" class="tab-pane fade">
+                                  		<button class="accordion active">&emsp;Apa itu Reksadana</button>
+					                    <div class="panel" style="max-height: 392px;">
+					                      	<p>Reksa Dana: Wadah yang dipergunakan untuk menghimpun dana dari masyarakat pemodal untuk selanjutnya diinvestasikan dalam portofolio Efek oleh Manajer Investasi (UU No. 8 Tahun 1995 mengenai Pasar Modal).</p>
+					                      	<p>Ada 4 jenis produk Reksadana:</p>
+					                      	<ul>
+					                        	<li><b>Reksa Dana Saham/Index (Saham):</b> Reksa dana yang investasinya sebagian besar dalam bentuk Efek Ekuitas (Saham).</li>
+					                        	<li><b>Reksa Dana Campuran (Saham, Obligasi, Pasar Uang):</b> Reksa dana yang investasinya berbentuk Efek Ekuitas dan Efek Utang / Efek di Pasar Uang dengan komposisi proporsional.</li>
+					                        	<li><b>Reksa Dana Pendapatan Tetap (80% Obligasi):</b> Reksa dana yang investasinya sebagian besar dalam Efek Utang yang bersifat jangka panjang.</li>
+					                        	<li><b>Reksa Dana Pasar Uang (100% instrumen Pasar Uang):</b> Reksadana yang investasinya ditanam pada efek bersifat hutang dengan jatuh tempo yang kurang dari satu tahun (Deposito, SBI, SBPU).</li>
+					                      	</ul>
+					                    </div>
+					                    <button class="accordion">&emsp;Apa saja istilah di Reksadana</button>
+					                    <div class="panel">
+					                      	<ul>
+					                        	<li><b>Manajer Investasi:</b> Pihak yang kegiatan usahanya mengelola Portofolio Efek untuk para nasabah atau mengelola portofolio investasi kolektif untuk sekelompok nasabah, kecuali perusahaan asuransi, dana pensiun dan bank yang melakukan sendiri kegiatan usahanya berdasarkan peraturan perundang-undangan yang berlaku.</li>
+					                       		<li><b>Agen Penjual:</b> Perusahaan penjual Reksadana diluar Manajer Investasi, Bisa juga disebut sebagai agen untuk menjual Reksadana dan sudah mendapat ijin dari pihak berwenang seperti BAPEPAM dan BI untuk Bank.</li>
+					                        	<li><b>Bank Kustodian:</b> Pihak yang memberikan jasa penitipan Efek dan harta lain yang berkaitan dengan Efek serta jasa lain, termasuk menerima deviden, bunga dan hak-hak lain menyelesaikan transaksi Efek dan mewakili pemegang rekening yang menjadi nasabahnya.</li>
+					                        	<li><b>Prospektus:</b> informasi tertulis mengenai produk reksa dana yang ditawarkan kepada publik.</li>
+					                        	<li><b>Fund Fact Sheet,</b> merupakan Informasi tertulis tentang produk Reksadana, biasanya berisi dengan, Nama Perusahaan Aset Manajemen, Nama Reksadana, Harga NAB/ Unit = Nilai Aktiva Bersih, Profil Perusahaan dan Reksadana, Kebijakan Investasi, Kinerja Reksadana, Alokasi Aset, Disclaimer.</li>
+					                       		<li><b>Unit Penyertaan (UP):</b> Satuan ukuran yang menunjukkan bagian kepentingan setiap Pihak dalam portofolio. Jika disaham hitungannya dengan Lot, maka di Reksadana dengan Unit.</li>
+					                        	<li><b>Nilai Aktiva Bersih (NAB):</b> Portofolio Besaran yang menggambarkan nilai asset suatu Reksa Dana pada suatu saat, setelah dikurangi dengan seluruh kewajibannya.</li>
+					                        	<li><b>NAB Per Unit Total:</b> NAB dibagi dengan jumlah Unit Penyertaan yang dimiliki oleh seluruh pemegang Unit Penyertaan. NAB per Unit dihitung setiap Hari Bursa oleh bank Kustodian berdasarkan ketentuan Bepepam yang berlaku, kemudian di umumkan kepada publik.</li>
+					                        	<li><b>Outstanding Unit Penyertaan:</b> Outstanding Unit Penyertaan merupakan jumlah unit penyertaan yang telah diterbitkan Reksa Dana.</li>
+					                        	<li><b>Pembelian (Subscription):</b> Subscription adalah pembelian atau pemesanan unit penyertaan.</li>
+					                        	<li><b>Penjualan (Redemption):</b> Redemption adalah pencairan atau Penjualan (Redemption) kembali unit penyertaan.</li>
+					                        	<li><b>Biaya Pembelian (Subscription Fee):</b> Biaya yang timbul dari transaksi pembelian atau subscription Reksa Dana.</li>
+					                        	<li><b>Biaya Penjualan (Redemption Fee):</b> Biaya yang timbul dari transaksi Penjualan (Redemption) atau redemption Reksa Dana.</li>
+					                      	</ul>
+					                    </div>
+					                    <button class="accordion">&emsp;Bagaimana cara memilih Reksadana?</button>
+					                    <div class="panel">
+                        					<ul>
+		                                        <li>Kenali Profil Resiko Anda, Profil resiko dibagi menjadi 3:
+		                                        	<ol>
+		                                              	<li>Konvensional: tidak dapat menerima resiko.</li>
+		                                              	<li>Moderat: Mampu menerima resiko dalam jumlah kecil.</li>
+		                                              	<li>Agresif: Mampu menerima resiko tinggi.</li>
+		                                          </ol>
+		                                        </li>
+		                                        <li>Tentukan Time-frame (periode) Investasi Anda.
+		                                        	<ol>
+		                                            	<li>Tentukan tujuan Anda dalam berinvestasi atau membeli reksadana.</li>
+		                                            	<li>Berdasarkan tujuan itu, maka Anda dapat menentukan jangka waktu atau periode Anda berinvestasi.</li>
+		                                        	</ol>
+		                                        </li>
+                                        		<li>Kenali tipe Reksadana yang akan Anda beli.</li>
+                                        		<li>Berikut ini ilustrasi dalam pemilihan Reksadana:
+                                          			<ol>
+		                                              	<li>Pasangan muda yang memiliki sisa pendapatan  setiap bulannya dan lebih siap menerima resiko tinggi, disarankan menginvestasikan sisa pendapatan mereka di Reksadana Saham.</li>
+		                                              	<li>Orang tua pensiunan yang hanya memiliki dana pensiun untuk kebutuhan hari tuanya, biasanya tidak berani untuk mengambil resiko, disarankan cukup berinvestasi di Pasar Uang saja atau Reksadana Pendapatan Tetap.</li>
+		                                              	<li>Akan tetapi bila ada orang tua hendak memberi warisan Reksadana kepada keturunannya dari sebagian kecukupan harta yang dimilikinya, disarankan berinvestasi pada Reksadana Saham untuk hasil yang lebih baik dengan periode waktu lebih panjang.</li>
+                                          			</ol>
+                                        		</li>
+                                    		</ul>
+                    					</div>
+					                    <button class="accordion">&emsp;Apa saja tipe-tipe reksadana yang ada dan bagaimana perbedaan antara tiap reksadana?</button>
+					                    <div class="panel">
+					                      	<table id="t05">
+					                      	    <tr>
+						                            <th>Tipe Reksadana </th>
+						                            <th>Tingkat Resiko</th> 
+						                            <th>Tingkat Pengembalian</th>
+						                            <th>Jangka Waktu Investasi</th>
+						                            <th>Komposisi</th>
+					                          	</tr>
+					                          	<tr>
+		                                          	<td>Reksadana Pasar Uang</td>
+		                                          	<td>Rendah</td>
+		                                          	<td>Rendah</td>
+		                                          	<td><= 1 tahun</td>
+		                                          	<td>Efek bersifat Utang dengan jatuh tempo kurang dari 1 (satu) tahun</td>
+		                                      	</tr>
+                                      			<tr>
+		                                          	<td>Reksadana Pendapatan Tetap</td>
+		                                          	<td>Rendah - Sedang</td>
+		                                          	<td>Rendah - Sedang</td>
+		                                          	<td>1 - 3 tahun</td>
+		                                          	<td>sekurang-kurangnya 80% dari aktivanya dalam bentuk Efek bersifat Utang.</td>
+		                                      	</tr>
+                                      			<tr>
+		                                          	<td>Reksadana Campuran</td>
+		                                          	<td>Sedang</td>
+		                                          	<td>Sedang</td>
+		                                          	<td>3 - 10 tahun</td>
+		                                          	<td>Efek bersifat Ekuitas dan Efek bersifat Utang.</td>
+		                                      	</tr>
+		                                      	<tr>
+		                                          	<td>Reksadana Saham</td>
+		                                          	<td>Tinggi</td>
+		                                          	<td>Tinggi</td>
+		                                          	<td>>= 10 tahun</td>
+		                                          	<td>sekurang-kurangnya 80% dari aktivanya dalam bentuk Efek bersifat Ekuitas.</td>
+		                                      	</tr>
+		                      				</table>
+						                </div>
+						                <button class="accordion">&emsp;Bagaimana cara berinvestasi di Reksadana</button>
+						                <div class="panel">
+						                    <p>Cara berinvestasi Reksadana adalah dengan mendatangi langsung Manajer Investasi atau agen penjual Reksadana seperti bank dan sekuritas, datang mengisi form dan data-data yang diperlukan. Hal itu dilakukan setiap ingin melakukan pembelian (subcription) dan Penjualan (Redemption) Reksadana (redemption).</p>
+						                </div>
+						                <button class="accordion">&emsp;Apa itu POEMS ProFunds online?</button>
+						                <div class="panel">
+						                    <p>POEMS ProFunds Online adalah produk yang memberi kemudahan bagi semua strata Investor dalam memilih dan berinvestasi Reksadana secara online kapan saja dan di mana saja melalui sistem online trading (POEMS) milik PT. Phillip Sekuritas Indonesia.</p>
+						                </div>
+						                <button class="accordion">&emsp;Apa saja keunggulan POEMS ProFunds?</button>
+						                <div class="panel">
+						                    <ul>
+						                        <li>Sistem terintegrasi dengan POEMS sehingga dengan platform yang sama dapat digunakan untuk bertransaksi saham.</li>
+						                        <li>Memudahkan nasabah untuk memaksimalkan pendapatan dari dana yang mengendap ketika tidak dipergunakan untuk membeli saham.</li>
+						                        <li>Menggunakan Rekening Dana Investor (RDI) sebagai rekening pembayaran sehingga lebih aman dan transparan.</li>
+						                        <li>Biaya Pembelian (subscription fee) yang rendah sekali.</li>
+						                        <li>Menampilkan berbagai pilihan Reksadana dari perusahaan asset manajemen terkemuka yang dapat dibeli.</li>
+						                        <li>Menampilkan informasi kinerja dan prospektus dari setiap Reksadana-Reksadana pilihan secara online dakam satu platform sehingga lebih efektif dan efisien.</li>
+						                        <li>Pembelian (Subscription) dan Penjualan (Redemption) dilakukan secara Online, sehingga menghemat biaya dan waktu.</li>
+						                        <li>Memudahkan dalam memantau kinerja Reksadana yang dimiliki untuk mempermudah dalam pengambilan keputusan.</li>
+						                    </ul>
+						                </div>
+						                <button class="accordion">&emsp;Siapa saja yang boleh menjadi nasabah POEMS ProFunds online?</button>
+						                   	<div class="panel">
+						                      	<p>Siapa saja dapat menjadi Nasabah POEMS ProFunds, baik nasabah baru ataupun nasabah existing Phillip Sekuritas.</p>
+						                    </div>
+						                    <button class="accordion">&emsp;Bagaimana Cara menjadi nasabah ProFunds?</button>
+						                    <div class="panel">
+						                      	<ul>
+						                        	<li>Untuk nasabah existing PT. Phillip Sekuritas Indonesia, cukup login ke dalam www.POEMS.co.id | www,POEMS.web.id, lalu klik menu ‘ProFunds’ dan lakukan pendaftaran di tombol ‘Sign Up’. Saat mendaftar, maka Anda harus menyetujui ‘Term & Condition’ yang berlaku, dan mengisi formulir ‘Profil Risiko’ untuk mengetahui profil resiko Anda dan dapat membantu menentukan jenis reksadana yang dipilih. </li>
+						                        	<p>Setelah selesai proses pendaftaran, maka system akan mengirimkan dokumen-dokumen pendukung, yaitu:</p>
+						                        	<ol>
+						                          		<li>Formulir Profil Resiko yang sudah terisi.</li>
+						                          		<li>Surat Pernyataan Nasabah untuk menyatakan bahwa Nasabah akan melakukan investasi Reksadana secara online dan hasil penjualan kembali reksadana ditransfer ke Rekening Dana Investor atas nama Nasabah.</li>
+						                          		<li>Surat Kuasa Pendebetan RDI, yaitu surat untuk menguasakan kepada PT Phillip Sekuritas Indonesia untuk mendebet dana di RDI untuk penyelesaian instruksi pembelian reksadana.</li>
+						                          		<li>Surat Kuasa Penjualan, yaitu surat untuk menguasakan kepada PT Phillip Sekuritas Indonesia untuk menjual saham dan/atau saham untuk penyelesaian hutang-hutang.menutupi semua kewajiban akibat transaksi saham, bila Nasabah bersedia reksadananya dapat digunakan untuk menambah equity.</li>
+						                        	</ol>
+						                        	<p>Setelah membaca dan menandatangani dokumen-dokumen pendukung, maka Nasabah wajib memberikan dokumen-dokumen tersebut ke Kantor Pusat PT Phillip Sekuritas Indonesia, ANZ Tower lantai 23B, Jl. Jend. Sudirman Kav. 33A, Jakarta 10220.</p>
+						                        	<p>Lampirkan juga fotokopi KTP yang berlaku dan NPWP , bila sebelumnya belum ada.</p>
+						                        	<li>Untuk nasabah baru, harap menghubungi marketing PT Phillip Sekuritas Indonesia di lokasi terdekat dengan Anda untuk mengisi formulir pembukaan dengan dilengkapi dokumen-dokumen pendukung, seperti KTP yang masih berlaku, NPWP.</li>
+						                      	</ul>
+						                    </div>
+						                    <button class="accordion">&emsp;Bagaimana cara berinvestasi di POEMS ProFunds?</button>
+						                    <div class="panel">
+						                      	<p>Setelah terdaftar sebagai nasabah PT. Phillip Sekuritas Indonesia dan mendapatkan login POEMS (online trading) yaitu berupa User Id, Password, Pincode, maka nasabah tersebut sudah dapat berinvestasi reksadana melalui POEMS.</p>
+						                      	<ul>
+						                       		<li>Minimum pembelian awal dimulai dengan Rp. 250.000, (disesuaikan dengan produk Reksadana masing-masing).</li>
+						                        	<li>Saat akan memulai melakukan transaksi baik untuk pembelian/ subscribe ataupun penjualan kembali / redeem, maka lakukan Login di www.poems.co.id menu "ProFunds".</li>
+						                        	<li>Pilih Reksadana yang sesuai dengan Profil Resiko</li>
+						                        	<li>Klik "Submit" selambat-lambatnya pk. 11.00 WIB untuk mendapatkan NAB (Nilai Aktiva Bersih) di hari yang sama.</li>
+						                      	</ul>
+						                    </div>
+						                    <button class="accordion">&emsp;Produk Reksadana apa saja yang ada di POEMS ProFunds?</button>
+						                    <div class="panel">
+						                      	<p>Anda dapat membeli Produk Reksadana dari beberapa manajer Investasi ternama di Indonesia.</p>
+						                    </div>
+						                    <button class="accordion">&emsp;Produk Reksadana apa saja yang ada di POEMS ProFunds?</button>
+						                    <div class="panel">
+						                      	<p>Semua kemudahan bertransaksi ada pada ProFunds, untuk mempelajarinya silahkan mendownload manual book di<a href="www.poems.co.id"></a> www.poems.co.id.</p>
+						                    </div>
+						                    <button class="accordion">&emsp;Biaya apa saja yang dikenakan di dalam ProFunds?</button>
+						                    <div class="panel">
+						                      	<p>Biaya yang dikenakan adalah biaya/ fee pembelian dan Penjualan (Redemption) (bila ada), dan masing-masing produk Reksadana mempunyai fee yang berbeda tergantung dari kebijakan Manajer Investasi. Dan pada ProFunds semua biaya / fee sudah dicantumkan secara transparan pada tiap informasi produk.</p>
+						                    </div>
+						                    <button class="accordion">&emsp;Apakah dana unutk berinvestasi saham dengan Reksadana di Rekening Dana Investor (RDI) menjadi satu?</button>
+						                    <div class="panel">
+						                      	<p>Ya, untuk dana Rekening Dana Investor (RDI) tetap menjadi satu.</p>
+						                    </div>
+						                    <button class="accordion">&emsp;Salah satu keunggulan ProFunds adalah dapat melakukan pembelian/subscribe meskipun dana di Rekening Dana Investor (RDI) belum cukup, dan akan diproses setelah dana mencukupi. Pertanyaannya apakah NAV yang digunakan pada saat pembelian/subscribe atau NAV saat dana Rekening Dana Investor (RDI) telah mencukupi?</button>
+						                    <div class="panel">
+						                      	<p>NAV yang digunakan adalah NAV pada tanggal saat dana telah tercukupi dan didebet oleh PT Phillip Sekuritas Indonesia.</p>
+						                      	<p>Misalnya, pada tanggal 1 April 2014, seorang Investor akan melakukan pembelian/subscribe Reksadana produk X sebesar Rp. 500.000,00, tetapi dana Rekening Dana Investor (RDI) yang tersedia tidak mencukupi. Maka instruksi pembelian itu ditangguhkan dengan status ‘Waiting for Payment’ dan ditunggu hingga 4 April 2014 ( 3 hari bursa setelah tanggal submit instruksi).</p>
+						                      	<p>Pada tanggal 3 April 2014, dana di Rekening Dana Investor (RDI) sudah mencukupi dan berhasil di-debet oleh PSI sebelum pk 11.00 WIB, maka instruksi pembelian/subscribe diproses ke Bank Kustodi, dan NAV yang didapat oleh investor adalah NAV tanggal 3 April 2014, dan akan mendapatkan konfirmasi jumlah unit yang didapat 1 hari bursa sesudahnya.</p>
+						                    </div>
+						                    <button class="accordion">&emsp;Berapakah dana minimal melakukan pembelian/subscribe? Dan Apakah berlaku kelipatan?</button>
+						                    <div class="panel">
+						                      	<p>Dana minimal melakukan pembelian/subscribe berbeda-beda, tergantung pada kebijakan produk Reksadana tersebut. Untuk melakukan pembelian/subscribe tidak berlaku kelipatan, jadi Nasabah dapat melakukan pembelian/subscribe secara bebas, yang terpenting sama dengan atau melebihi minimal pembelian/ subscribe.</p>
+						                    </div>
+						                    <button class="accordion">&emsp;Apakah nasabah Reksadana dikenakan pajak?</button>
+						                    <div class="panel">
+						                      	<p>Untuk saat ini nasabah Reksadana blm menjadi objek pajak.</p>
+						                    </div>
+						                    <button class="accordion">&emsp;Berapa lama dana hasil Penjualan (Redemption) kembali masuk ke Rekening Dana Investor (RDI)</button>
+						                    <div class="panel">
+						                      	<ul>
+						                        	<li>Maksimal T+2 untuk Reksadana Pasar uang (money market)</li>
+						                        	<li>Maksimal T+7 untuk Reksadana non pasar uang (money market)</li>
+						                      	</ul>
+						                    </div>
+						                    <button class="accordion">&emsp;Dalam bertransaksi ProFunds melalui poems harus menggunakan Rekening Dana Investor (RDI). Pertanyaannya bila Bank Rekening Dana Investor (RDI) berbeda dengan bank Produk, apakah ada biaya transfer antar rekening tersebut?</button>
+						                    <div class="panel">
+						                      	<p>Ya, terkena biaya transfer kecuali jika memang dalam produk Reksadana tersebut mempunyai beberapa Bank Produk. Misal, Produk Reksadana Pasar Uang milik Phillip Asset Management, yaitu Phillip Money Market Fund. Reksadana ini memiliki 3 bank yang sama dengan bank Rekening Dana Investor (RDI) jadi nasabah tidak perlu dikenakan biaya transfer</p>
+						                    </div>
+						                    <button class="accordion">&emsp;Berapa lama dana hasil Penjualan (Redemption) kembali masuk ke Rekening Dana Investor (RDI)</button>
+						                    <div class="panel">
+						                      	<ul>
+						                        	<li>Keharusan pembukaan RDI adalah untuk memudahkan nasabah ProFunds dalam berinvestasi. Biasanya setiap produk reksadana memiliki rekening yang berbeda.</li>
+						                        	<li>Ilustrasi kasus: Pak Phillip sangat sadar akan pentingnya investasi reksadana, maka dengan itu Dia akan membeli 4 produk reksadana yang berbeda misal A,B,C dan D. Untuk mendapatkan produk reksadana tersebut, dia harus mentransfer dana kepada tiap-tiap rekening produk reksadana yang dipilih, Hal ini memungkinkan terjadi resiko kesalahan dalam melakukan transfer dana, serta membuang waktu karena harus mentransfer satu-persatu . Berbeda dengan ProFunds Online, dengan menggunakan RDI maka Nasabah hanya perlu mengingat 1 nomor rekening saja, yaitu nomor RDI miliknya sendiri. Sedangkan untuk transfer ke tiap-tiap rekening produk tersebut akan dilakukan oleh sistem POEMS ProFunds.</li>
+						                      </ul>
+						                    </div>
+						                </div>
+						            </div>
+						            <script>
+						                var acc = document.getElementsByClassName("accordion");
+						                var i;
+						                for (i = 0; i < acc.length; i++) {
+						                    acc[i].addEventListener("click", function() {
+						                        this.classList.toggle("active");
+						                        var panel = this.nextElementSibling;
+						                        if (panel.style.maxHeight){
+						                            panel.style.maxHeight = null;
+						                        }
+						                        else {
+						                            panel.style.maxHeight = panel.scrollHeight + "px";
+						                        } 
+						                    });
+						                }
+						            </script>
 				    			</div>
                         	</div>
 				      	</section>
@@ -597,77 +620,102 @@
 				<div class="col-sm-3">
 					<div class="row">
 						<div class="col-sm-12">
-							<div class="column">
+							<div class="rightcolumn">
+								<section>
+									<h3>Top List Updates</h3>
+							  		<ul class="nav nav-pills nav-justified" role="tablist">
+							    		<li class="nav-item">
+							      			<a class="nav-link active" data-toggle="pill" href="#topfreq">Top Frequency</a>
+							    		</li>
+							    		<li class="nav-item">
+							      			<a class="nav-link" data-toggle="pill" href="#topgain">Top Gainers</a>
+							    		</li>
+							    		<li class="nav-item">
+							      			<a class="nav-link" data-toggle="pill" href="#toplos">Top Losers</a>
+							    		</li>
+							    		<li class="nav-item">
+							      			<a class="nav-link" data-toggle="pill" href="#topval">Top Value</a>
+							    		</li>
+							    		<li class="nav-item">
+							      			<a class="nav-link" data-toggle="pill" href="#topvol">Top Volume</a>
+							    		</li>
+							  		</ul>
+							  		<div class="tab-content">
+							    		<div id="topfreq" class="tab-pane active">
+							      			<table id="t01">
+								  			<tr>
+									    		<th>Stock</th>
+									    		<th>Price</th> 
+									    		<th>Change</th>
+									  		</tr>
+									  		<tr>
+                                				<td colspan="3">The Service is Temporarily Unvavailable</td>
+                           					</tr>
+										</table>
+							    		</div>
+							    		<div id="topgain" class="tab-pane fade">
+							      			<table id="t01">
+								  			<tr>
+									    		<th>Stock</th>
+									    		<th>Price</th> 
+									    		<th>Change</th>
+									  		</tr>
+									  		<tr>
+                                				<td colspan="3">The Service is Temporarily Unvavailable</td>
+                           					</tr>
+										</table>
+										</div>
+										<div id="toplos" class="tab-pane fade">
+							      			<table id="t01">
+								  			<tr>
+									    		<th>Stock</th>
+									    		<th>Price</th> 
+									    		<th>Change</th>
+									  		</tr>
+									  		<tr>
+                                				<td colspan="3">The Service is Temporarily Unvavailable</td>
+                           					</tr>
+										</table>
+										</div>
+										<div id="topval" class="tab-pane fade">
+							      			<table id="t01">
+								  			<tr>
+									    		<th>Stock</th>
+									    		<th>Price</th> 
+									    		<th>Change</th>
+									  		</tr>
+									  		<tr>
+                                				<td colspan="3">The Service is Temporarily Unvavailable</td>
+                           					</tr>
+										</table>
+										</div>
+										<div id="topvol" class="tab-pane fade">
+							      			<table id="t01">
+								  			<tr>
+									    		<th>Stock</th>
+									    		<th>Price</th> 
+									    		<th>Change</th>
+									  		</tr>
+									  		<tr>
+                                				<td colspan="3">The Service is Temporarily Unvavailable</td>
+                           					</tr>
+										</table>
+										</div>
+									</div>
+								</section>
 								<section>
 									<h3>Market Updates</h3>
-									<button class="accordion active">Top Frequency</button>
-									<div class="panel" style="max-height: 63px;">
-									  	<table id="t01">
-									  		<tr>
-									    		<th>Stock</th>
-									    		<th>Price</th> 
-									    		<th>Change</th>
-									  		</tr>
-									  		<tr>
-                                				<td colspan="3">The Service is Temporarily Unvavailable</td>
-                           					</tr>
-										</table>
-									</div>
-									<button class="accordion">Top Gainers</button>
-									<div class="panel">
-		  								<table id="t01">
-									  		<tr>
-									    		<th>Stock</th>
-									    		<th>Price</th> 
-									    		<th>Change</th>
-											</tr>
-											<tr>
-                                				<td colspan="3">The Service is Temporarily Unvavailable</td>
-                           					</tr>
-										</table>
-									</div>
-									<button class="accordion">Top Losers</button>
-									<div class="panel">
-								  		<table id="t01">
-								  			<tr>
-									    		<th>Stock</th>
-									    		<th>Price</th> 
-									    		<th>Change</th>
-									  		</tr>
-									  		<tr>
-                                				<td colspan="3">The Service is Temporarily Unvavailable</td>
-                           					</tr>
-										</table>
-									</div>
-									<button class="accordion">Top Volume</button>
-									<div class="panel">
-								  		<table id="t01">
-								  			<tr>
-									    		<th>Stock</th>
-									    		<th>Price</th> 
-									    		<th>Change</th>
-									  		</tr>
-									  		<tr>
-                                				<td colspan="3">The Service is Temporarily Unvavailable</td>
-                           					</tr>
-										</table>
-									</div>
-									<button class="accordion">Top Value</button>
-									<div class="panel">
-								  		<table id="t01">
-								  			<tr>
-									    		<th>Stock</th>
-									    		<th>Price</th> 
-									    		<th>Change</th>
-									  		</tr>
-									  		<tr>
-                                				<td colspan="3">The Service is Temporarily Unvavailable</td>
-                           					</tr>
-										</table>
-									</div>
-									<button class="accordion">Market Indices</button>
-									<div class="panel">
-								  		<table id="t01">
+									<ul class="nav nav-pills nav-justified" role="tablist">
+										<li class="nav-item">
+							      			<a class="nav-link active" data-toggle="pill" href="#marin">Market Indices</a>
+							    		</li>
+							    		<li class="nav-item">
+							      			<a class="nav-link" data-toggle="pill" href="#exrat">Exchanges Rates</a>
+							    		</li>
+							    	</ul>
+							    	<div class="tab-content">
+							    		<div id="marin" class="tab-pane active">
+							      			<table id="t01">
 								  			<tr>
 									    		<th>Index</th>
 									    		<th>Last</th> 
@@ -724,10 +772,9 @@
 									    		<td>1.58</td>
 									  		</tr>
 										</table>
-									</div>
-									<button class="accordion">Exchanges Rates</button>
-									<div class="panel">
-								  		<table id="t01">
+										</div>
+										<div id="exrat" class="tab-pane fade">
+							      			<table id="t01">
 								  			<tr>
 									    		<th>Name</th>
 									    		<th>Last</th>
@@ -757,14 +804,21 @@
 									    		<td>Rp. 2,216.03</td>
 									  		</tr>
 										</table>
-									</div>
-								</section>
-								<div class="column">
-									<section>
-										<h3>Reksadana</h3>
-										<button class="accordion active">PMMF</button>
-										<div class="panel" style="max-height: 436px;">
-										  	<table id="t02">
+										</div>
+							    </section>
+								<section>
+									<h3>Reksadana</h3>
+							  		<ul class="nav nav-pills nav-justified" role="tablist">
+							    		<li class="nav-item">
+							      			<a class="nav-link active" data-toggle="pill" href="#pmmf">PMMF</a>
+							    		</li>
+							    		<li class="nav-item">
+							      			<a class="nav-link" data-toggle="pill" href="#prbf">PRBF</a>
+							    		</li>
+							  		</ul>
+							  		<div class="tab-content">
+							    		<div id="pmmf" class="tab-pane active">
+							      			<table id="t02">
 										  		<tr>
 										    		<td>Fund Name</td>
 										    		<td>Phillip Money Market Fund</td>
@@ -806,10 +860,9 @@
 										    		<td>5.08</td>
 										  		</tr>
 											</table>
-										</div>
-										<button class="accordion">PRBF</button>
-										<div class="panel">
-										  	<table id="t02">
+							    		</div>
+							    		<div id="prbf" class="tab-pane fade">
+							      			<table id="t02">
 										  		<tr>
 										    		<td>Fund Name</td>
 										    		<td>Phillip Balance Rupiah Fund</td>
@@ -852,12 +905,21 @@
 										  		</tr>
 											</table>
 										</div>
-									</section>
-									<section> 
-										<h3>Corporate Action</h3>
-										<button class="accordion active">Stocks</button>
-										<div class="panel" style="max-height: 207px;">
-										  	<table id="t03">
+									</div>
+								</section>
+								<section>
+									<h3>Corporate Action</h3>
+							  		<ul class="nav nav-pills nav-justified" role="tablist">
+							    		<li class="nav-item">
+							      			<a class="nav-link active" data-toggle="pill" href="#stocks">Stocks</a>
+							    		</li>
+							    		<li class="nav-item">
+							      			<a class="nav-link" data-toggle="pill" href="#warrant">Warrant</a>
+							    		</li>
+							  		</ul>
+							  		<div class="tab-content">
+							    		<div id="stocks" class="tab-pane active">
+							      			<table id="t03">
 										  		<tr>
 										    		<th>Stock</th>
 										    		<th>Exercise Price</th>
@@ -889,10 +951,9 @@
 										    		<td>Mar 13, 2020</td>
 										  		</tr>
 											</table>
-										</div>
-										<button class="accordion">Warrant</button>
-										<div class="panel">
-										  	<table id="t03">
+							    		</div>
+							    		<div id="warrant" class="tab-pane fade">
+							      			<table id="t03">
 										  		<tr>
 											   		<th>Stock</th>
 										    		<th>Action</th>
@@ -925,24 +986,8 @@
 										  		</tr>
 											</table>
 										</div>
-									</section>
-								</div>
-								<script>
-									var acc = document.getElementsByClassName("accordion");
-									var i;
-									for (i = 0; i < acc.length; i++) {
-									  	acc[i].addEventListener("click", function() {
-									    	this.classList.toggle("active");
-									    	var panel = this.nextElementSibling;
-									    	if (panel.style.maxHeight){
-									      		panel.style.maxHeight = null;
-									    	}
-									    	else {
-									      		panel.style.maxHeight = panel.scrollHeight + "px";
-									    	} 
-									  	});
-									}
-								</script>
+									</div>
+								</section>
 							</div>
 						</div>
 					</div>
@@ -950,13 +995,13 @@
 			</div>
 		</div>
 	</body>
-		<footer>
+	<footer>
 		<div class="container">
 			<div class="footerinfo">
 	    		<div class="row">
 	     			<div class="col-sm-2">
 			   			<h6><u><b>Accounts</b></u></h6>
-			   			<p><a href="#">Free Trial</p></a>
+			   			<p><a href="https://www.poems.co.id/asp/start/frontpage/promo/promomicrosite.asp?ref=poemsdev">Free Trial</p></a>
 			   			<p><a href="#">Open an Account</p></a>
 		   			</div>
 			   		<div class="col-sm-2">
@@ -982,11 +1027,18 @@
 			    	</div>
 			    	<div class="col-sm-2">
 				    	<h6><u><b>Help & Support</b></u></h6>
-				   		<p><a href="#">Knowledge Base</p></a>
-				   		<p><a href="#">IDX Calendar</p></a>
-				   		<p><a href="#">Download</p></a>
-				   		<p><a href="#">Privacy Policy</p></a>
-				   		<p><a href="#">Term of Use</p></a>
+				   		<p><a href="Knowledge-Base.html">Knowledge Base</p></a>
+				   		<p><a href="https://www.idx.co.id/berita/jadwal-libur-bursa">IDX Calendar</p></a>
+				   		<p><a href="Download.html">Download</p></a>
+				   		<p><a href="#" data-toggle="modal" data-target="#disclaimers">Privacy Policy</p></a>
+				   		<p><a href="#" data-toggle="modal" data-target="#disclaimers">Term of Use</p></a>
+				   		<div class="modal" id="disclaimers">
+    						<div class="modal-dialog modal-lg">
+      							<div class="modal-content">
+        							<iframe src="Disclaimer.html" height="1100" width="800"></iframe>
+    							</div>
+ 							</div>
+ 						</div>
 					</div>
 				   	<div class="col-sm-2">
 				   		<h6><u><b>Contact Us</b></u></h6>

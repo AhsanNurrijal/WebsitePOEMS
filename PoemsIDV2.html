@@ -55,15 +55,17 @@
 					<div class="modal" id="myModal">
     					<div class="modal-dialog">
       						<div class="modal-content">
-        						<div class="modal-header">
-          							<h4 class="modal-title">Login Form</h4>
-          							<button type="button" class="close" data-dismiss="modal">&times;</button>
-        						</div>
-        						<div class="modal-body">
-        						</div>
-        						<div class="modal-footer">
-          							<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-        						</div>
+        						<img src="Assets\logo.png">
+        						<form action="/action_page.php">
+									<input type="text" placeholder="Username"><br>
+									<input type="Password" placeholder="Password"><br>
+									<input type="text" placeholder="PIN CODE"><br>
+									<input type="submit" value="Desktop Login">
+									<p><a href="#">Forgot Password ?</a>&emsp;|&emsp;<a href="#" data-toggle="modal" data-target="#disclaimers">Disclaimer</a></p>
+									<div class="openaccount">
+										<button type="button">Open An Account</button>
+									</div>
+								</form> 
         					</div>
     					</div>
  					</div>
@@ -142,77 +144,102 @@
 				<div class="col-sm-3">
 					<div class="row">
 						<div class="col-sm-12">
-							<div class="column">
+							<div class="rightcolumn">
+								<section>
+									<h3>Top List Updates</h3>
+							  		<ul class="nav nav-pills nav-justified" role="tablist">
+							    		<li class="nav-item">
+							      			<a class="nav-link active" data-toggle="pill" href="#topfreq">Top Frequency</a>
+							    		</li>
+							    		<li class="nav-item">
+							      			<a class="nav-link" data-toggle="pill" href="#topgain">Top Gainers</a>
+							    		</li>
+							    		<li class="nav-item">
+							      			<a class="nav-link" data-toggle="pill" href="#toplos">Top Losers</a>
+							    		</li>
+							    		<li class="nav-item">
+							      			<a class="nav-link" data-toggle="pill" href="#topval">Top Value</a>
+							    		</li>
+							    		<li class="nav-item">
+							      			<a class="nav-link" data-toggle="pill" href="#topvol">Top Volume</a>
+							    		</li>
+							  		</ul>
+							  		<div class="tab-content">
+							    		<div id="topfreq" class="tab-pane active">
+							      			<table id="t01">
+								  			<tr>
+									    		<th>Stock</th>
+									    		<th>Price</th> 
+									    		<th>Change</th>
+									  		</tr>
+									  		<tr>
+                                				<td colspan="3">The Service is Temporarily Unvavailable</td>
+                           					</tr>
+										</table>
+							    		</div>
+							    		<div id="topgain" class="tab-pane fade">
+							      			<table id="t01">
+								  			<tr>
+									    		<th>Stock</th>
+									    		<th>Price</th> 
+									    		<th>Change</th>
+									  		</tr>
+									  		<tr>
+                                				<td colspan="3">The Service is Temporarily Unvavailable</td>
+                           					</tr>
+										</table>
+										</div>
+										<div id="toplos" class="tab-pane fade">
+							      			<table id="t01">
+								  			<tr>
+									    		<th>Stock</th>
+									    		<th>Price</th> 
+									    		<th>Change</th>
+									  		</tr>
+									  		<tr>
+                                				<td colspan="3">The Service is Temporarily Unvavailable</td>
+                           					</tr>
+										</table>
+										</div>
+										<div id="topval" class="tab-pane fade">
+							      			<table id="t01">
+								  			<tr>
+									    		<th>Stock</th>
+									    		<th>Price</th> 
+									    		<th>Change</th>
+									  		</tr>
+									  		<tr>
+                                				<td colspan="3">The Service is Temporarily Unvavailable</td>
+                           					</tr>
+										</table>
+										</div>
+										<div id="topvol" class="tab-pane fade">
+							      			<table id="t01">
+								  			<tr>
+									    		<th>Stock</th>
+									    		<th>Price</th> 
+									    		<th>Change</th>
+									  		</tr>
+									  		<tr>
+                                				<td colspan="3">The Service is Temporarily Unvavailable</td>
+                           					</tr>
+										</table>
+										</div>
+									</div>
+								</section>
 								<section>
 									<h3>Market Updates</h3>
-									<button class="accordion active">Top Frequency</button>
-									<div class="panel" style="max-height: 63px;">
-									  	<table id="t01">
-									  		<tr>
-									    		<th>Stock</th>
-									    		<th>Price</th> 
-									    		<th>Change</th>
-									  		</tr>
-									  		<tr>
-                                				<td colspan="3">The Service is Temporarily Unvavailable</td>
-                           					</tr>
-										</table>
-									</div>
-									<button class="accordion">Top Gainers</button>
-									<div class="panel">
-		  								<table id="t01">
-									  		<tr>
-									    		<th>Stock</th>
-									    		<th>Price</th> 
-									    		<th>Change</th>
-											</tr>
-											<tr>
-                                				<td colspan="3">The Service is Temporarily Unvavailable</td>
-                           					</tr>
-										</table>
-									</div>
-									<button class="accordion">Top Losers</button>
-									<div class="panel">
-								  		<table id="t01">
-								  			<tr>
-									    		<th>Stock</th>
-									    		<th>Price</th> 
-									    		<th>Change</th>
-									  		</tr>
-									  		<tr>
-                                				<td colspan="3">The Service is Temporarily Unvavailable</td>
-                           					</tr>
-										</table>
-									</div>
-									<button class="accordion">Top Volume</button>
-									<div class="panel">
-								  		<table id="t01">
-								  			<tr>
-									    		<th>Stock</th>
-									    		<th>Price</th> 
-									    		<th>Change</th>
-									  		</tr>
-									  		<tr>
-                                				<td colspan="3">The Service is Temporarily Unvavailable</td>
-                           					</tr>
-										</table>
-									</div>
-									<button class="accordion">Top Value</button>
-									<div class="panel">
-								  		<table id="t01">
-								  			<tr>
-									    		<th>Stock</th>
-									    		<th>Price</th> 
-									    		<th>Change</th>
-									  		</tr>
-									  		<tr>
-                                				<td colspan="3">The Service is Temporarily Unvavailable</td>
-                           					</tr>
-										</table>
-									</div>
-									<button class="accordion">Market Indices</button>
-									<div class="panel">
-								  		<table id="t01">
+									<ul class="nav nav-pills nav-justified" role="tablist">
+										<li class="nav-item">
+							      			<a class="nav-link active" data-toggle="pill" href="#marin">Market Indices</a>
+							    		</li>
+							    		<li class="nav-item">
+							      			<a class="nav-link" data-toggle="pill" href="#exrat">Exchanges Rates</a>
+							    		</li>
+							    	</ul>
+							    	<div class="tab-content">
+							    		<div id="marin" class="tab-pane active">
+							      			<table id="t01">
 								  			<tr>
 									    		<th>Index</th>
 									    		<th>Last</th> 
@@ -269,10 +296,9 @@
 									    		<td>1.58</td>
 									  		</tr>
 										</table>
-									</div>
-									<button class="accordion">Exchanges Rates</button>
-									<div class="panel">
-								  		<table id="t01">
+										</div>
+										<div id="exrat" class="tab-pane fade">
+							      			<table id="t01">
 								  			<tr>
 									    		<th>Name</th>
 									    		<th>Last</th>
@@ -302,14 +328,21 @@
 									    		<td>Rp. 2,216.03</td>
 									  		</tr>
 										</table>
-									</div>
-								</section>
-								<div class="column">
-									<section>
-										<h3>Reksadana</h3>
-										<button class="accordion active">PMMF</button>
-										<div class="panel" style="max-height: 436px;">
-										  	<table id="t02">
+										</div>
+							    </section>
+								<section>
+									<h3>Reksadana</h3>
+							  		<ul class="nav nav-pills nav-justified" role="tablist">
+							    		<li class="nav-item">
+							      			<a class="nav-link active" data-toggle="pill" href="#pmmf">PMMF</a>
+							    		</li>
+							    		<li class="nav-item">
+							      			<a class="nav-link" data-toggle="pill" href="#prbf">PRBF</a>
+							    		</li>
+							  		</ul>
+							  		<div class="tab-content">
+							    		<div id="pmmf" class="tab-pane active">
+							      			<table id="t02">
 										  		<tr>
 										    		<td>Fund Name</td>
 										    		<td>Phillip Money Market Fund</td>
@@ -351,10 +384,9 @@
 										    		<td>5.08</td>
 										  		</tr>
 											</table>
-										</div>
-										<button class="accordion">PRBF</button>
-										<div class="panel">
-										  	<table id="t02">
+							    		</div>
+							    		<div id="prbf" class="tab-pane fade">
+							      			<table id="t02">
 										  		<tr>
 										    		<td>Fund Name</td>
 										    		<td>Phillip Balance Rupiah Fund</td>
@@ -397,12 +429,21 @@
 										  		</tr>
 											</table>
 										</div>
-									</section>
-									<section> 
-										<h3>Corporate Action</h3>
-										<button class="accordion active">Stocks</button>
-										<div class="panel" style="max-height: 207px;">
-										  	<table id="t03">
+									</div>
+								</section>
+								<section>
+									<h3>Corporate Action</h3>
+							  		<ul class="nav nav-pills nav-justified" role="tablist">
+							    		<li class="nav-item">
+							      			<a class="nav-link active" data-toggle="pill" href="#stocks">Stocks</a>
+							    		</li>
+							    		<li class="nav-item">
+							      			<a class="nav-link" data-toggle="pill" href="#warrant">Warrant</a>
+							    		</li>
+							  		</ul>
+							  		<div class="tab-content">
+							    		<div id="stocks" class="tab-pane active">
+							      			<table id="t03">
 										  		<tr>
 										    		<th>Stock</th>
 										    		<th>Exercise Price</th>
@@ -434,10 +475,9 @@
 										    		<td>Mar 13, 2020</td>
 										  		</tr>
 											</table>
-										</div>
-										<button class="accordion">Warrant</button>
-										<div class="panel">
-										  	<table id="t03">
+							    		</div>
+							    		<div id="warrant" class="tab-pane fade">
+							      			<table id="t03">
 										  		<tr>
 											   		<th>Stock</th>
 										    		<th>Action</th>
@@ -470,24 +510,8 @@
 										  		</tr>
 											</table>
 										</div>
-									</section>
-								</div>
-								<script>
-									var acc = document.getElementsByClassName("accordion");
-									var i;
-									for (i = 0; i < acc.length; i++) {
-									  	acc[i].addEventListener("click", function() {
-									    	this.classList.toggle("active");
-									    	var panel = this.nextElementSibling;
-									    	if (panel.style.maxHeight){
-									      		panel.style.maxHeight = null;
-									    	}
-									    	else {
-									      		panel.style.maxHeight = panel.scrollHeight + "px";
-									    	} 
-									  	});
-									}
-								</script>
+									</div>
+								</section>
 							</div>
 						</div>
 					</div>
@@ -501,7 +525,7 @@
 	    		<div class="row">
 	     			<div class="col-sm-2">
 			   			<h6><u><b>Accounts</b></u></h6>
-			   			<p><a href="#">Free Trial</p></a>
+			   			<p><a href="https://www.poems.co.id/asp/start/frontpage/promo/promomicrosite.asp?ref=poemsdev">Free Trial</p></a>
 			   			<p><a href="#">Open an Account</p></a>
 		   			</div>
 			   		<div class="col-sm-2">
@@ -527,11 +551,18 @@
 			    	</div>
 			    	<div class="col-sm-2">
 				    	<h6><u><b>Help & Support</b></u></h6>
-				   		<p><a href="#">Knowledge Base</p></a>
-				   		<p><a href="#">IDX Calendar</p></a>
-				   		<p><a href="#">Download</p></a>
-				   		<p><a href="#">Privacy Policy</p></a>
-				   		<p><a href="#">Term of Use</p></a>
+				   		<p><a href="Knowledge-Base.html">Knowledge Base</p></a>
+				   		<p><a href="https://www.idx.co.id/berita/jadwal-libur-bursa">IDX Calendar</p></a>
+				   		<p><a href="Download.html">Download</p></a>
+				   		<p><a href="#" data-toggle="modal" data-target="#disclaimers">Privacy Policy</p></a>
+				   		<p><a href="#" data-toggle="modal" data-target="#disclaimers">Term of Use</p></a>
+				   		<div class="modal" id="disclaimers">
+    						<div class="modal-dialog modal-lg">
+      							<div class="modal-content">
+        							<iframe src="Disclaimer.html" height="1100" width="800"></iframe>
+    							</div>
+ 							</div>
+ 						</div>
 					</div>
 				   	<div class="col-sm-2">
 				   		<h6><u><b>Contact Us</b></u></h6>

@@ -61,7 +61,7 @@
                                     <input type="Password" placeholder="Password"><br>
                                     <input type="text" placeholder="PIN CODE"><br>
                                     <input type="submit" value="Desktop Login">
-                                    <p><a href="#">Forgot Password ?</a>&emsp;|&emsp;<a href="#">Disclaimer</a></p>
+                                    <p><a href="#">Forgot Password ?</a>&emsp;|&emsp;<a href="#" data-toggle="modal" data-target="#disclaimers">Disclaimer</a></p>
                                     <div class="openaccount">
                                         <button type="button">Open An Account</button>
                                     </div>
@@ -98,186 +98,195 @@
 	        			<h2>Download</h2>
 	    			</div>
 				    <div class="profunds">
-                    	<input type="radio" name="tabs" id="tab1" checked="checked">
-                    	<label for="tab1">POEMS Pro Trader</label>
-                    	<input type="radio" name="tabs" id="tab2">
-                    	<label for="tab2">Manual Books</label>
-                		<input type="radio" name="tabs" id="tab3">
-                		<label for="tab3">Utilities</label>
-                		<input type="radio" name="tabs" id="tab4">
-                		<label for="tab4">Brochures</label>
-                		<input type="radio" name="tabs" id="tab5">
-                		<label for="tab5">Newsletter</label>
-                		<div id="tab-content1" class="tab-content">
-                			<div class="article">
-                                <section>
-                                    <div class="row">
-                                        <div class="col-sm-12">
-                                            <img src="Assets\Download.png">
+                    	<ul class="nav nav-pills nav-justified" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="pill" href="#ppt">POEMS Pro Trader</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="pill" href="#mb">Manual Books</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="pill" href="#util">Utilities</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="pill" href="#bro">Brochures</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="pill" href="#new">Newsletter</a>
+                            </li>
+                        </ul>
+                		<div class="tab-content">
+                            <div id="ppt" class="tab-pane active">
+                    			<div class="article">
+                                    <section>
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <img src="Assets\Download.png">
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="articleinfo">
-                                        <h3>POEMS ProTrader Installer</h3><br>
-                                        <a href="https://www.poems.co.id/download/protrader/bublish.asp"><p>Download ProTrader</p></a> 
-                                        <p><b>System Requirements :</b></p>
-                                        <p>Supported Operating System 32/64-bit</p>
-                                        <p>Windows XP, Windows 7, Windows 8, Windows 10</p>
-                                        <p>.NET Framework 3.5</p> 
-                                    </div>
-                                </section>
-                            </div>
-            			</div>
-                		<div id="tab-content2" class="tab-content">
-                			<div class="article">
-                                <section>
-                                    <div class="row">
-                                        <div class="col-sm-12">
-                                            <img src="Assets\Download.png">
+                                        <div class="articleinfo">
+                                            <h3>POEMS ProTrader Installer</h3><br>
+                                            <a href="https://www.poems.co.id/download/protrader/bublish.asp"><p>Download ProTrader</p></a> 
+                                            <p><b>System Requirements :</b></p>
+                                            <p>Supported Operating System 32/64-bit</p>
+                                            <p>Windows XP, Windows 7, Windows 8, Windows 10</p>
+                                            <p>.NET Framework 3.5</p> 
                                         </div>
-                                    </div>
-                                    <div class="articleinfo">
-                                        <h3>POEMS Manual Books</h3><br>
-                                        <div class="pdf">
-                                            <a href="https://bit.ly/2Bc0ZGI"><p><img src="Assets\Icon\pdf.png">&emsp;POEMS ID Manual Book</p></a>
-                                            <a href="http://www.poems.co.id/htm/download/POEMS_User_Guide.pdf"><p><img src="Assets\Icon\pdf.png">&emsp;POEMS Web Manual Book</p></a>
-                                            <a href="http://www.poems.co.id/htm/download/UserGuideProTrader.pdf"><p><img src="Assets\Icon\pdf.png">&emsp;POEMS ProTrader Manual Book</p></a>
-                                            <a href="http://www.poems.co.id/htm/download/PoemsOniPAD_User_Guide.pdf"><p><img src="Assets\Icon\pdf.png">&emsp;POEMS on iPad Manual Book</p></a>
-                                            <a href="http://www.poems.co.id/htm/download/UserGuideSmartSAFE.pdf"><p><img src="Assets\Icon\pdf.png">&emsp;SmartSAFE Manual Book</p></a>
-                                            <a href="http://www.poems.co.id/htm/download/User%20Guide%20Amibroker.zip"><p><img src="Assets\Icon\pdf.png">&emsp;AmiBroker Plugin Manual Book</p></a>
+                                    </section>
+                                </div>
+            			    </div>
+                		    <div id="mb" class="tab-pane fade">
+                    			<div class="article">
+                                    <section>
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <img src="Assets\Download.png">
+                                            </div>
                                         </div>
-                                    </div>
-                                </section>
-                            </div>
-            		    </div>
-                		<div id="tab-content3" class="tab-content">
-                			<div class="article">
-                                <section>
-                                    <div class="row">
-                                        <div class="col-sm-12">
-                                            <img src="Assets\Download.png">
+                                        <div class="articleinfo">
+                                            <h3>POEMS Manual Books</h3><br>
+                                            <div class="pdf">
+                                                <a href="https://bit.ly/2Bc0ZGI"><p><img src="Assets\Icon\pdf.png">&emsp;POEMS ID Manual Book</p></a>
+                                                <a href="http://www.poems.co.id/htm/download/POEMS_User_Guide.pdf"><p><img src="Assets\Icon\pdf.png">&emsp;POEMS Web Manual Book</p></a>
+                                                <a href="http://www.poems.co.id/htm/download/UserGuideProTrader.pdf"><p><img src="Assets\Icon\pdf.png">&emsp;POEMS ProTrader Manual Book</p></a>
+                                                <a href="http://www.poems.co.id/htm/download/PoemsOniPAD_User_Guide.pdf"><p><img src="Assets\Icon\pdf.png">&emsp;POEMS on iPad Manual Book</p></a>
+                                                <a href="http://www.poems.co.id/htm/download/UserGuideSmartSAFE.pdf"><p><img src="Assets\Icon\pdf.png">&emsp;SmartSAFE Manual Book</p></a>
+                                                <a href="http://www.poems.co.id/htm/download/User%20Guide%20Amibroker.zip"><p><img src="Assets\Icon\pdf.png">&emsp;AmiBroker Plugin Manual Book</p></a>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="articleinfo">
-                                        <h3>Utilities</h3><br>
-                                        <ul>
-                                            <a href="http://ardownload.adobe.com/pub/adobe/reader/win/9.x/9.3/enu/AdbeRdr930_en_US.exe"><li>GET Adobe Reader</li></a><br>
-                                            <a href="http://java.com/inc/BrowserRedirect1.jsp?locale=en"><li>Java Sun</li></a><br>
-                                            <a href="http://www.poems.co.id/htm/download/msjavx86.exe"><li>Java Microsoft Virtual Machine</li></a>
-                                        </ul>
-                                    </div>
-                                </section>
-                            </div>
-		                </div>
-                		<div id="tab-content4" class="tab-content">
-                			<div class="article">
-                                <section>
-                                    <div class="row">
-                                        <div class="col-sm-12">
-                                            <img src="Assets\Download.png">
+                                    </section>
+                                </div>
+                		    </div>
+                		    <div id="util" class="tab-pane fade">
+                    			<div class="article">
+                                    <section>
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <img src="Assets\Download.png">
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="articleinfo">
-                                        <h3>POEMS Brochures</h3><br>
-                                        <ul>
-                                            <a href="http://www.poems.co.id/asp/start/frontpage/brochure/Cerdas Berinvestasi dengan POEMS.pdf"><li>Cerdas Berinvestasi dengan POEMS</li></a><br>
-                                            <a href="http://www.poems.co.id/asp/start/frontpage/brochure/Brosur Saham Dan Reksadana.pdf"><li>Reksadana dan Sahan dalam Satu Platform</li></a><br>
-                                            <a href="http://www.poems.co.id/asp/start/frontpage/brochure/Brosur_MarginTrading.pdf"><li>Margin Trading</li></a><br>
-                                            <a href="http://www.poems.co.id/asp/start/frontpage/brochure/UserGuideProFinishRev1(210212)%20edited2.pdf"><li>POEMS "Anytime - Anywhere" Brochure</li></a><br>
-                                            <a href="http://www.poems.co.id/asp/start/frontpage/brochure/BrosurPoemsFamily.pdf"><li>POEMS Family Brochure</li></a><br>
-                                            <a href="http://www.poems.co.id/asp/start/frontpage/brochure/BrosurProTrader.pdf"><li>POEMS ProTrader Brochure</li></a><br>
-                                            <a href="http://www.poems.co.id/asp/start/frontpage/brochure/BrosurReksadana.pdf"><li>ReksaDana Brochure</li></a><br>
-                                            <a href="http://www.poems.co.id/asp/start/frontpage/brochure/Brosur%20pmmf.pdf"><li>Phillip Money Market Fund Brochure</li></a><br>
-                                            <a href="http://www.poems.co.id/asp/start/frontpage/brochure/flyer-promo.pdf"><li>Flyer Promo Discount 50%</li></a><br>
-                                        </ul>
-                                    </div>
-                                </section>
-                            </div>
-		                </div>
-                		<div id="tab-content5" class="tab-content">
-                			<div class="article">
-                                <section>
-                                    <div class="row">
-                                        <div class="col-sm-12">
-                                            <img src="Assets\Download.png">
+                                        <div class="articleinfo">
+                                            <h3>Utilities</h3><br>
+                                            <ul>
+                                                <a href="http://ardownload.adobe.com/pub/adobe/reader/win/9.x/9.3/enu/AdbeRdr930_en_US.exe"><li>GET Adobe Reader</li></a><br>
+                                                <a href="http://java.com/inc/BrowserRedirect1.jsp?locale=en"><li>Java Sun</li></a><br>
+                                                <a href="http://www.poems.co.id/htm/download/msjavx86.exe"><li>Java Microsoft Virtual Machine</li></a>
+                                            </ul>
                                         </div>
-                                    </div>
-                                    <div class="articleinfo">
-                                        <h3>Newsletter Archives</h3><br>
-                                        <ol>
-                                            <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v74_TipsInvestasiSaham.html">Newsletter_v74_TipsInvestasiSaham</a></li>
-                                            <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v73_anggaranlebaran.html">Newsletter_v73_anggaranlebaran</a></li>
-                                            <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v72_FiturPOEMS.html">Newsletter_v72_FiturPOEMS</a></li>
-                                            <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v71_AnalisaFundamental.html">Newsletter_v71_AnalisaFundamental</a></li>
-                                            <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v70_MarketOutlook2019.html">Newsletter_v70_MarketOutlook2019</a></li>
-                                            <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v69_rencanakuangan2019.html">Newsletter_v69_rencanakuangan2019</a></li>
-                                            <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v68_Manfaatgopublic.html">Newsletter_v68_Manfaatgopublic</a></li>
-                                            <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v67_OnlineTradingTerbaik.html">Newsletter_v67_OnlineTradingTerbaik</a></li>
-                                            <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v66_IdulAdha.html">Newsletter_v66_IdulAdha</a></li>
-                                            <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v65_IPOadalah.html">Newsletter_v65_IPOadalah</a></li>
-                                            <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v64_DanaInvestasi.html">Newsletter_v64_DanaInvestasi</a></li>
-                                            <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v63_MenghadapiBearish.html">Newsletter_v63_MenghadapiBearish</a></li>
-                                            <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v62_StartUPIndonesia.html">Newsletter_v62_StartUPIndonesia</a></li>
-                                            <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v61_PeruntunganShio.html">Newsletter_v61_PeruntunganShio</a></li>
-                                            <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v60_IHSG2018.html">Newsletter_v60_IHSG2018</a></li>
-                                            <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v59_Investasi_Untuk_Umroh.html">Newsletter_v59_Investasi_Untuk_Umroh</a></li>
-                                            <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v58_MerdekaFinansial.html">Newsletter_v58_MerdekaFinansial</a></li>
-                                            <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v57_DanaPendidikanDenganReksadana.html">Newsletter_v57_DanaPendidikanDenganReksadana</a></li>
-                                            <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v56_220617.html">Newsletter_v56_220617</a></li>
-                                            <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v54_120417.html">Newsletter_v54_120417</a></li>
-                                            <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v53_100317.html">Newsletter_v53_100317</a></li>
-                                            <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v52_190117.html">Newsletter_v52_190117</a></li>
-                                            <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v51_151116.html">Newsletter_v51_151116</a></li>
-                                            <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v50_141016.html">Newsletter_v50_141016</a></li>
-                                            <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v48_090516.html">Newsletter_v48_090516</a></li>
-                                            <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v47_300316.html">Newsletter_v47_300316</a></li>
-                                            <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v46_030216.html">Newsletter_v46_030216</a></li>
-                                            <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v45_120116.html">Newsletter_v45_120116</a></li>
-                                            <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v44_091015.html">Newsletter_v44_091015</a></li>
-                                            <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v43_090915.html">Newsletter_v43_090915</a></li>
-                                            <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v42_130815.html">Newsletter_v42_130815</a></li>
-                                            <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v41_140715.html">Newsletter_v41_140715</a></li>
-                                            <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v40_030715.html">Newsletter_v40_030715</a></li>
-                                            <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v39_110615.html">Newsletter_v39_110615</a></li>
-                                            <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v38_150515.html">Newsletter_v38_150515</a></li>
-                                            <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v37_280415.html">Newsletter_v37_280415</a></li>
-                                            <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v36_SpecialEdition_270315.html">Newsletter_v36_SpecialEdition_270315</a></li>
-                                            <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v35_250315.html">Newsletter_v35_250315</a></li>
-                                            <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v34_180215.html">Newsletter_v34_180215</a></li>
-                                            <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v33_290115.html">Newsletter_v33_290115</a></li>
-                                            <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v31_021214.html">Newsletter_v31_021214</a></li>
-                                            <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v30_141114.html">Newsletter_v30_141114</a></li>
-                                            <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v29_241014.html">Newsletter_v29_241014</a></li>
-                                            <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v28_091014.html">Newsletter_v28_091014</a></li>
-                                            <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v27_250914.html">Newsletter_v27_250914</a></li>
-                                            <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v26_110914.html">Newsletter_v26_110914</a></li>
-                                            <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v25_280814.html">Newsletter_v25_280814</a></li>
-                                            <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v24_180714.html">Newsletter_v24_180714</a></li>
-                                            <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v23_180714.html">Newsletter_v23_180714</a></li>
-                                            <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v22_020714.html">Newsletter_v22_020714</a></li>
-                                            <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v21_200614.html">Newsletter_v21_200614</a></li>
-                                            <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v20_060614.html">Newsletter_v20_060614</a></li>
-                                            <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v19_210514.html">Newsletter_v19_210514</a></li>
-                                            <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v18_080514.html">Newsletter_v18_080514</a></li>
-                                            <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v17_220414.html">Newsletter_v17_220414</a></li>
-                                            <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v16_240314.html">Newsletter_v16_240314</a></li>
-                                            <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v15_040314.html">Newsletter_v15_040314</a></li>
-                                            <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v14_170214.html">Newsletter_v14_170214</a></li>
-                                            <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v13_030214.html">Newsletter_v13_030214</a></li>
-                                            <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v12_200114.html">Newsletter_v12_200114</a></li>
-                                            <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v11_060114.html">Newsletter_v11_060114</a></li>
-                                            <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v10_231213.html">Newsletter_v10_231213</a></li>
-                                            <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v09_091213.html">Newsletter_v09_091213</a></li>
-                                            <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v08_251113.html">Newsletter_v08_251113</a></li>
-                                            <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v07_121113.html">Newsletter_v07_121113</a></li>
-                                            <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v06_241013.html">Newsletter_v06_241013</a></li>
-                                            <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v05_071013.html">Newsletter_v05_071013</a></li>
-                                            <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v04_130913.html">Newsletter_v04_130913</a></li>
-                                            <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v03_160813.html">Newsletter_v03_160813</a></li>
-                                            <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v02_220713.html">Newsletter_v02_220713</a></li>
-                                            <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v01_040713.html">Newsletter_v01_040713</a></li>
-                                        </ol>
-                                    </div>
-                                </section>
+                                    </section>
+                                </div>
+    		                </div>
+                    		<div id="bro" class="tab-pane fade">
+                    			<div class="article">
+                                    <section>
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <img src="Assets\Download.png">
+                                            </div>
+                                        </div>
+                                        <div class="articleinfo">
+                                            <h3>POEMS Brochures</h3><br>
+                                            <ul>
+                                                <a href="http://www.poems.co.id/asp/start/frontpage/brochure/Cerdas Berinvestasi dengan POEMS.pdf"><li>Cerdas Berinvestasi dengan POEMS</li></a><br>
+                                                <a href="http://www.poems.co.id/asp/start/frontpage/brochure/Brosur Saham Dan Reksadana.pdf"><li>Reksadana dan Sahan dalam Satu Platform</li></a><br>
+                                                <a href="http://www.poems.co.id/asp/start/frontpage/brochure/Brosur_MarginTrading.pdf"><li>Margin Trading</li></a><br>
+                                                <a href="http://www.poems.co.id/asp/start/frontpage/brochure/UserGuideProFinishRev1(210212)%20edited2.pdf"><li>POEMS "Anytime - Anywhere" Brochure</li></a><br>
+                                                <a href="http://www.poems.co.id/asp/start/frontpage/brochure/BrosurPoemsFamily.pdf"><li>POEMS Family Brochure</li></a><br>
+                                                <a href="http://www.poems.co.id/asp/start/frontpage/brochure/BrosurProTrader.pdf"><li>POEMS ProTrader Brochure</li></a><br>
+                                                <a href="http://www.poems.co.id/asp/start/frontpage/brochure/BrosurReksadana.pdf"><li>ReksaDana Brochure</li></a><br>
+                                                <a href="http://www.poems.co.id/asp/start/frontpage/brochure/Brosur%20pmmf.pdf"><li>Phillip Money Market Fund Brochure</li></a><br>
+                                                <a href="http://www.poems.co.id/asp/start/frontpage/brochure/flyer-promo.pdf"><li>Flyer Promo Discount 50%</li></a><br>
+                                            </ul>
+                                        </div>
+                                    </section>
+                                </div>
+    		                </div>
+                    		<div id="new" class="tab-pane fade">
+                    			<div class="article">
+                                    <section>
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <img src="Assets\Download.png">
+                                            </div>
+                                        </div>
+                                        <div class="articleinfo">
+                                            <h3>Newsletter Archives</h3><br>
+                                            <ol>
+                                                <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v74_TipsInvestasiSaham.html">Newsletter_v74_TipsInvestasiSaham</a></li>
+                                                <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v73_anggaranlebaran.html">Newsletter_v73_anggaranlebaran</a></li>
+                                                <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v72_FiturPOEMS.html">Newsletter_v72_FiturPOEMS</a></li>
+                                                <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v71_AnalisaFundamental.html">Newsletter_v71_AnalisaFundamental</a></li>
+                                                <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v70_MarketOutlook2019.html">Newsletter_v70_MarketOutlook2019</a></li>
+                                                <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v69_rencanakuangan2019.html">Newsletter_v69_rencanakuangan2019</a></li>
+                                                <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v68_Manfaatgopublic.html">Newsletter_v68_Manfaatgopublic</a></li>
+                                                <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v67_OnlineTradingTerbaik.html">Newsletter_v67_OnlineTradingTerbaik</a></li>
+                                                <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v66_IdulAdha.html">Newsletter_v66_IdulAdha</a></li>
+                                                <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v65_IPOadalah.html">Newsletter_v65_IPOadalah</a></li>
+                                                <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v64_DanaInvestasi.html">Newsletter_v64_DanaInvestasi</a></li>
+                                                <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v63_MenghadapiBearish.html">Newsletter_v63_MenghadapiBearish</a></li>
+                                                <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v62_StartUPIndonesia.html">Newsletter_v62_StartUPIndonesia</a></li>
+                                                <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v61_PeruntunganShio.html">Newsletter_v61_PeruntunganShio</a></li>
+                                                <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v60_IHSG2018.html">Newsletter_v60_IHSG2018</a></li>
+                                                <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v59_Investasi_Untuk_Umroh.html">Newsletter_v59_Investasi_Untuk_Umroh</a></li>
+                                                <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v58_MerdekaFinansial.html">Newsletter_v58_MerdekaFinansial</a></li>
+                                                <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v57_DanaPendidikanDenganReksadana.html">Newsletter_v57_DanaPendidikanDenganReksadana</a></li>
+                                                <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v56_220617.html">Newsletter_v56_220617</a></li>
+                                                <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v54_120417.html">Newsletter_v54_120417</a></li>
+                                                <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v53_100317.html">Newsletter_v53_100317</a></li>
+                                                <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v52_190117.html">Newsletter_v52_190117</a></li>
+                                                <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v51_151116.html">Newsletter_v51_151116</a></li>
+                                                <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v50_141016.html">Newsletter_v50_141016</a></li>
+                                                <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v48_090516.html">Newsletter_v48_090516</a></li>
+                                                <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v47_300316.html">Newsletter_v47_300316</a></li>
+                                                <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v46_030216.html">Newsletter_v46_030216</a></li>
+                                                <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v45_120116.html">Newsletter_v45_120116</a></li>
+                                                <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v44_091015.html">Newsletter_v44_091015</a></li>
+                                                <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v43_090915.html">Newsletter_v43_090915</a></li>
+                                                <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v42_130815.html">Newsletter_v42_130815</a></li>
+                                                <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v41_140715.html">Newsletter_v41_140715</a></li>
+                                                <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v40_030715.html">Newsletter_v40_030715</a></li>
+                                                <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v39_110615.html">Newsletter_v39_110615</a></li>
+                                                <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v38_150515.html">Newsletter_v38_150515</a></li>
+                                                <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v37_280415.html">Newsletter_v37_280415</a></li>
+                                                <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v36_SpecialEdition_270315.html">Newsletter_v36_SpecialEdition_270315</a></li>
+                                                <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v35_250315.html">Newsletter_v35_250315</a></li>
+                                                <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v34_180215.html">Newsletter_v34_180215</a></li>
+                                                <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v33_290115.html">Newsletter_v33_290115</a></li>
+                                                <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v31_021214.html">Newsletter_v31_021214</a></li>
+                                                <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v30_141114.html">Newsletter_v30_141114</a></li>
+                                                <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v29_241014.html">Newsletter_v29_241014</a></li>
+                                                <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v28_091014.html">Newsletter_v28_091014</a></li>
+                                                <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v27_250914.html">Newsletter_v27_250914</a></li>
+                                                <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v26_110914.html">Newsletter_v26_110914</a></li>
+                                                <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v25_280814.html">Newsletter_v25_280814</a></li>
+                                                <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v24_180714.html">Newsletter_v24_180714</a></li>
+                                                <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v23_180714.html">Newsletter_v23_180714</a></li>
+                                                <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v22_020714.html">Newsletter_v22_020714</a></li>
+                                                <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v21_200614.html">Newsletter_v21_200614</a></li>
+                                                <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v20_060614.html">Newsletter_v20_060614</a></li>
+                                                <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v19_210514.html">Newsletter_v19_210514</a></li>
+                                                <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v18_080514.html">Newsletter_v18_080514</a></li>
+                                                <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v17_220414.html">Newsletter_v17_220414</a></li>
+                                                <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v16_240314.html">Newsletter_v16_240314</a></li>
+                                                <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v15_040314.html">Newsletter_v15_040314</a></li>
+                                                <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v14_170214.html">Newsletter_v14_170214</a></li>
+                                                <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v13_030214.html">Newsletter_v13_030214</a></li>
+                                                <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v12_200114.html">Newsletter_v12_200114</a></li>
+                                                <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v11_060114.html">Newsletter_v11_060114</a></li>
+                                                <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v10_231213.html">Newsletter_v10_231213</a></li>
+                                                <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v09_091213.html">Newsletter_v09_091213</a></li>
+                                                <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v08_251113.html">Newsletter_v08_251113</a></li>
+                                                <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v07_121113.html">Newsletter_v07_121113</a></li>
+                                                <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v06_241013.html">Newsletter_v06_241013</a></li>
+                                                <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v05_071013.html">Newsletter_v05_071013</a></li>
+                                                <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v04_130913.html">Newsletter_v04_130913</a></li>
+                                                <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v03_160813.html">Newsletter_v03_160813</a></li>
+                                                <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v02_220713.html">Newsletter_v02_220713</a></li>
+                                                <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v01_040713.html">Newsletter_v01_040713</a></li>
+                                            </ol>
+                                        </div>
+                                    </section>
+                                </div>
                             </div>
 		                </div>
 				    </div>
@@ -285,77 +294,102 @@
 				<div class="col-sm-3">
 					<div class="row">
                         <div class="col-sm-12">
-                            <div class="column">
+                            <div class="rightcolumn">
+                                <section>
+                                    <h3>Top List Updates</h3>
+                                    <ul class="nav nav-pills nav-justified" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" data-toggle="pill" href="#topfreq">Top Frequency</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-toggle="pill" href="#topgain">Top Gainers</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-toggle="pill" href="#toplos">Top Losers</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-toggle="pill" href="#topval">Top Value</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-toggle="pill" href="#topvol">Top Volume</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div id="topfreq" class="tab-pane active">
+                                            <table id="t01">
+                                            <tr>
+                                                <th>Stock</th>
+                                                <th>Price</th> 
+                                                <th>Change</th>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="3">The Service is Temporarily Unvavailable</td>
+                                            </tr>
+                                        </table>
+                                        </div>
+                                        <div id="topgain" class="tab-pane fade">
+                                            <table id="t01">
+                                            <tr>
+                                                <th>Stock</th>
+                                                <th>Price</th> 
+                                                <th>Change</th>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="3">The Service is Temporarily Unvavailable</td>
+                                            </tr>
+                                        </table>
+                                        </div>
+                                        <div id="toplos" class="tab-pane fade">
+                                            <table id="t01">
+                                            <tr>
+                                                <th>Stock</th>
+                                                <th>Price</th> 
+                                                <th>Change</th>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="3">The Service is Temporarily Unvavailable</td>
+                                            </tr>
+                                        </table>
+                                        </div>
+                                        <div id="topval" class="tab-pane fade">
+                                            <table id="t01">
+                                            <tr>
+                                                <th>Stock</th>
+                                                <th>Price</th> 
+                                                <th>Change</th>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="3">The Service is Temporarily Unvavailable</td>
+                                            </tr>
+                                        </table>
+                                        </div>
+                                        <div id="topvol" class="tab-pane fade">
+                                            <table id="t01">
+                                            <tr>
+                                                <th>Stock</th>
+                                                <th>Price</th> 
+                                                <th>Change</th>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="3">The Service is Temporarily Unvavailable</td>
+                                            </tr>
+                                        </table>
+                                        </div>
+                                    </div>
+                                </section>
                                 <section>
                                     <h3>Market Updates</h3>
-                                    <button class="accordion active">Top Frequency</button>
-                                    <div class="panel" style="max-height: 63px;">
-                                        <table id="t01">
-                                            <tr>
-                                                <th>Stock</th>
-                                                <th>Price</th> 
-                                                <th>Change</th>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="3">The Service is Temporarily Unvavailable</td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                    <button class="accordion">Top Gainers</button>
-                                    <div class="panel">
-                                        <table id="t01">
-                                            <tr>
-                                                <th>Stock</th>
-                                                <th>Price</th> 
-                                                <th>Change</th>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="3">The Service is Temporarily Unvavailable</td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                    <button class="accordion">Top Losers</button>
-                                    <div class="panel">
-                                        <table id="t01">
-                                            <tr>
-                                                <th>Stock</th>
-                                                <th>Price</th> 
-                                                <th>Change</th>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="3">The Service is Temporarily Unvavailable</td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                    <button class="accordion">Top Volume</button>
-                                    <div class="panel">
-                                        <table id="t01">
-                                            <tr>
-                                                <th>Stock</th>
-                                                <th>Price</th> 
-                                                <th>Change</th>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="3">The Service is Temporarily Unvavailable</td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                    <button class="accordion">Top Value</button>
-                                    <div class="panel">
-                                        <table id="t01">
-                                            <tr>
-                                                <th>Stock</th>
-                                                <th>Price</th> 
-                                                <th>Change</th>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="3">The Service is Temporarily Unvavailable</td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                    <button class="accordion">Market Indices</button>
-                                    <div class="panel">
-                                        <table id="t01">
+                                    <ul class="nav nav-pills nav-justified" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" data-toggle="pill" href="#marin">Market Indices</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-toggle="pill" href="#exrat">Exchanges Rates</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div id="marin" class="tab-pane active">
+                                            <table id="t01">
                                             <tr>
                                                 <th>Index</th>
                                                 <th>Last</th> 
@@ -412,10 +446,9 @@
                                                 <td>1.58</td>
                                             </tr>
                                         </table>
-                                    </div>
-                                    <button class="accordion">Exchanges Rates</button>
-                                    <div class="panel">
-                                        <table id="t01">
+                                        </div>
+                                        <div id="exrat" class="tab-pane fade">
+                                            <table id="t01">
                                             <tr>
                                                 <th>Name</th>
                                                 <th>Last</th>
@@ -445,13 +478,20 @@
                                                 <td>Rp. 2,216.03</td>
                                             </tr>
                                         </table>
-                                    </div>
+                                        </div>
                                 </section>
-                                <div class="column">
-                                    <section>
-                                        <h3>Reksadana</h3>
-                                        <button class="accordion active">PMMF</button>
-                                        <div class="panel" style="max-height: 436px;">
+                                <section>
+                                    <h3>Reksadana</h3>
+                                    <ul class="nav nav-pills nav-justified" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" data-toggle="pill" href="#pmmf">PMMF</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-toggle="pill" href="#prbf">PRBF</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div id="pmmf" class="tab-pane active">
                                             <table id="t02">
                                                 <tr>
                                                     <td>Fund Name</td>
@@ -495,8 +535,7 @@
                                                 </tr>
                                             </table>
                                         </div>
-                                        <button class="accordion">PRBF</button>
-                                        <div class="panel">
+                                        <div id="prbf" class="tab-pane fade">
                                             <table id="t02">
                                                 <tr>
                                                     <td>Fund Name</td>
@@ -540,11 +579,20 @@
                                                 </tr>
                                             </table>
                                         </div>
-                                    </section>
-                                    <section> 
-                                        <h3>Corporate Action</h3>
-                                        <button class="accordion active">Stocks</button>
-                                        <div class="panel" style="max-height: 207px;">
+                                    </div>
+                                </section>
+                                <section>
+                                    <h3>Corporate Action</h3>
+                                    <ul class="nav nav-pills nav-justified" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" data-toggle="pill" href="#stocks">Stocks</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-toggle="pill" href="#warrant">Warrant</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div id="stocks" class="tab-pane active">
                                             <table id="t03">
                                                 <tr>
                                                     <th>Stock</th>
@@ -578,8 +626,7 @@
                                                 </tr>
                                             </table>
                                         </div>
-                                        <button class="accordion">Warrant</button>
-                                        <div class="panel">
+                                        <div id="warrant" class="tab-pane fade">
                                             <table id="t03">
                                                 <tr>
                                                     <th>Stock</th>
@@ -613,24 +660,8 @@
                                                 </tr>
                                             </table>
                                         </div>
-                                    </section>
-                                </div>
-                                <script>
-                                    var acc = document.getElementsByClassName("accordion");
-                                    var i;
-                                    for (i = 0; i < acc.length; i++) {
-                                        acc[i].addEventListener("click", function() {
-                                            this.classList.toggle("active");
-                                            var panel = this.nextElementSibling;
-                                            if (panel.style.maxHeight){
-                                                panel.style.maxHeight = null;
-                                            }
-                                            else {
-                                                panel.style.maxHeight = panel.scrollHeight + "px";
-                                            } 
-                                        });
-                                    }
-                                </script>
+                                    </div>
+                                </section>
                             </div>
                         </div>
                     </div>
@@ -644,7 +675,7 @@
                 <div class="row">
                     <div class="col-sm-2">
                         <h6><u><b>Accounts</b></u></h6>
-                        <p><a href="#">Free Trial</p></a>
+                        <p><a href="https://www.poems.co.id/asp/start/frontpage/promo/promomicrosite.asp?ref=poemsdev">Free Trial</p></a>
                         <p><a href="#">Open an Account</p></a>
                     </div>
                     <div class="col-sm-2">
@@ -670,11 +701,18 @@
                     </div>
                     <div class="col-sm-2">
                         <h6><u><b>Help & Support</b></u></h6>
-                        <p><a href="#">Knowledge Base</p></a>
-                        <p><a href="#">IDX Calendar</p></a>
-                        <p><a href="#">Download</p></a>
-                        <p><a href="#">Privacy Policy</p></a>
-                        <p><a href="#">Term of Use</p></a>
+                        <p><a href="Knowledge-Base.html">Knowledge Base</p></a>
+                        <p><a href="https://www.idx.co.id/berita/jadwal-libur-bursa">IDX Calendar</p></a>
+                        <p><a href="Download.html">Download</p></a>
+                        <p><a href="#" data-toggle="modal" data-target="#disclaimers">Privacy Policy</p></a>
+                        <p><a href="#" data-toggle="modal" data-target="#disclaimers">Term of Use</p></a>
+                        <div class="modal" id="disclaimers">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <iframe src="Disclaimer.html" height="1100" width="800"></iframe>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-sm-2">
                         <h6><u><b>Contact Us</b></u></h6>
