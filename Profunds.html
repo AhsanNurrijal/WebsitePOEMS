@@ -12,9 +12,9 @@
 	<body>
 		<div class="container">
 			<header>
-				<div class="row">
-					<div class=col-sm-1>
-    					<div id="mySidebar" class="sidebar">
+                <div class="row">
+                    <div class=col-sm-1>
+                        <div id="mySidebar" class="sidebar">
                             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
                             <a href="Profile.html"><img src="Assets\Icon\SidebarIcon1.png">&emsp;Profile</a>
                             <a href="https://www.phillip.com.sg/"><img src="Assets\Icon\SidebarIcon2.png">&emsp;Phillip Capital</a>
@@ -28,49 +28,62 @@
                             <a href="http://instagram.com/talktophillip"><img src="Assets\Icon\ig.png">&emsp;Instagram</a>
                             <a href="https://www.youtube.com/user/PhillipIndonesia?sub_confirmation=1"><img src="Assets\Icon\yt.png">&emsp;Youtube</a>
                         </div>
-						<div id="main">
-  							<button class="openbtn" onclick="openNav()">☰</button>  
-						</div>
-					</div>
-					<script>
-						function openNav() {
-  							document.getElementById("mySidebar").style.width = "250px";
-  							document.getElementById("main").style.marginLeft = "250px";
-						}
-						function closeNav() {
-  							document.getElementById("mySidebar").style.width = "0";
-  							document.getElementById("main").style.marginLeft= "0";
-						}
-					</script>
-					<div class=col-sm-9>
-						<div class="logo">
-							<a href="Homepage.html"><img src="Assets\logo.png"></a>
-						</div>
-					</div>
-					<div class=col-sm-2>
-						<div class=loginbutton>
-							<button type="button" data-toggle="modal" data-target="#myModal">Login</button>
-						</div>
-					</div>
-					<div class="modal" id="myModal">
+                        <div id="main">
+                            <button class="openbtn" onclick="openNav()">☰</button>  
+                        </div>
+                    </div>
+                    <script>
+                        function openNav() {
+                            document.getElementById("mySidebar").style.width = "250px";
+                            document.getElementById("main").style.marginLeft = "250px";
+                        }
+                        function closeNav() {
+                            document.getElementById("mySidebar").style.width = "0";
+                            document.getElementById("main").style.marginLeft= "0";
+                        }
+                    </script>
+                    <div class=col-sm-7>
+                        <div class="img-fluid">
+                            <a href="Homepage.html"><img src="Assets\logo.png"></a>
+                        </div>
+                    </div>
+                    <div class=col-sm-2>
+                        <div class=openbutton>
+                            <button type="button">Open an Account</button>
+                        </div>
+                    </div>
+                    <div class=col-sm-1>
+                        <div class=loginbutton>
+                            <button type="button" data-toggle="modal" data-target="#myModal">Login</button>
+                        </div>
+                    </div>
+                    <div class="modal" id="myModal">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <img src="Assets\logo.png">
-                                <form action="/action_page.php">
-                                    <input type="text" placeholder="Username"><br>
-                                    <input type="Password" placeholder="Password"><br>
-                                    <input type="text" placeholder="PIN CODE"><br>
-                                    <input type="submit" value="Desktop Login">
-                                    <p><a href="#">Forgot Password ?</a>&emsp;|&emsp;<a href="#" data-toggle="modal" data-target="#disclaimers">Disclaimer</a></p>
-                                    <div class="openaccount">
-                                        <button type="button">Open An Account</button>
+                                <div class="row">
+                                    <div class="col-sm-1">
                                     </div>
-                                </form> 
+                                    <div class="col-sm-10">
+                                        <form action="/action_page.php">
+                                                <input type="text" placeholder="Username"><br>
+                                                <input type="Password" placeholder="Password"><br>
+                                                <input type="text" placeholder="PIN CODE"><br>
+                                                <input type="submit" value="Desktop Login">
+                                                <p><a href="#">Forgot Password ?</a>&emsp;|&emsp;<a href="#" data-toggle="modal" data-target="#disclaimers">Disclaimer</a></p>
+                                                <div class="openaccount">
+                                                    <button type="button">Open An Account</button>
+                                                </div>
+                                        </form>
+                                    </div>
+                                    <div class="col-sm-1">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-				</div>
-			</header>
+                </div>
+            </header>
 			<div class="row">
 				<div class="col-sm-12">
 					<nav class="navbar navbar-expand-lg">
@@ -103,492 +116,492 @@
 				           		<img src="Assets\Profunds.png">
 				        	</div>
 				    	</div>
-                        <ul class="nav nav-pills nav-justified" role="tablist">
-                            <li class="nav-item">
-                                <a class="nav-link active" data-toggle="pill" href="#all">All</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-toggle="pill" href="#equity">Equity</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-toggle="pill" href="#balanced">Balanced</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-toggle="pill" href="#fixin">Fixed Income</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-toggle="pill" href="#monmar">Money Market</a>
-                            </li>
-                        </ul>
-                            <div class="tab-content">
-                                <div id="all" class="tab-pane active">
-                                    <table id="t05">
-                                        <tr>
-                                            <th rowspan="2">No.</th>
-                                            <th rowspan="2">Product Name</th>
-                                            <th colspan="2">Min Investment</th>
-                                            <th colspan="2">Fee (%)</th>
-                                            <th colspan="4">Return (%)</th>
-                                            <th rowspan="2">Ccy</th>
-                                            <th rowspan="2">NAV *</th>
-                                        </tr>
-                                        <tr>
-                                            <th>New</th>
-                                            <th>Top Up</th>
-                                            <th>Subs</th>
-                                            <th>Redeem</th>
-                                            <th>1&nbsp;M</th>
-                                            <th>1&nbsp;Y</th>
-                                            <th>YTD</th>
-                                            <th>3&nbsp;Y</th>
-                                        </tr>
-                                        <tr>
-                                            <td>1</td>
-                                            <td><a href="">Aberdeen Standard Indonesia Balanced Growth Fund</a></td>
-                                            <td>100,000</td>
-                                            <td>100,000</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>3.18</td>
-                                            <td>12.62</td>
-                                            <td>8.92</td>
-                                            <td>17.69</td>
-                                            <td>IDR</td>
-                                            <td>1,939.54</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>Bahana Traiblazer Fund</td>
-                                            <td>100,000</td>
-                                            <td>100,000</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>1.36</td>
-                                            <td>3.73</td>
-                                            <td>1.98</td>
-                                            <td>9.16</td>
-                                            <td>IDR</td>
-                                            <td>1,033.34</td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>Manulife Dana Saham</td>
-                                            <td>50,000</td>
-                                            <td>50,000</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>2.37</td>
-                                            <td>7.5</td>
-                                            <td>10.45</td>
-                                            <td>-67</td>
-                                            <td>IDR</td>
-                                            <td>1,031.02</td>
-                                        </tr>
-                                        <tr>
-                                            <td>4</td>
-                                            <td>Rencana Cerdas</td>
-                                            <td>100,000</td>
-                                            <td>100,000</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>2.5</td>
-                                            <td>15</td>
-                                            <td>9.07</td>
-                                            <td>23.77</td>
-                                            <td>IDR</td>
-                                            <td>16,902.79</td>
-                                        </tr>
-                                        <tr>
-                                            <td>5</td>
-                                            <td>MNC Dana Ekuitas</td>
-                                            <td>100,000</td>
-                                            <td>100,000</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0.15</td>
-                                            <td>0.22</td>
-                                            <td>4.03</td>
-                                            <td>5.71</td>
-                                            <td>IDR</td>
-                                          <td>4,054.14</td>
-                                        </tr>   
-                                    </table>
-                                </div>
-                                <div id="equity" class="tab-pane fade">
-                                    <table id="t05">
-                                        <tr>
-                                            <th rowspan="2">No.</th>
-                                            <th rowspan="2">Product Name</th>
-                                            <th colspan="2">Min Investment</th>
-                                            <th colspan="2">Fee (%)</th>
-                                            <th colspan="4">Return (%)</th>
-                                            <th rowspan="2">Ccy</th>
-                                            <th rowspan="2">NAV *</th>
-                                        </tr>
-                                        <tr>
-                                            <th>New</th>
-                                            <th>Top Up</th>
-                                            <th>Subs</th>
-                                            <th>Redeem</th>
-                                            <th>1&nbsp;M</th>
-                                            <th>1&nbsp;Y</th>
-                                            <th>YTD</th>
-                                            <th>3&nbsp;Y</th>
-                                        </tr>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Bahana Traiblazer Fund</td>
-                                            <td>100,000</td>
-                                            <td>100,000</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>1.36</td>
-                                            <td>3.73</td>
-                                            <td>1.98</td>
-                                            <td>9.16</td>
-                                            <td>IDR</td>
-                                            <td>1,033.34</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>Manulife Dana Saham</td>
-                                            <td>50,000</td>
-                                            <td>50,000</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>2.37</td>
-                                            <td>7.5</td>
-                                            <td>10.45</td>
-                                            <td>-67</td>
-                                            <td>IDR</td>
-                                            <td>1,031.02</td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>Rencana Cerdas</td>
-                                            <td>100,000</td>
-                                            <td>100,000</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>2.5</td>
-                                            <td>15</td>
-                                            <td>9.07</td>
-                                            <td>23.77</td>
-                                            <td>IDR</td>
-                                            <td>16,902.79</td>
-                                        </tr>
-                                        <tr>
-                                            <td>4</td>
-                                            <td>MNC Dana Ekuitas</td>
-                                            <td>100,000</td>
-                                            <td>100,000</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0.15</td>
-                                            <td>0.22</td>
-                                            <td>4.03</td>
-                                            <td>5.71</td>
-                                            <td>IDR</td>
-                                            <td>4,054.14</td>
-                                        </tr>
-                                        <tr>
-                                            <td>5</td>
-                                            <td>Aberdeen Standard indonesia balanced Growth Fund</td>
-                                            <td>100,000</td>
-                                            <td>100,000</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>3.18</td>
-                                            <td>12.62</td>
-                                            <td>8.92</td>
-                                            <td>17.69</td>
-                                            <td>IDR</td>
-                                            <td>1,939.54</td>
-                                        </tr>
-                                    </table>
-                                </div>
-                                <div id="balanced" class="tab-pane fade">
-                                  <table id="t05">
-                                    <tr>
-                                        <th rowspan="2">No.</th>
-                                        <th rowspan="2">Product Name</th>
-                                        <th colspan="2">Min Investment</th>
-                                        <th colspan="2">Fee (%)</th>
-                                        <th colspan="4">Return (%)</th>
-                                        <th rowspan="2">Ccy</th>
-                                        <th rowspan="2">NAV *</th>
-                                    </tr>
-                                    <tr>
-                                        <th>New</th>
-                                        <th>Top Up</th>
-                                        <th>Subs</th>
-                                        <th>Redeem</th>
-                                        <th>1&nbsp;M</th>
-                                        <th>1&nbsp;Y</th>
-                                        <th>YTD</th>
-                                        <th>3&nbsp;Y</th>
-                                    </tr>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>Manulife Dana Saham</td>
-                                        <td>50,000</td>
-                                        <td>50,000</td>
-                                        <td>0</td>
-                                        <td>0</td>
-                                        <td>2.37</td>
-                                        <td>7.5</td>
-                                        <td>10.45</td>
-                                        <td>-67</td>
-                                        <td>IDR</td>
-                                        <td>1,031.02</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>Rencana Cerdas</td>
-                                        <td>100,000</td>
-                                        <td>100,000</td>
-                                        <td>0</td>
-                                        <td>0</td>
-                                        <td>2.5</td>
-                                        <td>15</td>
-                                        <td>9.07</td>
-                                        <td>23.77</td>
-                                        <td>IDR</td>
-                                        <td>16,902.79</td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>MNC Dana Ekuitas</td>
-                                        <td>100,000</td>
-                                        <td>100,000</td>
-                                        <td>0</td>
-                                        <td>0</td>
-                                        <td>0.15</td>
-                                        <td>0.22</td>
-                                        <td>4.03</td>
-                                        <td>5.71</td>
-                                        <td>IDR</td>
-                                        <td>4,054.14</td>
-                                    </tr>
-                                    <tr>
-                                        <td>4</td>
-                                        <td>Aberdeen Standard indonesia balanced Growth Fund</td>
-                                        <td>100,000</td>
-                                        <td>100,000</td>
-                                        <td>0</td>
-                                        <td>0</td>
-                                        <td>3.18</td>
-                                        <td>12.62</td>
-                                        <td>8.92</td>
-                                        <td>17.69</td>
-                                        <td>IDR</td>
-                                        <td>1,939.54</td>
-                                    </tr>
-                                <tr>
-                                    <td>5</td>
-                                    <td>Bahana Traiblazer Fund</td>
-                                    <td>100,000</td>
-                                    <td>100,000</td>
-                                    <td>0</td>
-                                    <td>0</td>
-                                    <td>1.36</td>
-                                    <td>3.73</td>
-                                    <td>1.98</td>
-                                    <td>9.16</td>
-                                    <td>IDR</td>
-                                    <td>1,033.34</td>
-                                </tr>
-                            </table>
-                            </div>
-                            <div id="fixin" class="tab-pane fade">
-                                <table id="t05">
-                                    <tr>
-                                        <th rowspan="2">No.</th>
-                                        <th rowspan="2">Product Name</th>
-                                        <th colspan="2">Min Investment</th>
-                                        <th colspan="2">Fee (%)</th>
-                                        <th colspan="4">Return (%)</th>
-                                        <th rowspan="2">Ccy</th>
-                                        <th rowspan="2">NAV *</th>
-                                    </tr>
-                                    <tr>
-                                        <th>New</th>
-                                        <th>Top Up</th>
-                                        <th>Subs</th>
-                                        <th>Redeem</th>
-                                        <th>1&nbsp;M</th>
-                                        <th>1&nbsp;Y</th>
-                                        <th>YTD</th>
-                                        <th>3&nbsp;Y</th>
-                                    </tr>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>Rencana Cerdas</td>
-                                        <td>100,000</td>
-                                        <td>100,000</td>
-                                        <td>0</td>
-                                        <td>0</td>
-                                        <td>2.5</td>
-                                        <td>15</td>
-                                        <td>9.07</td>
-                                        <td>23.77</td>
-                                        <td>IDR</td>
-                                        <td>16,902.79</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>MNC Dana Ekuitas</td>
-                                        <td>100,000</td>
-                                        <td>100,000</td>
-                                        <td>0</td>
-                                        <td>0</td>
-                                        <td>0.15</td>
-                                        <td>0.22</td>
-                                        <td>4.03</td>
-                                        <td>5.71</td>
-                                        <td>IDR</td>
-                                        <td>4,054.14</td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>Aberdeen Standard indonesia balanced Growth Fund</td>
-                                        <td>100,000</td>
-                                        <td>100,000</td>
-                                        <td>0</td>
-                                        <td>0</td>
-                                        <td>3.18</td>
-                                        <td>12.62</td>
-                                        <td>8.92</td>
-                                        <td>17.69</td>
-                                        <td>IDR</td>
-                                        <td>1,939.54</td>
-                                    </tr>
-                                    <tr>
-                                        <td>4</td>
-                                        <td>Bahana Traiblazer Fund</td>
-                                        <td>100,000</td>
-                                        <td>100,000</td>
-                                        <td>0</td>
-                                        <td>0</td>
-                                        <td>1.36</td>
-                                        <td>3.73</td>
-                                        <td>1.98</td>
-                                        <td>9.16</td>
-                                        <td>IDR</td>
-                                        <td>1,033.34</td>
-                                    </tr>
-                                    <tr>
-                                        <td>5</td>
-                                        <td>Manulife Dana Saham</td>
-                                        <td>50,000</td>
-                                        <td>50,000</td>
-                                        <td>0</td>
-                                        <td>0</td>
-                                        <td>2.37</td>
-                                        <td>7.5</td>
-                                        <td>10.45</td>
-                                        <td>-67</td>
-                                        <td>IDR</td>
-                                        <td>1,031.02</td>
-                                    </tr>
-                                </table>
-                            </div>
-                            <div id="monmar" class="tab-pane fade">
-                                <table id="t05">
-                                    <tr>
-                                        <th rowspan="2">No.</th>
-                                        <th rowspan="2">Product Name</th>
-                                        <th colspan="2">Min Investment</th>
-                                        <th colspan="2">Fee (%)</th>
-                                        <th colspan="4">Return (%)</th>
-                                        <th rowspan="2">Ccy</th>
-                                        <th rowspan="2">NAV *</th>
-                                    </tr>
-                                    <tr>
-                                        <th>New</th>
-                                        <th>Top Up</th>
-                                        <th>Subs</th>
-                                        <th>Redeem</th>
-                                        <th>1&nbsp;M</th>
-                                        <th>1&nbsp;Y</th>
-                                        <th>YTD</th>
-                                        <th>3&nbsp;Y</th>
-                                    </tr>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>MNC Dana Ekuitas</td>
-                                        <td>100,000</td>
-                                        <td>100,000</td>
-                                        <td>0</td>
-                                        <td>0</td>
-                                        <td>0.15</td>
-                                        <td>0.22</td>
-                                        <td>4.03</td>
-                                        <td>5.71</td>
-                                        <td>IDR</td>
-                                        <td>4,054.14</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>Aberdeen Standard indonesia balanced Growth Fund</td>
-                                        <td>100,000</td>
-                                        <td>100,000</td>
-                                        <td>0</td>
-                                        <td>0</td>
-                                        <td>3.18</td>
-                                        <td>12.62</td>
-                                        <td>8.92</td>
-                                        <td>17.69</td>
-                                        <td>IDR</td>
-                                        <td>1,939.54</td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>Bahana Traiblazer Fund</td>
-                                        <td>100,000</td>
-                                        <td>100,000</td>
-                                        <td>0</td>
-                                        <td>0</td>
-                                        <td>1.36</td>
-                                        <td>3.73</td>
-                                        <td>1.98</td>
-                                        <td>9.16</td>
-                                        <td>IDR</td>
-                                        <td>1,033.34</td>
-                                    </tr>
-                                    <tr>
-                                        <td>4</td>
-                                        <td>Manulife Dana Saham</td>
-                                        <td>50,000</td>
-                                        <td>50,000</td>
-                                        <td>0</td>
-                                        <td>0</td>
-                                        <td>2.37</td>
-                                        <td>7.5</td>
-                                        <td>10.45</td>
-                                        <td>-67</td>
-                                        <td>IDR</td>
-                                        <td>1,031.02</td>
-                                    </tr>
-                                    <tr>
-                                        <td>5</td>
-                                        <td>Rencana Cerdas</td>
-                                        <td>100,000</td>
-                                        <td>100,000</td>
-                                        <td>0</td>
-                                        <td>0</td>
-                                        <td>2.5</td>
-                                        <td>15</td>
-                                        <td>9.07</td>
-                                        <td>23.77</td>
-                                        <td>IDR</td>
-                                        <td>16,902.79</td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </div>
                         <div class="article">
                             <section>
+                                <ul class="nav nav-tabs nav-justified" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" data-toggle="tab" href="#all">All</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#equity">Equity</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#balanced">Balanced</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#fixin">Fixed Income</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#monmar">Money Market</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div id="all" class="tab-pane active">
+                                        <table id="t05">
+                                            <tr>
+                                                <th rowspan="2">No.</th>
+                                                <th rowspan="2">Product Name</th>
+                                                <th colspan="2">Min Investment</th>
+                                                <th colspan="2">Fee (%)</th>
+                                                <th colspan="4">Return (%)</th>
+                                                <th rowspan="2">Ccy</th>
+                                                <th rowspan="2">NAV *</th>
+                                            </tr>
+                                            <tr>
+                                                <th>New</th>
+                                                <th>Top Up</th>
+                                                <th>Subs</th>
+                                                <th>Redeem</th>
+                                                <th>1&nbsp;M</th>
+                                                <th>1&nbsp;Y</th>
+                                                <th>YTD</th>
+                                                <th>3&nbsp;Y</th>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td><a href="">Aberdeen Standard Indonesia Balanced Growth Fund</a></td>
+                                                <td>100,000</td>
+                                                <td>100,000</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>3.18</td>
+                                                <td>12.62</td>
+                                                <td>8.92</td>
+                                                <td>17.69</td>
+                                                <td>IDR</td>
+                                                <td>1,939.54</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Bahana Traiblazer Fund</td>
+                                                <td>100,000</td>
+                                                <td>100,000</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>1.36</td>
+                                                <td>3.73</td>
+                                                <td>1.98</td>
+                                                <td>9.16</td>
+                                                <td>IDR</td>
+                                                <td>1,033.34</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>Manulife Dana Saham</td>
+                                                <td>50,000</td>
+                                                <td>50,000</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>2.37</td>
+                                                <td>7.5</td>
+                                                <td>10.45</td>
+                                                <td>-67</td>
+                                                <td>IDR</td>
+                                                <td>1,031.02</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>Rencana Cerdas</td>
+                                                <td>100,000</td>
+                                                <td>100,000</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>2.5</td>
+                                                <td>15</td>
+                                                <td>9.07</td>
+                                                <td>23.77</td>
+                                                <td>IDR</td>
+                                                <td>16,902.79</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>MNC Dana Ekuitas</td>
+                                                <td>100,000</td>
+                                                <td>100,000</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0.15</td>
+                                                <td>0.22</td>
+                                                <td>4.03</td>
+                                                <td>5.71</td>
+                                                <td>IDR</td>
+                                              <td>4,054.14</td>
+                                            </tr>                                        
+                                        </table>
+                                    </div>
+                                    <div id="equity" class="tab-pane fade">
+                                        <table id="t05">
+                                            <tr>
+                                                <th rowspan="2">No.</th>
+                                                <th rowspan="2">Product Name</th>
+                                                <th colspan="2">Min Investment</th>
+                                                <th colspan="2">Fee (%)</th>
+                                                <th colspan="4">Return (%)</th>
+                                                <th rowspan="2">Ccy</th>
+                                                <th rowspan="2">NAV *</th>
+                                            </tr>
+                                            <tr>
+                                                <th>New</th>
+                                                <th>Top Up</th>
+                                                <th>Subs</th>
+                                                <th>Redeem</th>
+                                                <th>1&nbsp;M</th>
+                                                <th>1&nbsp;Y</th>
+                                                <th>YTD</th>
+                                                <th>3&nbsp;Y</th>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Bahana Traiblazer Fund</td>
+                                                <td>100,000</td>
+                                                <td>100,000</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>1.36</td>
+                                                <td>3.73</td>
+                                                <td>1.98</td>
+                                                <td>9.16</td>
+                                                <td>IDR</td>
+                                                <td>1,033.34</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Manulife Dana Saham</td>
+                                                <td>50,000</td>
+                                                <td>50,000</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>2.37</td>
+                                                <td>7.5</td>
+                                                <td>10.45</td>
+                                                <td>-67</td>
+                                                <td>IDR</td>
+                                                <td>1,031.02</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>Rencana Cerdas</td>
+                                                <td>100,000</td>
+                                                <td>100,000</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>2.5</td>
+                                                <td>15</td>
+                                                <td>9.07</td>
+                                                <td>23.77</td>
+                                                <td>IDR</td>
+                                                <td>16,902.79</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>MNC Dana Ekuitas</td>
+                                                <td>100,000</td>
+                                                <td>100,000</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0.15</td>
+                                                <td>0.22</td>
+                                                <td>4.03</td>
+                                                <td>5.71</td>
+                                                <td>IDR</td>
+                                                <td>4,054.14</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>Aberdeen Standard indonesia balanced Growth Fund</td>
+                                                <td>100,000</td>
+                                                <td>100,000</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>3.18</td>
+                                                <td>12.62</td>
+                                                <td>8.92</td>
+                                                <td>17.69</td>
+                                                <td>IDR</td>
+                                                <td>1,939.54</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div id="balanced" class="tab-pane fade">
+                                        <table id="t05">
+                                            <tr>
+                                                <th rowspan="2">No.</th>
+                                                <th rowspan="2">Product Name</th>
+                                                <th colspan="2">Min Investment</th>
+                                                <th colspan="2">Fee (%)</th>
+                                                <th colspan="4">Return (%)</th>
+                                                <th rowspan="2">Ccy</th>
+                                                <th rowspan="2">NAV *</th>
+                                            </tr>
+                                            <tr>
+                                                <th>New</th>
+                                                <th>Top Up</th>
+                                                <th>Subs</th>
+                                                <th>Redeem</th>
+                                                <th>1&nbsp;M</th>
+                                                <th>1&nbsp;Y</th>
+                                                <th>YTD</th>
+                                                <th>3&nbsp;Y</th>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Manulife Dana Saham</td>
+                                                <td>50,000</td>
+                                                <td>50,000</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>2.37</td>
+                                                <td>7.5</td>
+                                                <td>10.45</td>
+                                                <td>-67</td>
+                                                <td>IDR</td>
+                                                <td>1,031.02</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Rencana Cerdas</td>
+                                                <td>100,000</td>
+                                                <td>100,000</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>2.5</td>
+                                                <td>15</td>
+                                                <td>9.07</td>
+                                                <td>23.77</td>
+                                                <td>IDR</td>
+                                                <td>16,902.79</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>MNC Dana Ekuitas</td>
+                                                <td>100,000</td>
+                                                <td>100,000</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0.15</td>
+                                                <td>0.22</td>
+                                                <td>4.03</td>
+                                                <td>5.71</td>
+                                                <td>IDR</td>
+                                                <td>4,054.14</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>Aberdeen Standard indonesia balanced Growth Fund</td>
+                                                <td>100,000</td>
+                                                <td>100,000</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>3.18</td>
+                                                <td>12.62</td>
+                                                <td>8.92</td>
+                                                <td>17.69</td>
+                                                <td>IDR</td>
+                                                <td>1,939.54</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>Bahana Traiblazer Fund</td>
+                                                <td>100,000</td>
+                                                <td>100,000</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>1.36</td>
+                                                <td>3.73</td>
+                                                <td>1.98</td>
+                                                <td>9.16</td>
+                                                <td>IDR</td>
+                                                <td>1,033.34</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div id="fixin" class="tab-pane fade">
+                                        <table id="t05">
+                                            <tr>
+                                                <th rowspan="2">No.</th>
+                                                <th rowspan="2">Product Name</th>
+                                                <th colspan="2">Min Investment</th>
+                                                <th colspan="2">Fee (%)</th>
+                                                <th colspan="4">Return (%)</th>
+                                                <th rowspan="2">Ccy</th>
+                                                <th rowspan="2">NAV *</th>
+                                            </tr>
+                                            <tr>
+                                                <th>New</th>
+                                                <th>Top Up</th>
+                                                <th>Subs</th>
+                                                <th>Redeem</th>
+                                                <th>1&nbsp;M</th>
+                                                <th>1&nbsp;Y</th>
+                                                <th>YTD</th>
+                                                <th>3&nbsp;Y</th>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Rencana Cerdas</td>
+                                                <td>100,000</td>
+                                                <td>100,000</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>2.5</td>
+                                                <td>15</td>
+                                                <td>9.07</td>
+                                                <td>23.77</td>
+                                                <td>IDR</td>
+                                                <td>16,902.79</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>MNC Dana Ekuitas</td>
+                                                <td>100,000</td>
+                                                <td>100,000</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0.15</td>
+                                                <td>0.22</td>
+                                                <td>4.03</td>
+                                                <td>5.71</td>
+                                                <td>IDR</td>
+                                                <td>4,054.14</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>Aberdeen Standard indonesia balanced Growth Fund</td>
+                                                <td>100,000</td>
+                                                <td>100,000</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>3.18</td>
+                                                <td>12.62</td>
+                                                <td>8.92</td>
+                                                <td>17.69</td>
+                                                <td>IDR</td>
+                                                <td>1,939.54</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>Bahana Traiblazer Fund</td>
+                                                <td>100,000</td>
+                                                <td>100,000</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>1.36</td>
+                                                <td>3.73</td>
+                                                <td>1.98</td>
+                                                <td>9.16</td>
+                                                <td>IDR</td>
+                                                <td>1,033.34</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>Manulife Dana Saham</td>
+                                                <td>50,000</td>
+                                                <td>50,000</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>2.37</td>
+                                                <td>7.5</td>
+                                                <td>10.45</td>
+                                                <td>-67</td>
+                                                <td>IDR</td>
+                                                <td>1,031.02</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div id="monmar" class="tab-pane fade">
+                                        <table id="t05">
+                                            <tr>
+                                                <th rowspan="2">No.</th>
+                                                <th rowspan="2">Product Name</th>
+                                                <th colspan="2">Min Investment</th>
+                                                <th colspan="2">Fee (%)</th>
+                                                <th colspan="4">Return (%)</th>
+                                                <th rowspan="2">Ccy</th>
+                                                <th rowspan="2">NAV *</th>
+                                            </tr>
+                                            <tr>
+                                                <th>New</th>
+                                                <th>Top Up</th>
+                                                <th>Subs</th>
+                                                <th>Redeem</th>
+                                                <th>1&nbsp;M</th>
+                                                <th>1&nbsp;Y</th>
+                                                <th>YTD</th>
+                                                <th>3&nbsp;Y</th>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>MNC Dana Ekuitas</td>
+                                                <td>100,000</td>
+                                                <td>100,000</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0.15</td>
+                                                <td>0.22</td>
+                                                <td>4.03</td>
+                                                <td>5.71</td>
+                                                <td>IDR</td>
+                                                <td>4,054.14</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Aberdeen Standard indonesia balanced Growth Fund</td>
+                                                <td>100,000</td>
+                                                <td>100,000</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>3.18</td>
+                                                <td>12.62</td>
+                                                <td>8.92</td>
+                                                <td>17.69</td>
+                                                <td>IDR</td>
+                                                <td>1,939.54</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>Bahana Traiblazer Fund</td>
+                                                <td>100,000</td>
+                                                <td>100,000</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>1.36</td>
+                                                <td>3.73</td>
+                                                <td>1.98</td>
+                                                <td>9.16</td>
+                                                <td>IDR</td>
+                                                <td>1,033.34</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>Manulife Dana Saham</td>
+                                                <td>50,000</td>
+                                                <td>50,000</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>2.37</td>
+                                                <td>7.5</td>
+                                                <td>10.45</td>
+                                                <td>-67</td>
+                                                <td>IDR</td>
+                                                <td>1,031.02</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>Rencana Cerdas</td>
+                                                <td>100,000</td>
+                                                <td>100,000</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>2.5</td>
+                                                <td>15</td>
+                                                <td>9.07</td>
+                                                <td>23.77</td>
+                                                <td>IDR</td>
+                                                <td>16,902.79</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
                                 <div class="articleinfo">
                                     <h3>POEMS ProFunds: Reap Your Investments from Handpicked Funds</h3><br>
                                     <p>POEMS ProFunds is an online mutual fund store provided by Phillip Sekuritas Indonesia. Integrated with POEMS, our online share trading platform, POEMS ProFunds provides the convenience of one-stop shopping and easy online access. Our partnerships with prominent asset management firms open up the opportunity to choose from a select group of mutual funds.</p><br>
@@ -615,21 +628,15 @@
                             <div class="rightcolumn">
                                 <section>
                                     <h3>Top List Updates</h3>
-                                    <ul class="nav nav-pills nav-justified" role="tablist">
+                                    <ul class="nav nav-tabs nav-justified" role="tablist">
                                         <li class="nav-item">
-                                            <a class="nav-link active" data-toggle="pill" href="#topfreq">Top Frequency</a>
+                                            <a class="nav-link active" data-toggle="tab" href="#topfreq">Top Freq</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" data-toggle="pill" href="#topgain">Top Gainers</a>
+                                            <a class="nav-link" data-toggle="tab" href="#topgain">Top Gainers</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" data-toggle="pill" href="#toplos">Top Losers</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" data-toggle="pill" href="#topval">Top Value</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" data-toggle="pill" href="#topvol">Top Volume</a>
+                                            <a class="nav-link" data-toggle="tab" href="#toplos">Top Losers</a>
                                         </li>
                                     </ul>
                                     <div class="tab-content">
@@ -669,40 +676,50 @@
                                             </tr>
                                         </table>
                                         </div>
-                                        <div id="topval" class="tab-pane fade">
+                                    </div>
+                                    <ul class="nav nav-tabs nav-justified" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" data-toggle="tab" href="#topval">Top Value</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-toggle="tab" href="#topvol">Top Volume</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div id="topval" class="tab-pane active">
                                             <table id="t01">
-                                            <tr>
-                                                <th>Stock</th>
-                                                <th>Price</th> 
-                                                <th>Change</th>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="3">The Service is Temporarily Unvavailable</td>
-                                            </tr>
-                                        </table>
+                                                <tr>
+                                                    <th>Stock</th>
+                                                    <th>Price</th> 
+                                                    <th>Change</th>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="3">The Service is Temporarily Unvavailable</td>
+                                                </tr>
+                                            </table>
                                         </div>
                                         <div id="topvol" class="tab-pane fade">
                                             <table id="t01">
-                                            <tr>
-                                                <th>Stock</th>
-                                                <th>Price</th> 
-                                                <th>Change</th>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="3">The Service is Temporarily Unvavailable</td>
-                                            </tr>
-                                        </table>
+                                                <tr>
+                                                    <th>Stock</th>
+                                                    <th>Price</th> 
+                                                    <th>Change</th>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="3">The Service is Temporarily Unvavailable</td>
+                                                </tr>
+                                            </table>
                                         </div>
                                     </div>
                                 </section>
                                 <section>
                                     <h3>Market Updates</h3>
-                                    <ul class="nav nav-pills nav-justified" role="tablist">
+                                    <ul class="nav nav-tabs nav-justified" role="tablist">
                                         <li class="nav-item">
-                                            <a class="nav-link active" data-toggle="pill" href="#marin">Market Indices</a>
+                                            <a class="nav-link active" data-toggle="tab" href="#marin">Market Indices</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" data-toggle="pill" href="#exrat">Exchanges Rates</a>
+                                            <a class="nav-link" data-toggle="tab" href="#exrat">Exchanges Rates</a>
                                         </li>
                                     </ul>
                                     <div class="tab-content">
@@ -800,12 +817,12 @@
                                 </section>
                                 <section>
                                     <h3>Reksadana</h3>
-                                    <ul class="nav nav-pills nav-justified" role="tablist">
+                                    <ul class="nav nav-tabs nav-justified" role="tablist">
                                         <li class="nav-item">
-                                            <a class="nav-link active" data-toggle="pill" href="#pmmf">PMMF</a>
+                                            <a class="nav-link active" data-toggle="tab" href="#pmmf">PMMF</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" data-toggle="pill" href="#prbf">PRBF</a>
+                                            <a class="nav-link" data-toggle="tab" href="#prbf">PRBF</a>
                                         </li>
                                     </ul>
                                     <div class="tab-content">
@@ -901,12 +918,12 @@
                                 </section>
                                 <section>
                                     <h3>Corporate Action</h3>
-                                    <ul class="nav nav-pills nav-justified" role="tablist">
+                                    <ul class="nav nav-tabs nav-justified" role="tablist">
                                         <li class="nav-item">
-                                            <a class="nav-link active" data-toggle="pill" href="#stocks">Stocks</a>
+                                            <a class="nav-link active" data-toggle="tab" href="#stocks">Stocks</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" data-toggle="pill" href="#warrant">Warrant</a>
+                                            <a class="nav-link" data-toggle="tab" href="#warrant">Warrant</a>
                                         </li>
                                     </ul>
                                     <div class="tab-content">
@@ -1027,7 +1044,7 @@
                         <div class="modal" id="disclaimers">
                             <div class="modal-dialog modal-lg">
                                 <div class="modal-content">
-                                    <iframe src="Disclaimer.html" height="1100" width="800"></iframe>
+                                    <iframe src="Disclaimer.html" height="1263" width="800"></iframe>
                                 </div>
                             </div>
                         </div>

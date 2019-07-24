@@ -12,9 +12,9 @@
 	<body>
 		<div class="container">
 			<header>
-				<div class="row">
-					<div class=col-sm-1>
-    					<div id="mySidebar" class="sidebar">
+                <div class="row">
+                    <div class=col-sm-1>
+                        <div id="mySidebar" class="sidebar">
                             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
                             <a href="Profile.html"><img src="Assets\Icon\SidebarIcon1.png">&emsp;Profile</a>
                             <a href="https://www.phillip.com.sg/"><img src="Assets\Icon\SidebarIcon2.png">&emsp;Phillip Capital</a>
@@ -28,49 +28,62 @@
                             <a href="http://instagram.com/talktophillip"><img src="Assets\Icon\ig.png">&emsp;Instagram</a>
                             <a href="https://www.youtube.com/user/PhillipIndonesia?sub_confirmation=1"><img src="Assets\Icon\yt.png">&emsp;Youtube</a>
                         </div>
-						<div id="main">
-  							<button class="openbtn" onclick="openNav()">☰</button>  
-						</div>
-					</div>
-					<script>
-						function openNav() {
-  							document.getElementById("mySidebar").style.width = "250px";
-  							document.getElementById("main").style.marginLeft = "250px";
-						}
-						function closeNav() {
-  							document.getElementById("mySidebar").style.width = "0";
-  							document.getElementById("main").style.marginLeft= "0";
-						}
-					</script>
-					<div class=col-sm-9>
-						<div class="logo">
-							<a href="Homepage.html"><img src="Assets\logo.png"></a>
-						</div>
-					</div>
-					<div class=col-sm-2>
-						<div class=loginbutton>
-							<button type="button" data-toggle="modal" data-target="#myModal">Login</button>
-						</div>
-					</div>
+                        <div id="main">
+                            <button class="openbtn" onclick="openNav()">☰</button>  
+                        </div>
+                    </div>
+                    <script>
+                        function openNav() {
+                            document.getElementById("mySidebar").style.width = "250px";
+                            document.getElementById("main").style.marginLeft = "250px";
+                        }
+                        function closeNav() {
+                            document.getElementById("mySidebar").style.width = "0";
+                            document.getElementById("main").style.marginLeft= "0";
+                        }
+                    </script>
+                    <div class=col-sm-7>
+                        <div class="img-fluid">
+                            <a href="Homepage.html"><img src="Assets\logo.png"></a>
+                        </div>
+                    </div>
+                    <div class=col-sm-2>
+                        <div class=openbutton>
+                            <button type="button">Open an Account</button>
+                        </div>
+                    </div>
+                    <div class=col-sm-1>
+                        <div class=loginbutton>
+                            <button type="button" data-toggle="modal" data-target="#myModal">Login</button>
+                        </div>
+                    </div>
                     <div class="modal" id="myModal">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <img src="Assets\logo.png">
-                                <form action="/action_page.php">
-                                    <input type="text" placeholder="Username"><br>
-                                    <input type="Password" placeholder="Password"><br>
-                                    <input type="text" placeholder="PIN CODE"><br>
-                                    <input type="submit" value="Desktop Login">
-                                    <p><a href="#">Forgot Password ?</a>&emsp;|&emsp;<a href="#" data-toggle="modal" data-target="#disclaimers">Disclaimer</a></p>
-                                    <div class="openaccount">
-                                        <button type="button">Open An Account</button>
+                                <div class="row">
+                                    <div class="col-sm-1">
                                     </div>
-                                </form> 
+                                    <div class="col-sm-10">
+                                        <form action="/action_page.php">
+                                                <input type="text" placeholder="Username"><br>
+                                                <input type="Password" placeholder="Password"><br>
+                                                <input type="text" placeholder="PIN CODE"><br>
+                                                <input type="submit" value="Desktop Login">
+                                                <p><a href="#">Forgot Password ?</a>&emsp;|&emsp;<a href="#" data-toggle="modal" data-target="#disclaimers">Disclaimer</a></p>
+                                                <div class="openaccount">
+                                                    <button type="button">Open An Account</button>
+                                                </div>
+                                        </form>
+                                    </div>
+                                    <div class="col-sm-1">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-				</div>
-			</header>
+                </div>
+            </header>
 			<div class="row">
 				<div class="col-sm-12">
 					<nav class="navbar navbar-expand-lg">
@@ -98,27 +111,27 @@
 	        			<h2>Download</h2>
 	    			</div>
 				    <div class="profunds">
-                    	<ul class="nav nav-pills nav-justified" role="tablist">
-                            <li class="nav-item">
-                                <a class="nav-link active" data-toggle="pill" href="#ppt">POEMS Pro Trader</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-toggle="pill" href="#mb">Manual Books</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-toggle="pill" href="#util">Utilities</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-toggle="pill" href="#bro">Brochures</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-toggle="pill" href="#new">Newsletter</a>
-                            </li>
-                        </ul>
-                		<div class="tab-content">
-                            <div id="ppt" class="tab-pane active">
-                    			<div class="article">
-                                    <section>
+                        <div class="article">
+                            <section>
+                            	<ul class="nav nav-tabs nav-justified" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" data-toggle="tab" href="#ppt">POEMS Pro Trader</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#mb">Manual Books</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#util">Utilities</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#bro">Brochures</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#new">Newsletter</a>
+                                    </li>
+                                </ul>
+                        		<div class="tab-content">
+                                    <div id="ppt" class="tab-pane active">
                                         <div class="row">
                                             <div class="col-sm-12">
                                                 <img src="Assets\Download.png">
@@ -132,12 +145,8 @@
                                             <p>Windows XP, Windows 7, Windows 8, Windows 10</p>
                                             <p>.NET Framework 3.5</p> 
                                         </div>
-                                    </section>
-                                </div>
-            			    </div>
-                		    <div id="mb" class="tab-pane fade">
-                    			<div class="article">
-                                    <section>
+                    			    </div>
+                        		    <div id="mb" class="tab-pane fade">
                                         <div class="row">
                                             <div class="col-sm-12">
                                                 <img src="Assets\Download.png">
@@ -154,12 +163,8 @@
                                                 <a href="http://www.poems.co.id/htm/download/User%20Guide%20Amibroker.zip"><p><img src="Assets\Icon\pdf.png">&emsp;AmiBroker Plugin Manual Book</p></a>
                                             </div>
                                         </div>
-                                    </section>
-                                </div>
-                		    </div>
-                		    <div id="util" class="tab-pane fade">
-                    			<div class="article">
-                                    <section>
+                        		    </div>
+                        		    <div id="util" class="tab-pane fade">
                                         <div class="row">
                                             <div class="col-sm-12">
                                                 <img src="Assets\Download.png">
@@ -173,12 +178,8 @@
                                                 <a href="http://www.poems.co.id/htm/download/msjavx86.exe"><li>Java Microsoft Virtual Machine</li></a>
                                             </ul>
                                         </div>
-                                    </section>
-                                </div>
-    		                </div>
-                    		<div id="bro" class="tab-pane fade">
-                    			<div class="article">
-                                    <section>
+            		                </div>
+                            		<div id="bro" class="tab-pane fade">
                                         <div class="row">
                                             <div class="col-sm-12">
                                                 <img src="Assets\Download.png">
@@ -198,12 +199,8 @@
                                                 <a href="http://www.poems.co.id/asp/start/frontpage/brochure/flyer-promo.pdf"><li>Flyer Promo Discount 50%</li></a><br>
                                             </ul>
                                         </div>
-                                    </section>
-                                </div>
-    		                </div>
-                    		<div id="new" class="tab-pane fade">
-                    			<div class="article">
-                                    <section>
+            		                </div>
+                            		<div id="new" class="tab-pane fade">
                                         <div class="row">
                                             <div class="col-sm-12">
                                                 <img src="Assets\Download.png">
@@ -285,9 +282,9 @@
                                                 <li><a href="http://www.poems.co.id/htm/freeducation/arsipnewsletter/Newsletter_v01_040713.html">Newsletter_v01_040713</a></li>
                                             </ol>
                                         </div>
-                                    </section>
+                                    </div>
                                 </div>
-                            </div>
+                            </section>
 		                </div>
 				    </div>
 				</div>
@@ -297,21 +294,15 @@
                             <div class="rightcolumn">
                                 <section>
                                     <h3>Top List Updates</h3>
-                                    <ul class="nav nav-pills nav-justified" role="tablist">
+                                    <ul class="nav nav-tabs nav-justified" role="tablist">
                                         <li class="nav-item">
-                                            <a class="nav-link active" data-toggle="pill" href="#topfreq">Top Frequency</a>
+                                            <a class="nav-link active" data-toggle="tab" href="#topfreq">Top Freq</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" data-toggle="pill" href="#topgain">Top Gainers</a>
+                                            <a class="nav-link" data-toggle="tab" href="#topgain">Top Gainers</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" data-toggle="pill" href="#toplos">Top Losers</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" data-toggle="pill" href="#topval">Top Value</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" data-toggle="pill" href="#topvol">Top Volume</a>
+                                            <a class="nav-link" data-toggle="tab" href="#toplos">Top Losers</a>
                                         </li>
                                     </ul>
                                     <div class="tab-content">
@@ -351,40 +342,50 @@
                                             </tr>
                                         </table>
                                         </div>
-                                        <div id="topval" class="tab-pane fade">
+                                    </div>
+                                    <ul class="nav nav-tabs nav-justified" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" data-toggle="tab" href="#topval">Top Value</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-toggle="tab" href="#topvol">Top Volume</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div id="topval" class="tab-pane active">
                                             <table id="t01">
-                                            <tr>
-                                                <th>Stock</th>
-                                                <th>Price</th> 
-                                                <th>Change</th>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="3">The Service is Temporarily Unvavailable</td>
-                                            </tr>
-                                        </table>
+                                                <tr>
+                                                    <th>Stock</th>
+                                                    <th>Price</th> 
+                                                    <th>Change</th>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="3">The Service is Temporarily Unvavailable</td>
+                                                </tr>
+                                            </table>
                                         </div>
                                         <div id="topvol" class="tab-pane fade">
                                             <table id="t01">
-                                            <tr>
-                                                <th>Stock</th>
-                                                <th>Price</th> 
-                                                <th>Change</th>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="3">The Service is Temporarily Unvavailable</td>
-                                            </tr>
-                                        </table>
+                                                <tr>
+                                                    <th>Stock</th>
+                                                    <th>Price</th> 
+                                                    <th>Change</th>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="3">The Service is Temporarily Unvavailable</td>
+                                                </tr>
+                                            </table>
                                         </div>
                                     </div>
                                 </section>
                                 <section>
                                     <h3>Market Updates</h3>
-                                    <ul class="nav nav-pills nav-justified" role="tablist">
+                                    <ul class="nav nav-tabs nav-justified" role="tablist">
                                         <li class="nav-item">
-                                            <a class="nav-link active" data-toggle="pill" href="#marin">Market Indices</a>
+                                            <a class="nav-link active" data-toggle="tab" href="#marin">Market Indices</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" data-toggle="pill" href="#exrat">Exchanges Rates</a>
+                                            <a class="nav-link" data-toggle="tab" href="#exrat">Exchanges Rates</a>
                                         </li>
                                     </ul>
                                     <div class="tab-content">
@@ -482,12 +483,12 @@
                                 </section>
                                 <section>
                                     <h3>Reksadana</h3>
-                                    <ul class="nav nav-pills nav-justified" role="tablist">
+                                    <ul class="nav nav-tabs nav-justified" role="tablist">
                                         <li class="nav-item">
-                                            <a class="nav-link active" data-toggle="pill" href="#pmmf">PMMF</a>
+                                            <a class="nav-link active" data-toggle="tab" href="#pmmf">PMMF</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" data-toggle="pill" href="#prbf">PRBF</a>
+                                            <a class="nav-link" data-toggle="tab" href="#prbf">PRBF</a>
                                         </li>
                                     </ul>
                                     <div class="tab-content">
@@ -583,12 +584,12 @@
                                 </section>
                                 <section>
                                     <h3>Corporate Action</h3>
-                                    <ul class="nav nav-pills nav-justified" role="tablist">
+                                    <ul class="nav nav-tabs nav-justified" role="tablist">
                                         <li class="nav-item">
-                                            <a class="nav-link active" data-toggle="pill" href="#stocks">Stocks</a>
+                                            <a class="nav-link active" data-toggle="tab" href="#stocks">Stocks</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" data-toggle="pill" href="#warrant">Warrant</a>
+                                            <a class="nav-link" data-toggle="tab" href="#warrant">Warrant</a>
                                         </li>
                                     </ul>
                                     <div class="tab-content">
@@ -709,7 +710,7 @@
                         <div class="modal" id="disclaimers">
                             <div class="modal-dialog modal-lg">
                                 <div class="modal-content">
-                                    <iframe src="Disclaimer.html" height="1100" width="800"></iframe>
+                                    <iframe src="Disclaimer.html" height="1263" width="800"></iframe>
                                 </div>
                             </div>
                         </div>

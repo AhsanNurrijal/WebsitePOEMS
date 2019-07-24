@@ -82,9 +82,12 @@ a {
 
 /*--- Login ---*/
 .loginbutton button {
-	width: 112px;
+	width: 150px;
 	height: 44px;
-	margin: 30px 50px 0px 50px;
+  margin-bottom: 30px; 
+  margin-left: 10px;
+  margin-top: 30px;
+  margin-right: 0px;
 	color: #FFF !important;
 	background-color: #003466;
 	font-family: sans-serif;
@@ -92,7 +95,25 @@ a {
 	font-weight: bold;
 }
 
+.openbutton button {
+  width: 150px;
+  height: 44px;
+  margin-bottom: 30px; 
+  margin-left: 0px;
+  margin-top: 30px;
+  margin-right: 0px;
+  color: #FFF !important;
+  background-color: #003466;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+
 .loginbutton button:hover {
+  background-image: linear-gradient(#003466, #006DD7);
+}
+
+.openbutton button:hover {
   background-image: linear-gradient(#003466, #006DD7);
 }
 
@@ -103,13 +124,11 @@ a {
 }
 
 .modal form{
-  margin-left: 30px;
   margin-top: 30px;
-  width: 300px;
 }
 
 .modal input[type=text], select {
-  width: 410px;
+  width: 100%;
   padding: 8px 20px;
   margin: 8px 0;
   display: inline-block;
@@ -119,7 +138,7 @@ a {
 }
 
 .modal input[type=password], select {
-  width: 410px;
+  width: 100%;
   padding: 8px 20px;
   margin: 8px 0;
   display: inline-block;
@@ -129,7 +148,7 @@ a {
 }
 
 .modal input[type=submit] {
-  width: 410px;
+  width: 100%;
   background-color: #003466;
   color: white;
   padding: 14px 20px;
@@ -140,7 +159,7 @@ a {
 }
 
 .openaccount button {
-  width: 410px;
+  width: 100%;
   background-color: #FF9501;
   color: white;
   padding: 14px 20px;
@@ -252,7 +271,6 @@ section {
 	font-weight: bold;
 	font-size: 30px;
 	color: #003466;
-	margin-top: 10px;
 }
 
 .articlelist img {
@@ -566,15 +584,15 @@ footer {
 }
 
 .rightcolumn  table#t01 th {
-  background-color: #eee;
-  color: black;
+  color: #fff;
   font-size: 10px;
   text-align: center;
+  background-color: #006DD7;
 }
 
 .rightcolumn table#t03 th {
-  background-color: #ccc;
-  color: black;
+  background-color: #006DD7;
+  color: #fff;
   font-size: 10px;
   text-align: center;
 }
@@ -582,19 +600,16 @@ footer {
 .rightcolumn table#t01 td {
   color: black;
   font-size: 10px;
-  padding-left: 20px;
 }
 
 .rightcolumn table#t02 td {
   color: black;
   font-size: 10px;
-  padding-left: 20px;
 }
 
 .rightcolumn table#t03 td {
   color: black;
   font-size: 10px;
-  padding-left: 20px;
 }
 
 .panel table#t05{
@@ -631,8 +646,9 @@ footer {
 
 .rightcolumn section {
 	border-radius: 5px;
-	border-color: #eee;
+	border-color: #ddd;
   border-style: solid;
+  background-color: #eee;
 }
 
 .rightcolumn h3 {
@@ -659,8 +675,14 @@ footer {
   background-image: linear-gradient(#eee, #bbb);
 }
 
-table {
-  width:100%;
+.rightcolumn table {
+  width: 96%;
+  margin: 5px;
+}
+
+.profunds table {
+  width: 99%;
+  margin: 5px;
 }
 
 .profunds th, td {
@@ -700,7 +722,6 @@ table {
 }
 
 .categorylist img{
-  width: 30px;
   height: 30px;
 }
 
@@ -755,6 +776,7 @@ table {
   color: #fff;
   text-align: center;
   margin-top: 30px;
+  padding: 10px;
 }
 
 .contact h5{
@@ -860,7 +882,6 @@ table {
   transition: background-color .3s;
   border: 1px solid #ddd;
   margin-top: 50px;
-  margin-left: 25px;
 }
 
 .pagination a.active {
@@ -896,14 +917,14 @@ table {
   font-weight: bold;
 }
 
-.rightcolumn .nav {
-  background-color: #003466;
-}
-
 .rightcolumn .nav .nav-item a {
-  color: #FFF !important;
-  font-family: sans-serif;
+  padding: 5px;
+  background: #ccc;
+  color: #000;
   font-size: 10px;
+  border-right: 1px solid #eee;
+  border-left: 1px solid #eee;
+  border-top: 1px solid #eee;
 }
 
 .rightcolumn .nav .nav-item a:link,
@@ -916,11 +937,13 @@ table {
 .rightcolumn .nav .nav-item a:active {
   color: #000;
   transition: 0.5s;
+  font-weight: bold;
 }
 
-.rightcolumn .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-  background-image: linear-gradient(#003466, #006DD7);
+.rightcolumn .nav-tabs .nav-link.active, .nav-tabs .show>.nav-link {
+  background-image: linear-gradient(#aaa, #eee);
   font-weight: bold;
+  border-bottom: 1px solid #eee;
 }
 
 .profunds .nav {
@@ -929,13 +952,13 @@ table {
 }
 
 .profunds .nav .nav-item a {
-  margin-top: 20px;
   padding: 10px;
   background: #fff;
-  border-radius: 5px;
   color: #000;
   font-size: 14px;
-  border: 1px solid #ccc;
+  border-right: 1px solid #eee;
+  border-left: 1px solid #eee;
+  border-top: 1px solid #eee;
 }
 
 .profunds .nav .nav-item a:link,
@@ -950,9 +973,10 @@ table {
   transition: 0.5s;
 }
 
-.profunds .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-  background-image: linear-gradient(#aaa, #fff);
+.profunds .nav-tabs .nav-link.active, .nav-tabs .show>.nav-link {
+  background-image: linear-gradient(#aaa, #eee);
   font-weight: bold;
+  border-bottom: 1px solid #eee;
 }
 
 .faq .nav {
@@ -1065,4 +1089,148 @@ table {
   font-size: 14px;
   margin-left: 40px;
   margin-right: 20px;
+}
+
+.regularbutton section{
+  background-color: #347AB6;
+  color: #fff;
+  border-radius: 75px;
+  width: 350px;
+  height: 110px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.regularbutton h4{
+  font-size: 48px;
+  color: #fff;
+  text-align: center;
+}
+
+.regularbutton h6{
+  font-size: 28px;
+  color: #fff;
+  text-align: center;
+}
+
+.shariabutton section{
+  background-color: #5BB95B;
+  color: #fff;
+  border-radius: 75px;
+  width: 350px;
+  height: 110px;
+  margin-top: 50px;
+}
+
+.shariabutton h4{
+  font-size: 48px;
+  color: #fff;
+  text-align: center;
+}
+
+.shariabutton h6{
+  font-size: 28px;
+  color: #fff;
+  text-align: center;
+}
+
+.detailprofundsmenu {
+  float: left;
+  height: 500px;
+}
+
+.detailprofundsmenu {
+  float: left;
+  height: 500px;
+}
+
+.left {
+  width: 25%;
+}
+
+.right{
+  width: 75%
+}
+
+.detailprofundsmenu img{
+  width: 30px;
+}
+
+.detailprofundsmenu a{
+  font-size: 14px;
+  color: #000;
+}
+
+.detailprofundsmenu .nav {
+  background-color: #fff;
+  width: 175px;
+}
+
+.detailprofundsmenu .nav .nav-item a {
+  padding: 10px;
+  background: #fff;
+  color: #000;
+  font-size: 14px;
+  border-left: 1px solid #eee;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.detailprofundsmenu .nav .nav-item a:link,
+.detailprofundsmenu .nav .nav-item a:visited {
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.detailprofundsmenu .nav .nav-item a:hover,
+.detailprofundsmenu .nav .nav-item a:active {
+  color: #000;
+  transition: 0.5s;
+}
+
+.detailprofundsmenu .nav-tabs .nav-link.active, .nav-tabs .show>.nav-link {
+  background-image: linear-gradient(to right, #aaa, #eee);
+  font-weight: bold;
+  border-right: 1px solid #fff;
+}
+
+.detailpro section{
+  margin-top: 10px;
+  width: 700px;
+  height: 500px;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  border-top: 1px solid #eee;
+}
+
+.detailpro .titlepro h3{
+  font-size: 14px;
+  color:  #003466;
+}
+
+.detailpro .titlepro h2{
+  font-size: 18px;
+  color:  #003466;
+  margin-bottom: 20px;
+}
+
+.detailpro .titlepro button{
+  font-size: 12px;
+  color: #fff;
+  background-image: linear-gradient(#5BB95B, #5CCD00);
+  border-radius: 15px;
+  padding: 5px;
+  width: 100px;
+  margin-top: 10px;
+}
+
+.detailpro .titlepro button:hover{
+  background-image: linear-gradient(#5CCD00, #5BB95B);
+}
+
+.detailpro .contentpro h5{
+  font-size: 12px;
+  color: #006DD7;
+  border-bottom: 1px solid #000;
+  margin-right: 53px;
 }
