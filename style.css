@@ -82,39 +82,51 @@ a {
 
 /*--- Login ---*/
 .loginbutton button {
-	width: 150px;
-	height: 44px;
+	width: 160px;
+  height: 44px;
   margin-bottom: 30px; 
-  margin-left: 10px;
+  margin-left: 0px;
   margin-top: 30px;
-  margin-right: 0px;
-	color: #FFF !important;
-	background-color: #003466;
-	font-family: sans-serif;
-	font-size: 14px;
-	font-weight: bold;
+  margin-right: 30px;
+  color: #003466;
+  background-color: #fff;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  border: 1px solid #fff;
 }
 
 .openbutton button {
-  width: 150px;
+  width: 170px;
   height: 44px;
   margin-bottom: 30px; 
   margin-left: 0px;
   margin-top: 30px;
   margin-right: 0px;
-  color: #FFF !important;
-  background-color: #003466;
+  color: #003466;
+  background-color: #fff;
   font-family: sans-serif;
   font-size: 14px;
   font-weight: bold;
+  border: 1px solid #fff;
+}
+
+.openbutton img{
+  width: 20px;
+}
+
+.loginbutton img{
+  width: 20px;
 }
 
 .loginbutton button:hover {
-  background-image: linear-gradient(#003466, #006DD7);
+  color: #006DD7;
+  border: 1px solid #fff;
 }
 
 .openbutton button:hover {
-  background-image: linear-gradient(#003466, #006DD7);
+  color: #006DD7;
+  border: 1px solid #fff;
 }
 
 .modal img{
@@ -283,6 +295,14 @@ section {
 	color: #003466;
 }
 
+.articletitle h4 {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  color: #003466;
+  margin-top: 20px;
+}
+
 .articlelist img {
 	width: 200px;
 	height: 140px;
@@ -348,7 +368,7 @@ section {
 	font-weight: bold;
 	font-size: 16px;
 	color: #003466;
-	margin-left: 35px;
+	margin-left: 10px;
   margin-top: 20px;
 }
 
@@ -439,6 +459,8 @@ section {
   font-size: 12px;
   font-family: sans-serif;
   color: #000;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .menutitle h3 {
@@ -472,7 +494,7 @@ section {
 	width: 225px;
 	height: 125px;
   margin-left: 20px;
-  margin-top: 10px;
+  margin-top: 15px;
   position: center;
 }
 
@@ -485,7 +507,8 @@ section {
 .video iframe {
 	width: 225px;
 	height: 125px;
-  margin: 10px;
+  margin-top: 15px;
+  margin-left: 15px;
   position: center;
 }
 
@@ -661,6 +684,7 @@ footer {
 	border-color: #aaa;
   border-style: solid;
   background-color: #ddd;
+  margin-bottom: 20px;
 }
 
 .rightcolumn h3 {
@@ -788,7 +812,7 @@ footer {
   background-color: #006DD7;
   color: #fff;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 20px;
   padding: 10px;
 }
 
@@ -860,11 +884,11 @@ footer {
 }
 
 .faq .accordion {
-  background-image: linear-gradient(#ccc, #fff);
+  background-image: linear-gradient(#eee, #fff);
   color: #000;
   cursor: pointer;
   padding: 10px;
-  border: none;
+  border: 1px solid #aaa;
   width: 96%;
   outline: none;
   font-size: 12px;
@@ -873,15 +897,18 @@ footer {
   transition: 0.4s;
   font-family: sans-serif;
   border-radius: 5px;
-  margin-left: 10px;\
+  margin-left: 10px;
 }
 
 .faq .active, .accordion:hover {
-  background-image: linear-gradient(#fff, #aaa);
+  background-image: linear-gradient(#ccc, #fff);
+  border: 3px solid #aaa;
 }
 
 .faq .panel{
   background-color: #fff;
+  width: 93%;
+  margin-left: 17px;
 }
 
 .pagination {
@@ -1161,6 +1188,7 @@ footer {
   height: 40px;
   margin-bottom: 10px;
   margin-left: 10px;
+  box-shadow: none;
 }
 
 .detailprofundsmenu a{
@@ -1180,7 +1208,7 @@ footer {
 
 .detailprofundsmenu .nav .nav-item a {
   color: #000;
-  background-color: #bbb;
+  background-color: #eee;
   border-radius: 0px;
   border-right: 1px solid #aaa;
   border-left: 1px solid #aaa;
@@ -1484,4 +1512,9 @@ footer {
   color: #fff;
   text-align: center;
   padding: 5px;
+}
+
+.iconmedia img{
+  width: 20px;
+  margin-left: 10px;
 }
