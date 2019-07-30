@@ -58,14 +58,12 @@
 						</div>
 					</div>
 					<div class="modal" id="myModal">
-    					<div class="modal-dialog">
+    					<div class="modal-dialog modal-dialog-centered">
       						<div class="modal-content">
-        						<img src="Assets\logo.png">
         						<div class="row">
-        							<div class="col-sm-1">
-        							</div>
-        							<div class="col-sm-10">
+        							<div class="col-sm-12">
 		        						<form action="/action_page.php">
+		        							<img src="Assets\loginlogo.png">
 											<input type="text" placeholder="Username"><br>
 											<input type="Password" placeholder="Password"><br>
 											<input type="text" placeholder="PIN CODE"><br>
@@ -76,35 +74,33 @@
 											</div>
 										</form>
 									</div>
-									<div class="col-sm-1">
-        							</div>
 								</div>
         					</div>
     					</div>
  					</div>
 				</div>
-			</header>
-			<div class="row">
-				<div class="col-sm-12">
-					<nav class="navbar navbar-expand-lg">
-  						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-	    					<span class="navbar-toggler-icon"></span>
-  						</button>
-						<div class="collapse navbar-collapse" id="navbarSupportedContent">
-    						<ul class="navbar-nav mr-auto">
-      							<li class="nav-item"><a class="nav-link" href="Homepage.html">HOME<span class="sr-only">(current)</span></a></li>
-	      						<li class="nav-item"><a class="nav-link" href="TradingPlatform.html">TRADING PLATFORM</a></li>
-    	  						<li class="nav-item"><a class="nav-link" href="Services.html">SERVICES</a></li>
-      							<li class="nav-item"><a class="nav-link" href="Profunds.html">PROFUNDS</a></li>
-      							<li class="nav-item"><a class="nav-link" href="Ipo.html">IPO</a></li>
-      							<li class="nav-item"><a class="nav-link" href="News-Investasi.html">NEWS</a></li>
-      							<li class="nav-item"><a class="nav-link" href="Research.html">RESEARCH</a></li>
-      							<li class="nav-item"><a class="nav-link" href="TalkToPhillip.html">TALK TO PHILLIP</a></li>
-    						</ul>
-    					</div>
-					</nav>
-			    </div>
-  			</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<nav class="navbar navbar-expand-lg">
+	  						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    					<span class="navbar-toggler-icon"></span>
+	  						</button>
+							<div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    						<ul class="navbar-nav w-100 nav-justified">
+	      							<li class="nav-item"><a class="nav-link" href="Homepage.html">HOME<span class="sr-only">(current)</span></a></li>
+		      						<li class="nav-item"><a class="nav-link" href="TradingPlatform.html">TRADING PLATFORM</a></li>
+	    	  						<li class="nav-item"><a class="nav-link" href="Services.html">SERVICES</a></li>
+	      							<li class="nav-item"><a class="nav-link" href="Profunds.html">PROFUNDS</a></li>
+	      							<li class="nav-item"><a class="nav-link" href="Ipo.html">IPO</a></li>
+	      							<li class="nav-item"><a class="nav-link" href="News-Investasi.html">NEWS</a></li>
+	      							<li class="nav-item"><a class="nav-link" href="Research.html">RESEARCH</a></li>
+	      							<li class="nav-item"><a class="nav-link" href="TalkToPhillip.html">TALK TO PHILLIP</a></li>
+	    						</ul>
+	    					</div>
+						</nav>
+				    </div>
+	  			</div>
+	  		</header>
 			<div class="row">
 				<div class="col-sm-3">
 					<div class="categorylist">
@@ -134,12 +130,12 @@
 				        	<div class="articleinfo">
 				            	<div class="faq">
 				            		<div class="toggle">
-				            			<ul class="nav nav-pills nav-justified" role="tablist">
+				            			<ul class="nav nav-tabs nav-justified" role="tablist">
                             				<li class="nav-item">
-                                				<a class="nav-link active" data-toggle="pill" href="#poems">POEMS</a>
+                                				<a class="nav-link active" data-toggle="tab" href="#poems">POEMS</a>
                             				</li>
                             				<li class="nav-item">
-                                				<a class="nav-link" data-toggle="pill" href="#reksa">Reksadana</a>
+                                				<a class="nav-link" data-toggle="tab" href="#reksa">Reksadana</a>
                             				</li>
                         				</ul>
                         			</div>
@@ -195,10 +191,6 @@
 						                    <div class="panel">
 						                      	<p>Setoran Tunai atau Transfer antar ATM di bank Rekening Dana Investor (RDI) atas nama Investor tersebut</p>
 						                    </div>
-						                    <button class="accordion">&emsp;Cara Pembayaran</button>
-						                    <div class="panel">
-						                      	<p>Setoran Tunai atau Transfer antar ATM di bank Rekening Dana Investor (RDI) atas nama Investor tersebut</p>
-						                    </div>
 						                    <button class="accordion">&emsp;Komisi atau Fee</button>
 						                    <div class="panel">
 						                      	<table id="t05">
@@ -230,7 +222,6 @@
 						                        	<li>Keterlambatan pembayaran transaksi beli akan dikenakan denda (24% pertahun) yang dihitung secara harian. </li>
 						                        	<li>Jika pada T+5 kewajiban bayar tidak di penuhi, maka kami akan melakukan force sell sejumlah outstanding Nasabah.</li>
 						                       		<li>Limit transaksi adalah minimal 1 x dan maksimal 2.86 x dari ekuiti (tergantung dari haircut suatu saham).</li>
-						                        	<li></li>
 						                      	</ul>
 						                      	<p>Ekuiti = dana + saham setelah haircut</p>
 						                      	<p>Haircut = nilai jaminan dari suatu saham yang dapat diakui oleh sekuritas, sesuai peraturan BEI dan tim Risk Management PT. Phillip Sekuritas Indonesia.</p>
@@ -358,15 +349,15 @@
 						                    <div class="panel">
 						                      	<p>Masuk ke "Safari", ketik www.poems.co.id/.</p>
 						                      	<p>Masukkan POEMS Id, Password, PinCode.</p>
-						                      	<img src="Assets\Faq3.png" style="width: 480px; height: 417px;">
+						                      	<img src="Assets\Faq3.png" style="width: 433px; height: 377px;">
 						                     	 <p>Masukkan POEMS ID, Password, dan Pin Code Nasabah. Bila belum menjadi Nasabah, maka bisa meminta user id demo. Setelah login, maka muncul layar: </p>
-						                      	<img src="Assets\Faq4.png" style="width: 480px; height: 489px;">
+						                      	<img src="Assets\Faq4.png" style="width: 433px; height: 489px;">
 						                      	<p>Bagi yang belum menjadi nasabah, bisa menghubungi Customer Care kami di 62-21-57900900 atau </p>
 						                      	<p><a href="#">customercare@phillip.co.id</a></p>
 						                    </div>
 						                    <button class="accordion">&emsp;POEMS on iPad</button>
 						                    <div class="panel">
-						                      	<img src="Assets\Faq5.png" style="width: 480px; height: 539px;">
+						                      	<img src="Assets\Faq5.png" style="width: 433px; height: 539px;">
 						                    </div>
 						                    <button class="accordion">&emsp;Waran & Option</button>
 						                    <div class="panel">
@@ -403,7 +394,7 @@
 						                      	</ol>
 						                    </div>
 						                    <button class="accordion">&emsp;Istilah dalam Corporate Action</button>
-						                    <div class="panel">
+						                    <div class="panel" style="margin-bottom: 10px;">
 						                      	<ol>
 						                        	<li>Cum date di pasar reguler adalah Tanggal terakhir pembelian saham di pasar reguler dan memegang saham tersebut yang mendapatkan hak corporate action</li>
 						                        	<li>Ex date di pasar reguler adalah Awal pembelian saham di pasar reguler tanpa / tidak mendapatkan hak corporate action</li>
@@ -601,7 +592,7 @@
 						                      	<p>Ya, terkena biaya transfer kecuali jika memang dalam produk Reksadana tersebut mempunyai beberapa Bank Produk. Misal, Produk Reksadana Pasar Uang milik Phillip Asset Management, yaitu Phillip Money Market Fund. Reksadana ini memiliki 3 bank yang sama dengan bank Rekening Dana Investor (RDI) jadi nasabah tidak perlu dikenakan biaya transfer</p>
 						                    </div>
 						                    <button class="accordion">&emsp;Berapa lama dana hasil Penjualan (Redemption) kembali masuk ke Rekening Dana Investor (RDI)</button>
-						                    <div class="panel">
+						                    <div class="panel" style="margin-bottom: 10px;">
 						                      	<ul>
 						                        	<li>Keharusan pembukaan RDI adalah untuk memudahkan nasabah ProFunds dalam berinvestasi. Biasanya setiap produk reksadana memiliki rekening yang berbeda.</li>
 						                        	<li>Ilustrasi kasus: Pak Phillip sangat sadar akan pentingnya investasi reksadana, maka dengan itu Dia akan membeli 4 produk reksadana yang berbeda misal A,B,C dan D. Untuk mendapatkan produk reksadana tersebut, dia harus mentransfer dana kepada tiap-tiap rekening produk reksadana yang dipilih, Hal ini memungkinkan terjadi resiko kesalahan dalam melakukan transfer dana, serta membuang waktu karena harus mentransfer satu-persatu . Berbeda dengan ProFunds Online, dengan menggunakan RDI maka Nasabah hanya perlu mengingat 1 nomor rekening saja, yaitu nomor RDI miliknya sendiri. Sedangkan untuk transfer ke tiap-tiap rekening produk tersebut akan dilakukan oleh sistem POEMS ProFunds.</li>
