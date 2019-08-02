@@ -1,5 +1,5 @@
 * {
-	margin: 0;
+  margin: 0;
 	padding: 0;
 }
 
@@ -122,11 +122,11 @@ a {
   border: 1px solid #fff;
 }
 
-.openbutton img{
+.openbutton img {
   width: 20px;
 }
 
-.loginbutton img{
+.loginbutton img {
   width: 20px;
 }
 
@@ -140,12 +140,12 @@ a {
   border: 1px solid #fff;
 }
 
-.modal img{
+.modal img {
   margin-left: 160px;
   margin-bottom: 10px;
 }
 
-.modal form{
+.modal form {
   margin: 20px;
 }
 
@@ -180,16 +180,16 @@ a {
   cursor: pointer;
 }
 
-.forgot section{
+.forgot section {
   border: 2px solid #aaa;
 }
 
-.forgot img{
+.forgot img {
   margin-left: 160px;
   margin-bottom: 10px;
 }
 
-.forgot form{
+.forgot form {
   margin: 20px;
 }
 
@@ -266,11 +266,11 @@ a {
   background-image: linear-gradient(#FF9501, #FFD001);
 }
 
-.modal a{
+.modal a {
   color: #000;
 }
 
-.modal p{
+.modal p {
   margin-left: 85px;
   margin-bottom: 0px;
 }
@@ -303,7 +303,7 @@ a {
   transition: 0.5s;
 }
 
-.navbar .active{
+.navbar .active {
   background-image: linear-gradient(#003466, #006DD7);
 }
 
@@ -477,7 +477,6 @@ section {
   background-image: linear-gradient(#fff, #eee);
 }
 
-/*--- Card ---*/
 .card {
   width: 230px;
   height: 230px;
@@ -497,15 +496,15 @@ section {
 	border-top-left-radius: 5px;
 }
 
-.inner{
+.inner {
   overflow: hidden;
 }
 
-.inner img{
+.inner img {
   transition: all 0.7s ease;
 }
 
-.inner:hover img{
+.inner:hover img {
   transform: scale(1.2);
 }
 
@@ -615,7 +614,7 @@ footer {
   margin-bottom: 15px;
 }
 
-.footerinfo p{
+.footerinfo p {
   font-family: sans-serif;
   font-size: 12px;
   color: #fff;
@@ -623,13 +622,13 @@ footer {
   margin-bottom: 10px;
 }
 
-.footerinfo a{
+.footerinfo a {
   font-family: sans-serif;
   font-size: 12px;
   color: #fff;
 }
 
-.footerinfo a:hover{
+.footerinfo a:hover {
   color: #aaa;
 }
 
@@ -745,7 +744,7 @@ footer {
   font-size: 10px;
 }
 
-.panel table#t05{
+.panel table#t05 {
   margin : 15px;
 }
 
@@ -770,7 +769,7 @@ footer {
  background-color: #eee;
 }
 
-.panel img{
+.panel img {
   margin: 15px;
 }
 
@@ -840,28 +839,28 @@ footer {
   font-weight: bold;
 }
 
-.pdf img{
+.pdf img {
   width: 20px;
   height: 20px;
   margin: 10px;
 }
 
-.categorylist section{
+.categorylist section {
   margin-bottom: 30px;
   border-style: solid;
   border-color: #eee;
   border-radius: 5px;
 }
 
-.categorylist img{
+.categorylist img {
   height: 30px;
 }
 
-.categorylist li:hover{
+.categorylist li:hover {
   background-image: linear-gradient(#eee, #fff);
 }
 
-.categorylist h3{
+.categorylist h3 {
   font-family: sans-serif;
   font-size: 14px;
   font-weight: bold;
@@ -871,7 +870,7 @@ footer {
   text-align: center;
   }
 
-.categorylist h4{
+.categorylist h4 {
   font-family: sans-serif;
   font-size: 12px;
   font-weight: bold;
@@ -879,7 +878,7 @@ footer {
   color: #000;
 }
 
-.categorylist h5{
+.categorylist h5 {
   font-family: sans-serif;
   font-size: 11px;
   font-weight: bold;
@@ -887,7 +886,7 @@ footer {
   margin-right: 10px;
 }
 
-.categorylist h6{
+.categorylist h6 {
   font-family: sans-serif;
   font-size: 10px;
   font-weight: bold;
@@ -895,13 +894,13 @@ footer {
   margin-bottom: 20px;
 }
 
-.contact img{
+.contact img {
   width: 20px;
   height: 20px;
   margin-left: 10px;
 }
 
-.contactcity h4{
+.contactcity h4 {
   font-family: sans-serif;
   font-size: 16px;
   font-weight: bold;
@@ -912,7 +911,7 @@ footer {
   padding: 10px;
 }
 
-.contact h5{
+.contact h5 {
   font-family: sans-serif;
   font-size: 14px;
   font-weight: bold;
@@ -921,14 +920,14 @@ footer {
   margin-top: 10px;
 }
 
-.contact h6{
+.contact h6 {
   font-family: sans-serif;
   font-size: 12px;
   margin-left: 10px;
   margin-top: 10px;
 }
 
-.contact p{
+.contact p {
   font-family: sans-serif;
   font-size: 12px;
   color: #006DD7;
@@ -963,20 +962,20 @@ footer {
   font-weight: bold;
 }
 
-.faq p{
+.faq p {
   font-size: 12px;
   margin :15px;
   text-align: justify;
 }
 
-.faq li{
+.faq li {
   font-size: 12px;
   margin-left :35px;
   margin-right: 15px;
   margin-top: 15px;
 }
 
-.toggle li{
+.toggle li {
   font-size: 12px;
   margin: 0px;
 }
@@ -1002,7 +1001,7 @@ footer {
   background-image: linear-gradient(#eee, #fff);
 }
 
-.faq .panel{
+.faq .panel {
   background-color: #fff;
   border: 1px solid #ddd;
   width: 93%;
@@ -1157,7 +1156,7 @@ footer {
   border-right: 1px solid #ccc;
   }
 
-.glossary h4{
+.glossary h4 {
   font-size: 14px;
   font-weight: bold;
   color: #006DD7;
@@ -1165,7 +1164,7 @@ footer {
   margin-left: 0px;
 }
 
-.glossary p{
+.glossary p {
   font-size: 12px;
 }
 
@@ -1202,45 +1201,45 @@ footer {
   font-weight: bold;
 }
 
-.disclaimers .content{
+.disclaimers .content {
   background-color: #eee;
 }
 
-.disclaimers .content h4{
+.disclaimers .content h4 {
   background-color: #006DD7;
   text-align: center;
   font-size: 24px;
   color: #fff;
 }
 
-.disclaimers .content h5{
+.disclaimers .content h5 {
   text-align: center;
   color: red;
   font-size: 14px;
 }
 
-.disclaimers .content h6{
+.disclaimers .content h6 {
   font-size: 14px;
   margin-left: 20px;
   margin-right: 20px;
   color: #006DD7;
 }
 
-.disclaimers .content p{
+.disclaimers .content p {
   font-size: 14px;
   margin-left: 20px;
   margin-right: 20px;
   color: #000;
 }
 
-.disclaimers .content li{
+.disclaimers .content li {
   font-size: 14px;
   margin-left: 40px;
   margin-right: 20px;
   color: #000;
 }
 
-.regularbutton section{
+.regularbutton section {
   background-color: #347AB6;
   color: #fff;
   border-radius: 75px;
@@ -1250,19 +1249,19 @@ footer {
   margin-top: 50px;
 }
 
-.regularbutton h4{
+.regularbutton h4 {
   font-size: 48px;
   color: #fff;
   text-align: center;
 }
 
-.regularbutton h6{
+.regularbutton h6 {
   font-size: 28px;
   color: #fff;
   text-align: center;
 }
 
-.shariabutton section{
+.shariabutton section {
   background-color: #5BB95B;
   color: #fff;
   border-radius: 75px;
@@ -1271,13 +1270,13 @@ footer {
   margin-top: 50px;
 }
 
-.shariabutton h4{
+.shariabutton h4 {
   font-size: 48px;
   color: #fff;
   text-align: center;
 }
 
-.shariabutton h6{
+.shariabutton h6 {
   font-size: 28px;
   color: #fff;
   text-align: center;
@@ -1288,7 +1287,7 @@ footer {
   border-collapse: collapse;
 }
 
-.detailprofundsmenu img{
+.detailprofundsmenu img {
   width: 40px;
   height: 40px;
   margin-bottom: 8px;
@@ -1296,12 +1295,12 @@ footer {
   box-shadow: none;
 }
 
-.detailprofundsmenu a{
+.detailprofundsmenu a {
   font-size: 14px;
   color: #000;
 }
 
-.detailprofundsmenu p{
+.detailprofundsmenu p {
   margin-bottom: 0px;
   margin-left: 0px;
   border-bottom: 1px solid #aaa;
@@ -1344,28 +1343,28 @@ footer {
   border-radius: 0px;
 }
 
-.detailpro section{
+.detailpro section {
   margin-top: 0px;
   border: 1px solid #ccc;
   border-top: none;
   background-color: #eee;
 }
 
-.detailpro .titlepro{
+.detailpro .titlepro {
   margin-top: 10px;
 }
 
-.detailpro .titlepro h3{
+.detailpro .titlepro h3 {
   font-size: 14px;
   color:  #003466;
 }
 
-.detailpro .titlepro h2{
+.detailpro .titlepro h2 {
   font-size: 18px;
   color:  #003466;
 }
 
-.detailpro .titlepro button{
+.detailpro .titlepro button {
   font-size: 12px;
   color: #fff;
   background-image: linear-gradient(#5BB95B, #5CCD00);
@@ -1376,11 +1375,11 @@ footer {
   margin-left: 15px;
 }
 
-.detailpro .titlepro button:hover{
+.detailpro .titlepro button:hover {
   background-image: linear-gradient(#5CCD00, #5BB95B);
 }
 
-.detailpro .contentpro h5{
+.detailpro .contentpro h5 {
   font-size: 12px;
   color: #006DD7;
   border-bottom: 1px solid #000;
@@ -1428,14 +1427,14 @@ footer {
   background-image: radial-gradient(#fff, #eee);
 }
 
-.footpro th{
+.footpro th {
   padding: 5px;
   text-align: center;
   font-size: 12px;
   font-family: sans-serif;
 }
 
-.footpro td{
+.footpro td {
   padding: 5px;
   text-align: center;
   font-size: 12px;
@@ -1475,27 +1474,27 @@ footer {
   border-bottom: 1px solid #eee;
 }
 
-.tabspro img{
+.tabspro img {
   margin: 0px;
   box-shadow: none;
   margin: 10px;
 }
 
-.detailpro .contentpro p{
+.detailpro .contentpro p {
   font-size: 12px;
   text-align: justify;
   font-family: sans-serif;
   margin-left: 0px;
 }
 
-.detailpro .contentpro img{
+.detailpro .contentpro img {
   margin-left: 0px;
   width: 100%;
   height: 100%;
 }
 
 
-.comparisonn p{
+.comparisonn p {
   margin-bottom: 5px;
   font-size: 10px;
   font-family: sans-serif;
@@ -1535,7 +1534,9 @@ footer {
   border-bottom: 1px solid #ccc;
 }
 
-.dropdown-content a:hover {background-color: #ccc}
+.dropdown-content a:hover {
+  background-color: #ccc
+}
 
 .dropdown:hover .dropdown-content {
   display: block;
@@ -1545,7 +1546,7 @@ footer {
   background-color: #003466;
 }
 
-.prosbutton button{
+.prosbutton button {
   padding: 5px;
   margin-top: 10px;
   background-color: #006DD7;
@@ -1555,7 +1556,7 @@ footer {
   width: 120px;
 }
 
-.factbutton button{
+.factbutton button {
   padding: 5px;
   margin-top: 10px;
   background-color: #006DD7;
@@ -1566,13 +1567,13 @@ footer {
   float: right;
 }
 
-.classection section{
+.classection section {
   border: 1px solid #003466;
   height: 67px;
   width: 80px;
 }
 
-.classection .navsec h4{
+.classection .navsec h4 {
   font-size: 12px;
   background-color: #006DD7;
   font-weight: bold;
@@ -1584,7 +1585,7 @@ footer {
   margin-left: 0px;
 }
 
-.classection .aumsec h4{
+.classection .aumsec h4 {
   font-size: 12px;
   background-color: #5CCD00;
   font-weight: bold;
@@ -1596,7 +1597,7 @@ footer {
   margin-left: 0px;
 }
 
-.classection h3{
+.classection h3 {
   font-size: 10px;
   margin-top: 0px;
   margin-bottom: 0px;
@@ -1604,7 +1605,7 @@ footer {
   padding: 5px;
 }
 
-.classection .navsec h6{
+.classection .navsec h6 {
   font-size: 8px;
   background-color: #003466;
   color: #fff;
@@ -1612,7 +1613,7 @@ footer {
   padding: 5px;
 }
 
-.classection .aumsec h6{
+.classection .aumsec h6 {
   font-size: 8px;
   background-color: #5BB95B;
   color: #fff;
@@ -1620,11 +1621,11 @@ footer {
   padding: 5px;
 }
 
-.iconmedia img{
+.iconmedia img {
   width: 20px;
   margin-right: 16px;
 }
 
-.iconmedia img:hover{
+.iconmedia img:hover {
   padding-bottom: 5px;
 }

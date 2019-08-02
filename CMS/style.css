@@ -1,4 +1,4 @@
-body{
+body {
     margin: 0;
     padding: 0;
     background-size: cover;
@@ -7,28 +7,24 @@ body{
 }
 
 a {
-  text-decoration: none !important;
-  line-height: 1.0;
+    text-decoration: none !important;
+    line-height: 1.0;
 }
 
 .bg-image {
-  /* The image used */
-  background-image: url("Assets/LogBackground.jpg");
+    background-image: url("Assets/LogBackground.jpg");
 
-  /* Add the blur effect */
-  filter: blur(2px);
-  -webkit-filter: blur(2px);
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
 
-  /* Full height */
-  height: 100%; 
+    height: 100%; 
 
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.loginbox{
+.loginbox {
     width: 320px;
     height: 260px;
     background: #fff;
@@ -43,28 +39,27 @@ a {
     border-radius: 30px;
 }
 
-.loginbox img{
+.loginbox img {
     margin-left: 65px;
 }
 
-.loginbox p{
+.loginbox p {
     margin: 0;
     padding: 0;
     font-weight: bold;
 }
 
-.loginbox input{
+.loginbox input {
     width: 100%;
     margin-bottom: 20px;
 }
 
-.loginbox button{
+.loginbox button {
     width: 100%;
     margin-top: 20px;
 }
 
-.loginbox input[type="text"], input[type="password"]
-{
+.loginbox input[type="text"], input[type="password"] {
     width: 100%;
     padding: 8px 20px;
     margin: 8px 0;
@@ -75,8 +70,7 @@ a {
     font-size: 16px;
 }
 
-.loginbox button
-{
+.loginbox button {
     border: none;
     outline: none;
     height: 40px;
@@ -86,8 +80,7 @@ a {
     border-radius: 20px;
 }
 
-.loginbox button:hover
-{
+.loginbox button:hover {
     cursor: pointer;
     background: #006DD7;
     color: #fff;
@@ -104,7 +97,7 @@ a {
     font-size: 12px;
 }
 
-.dashboardbar img{
+.dashboardbar img {
     width: 25px;
     height: 25px;
     margin-bottom: 8px;
@@ -112,7 +105,7 @@ a {
     box-shadow: none;
 }
 
-.dashboardbar a{
+.dashboardbar a {
     font-size: 14px;
     color: #fff;
 }
@@ -155,45 +148,53 @@ a {
     border-radius: 0px;
 }
 
-.content h3{
+.content h3 {
     font-size: 24px;
     color: #003466;
     font-weight: bold;
 }
 
-.add button{
+.content h4 {
+    font-size: 18px;
+    color: #003466;
+    font-weight: bold;
+}
+
+.add button {
     padding: 10px;
     background-color: #003466;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     color: #fff;
     border: 1px solid #003466;
     font-size: 14px;
 }
 
-.add img{
+.add img {
     height: 25px
 }
 
-.add button:hover{
+.add button:hover {
     font-weight: bold;
     box-shadow: 2px 2px 5px grey;
 }
 
-.iconbtn img{
-    height: 20px;
-    width: 20px;
+.iconbtn img {
+    height: 15px;
+    width: 15px;
+    margin-left: -1px;
+    margin-top: -2px;
 }
 
-.iconbtn button{
-    width: 40px;
-    height: 40px;
+.iconbtn button {
+    width: 30px;
+    height: 30px;
     background-image: linear-gradient(#ddd, #eee);
-    border: 1px solid #ccc;
+    border: 1px solid #aaa;
     border-radius: 300px;
 }
 
-.iconbtn button:hover{
+.iconbtn button:hover {
     background-image: linear-gradient(#eee, #aaa);
 }
 
@@ -206,7 +207,7 @@ a {
 .contentlist h4 {
     font-family: sans-serif;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 14px;
     color: #003466;
     margin-top: 10px;
     margin-left: 10px;
@@ -224,9 +225,118 @@ a {
     margin-bottom: 20px;
     border-radius: 5px;
     background-image: linear-gradient(#eee, #fff);
+    border: 1px solid #eee;
 }
 
 .contentlist section:hover {
     background-image: linear-gradient(#ddd, #fff);
     box-shadow: 2px 2px 5px grey;
+}
+/*--- Navbar Style ---*/
+
+
+.panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+}
+
+.contact .accordion {
+    background-image: linear-gradient(#ccc, #fff);
+    color: #000;
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #aaa;
+    width: 100%;
+    outline: none;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    transition: 0.4s;
+    font-family: sans-serif;
+  border-radius: 5px;
+}
+
+.contact .active, .accordion:hover {
+    background-image: linear-gradient(#fff, #ccc);
+}
+
+.contact .panel {
+    background-color: #fff;
+    border: 1px solid #eee;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.panel ul {
+    margin: 0px;
+    list-style-type:none;
+    padding-left: 0px;
+}
+
+.panel li {
+    padding: 10px;
+    background-image: linear-gradient(#eee, #fff);
+    margin-bottom: 0px;
+}
+
+.panel li:hover {
+    background-image: linear-gradient(#fff, #eee);
+}
+
+.panel a {
+    font-size: 14px;
+    color: #000;
+}
+
+.panel a:hover {
+    font-weight: bold;
+    color: #000;
+}
+
+.panel button {
+    background-image: linear-gradient(#ddd, #eee);
+    border: 1px solid #ccc;
+    border-radius: 300px;
+    float: right;
+    margin-left: 10px;
+    height: 25px;
+    width: 25px;
+}
+
+.panel button:hover {
+    background-image: linear-gradient(#eee, #aaa);
+}
+
+.panel img {
+    height: 12px;
+    width: 12px;
+    margin-left: 0px;
+    margin-top: -2px;
+}
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 1px solid #ddd;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+
+.pagination a.active {
+  background-image: linear-gradient(#ccc, #fff);
+  color: #000;
+  border: 1px solid #aaa;
+}
+
+.pagination a:hover:not(.active) {
+  background-image: linear-gradient(#eee, #fff);
 }
