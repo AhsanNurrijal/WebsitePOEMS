@@ -32,10 +32,10 @@
                     <div class="dashboardbar">
                         <ul class="nav nav-tabs flex-column" role="tablist">
                             <li class="nav-item">
-                                <a class="nav-link active" data-toggle="tab" href="#homepage"><img src="Assets\Home.png">&emsp;Homepage</a>
+                                <a class="nav-link" data-toggle="tab" href="#homepage"><img src="Assets\Home.png">&emsp;Homepage</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#profile"><img src="Assets\Profile.png">&emsp;Profile</a>
+                                <a class="nav-link active" data-toggle="tab" href="#profile"><img src="Assets\Profile.png">&emsp;Profile</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" data-toggle="tab" href="#tradingplatform"><img src="Assets\tradingplatform.png">&emsp;Trading Platform</a>
@@ -58,7 +58,7 @@
                 </div>
                 <div class="col-sm-10">
                     <div class="tab-content">
-                        <div id="homepage" class="container tab-pane active">
+                        <div id="homepage" class="container tab-pane fade">
                             <div class="content">
                                 <h3>Current Carousel</h3>
                                 <div class="row">
@@ -337,131 +337,40 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="profile" class="container tab-pane fade">
+                        <div id="profile" class="container tab-pane active">
                             <div class="content">
-                                <div class="add">
-                                    <a href="InputProfile.html"><button><img src="Assets\Adds.png">Add Article</button></a>
-                                </div>
-                                <h3>Current Article</h3>
-                                <div class="row">
-                                    <div class="col-sm-9">
-                                        <a href="#">
-                                            <div class="contentlist">
-                                                <section>
-                                                    <div class="row">
-                                                        <div class="col-sm-2">
-                                                            <img src="Assets\Profile1.png">
-                                                        </div>
-                                                        <div class="col-sm-10">
-                                                            <h4>About Poems</h4>
-                                                        </div>
-                                                    </div>
-                                                </section>
+                                <h3>Profile</h3>
+                                <form action="login.php" method="POST">
+                                    <div class="inputdata">
+                                        <div class="row">
+                                            <div class="col-sm-1">
+                                                <p>Title</p>
                                             </div>
-                                        </a>
-                                    </div>
-                                    <div class="col-sm-3">
-                                        <div class="iconbtn">
-                                            <div class="row">
-                                                <div class="col-sm-4">
-                                                    <a href="EditProfile.html" data-toggle="tooltip" title="Edit"><button><img src="Assets\Edit.png"></button></a>
-                                                </div>
-                                                <div class="col-sm-4">
-                                                    <a href="#" data-toggle="tooltip" title="Delete"><button><img src="Assets\Delete.png"></button></a>
-                                                </div>
+                                            <div class="col-sm-4">
+                                                <input type="text" value="Lorem ipsum dolor sit amet">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-1">
+                                                <p>Article</p>
+                                            </div>
+                                            <div class="col-sm-8">
+                                                <textarea rows="18">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis mollis elit. Phasellus scelerisque malesuada orci, id fringilla nulla interdum eu. Duis convallis egestas sollicitudin. Sed et semper turpis. Morbi rutrum pulvinar nibh, id venenatis nulla feugiat nec. Sed auctor, ipsum eu dictum sollicitudin, nisl justo mollis ligula, in finibus nisi ante vel metus. Vivamus et massa at leo laoreet facilisis. Vivamus non sollicitudin nunc. Nunc id urna et ex tincidunt lacinia. Duis varius augue at urna suscipit, finibus ullamcorper tellus rutrum. Sed ut purus ante. Cras accumsan velit sed tellus tempor, vitae rhoncus erat tristique. Proin nec finibus ipsum. Duis convallis fringilla elit in commodo. Aliquam volutpat vulputate tincidunt. Donec ut facilisis leo. Vivamus gravida tellus ipsum, sed malesuada dui dignissim non. Fusce aliquet enim eget leo pretium, sit amet auctor arcu pretium. Nullam eu condimentum nulla. Aliquam imperdiet urna a odio pharetra dapibus. Sed pellentesque neque ac sapien euismod, vitae luctus eros tempor. In hac habitasse platea dictumst. Sed a malesuada diam. Vestibulum bibendum est nunc, nec porttitor justo auctor nec.</textarea>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-1">
+                                                <p>Image Article</p>
+                                            </div>
+                                            <div class="col-sm-8">
+                                                <input type="file">
+                                                <input type="submit" value="Save Changes">
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-9">
-                                        <a href="#">
-                                            <div class="contentlist">
-                                                <section>
-                                                    <div class="row">
-                                                        <div class="col-sm-2">
-                                                            <img src="Assets\Profile2.png">
-                                                        </div>
-                                                        <div class="col-sm-10">
-                                                            <h4>History</h4>
-                                                        </div>
-                                                    </div>
-                                                </section>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col-sm-3">
-                                        <div class="iconbtn">
-                                            <div class="row">
-                                                <div class="col-sm-4">
-                                                    <a href="EditProfile.html" data-toggle="tooltip" title="Edit"><button><img src="Assets\Edit.png"></button></a>
-                                                </div>
-                                                <div class="col-sm-4">
-                                                    <a href="#" data-toggle="tooltip" title="Delete"><button><img src="Assets\Delete.png"></button></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-9">
-                                        <a href="#">
-                                            <div class="contentlist">
-                                                <section>
-                                                    <div class="row">
-                                                        <div class="col-sm-2">
-                                                            <img src="Assets\Profile3.png">
-                                                        </div>
-                                                        <div class="col-sm-10">
-                                                            <h4>Board of Commisioner</h4>
-                                                        </div>
-                                                    </div>
-                                                </section>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col-sm-3">
-                                        <div class="iconbtn">
-                                            <div class="row">
-                                                <div class="col-sm-4">
-                                                    <a href="EditProfile.html" data-toggle="tooltip" title="Edit"><button><img src="Assets\Edit.png"></button></a>
-                                                </div>
-                                                <div class="col-sm-4">
-                                                    <a href="#" data-toggle="tooltip" title="Delete"><button><img src="Assets\Delete.png"></button></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-9">
-                                        <a href="#">
-                                            <div class="contentlist">
-                                                <section>
-                                                    <div class="row">
-                                                        <div class="col-sm-2">
-                                                            <img src="Assets\Profile4.png">
-                                                        </div>
-                                                        <div class="col-sm-10">
-                                                            <h4>Capital Structure</h4>
-                                                        </div>
-                                                    </div>
-                                                </section>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col-sm-3">
-                                        <div class="iconbtn">
-                                            <div class="row">
-                                                <div class="col-sm-4">
-                                                    <a href="EditProfile.html" data-toggle="tooltip" title="Edit"><button><img src="Assets\Edit.png"></button></a>
-                                                </div>
-                                                <div class="col-sm-4">
-                                                    <a href="#" data-toggle="tooltip" title="Delete"><button><img src="Assets\Delete.png"></button></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                </form>
+                                <div class="backto">
+                                    <a href="Dashboard-Profile.html"><button type="button">Back</button></a>
                                 </div>
                             </div>
                         </div>
@@ -1807,7 +1716,7 @@
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="add">
-                                            <a href="InputUtilities.html"><button><img src="Assets\Adds.png">Add Utilities</button></a> 
+                                            <a href="InputUtilities"><button><img src="Assets\Adds.png">Add Utilities</button></a> 
                                         </div>
                                         <h3>Current Utilities</h3>
                                         <div class="row">

@@ -26,7 +26,6 @@ a {
 
 .loginbox {
     width: 320px;
-    height: 260px;
     background: #fff;
     color: #000;
     top: 50%;
@@ -161,13 +160,14 @@ a {
 }
 
 .add button {
-    padding: 10px;
+    width: 125px;
+    padding: 5px;
     background-color: #003466;
     margin-top: 10px;
     margin-bottom: 10px;
     color: #fff;
     border: 1px solid #003466;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .add img {
@@ -339,4 +339,106 @@ a {
 
 .pagination a:hover:not(.active) {
   background-image: linear-gradient(#eee, #fff);
+}
+
+.dropbtn {
+  background-color: #006DD7;
+  color: white;
+  padding: 8px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #eee;
+  z-index: 1;
+  min-width: 200px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 15px;
+  text-decoration: none;
+  display: block;
+  font-size: 12px;
+  border-bottom: 1px solid #ccc;
+}
+
+.dropdown-content a:hover {
+  background-color: #ccc
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #003466;
+}
+
+.inputdata .row{
+    margin-top: 10px;
+}
+
+.inputdata p{
+    font-size: 14px;
+}
+
+.inputdata input[type=text], input[type=tel], input[type=email]{
+  width: 100%;
+  padding-left: 10px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.inputdata input[type=submit] {
+  background-color: #003466;
+  color: white;
+  padding: 10px;
+  margin-top: 15px;
+  border: none;
+  cursor: pointer;
+  float: right;
+  font-size: 14px;
+  width: 150px;
+}
+
+.inputdata input[type=submit]:hover {
+  background-image: linear-gradient(#003466, #006DD7);
+}
+
+.backto button {
+  background-color: #003466;
+  color: white;
+  padding: 10px;
+  margin-top: 30px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  width: 100px;
+}
+
+.backto button:hover {
+  background-image: linear-gradient(#003466, #006DD7);
+}
+
+.inputdata textarea{  
+  overflow:hidden;
+  /* demo only: */
+  padding: 10px;
+  width: 100%;
+  font-size: 12px;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
