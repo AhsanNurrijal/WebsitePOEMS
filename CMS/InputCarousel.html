@@ -36,7 +36,7 @@
                     <div class="dashboardbar">
                         <ul class="nav nav-tabs flex-column" role="tablist">
                             <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#homepage"><img src="Assets\Home.png">&emsp;Homepage</a>
+                                <a class="nav-link active" data-toggle="tab" href="#homepage"><img src="Assets\Home.png">&emsp;Homepage</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" data-toggle="tab" href="#profile"><img src="Assets\Profile.png">&emsp;Profile</a>
@@ -51,7 +51,7 @@
                                 <a class="nav-link" data-toggle="tab" href="#talktophillip"><img src="Assets\TalkToPhillip.png">&emsp;Talk To Phillip</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" data-toggle="tab" href="#knowledgebase"><img src="Assets\KnowledgeBase.png">&emsp;Knowledge Base</a>
+                                <a class="nav-link" data-toggle="tab" href="#knowledgebase"><img src="Assets\KnowledgeBase.png">&emsp;Knowledge Base</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" data-toggle="tab" href="#download"><img src="Assets\Download.png">&emsp;Download</a>
@@ -62,282 +62,24 @@
                 </div>
                 <div class="col-sm-10" style="padding-left: 0px;">
                     <div class="tab-content">
-                        <div id="homepage" class="container tab-pane fade">
+                        <div id="homepage" class="container tab-pane active">
                             <div class="content">
-                                <h3>Current Carousel</h3>
-                                <div class="row">
-                                    <div class="col-sm-9">
-                                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                                            <ol class="carousel-indicators">
-                                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                                            </ol>
-                                            <div class="carousel-inner">
-                                                <div class="carousel-item active">
-                                                    <img src="Assets\Carousel1.png" class="d-block w-100" alt="..." width="900" height="275">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img src="Assets\Carousel2.png" class="d-block w-100" alt="..." width="900" height="275">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img src="Assets\Carousel3.png" class="d-block w-100" alt="..." width="900" height="275">
+                                <h3>Add Carousel Image</h3>
+                                <form action="login.php" method="POST">
+                                    <div class="inputdata">
+                                        <div class="row">
+                                            <div class="col-sm-1">
+                                                <p>Image</p>
                                             </div>
-                                            </div>
-                                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                                <span class="sr-only">Previous</span>
-                                            </a>
-                                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                                <span class="sr-only">Next</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-3">
-                                        <div class="iconbtn">
-                                            <div class="row">
-                                                <div class="col-sm-4">
-                                                    <a href="InputCarousel.html" data-toggle="tooltip" title="Add New"><button><img src="Assets\Add.png"></button></a>
-                                                </div>
-                                                <div class="col-sm-4">
-                                                    <a href="EditCarousel.html" data-toggle="tooltip" title="Edit"><button><img src="Assets\Edit.png"></button></a>
-                                                </div>
-                                                <div class="col-sm-4">
-                                                    <a href="#" data-toggle="tooltip" title="Delete"><button><img src="Assets\Delete.png"></button></a>
-                                                </div>
+                                            <div class="col-sm-4">
+                                                <input type="file">
+                                                <input type="submit" value="Add To Carousel">
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <h3>Current Services</h3>
-                                        <div class="row">
-                                            <div class="col-sm-9">
-                                                <a href="#" data-toggle="modal" data-target="#CardModal">
-                                                    <div class="contentlist">
-                                                        <section>
-                                                            <div class="row">
-                                                                <div class="col-sm-10">
-                                                                    <h4>Poems Syariah</h4>
-                                                                    <p>Waktunya Hijrah Bersama POEMS Syariah</p>
-                                                                </div>
-                                                            </div>
-                                                        </section>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <div class="col-sm-3">
-                                                <div class="iconbtn">
-                                                    <div class="row">
-                                                        <div class="col-sm-4">
-                                                            <a href="EditCards.html" data-toggle="tooltip" title="Edit"><button><img src="Assets\Edit.png"></button></a>
-                                                        </div>
-                                                        <div class="col-sm-4">
-                                                            <a href="#" data-toggle="tooltip" title="Delete"><button><img src="Assets\Delete.png"></button></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-9">
-                                                <a href="#" data-toggle="modal" data-target="#CardModal">
-                                                    <div class="contentlist">
-                                                        <section>
-                                                            <div class="row">
-                                                                <div class="col-sm-10">
-                                                                    <h4>Margin Trading</h4>
-                                                                    <p>Take advantage from the Power of Leverage</p>
-                                                                </div>
-                                                            </div>
-                                                        </section>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <div class="col-sm-3">
-                                                <div class="iconbtn">
-                                                    <div class="row">
-                                                        <div class="col-sm-4">
-                                                            <a href="EditCards.html" data-toggle="tooltip" title="Edit"><button><img src="Assets\Edit.png"></button></a>
-                                                        </div>
-                                                        <div class="col-sm-4">
-                                                            <a href="#" data-toggle="tooltip" title="Delete"><button><img src="Assets\Delete.png"></button></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-9">
-                                                <a href="#" data-toggle="modal" data-target="#CardModal">
-                                                    <div class="contentlist">
-                                                        <section>
-                                                            <div class="row">
-                                                                <div class="col-sm-10">
-                                                                    <h4>SmartPlan</h4>
-                                                                    <p>Apapun impianmu, Rencanakan sekarang dengan SmartPlan</p>
-                                                                </div>
-                                                            </div>
-                                                        </section>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <div class="col-sm-3">
-                                                <div class="iconbtn">
-                                                    <div class="row">
-                                                        <div class="col-sm-4">
-                                                            <a href="EditCards.html" data-toggle="tooltip" title="Edit"><button><img src="Assets\Edit.png"></button></a>
-                                                        </div>
-                                                        <div class="col-sm-4">
-                                                            <a href="#" data-toggle="tooltip" title="Delete"><button><img src="Assets\Delete.png"></button></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-9" data-toggle="modal" data-target="#CardModal">
-                                                <a href="#">
-                                                    <div class="contentlist">
-                                                        <section>
-                                                            <div class="row">
-                                                                <div class="col-sm-10">
-                                                                    <h4>Phillip Webinar</h4>
-                                                                    <p>Interactive Online Seminar on Indonesia stock market and daily stock highlights</p>
-                                                                </div>
-                                                            </div>
-                                                        </section>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <div class="col-sm-3">
-                                                <div class="iconbtn">
-                                                    <div class="row">
-                                                        <div class="col-sm-4">
-                                                            <a href="EditCards.html" data-toggle="tooltip" title="Edit"><button><img src="Assets\Edit.png"></button></a>
-                                                        </div>
-                                                        <div class="col-sm-4">
-                                                            <a href="#" data-toggle="tooltip" title="Delete"><button><img src="Assets\Delete.png"></button></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-9" data-toggle="modal" data-target="#CardModal">
-                                                <a href="#">
-                                                    <div class="contentlist">
-                                                        <section>
-                                                            <div class="row">
-                                                                <div class="col-sm-10">
-                                                                    <h4>Awards</h4>
-                                                                    <p>ONLINE TRADING TERBAIK 2015</p>
-                                                                </div>
-                                                            </div>
-                                                        </section>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <div class="col-sm-3">
-                                                <div class="iconbtn">
-                                                    <div class="row">
-                                                        <div class="col-sm-4">
-                                                            <a href="EditCards.html" data-toggle="tooltip" title="Edit"><button><img src="Assets\Edit.png"></button></a>
-                                                        </div>
-                                                        <div class="col-sm-4">
-                                                            <a href="#" data-toggle="tooltip" title="Delete"><button><img src="Assets\Delete.png"></button></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <h3>Current Videos</h3>
-                                        <div class="row">
-                                            <div class="col-sm-9">
-                                                <a href="#" data-toggle="modal" data-target="#VideoModal">
-                                                    <div class="contentlist">
-                                                        <section>
-                                                            <div class="row">
-                                                                <div class="col-sm-10">
-                                                                    <h4>Menantikan Paparan Ekonomi Semi-annual Ketua The Fed Jerome Powell</h4>
-                                                                </div>
-                                                            </div>
-                                                        </section>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <div class="col-sm-3">
-                                                <div class="iconbtn">
-                                                    <div class="row">
-                                                        <div class="col-sm-4">
-                                                            <a href="EditVideo.html" data-toggle="tooltip" title="Edit"><button><img src="Assets\Edit.png"></button></a>
-                                                        </div>
-                                                        <div class="col-sm-4">
-                                                            <a href="#" data-toggle="tooltip" title="Delete"><button><img src="Assets\Delete.png"></button></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-9" data-toggle="modal" data-target="#VideoModal">
-                                                <a href="#">
-                                                    <div class="contentlist">
-                                                        <section>
-                                                            <div class="row">
-                                                                <div class="col-sm-10">
-                                                                    <h4>Cara Join Seminar Online Phillip Morning Market Call</h4>
-                                                                </div>
-                                                            </div>
-                                                        </section>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <div class="col-sm-3">
-                                                <div class="iconbtn">
-                                                    <div class="row">
-                                                        <div class="col-sm-4">
-                                                            <a href="EditVideo.html" data-toggle="tooltip" title="Edit"><button><img src="Assets\Edit.png"></button></a>
-                                                        </div>
-                                                        <div class="col-sm-4">
-                                                            <a href="#" data-toggle="tooltip" title="Delete"><button><img src="Assets\Delete.png"></button></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-9">
-                                                <a href="#" data-toggle="modal" data-target="#VideoModal">
-                                                    <div class="contentlist">
-                                                        <section>
-                                                            <div class="row">
-                                                                <div class="col-sm-10">
-                                                                    <h4>Cara Jual Beli Saham melalui POEMS ID V2</h4>
-                                                                </div>
-                                                            </div>
-                                                        </section>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <div class="col-sm-3">
-                                                <div class="iconbtn">
-                                                    <div class="row">
-                                                        <div class="col-sm-4">
-                                                            <a href="EditVideo.html" data-toggle="tooltip" title="Edit"><button><img src="Assets\Edit.png"></button></a>
-                                                        </div>
-                                                        <div class="col-sm-4">
-                                                            <a href="#" data-toggle="tooltip" title="Delete"><button><img src="Assets\Delete.png"></button></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                </form>
+                                <div class="backto">
+                                    <a href="Dashboard.html"><button type="button">Back</button></a>
                                 </div>
                             </div>
                         </div>
@@ -669,7 +411,8 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>                        </div>
+                            </div>
+                        </div>
                         <div id="talktophillip" class="container tab-pane fade">
                             <div class="content">
                                 <div class="add">
@@ -869,7 +612,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="knowledgebase" class="container tab-pane active">
+                        <div id="knowledgebase" class="container tab-pane fade">
                             <div class="content">
                                 <h3>Current Frequently Asked Question</h3>
                                 <div class="add">
@@ -2047,7 +1790,7 @@
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="add">
-                                            <a href="InputUtilities.html"><button><img src="Assets\Adds.png">Add Utilities</button></a> 
+                                            <a href="InputUtilities"><button><img src="Assets\Adds.png">Add Utilities</button></a> 
                                         </div>
                                         <h3>Current Utilities</h3>
                                         <div class="row">

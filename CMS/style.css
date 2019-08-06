@@ -151,6 +151,7 @@ a {
     font-size: 24px;
     color: #003466;
     font-weight: bold;
+    margin-top: 5px;
 }
 
 .content h4 {
@@ -163,8 +164,7 @@ a {
     width: 125px;
     padding: 5px;
     background-color: #003466;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 15px;
     color: #fff;
     border: 1px solid #003466;
     font-size: 12px;
@@ -222,10 +222,10 @@ a {
 }
 
 .contentlist section {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     border-radius: 5px;
     background-image: linear-gradient(#eee, #fff);
-    border: 1px solid #eee;
+    border: 1px solid #aaa;
 }
 
 .contentlist section:hover {
@@ -432,13 +432,256 @@ a {
   background-image: linear-gradient(#003466, #006DD7);
 }
 
+.preview button {
+  background-color: #003466;
+  color: white;
+  padding: 10px;
+  margin-top: 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  width: 100px;
+}
+
+.preview button:hover {
+  background-image: linear-gradient(#003466, #006DD7);
+}
+
 .inputdata textarea{  
   overflow:hidden;
-  /* demo only: */
   padding: 10px;
   width: 100%;
   font-size: 12px;
   display: block;
   border: 1px solid #ccc;
   border-radius: 4px;
+}
+
+.card {
+  width: 230px;
+  height: 230px;
+  display: inline-block;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.card:hover {
+  box-shadow: 2px 2px 5px grey;
+  background-image: linear-gradient(#eee, #fff);
+}
+
+.image img {
+  width: 100%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.inner {
+  overflow: hidden;
+}
+
+.inner img {
+  transition: all 0.7s ease;
+}
+
+.inner:hover img {
+  transform: scale(1.2);
+}
+
+.title h5 {
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #003466;
+  padding: 5px;
+  font-family: Helvetica;
+  margin-top: 15px;
+}
+
+.title h3 {
+  text-align: left;
+  font-size: 14px;
+  color: #000;
+  padding: 5px;
+  font-family: sans-serif;
+  margin: 10px;
+  margin-top: 0px;
+}
+
+.title h6 {
+  text-align: left;
+  font-size: 10px;
+  color: #003466;
+  padding: 5px;
+  font-family: sans-serif;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.title p {
+  text-align: center;
+  font-size: 12px;
+  font-family: sans-serif;
+  color: #000;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.menutitle h3 {
+  font-family: sans-serif;
+  font-size: 30px;
+  color: #003466;
+  padding: 5px;
+}
+
+.cardmodal .modal-dialog{
+  width: 250px !important; 
+}
+
+.video iframe {
+  width: 225px;
+  height: 125px;
+  margin-top: 10px;
+  margin-left: 10px;
+  position: center;
+}
+
+.title h4 {
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 10px;
+  color: #000;
+}
+
+.videomodal .modal-dialog{
+  width: 245px !important; 
+}
+
+.article section {
+  margin: 10px;
+  background-image: linear-gradient(#eee, #fff);
+  border-radius: 5px;
+}
+ 
+.article img {
+  width: 100%;
+}
+
+.articleinfo {
+  margin : 20px;
+  text-align: justify;
+}
+
+.articleinfo h3 {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: #003466;
+}
+
+.articleinfo p {
+  font-family: sans-serif;
+  font-size: 12px;
+}
+
+.contactmodal img {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+}
+
+.contactcity h4 {
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #006DD7;
+  color: #fff;
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.contactmodal h5 {
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #006DD7;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.contactmodal h6 {
+  font-family: sans-serif;
+  font-size: 12px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.contactmodal p {
+  font-family: sans-serif;
+  font-size: 12px;
+  color: #006DD7;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.cardcontact {
+  width: 250px;
+  height: 200px;
+  display: inline-block;
+}
+
+.accordionmodal .accordion {
+  background-color: #eee;
+  color: #000;
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid #aaa;
+  width: 96%;
+  outline: none;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: left;
+  transition: 0.4s;
+  font-family: sans-serif;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.accordionmodal .accordion:hover {
+  background-image: linear-gradient(#eee, #fff);
+}
+
+.accordionmodal .panel {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  width: 96%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.accordionmodal p {
+  font-size: 12px;
+  margin :10px;
+  text-align: justify;
+}
+
+.glossarymodal h4 {
+  font-size: 14px;
+  font-weight: bold;
+  color: #006DD7;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.glossarymodal p {
+  font-size: 12px;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: justify;
 }
