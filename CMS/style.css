@@ -91,60 +91,48 @@ a {
 }
 
 .navbar .nav-item a {
-    color: #FFF !important;
+    color: #FFF;
     font-family: sans-serif;
     font-size: 12px;
-}
-
-.dashboardbar img {
-    width: 25px;
-    height: 25px;
-    margin-bottom: 8px;
-    margin-left: 0px;
-    box-shadow: none;
-}
-
-.dashboardbar a {
-    font-size: 14px;
-    color: #fff;
-}
-
-.dashboardbar .nav {
-    background-color: #003466;
-}
-
-.dashboardbar .nav .nav-item a {
-    color: #fff;
-    background-color: #003466;
-    border-radius: 0px;
     padding: 10px;
-    font-style: 14px;
-    padding-left: 20px;
 }
 
-.dashboardbar .nav .nav-item a:link,
-.dashboardbar .nav .nav-item a:visited {
-    text-decoration: none;
-    transition: all 0.2s;
+.dashboardbar .navbar {
+  background-color: #003466;
+  padding: 0px;
 }
 
-.dashboardbar .nav .nav-item a:hover,
-.dashboardbar .nav .nav-item a:active {
-    padding-left: 30px;
-    color: #000;
-    transition: 0.5s;
-    font-weight: bold;
-    background-color: #fff;
-    border-radius: 0px;
-    border-right: 2px solid #fff;
+.dashboardbar .navbar .nav-item a {
+  color: #FFF;
+  font-family: sans-serif;
+  font-size: 14px;
+  background-color: #003466;
 }
 
-.dashboardbar .nav-tabs .nav-link.active, .nav-tabs .show>.nav-link {
-    color: #000;
-    background-color: #fff;
-    font-weight: bold;
-    border-right: 2px solid #fff;
-    border-radius: 0px;
+.dashboardbar .navbar img{
+  width: 25px;
+  height: 25px;
+  margin-bottom: 0px;
+  margin-left: 10px;
+  box-shadow: none;
+}
+
+.dashboardbar .navbar .nav-item a:link,
+.dashboardbar .navbar .nav-item a:visited {
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.dashboardbar .navbar .nav-item a:hover,
+.dashboardbar .navbar .nav-link a:active {
+  padding-left: 20px;
+  transition: 0.5s;
+  font-weight: bold;
+}
+
+.dashboardbar .navbar .active {
+  color: #FFA722 !important;
+  font-weight: bold;
 }
 
 .content h3 {
@@ -158,6 +146,7 @@ a {
     font-size: 18px;
     color: #003466;
     font-weight: bold;
+    margin-top: 5px;
 }
 
 .add button {
@@ -168,6 +157,7 @@ a {
     color: #fff;
     border: 1px solid #003466;
     font-size: 12px;
+    border-radius: 5px;
 }
 
 .add img {
@@ -411,6 +401,7 @@ a {
   float: right;
   font-size: 14px;
   width: 150px;
+  border-radius: 5px;
 }
 
 .inputdata input[type=submit]:hover {
@@ -426,6 +417,7 @@ a {
   cursor: pointer;
   font-size: 14px;
   width: 100px;
+  border-radius: 5px;
 }
 
 .backto button:hover {
@@ -440,7 +432,8 @@ a {
   border: none;
   cursor: pointer;
   font-size: 14px;
-  width: 100px;
+  width: 150px;
+  border-radius: 5px;
 }
 
 .preview button:hover {
@@ -455,6 +448,7 @@ a {
   display: block;
   border: 1px solid #ccc;
   border-radius: 4px;
+  text-align: justify;
 }
 
 .card {

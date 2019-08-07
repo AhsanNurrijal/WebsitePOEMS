@@ -37,9 +37,9 @@
                         <nav class="navbar">
                             <ul class="navbar-nav">
                                 <li class="nav-item"><a class="nav-link" href="Dashboard.html"><img src="Assets\Home.png">&emsp;Homepage</a></li>
-                                <li class="nav-item"><a class="nav-link active" href="Profile.html"><img src="Assets\Profile.png">&emsp;Profile</a></li>
+                                <li class="nav-item"><a class="nav-link" href="Profile.html"><img src="Assets\Profile.png">&emsp;Profile</a></li>
                                 <li class="nav-item"><a class="nav-link" href="TradingPlatform.html"><img src="Assets\tradingplatform.png">&emsp;Trading Platform</a></li>
-                                <li class="nav-item"><a class="nav-link" href="Services.html"><img src="Assets\Servicess.png">&emsp;Services</a></li>
+                                <li class="nav-item"><a class="nav-link active" href="Services.html"><img src="Assets\Servicess.png">&emsp;Services</a></li>
                                 <li class="nav-item"><a class="nav-link" href="TalkToPhillip.html"><img src="Assets\TalkToPhillip.png">&emsp;Talk To Phillip</a></li>
                                 <li class="nav-item"><a class="nav-link" href="KnowledgeBase.html"><img src="Assets\KnowledgeBase.png">&emsp;Knowledge Base</a></li>
                                 <li class="nav-item"><a class="nav-link" href="Download.html"><img src="Assets\Download.png">&emsp;Download</a></li>
@@ -50,47 +50,102 @@
                 </div>
                 <div class="col-sm-10">
                     <div class="content">
-                        <h3>Services</h3>
-                        <form action="login.php" method="POST">
-                            <div class="inputdata">
-                                <div class="row">
-                                    <div class="col-sm-1">
-                                        <p>Title</p>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <input type="text" value="Lorem ipsum dolor sit amet">
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-1">
-                                        <p>Article</p>
-                                    </div>
-                                    <div class="col-sm-8">
-                                        <textarea rows="15">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis mollis elit. Phasellus scelerisque malesuada orci, id fringilla nulla interdum eu. Duis convallis egestas sollicitudin. Sed et semper turpis. Morbi rutrum pulvinar nibh, id venenatis nulla feugiat nec. Sed auctor, ipsum eu dictum sollicitudin, nisl justo mollis ligula, in finibus nisi ante vel metus. Vivamus et massa at leo laoreet facilisis. Vivamus non sollicitudin nunc. Nunc id urna et ex tincidunt lacinia. Duis varius augue at urna suscipit, finibus ullamcorper tellus rutrum. Sed ut purus ante. Cras accumsan velit sed tellus tempor, vitae rhoncus erat tristique. Proin nec finibus ipsum. Duis convallis fringilla elit in commodo. Aliquam volutpat vulputate tincidunt. Donec ut facilisis leo. Vivamus gravida tellus ipsum, sed malesuada dui dignissim non. Fusce aliquet enim eget leo pretium, sit amet auctor arcu pretium. Nullam eu condimentum nulla. Aliquam imperdiet urna a odio pharetra dapibus. Sed pellentesque neque ac sapien euismod, vitae luctus eros tempor. In hac habitasse platea dictumst. Sed a malesuada diam. Vestibulum bibendum est nunc, nec porttitor justo auctor nec.</textarea>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-1">
-                                        <p>Image Article</p>
-                                    </div>
-                                    <div class="col-sm-8">
-                                        <input type="file">
-                                        <div class="row">
-                                            <div class="col-sm-6">
-                                                <div class="preview">
-                                                    <button type="button" data-toggle="modal" data-target="#ArticleModal">Preview</button>
+                        <div class="add">
+                            <a href="InputServices.html"><button><img src="Assets\Adds.png">Add Article</button></a>
+                        </div>
+                        <h3>Current Article</h3>
+                        <div class="row">
+                            <div class="col-sm-9">
+                                <a href="#" data-toggle="modal" data-target="#ArticleModal">
+                                    <div class="contentlist">
+                                        <section>
+                                            <div class="row">
+                                                <div class="col-sm-2">
+                                                    <img src="Assets\Services1.png">
+                                                </div>
+                                                <div class="col-sm-10">
+                                                    <h4>Stocks</h4>
+                                                    <p>Smart Trading with POEMS, Anytime Anywhere</p>
                                                 </div>
                                             </div>
-                                            <div class="col-sm-6">
-                                                <input type="submit" value="Add Article">
-                                            </div>
+                                        </section>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="iconbtn">
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <a href="EditServices.html" data-toggle="tooltip" title="Edit"><button><img src="Assets\Edit.png"></button></a>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <a href="#" data-toggle="tooltip" title="Delete"><button><img src="Assets\Delete.png"></button></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </form>
-                        <div class="backto">
-                            <a href="Services.html"><button type="button">Back</button></a>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-9">
+                                <a href="#" data-toggle="modal" data-target="#ArticleModal">
+                                    <div class="contentlist">
+                                        <section>
+                                            <div class="row">
+                                                <div class="col-sm-2">
+                                                    <img src="Assets\Services2.png">
+                                                </div>
+                                                <div class="col-sm-10">
+                                                    <h4>Margin Trading</h4>
+                                                    <p>Take Advantage from the Power of Leverage!</p>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="iconbtn">
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <a href="EditServices.html" data-toggle="tooltip" title="Edit"><button><img src="Assets\Edit.png"></button></a>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <a href="#" data-toggle="tooltip" title="Delete"><button><img src="Assets\Delete.png"></button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-9">
+                                <a href="#" data-toggle="modal" data-target="#ArticleModal">
+                                    <div class="contentlist">
+                                        <section>
+                                            <div class="row">
+                                                <div class="col-sm-2">
+                                                    <img src="Assets\Services3.png">
+                                                </div>
+                                                <div class="col-sm-10">
+                                                    <h4>Securities Borrowing and Landing</h4>
+                                                    <p>Take Advantage of a Bear Market!</p>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="iconbtn">
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <a href="EditServices.html" data-toggle="tooltip" title="Edit"><button><img src="Assets\Edit.png"></button></a>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <a href="#" data-toggle="tooltip" title="Delete"><button><img src="Assets\Delete.png"></button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -38,8 +38,8 @@
                             <ul class="navbar-nav">
                                 <li class="nav-item"><a class="nav-link" href="Dashboard.html"><img src="Assets\Home.png">&emsp;Homepage</a></li>
                                 <li class="nav-item"><a class="nav-link" href="Profile.html"><img src="Assets\Profile.png">&emsp;Profile</a></li>
-                                <li class="nav-item"><a class="nav-link" href="TradingPlatform.html"><img src="Assets\tradingplatform.png">&emsp;Trading Platform</a></li>
-                                <li class="nav-item"><a class="nav-link active" href="Services.html"><img src="Assets\Servicess.png">&emsp;Services</a></li>
+                                <li class="nav-item"><a class="nav-link active" href="TradingPlatform.html"><img src="Assets\tradingplatforms.png">&emsp;Trading Platform</a></li>
+                                <li class="nav-item"><a class="nav-link" href="Services.html"><img src="Assets\Services.png">&emsp;Services</a></li>
                                 <li class="nav-item"><a class="nav-link" href="TalkToPhillip.html"><img src="Assets\TalkToPhillip.png">&emsp;Talk To Phillip</a></li>
                                 <li class="nav-item"><a class="nav-link" href="KnowledgeBase.html"><img src="Assets\KnowledgeBase.png">&emsp;Knowledge Base</a></li>
                                 <li class="nav-item"><a class="nav-link" href="Download.html"><img src="Assets\Download.png">&emsp;Download</a></li>
@@ -50,47 +50,102 @@
                 </div>
                 <div class="col-sm-10">
                     <div class="content">
-                        <h3>New Services</h3>
-                        <form action="login.php" method="POST">
-                            <div class="inputdata">
-                                <div class="row">
-                                    <div class="col-sm-1">
-                                        <p>Title</p>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <input type="text">
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-1">
-                                        <p>Article</p>
-                                    </div>
-                                    <div class="col-sm-8">
-                                        <textarea rows="15"></textarea>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-1">
-                                        <p>Image Article</p>
-                                    </div>
-                                    <div class="col-sm-8">
-                                        <input type="file">
-                                        <div class="row">
-                                            <div class="col-sm-6">
-                                                <div class="preview">
-                                                    <button type="button" data-toggle="modal" data-target="#ArticleModal">Preview</button>
+                        <div class="add">
+                            <a href="InputTradingPlatform.html"><button><img src="Assets\Adds.png">Add Article</button></a> 
+                        </div>
+                        <h3>Current Article</h3>
+                        <div class="row">
+                            <div class="col-sm-9">
+                                <a href="#" data-toggle="modal" data-target="#ArticleModal">
+                                    <div class="contentlist">
+                                        <section>
+                                            <div class="row">
+                                                <div class="col-sm-2">
+                                                    <img src="Assets\TradingPlatform1.png">
+                                                </div>
+                                                <div class="col-sm-10">
+                                                    <h4>POEMS Web-Based</h4>
+                                                    <p>Trade stocks online using your internet browser, without having to download any application.</p>
                                                 </div>
                                             </div>
-                                            <div class="col-sm-6">
-                                                <input type="submit" value="Add Article">
-                                            </div>
+                                        </section>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="iconbtn">
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <a href="EditTradingPlatform.html" data-toggle="tooltip" title="Edit"><button><img src="Assets\Edit.png"></button></a>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <a href="#" data-toggle="tooltip" title="Delete"><button><img src="Assets\Delete.png"></button></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </form>
-                        <div class="backto">
-                            <a href="Services.html"><button type="button">Back</button></a>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-9">
+                                <a href="#" data-toggle="modal" data-target="#ArticleModal">
+                                    <div class="contentlist">
+                                        <section>
+                                            <div class="row">
+                                                <div class="col-sm-2">
+                                                    <img src="Assets\TradingPlatform2.png">
+                                                </div>
+                                                <div class="col-sm-10">
+                                                    <h4>POEMS Mobile</h4>
+                                                    <p>Trade anywhere, anytime, on your favorite mobile device.</p>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="iconbtn">
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <a href="EditTradingPlatform.html" data-toggle="tooltip" title="Edit"><button><img src="Assets\Edit.png"></button></a>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <a href="#" data-toggle="tooltip" title="Delete"><button><img src="Assets\Delete.png"></button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-9">
+                                <a href="#" data-toggle="modal" data-target="#ArticleModal">
+                                    <div class="contentlist">
+                                        <section>
+                                            <div class="row">
+                                                <div class="col-sm-2">
+                                                    <img src="Assets\TradingPlatform3.png">
+                                                </div>
+                                                <div class="col-sm-10">
+                                                    <h4>POEMS Desktop</h4>
+                                                    <p>Trade anywhere, anytime, on your favorite mobile device.</p>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="iconbtn">
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <a href="EditTradingPlatform.html" data-toggle="tooltip" title="Edit"><button><img src="Assets\Edit.png"></button></a>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <a href="#" data-toggle="tooltip" title="Delete"><button><img src="Assets\Delete.png"></button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
