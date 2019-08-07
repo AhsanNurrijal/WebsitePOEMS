@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dashboard - Phillip Online Electronic Mart Systems | The Best Online Trading in Indonesia</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script>
+            $(document).ready(function(e) {
+                $('.has-sub').click(function() {
+                    $(this).toggleClass('tap');
+                });
+            });
+        </script>
+        <style>
+            .main-nav {
+                background-color: #003466;
+            }
+
+            .main-nav img{
+                width: 20px;
+                height: 20px;
+                margin-bottom: 0px;
+                box-shadow: none;
+            }
+
+            .main-nav li{
+                list-style: none;
+                padding-left: 0px;
+            }
+
+            .main-nav a{
+                color: #FFF;
+                font-family: sans-serif;
+                font-size: 14px;
+                background-color: #003466;
+                margin-left: -45px;
+            }
+
+            .main-nav a:hover{
+                padding-left: 20px;
+            }
+
+            .main-nav .active{
+                color: #FFA722 !important;
+            }
+
+            .main-nav-ul ul{
+                display: none;
+            }
+
+            .main-nav-ul li.tap ul{
+                display: block;
+                margin-left: -25px;
+            }
+
+            .main-nav .sub-arrow:after{
+                content: '\203A';
+                float: right;
+                transform: rotate(90deg);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12" style="padding-left: 0px; padding-right: 0px;">
+                    <nav class="navbar navbar-expand-lg">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav w-100">
+                                <li class="nav-item"><a class="nav-link" href="#">LOGO</a></li>
+                            </ul>
+                            <span class="navbar-text white-text">
+                                <img src="Assets\Logout.png" style="margin-right: 5px; height: 20px;">
+                            </span>
+                            <a href="Login.html">
+                                <span class="navbar-text white-text" style="margin-right: 20px; color: #fff; font-size: 12px;">Logout</span>
+                            </a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2" style="padding-left: 0px; background-color: #003466;">
+                    <div class="dashboardbar">
+                        <nav class="main-nav">
+                            <ul class="main-nav-ul">
+                                <li><a class="nav-link active" href="Dashboard.html"><img src="Assets\Homes.png">&emsp;Homepage</a></li>
+                                <li><a class="nav-link" href="Profile.html"><img src="Assets\Profile.png">&emsp;Profile</a></li>
+                                <li><a class="nav-link" href="TradingPlatform.html"><img src="Assets\TradingPlatform.png">&emsp;Trading Platform</a></li>
+                                <li><a class="nav-link" href="Services.html"><img src="Assets\Services.png">&emsp;Services</a></li>
+                                <li><a class="nav-link" href="TalkToPhillip.html"><img src="Assets\TalkToPhillip.png">&emsp;Talk To Phillip</a></li>
+                                <li class="has-sub"><a class="nav-link" href="#"><img src="Assets\KnowledgeBase.png">&emsp;Knowledge Base<span class="sub-arrow"></span></a>
+                                    <ul>
+                                        <li><a class="nav-link" href="Faq.html"><img src="Assets\Faq.png">&emsp;Faq</a></li>
+                                        <li><a class="nav-link" href="Glossary.html"><img src="Assets\Glossary.png">&emsp;Glossary</a></li>
+                                        <li><a class="nav-link" href="TechnicalSupport.html"><img src="Assets\TechnicalSupport.png">&emsp;Technical Support</a></li>
+                                        <li><a class="nav-link" href="UsefulLinks.html"><img src="Assets\UsefulLinks.png">&emsp;Useful Links</a></li>
+                                        <li><a class="nav-link" href="InvestmentRisk.html"><img src="Assets\InvestmentRisk.png">&emsp;Investment Risk</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-sub"><a class="nav-link" href="#"><img src="Assets\Download.png">&emsp;Download<span class="sub-arrow"></span></a>
+                                    <ul>
+                                        <li><a class="nav-link" href="Services.html"><img src="Assets\ProTrader.png">&emsp;Pro Trader</a></li>
+                                        <li><a class="nav-link" href="Services.html"><img src="Assets\ManualBooks.png">&emsp;Manual Books</a></li>
+                                        <li><a class="nav-link" href="Services.html"><img src="Assets\Utilities.png">&emsp;Utilities</a></li>
+                                        <li><a class="nav-link" href="Services.html"><img src="Assets\Brochures.png">&emsp;Brochures</a></li>
+                                        <li><a class="nav-link" href="Services.html"><img src="Assets\NewsLetter.png">&emsp;Newsletter</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="nav-link" href="Services.html"><img src="Assets\Services.png">&emsp;User</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-sm-10">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
