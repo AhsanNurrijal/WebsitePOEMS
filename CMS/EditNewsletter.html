@@ -34,16 +34,32 @@
             <div class="row">
                 <div class="col-sm-2" style="padding-left: 0px; background-color: #003466;">
                     <div class="dashboardbar">
-                        <nav class="navbar">
-                            <ul class="navbar-nav">
-                                <li class="nav-item"><a class="nav-link" href="Dashboard.html"><img src="Assets\Home.png">&emsp;Homepage</a></li>
-                                <li class="nav-item"><a class="nav-link" href="Profile.html"><img src="Assets\Profile.png">&emsp;Profile</a></li>
-                                <li class="nav-item"><a class="nav-link" href="TradingPlatform.html"><img src="Assets\tradingplatform.png">&emsp;Trading Platform</a></li>
-                                <li class="nav-item"><a class="nav-link" href="Services.html"><img src="Assets\Services.png">&emsp;Services</a></li>
-                                <li class="nav-item"><a class="nav-link" href="TalkToPhillip.html"><img src="Assets\TalkToPhillip.png">&emsp;Talk To Phillip</a></li>
-                                <li class="nav-item"><a class="nav-link" href="KnowledgeBase.html"><img src="Assets\KnowledgeBase.png">&emsp;Knowledge Base</a></li>
-                                <li class="nav-item"><a class="nav-link active" href="Download.html"><img src="Assets\Downloadss.png">&emsp;Download</a></li>
-                                <div class="clear" style="height: 286px;"></div>
+                        <nav class="main-nav">
+                            <ul class="main-nav-ul">
+                                <li><a class="nav-link" href="Dashboard.html"><img src="Assets\Icon\Home.png">&emsp;Homepage</a></li>
+                                <li><a class="nav-link" href="Profile.html"><img src="Assets\Icon\Profile.png">&emsp;Profile</a></li>
+                                <li><a class="nav-link" href="TradingPlatform.html"><img src="Assets\Icon\TradingPlatform.png">&emsp;Trading Platform</a></li>
+                                <li><a class="nav-link" href="Services.html"><img src="Assets\Icon\Services.png">&emsp;Services</a></li>
+                                <li><a class="nav-link" href="TalkToPhillip.html"><img src="Assets\Icon\TalkToPhillip.png">&emsp;Talk To Phillip</a></li>
+                                <li class="has-sub"><a class="nav-link" href="#"><img src="Assets\Icon\KnowledgeBase.png">&emsp;Knowledge Base<span class="sub-arrow"></span></a>
+                                    <ul>
+                                        <li><a class="nav-link" href="Faq.html"><img src="Assets\Icon\Faq.png">&emsp;Faq</a></li>
+                                        <li><a class="nav-link" href="Glossary.html"><img src="Assets\Icon\Glossary.png">&emsp;Glossary</a></li>
+                                        <li><a class="nav-link" href="TechnicalSupport.html"><img src="Assets\Icon\TechnicalSupport.png">&emsp;Technical Support</a></li>
+                                        <li><a class="nav-link" href="UsefulLinks.html"><img src="Assets\Icon\UsefulLinks.png">&emsp;Useful Links</a></li>
+                                        <li><a class="nav-link" href="InvestmentRisk.html"><img src="Assets\Icon\InvestmentRisk.png">&emsp;Investment Risk</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-sub"><a class="nav-link active" href="#"><img src="Assets\Icon\Downloads.png">&emsp;Download<span class="sub-arrow"></span></a>
+                                    <ul>
+                                        <li><a class="nav-link" href="ProTrader.html"><img src="Assets\Icon\ProTrader.png">&emsp;Pro Trader</a></li>
+                                        <li><a class="nav-link" href="ManualBooks.html"><img src="Assets\Icon\ManualBooks.png">&emsp;Manual Books</a></li>
+                                        <li><a class="nav-link" href="Utilities.html"><img src="Assets\Icon\Utilities.png">&emsp;Utilities</a></li>
+                                        <li><a class="nav-link" href="Brochures.html"><img src="Assets\Icon\Brochures.png">&emsp;Brochures</a></li>
+                                        <li><a class="nav-link active" href="Newsletter.html"><img src="Assets\Icon\NewsLetters.png">&emsp;Newsletter</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="nav-link" href="User.html"><img src="Assets\Icon\User.png">&emsp;User</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -77,11 +93,19 @@
                             </div>
                         </form>
                         <div class="backto">
-                            <a href="Download.html"><button type="button">Back</button></a>
+                            <a href="Newsletter.html"><button type="button">Back</button></a>
                         </div>
                     </div>
+                    <div class="clear" style="height: 344px;"></div>
                 </div>
             </div>
         </div>
+        <script>
+            $(document).ready(function(e) {
+                $('.has-sub').click(function() {
+                    $(this).toggleClass('tap');
+                });
+            });
+        </script>
     </body>
 </html>
