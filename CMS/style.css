@@ -464,8 +464,6 @@ a {
 }
 
 .card {
-  width: 230px;
-  height: 230px;
   display: inline-block;
   border-radius: 5px;
   margin: 10px;
@@ -708,17 +706,13 @@ a {
 }
 
 table {
-  border-collapse: collapse;
   width: 100%;
+  margin-top: 10px;
 }
 
 th, td {
-  padding: 5px;
-  border: 1px solid #003466;
-}
-
-tr:nth-child(even){
-  background-color: #eee
+  padding: 5px !important;
+  border: 1px solid #003466 !important;
 }
 
 th {
@@ -740,8 +734,6 @@ td{
 
 tr:hover{
   background-color: #ddd;
-  color: #000;
-  font-weight: bold;
 }
 
 footer {
@@ -763,6 +755,8 @@ footer p {
   background-color: #fff;
   border: 1px solid #aaa;
   border-radius: 2px;
+  height: 38px;
+  width: 38px;
 }
 
 .searchbar button:hover{
@@ -770,19 +764,6 @@ footer p {
 }
 
 .searchbar img{
-  height: 12px;
-  width: 12px;
-}
-
-.searchbar input[type=text]{
-  margin-right: 10px;
-  width: 230px;
-  padding-left: 10px;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  margin-top: 0px;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-  font-size: 14px;
+  height: 15px;
+  width: 15px;
 }
