@@ -6,8 +6,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="summernote/summernote-bs4.css">
         <script src="js/jquery.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
+        <script src="summernote/summernote-bs4.js"></script>
     </head>
     <body>
         <div class="container-fluid">
@@ -79,25 +82,17 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-sm-1">
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <div class="texteditor">
-                                            <button><img src="Assets\Bold.png"></button>
-                                            <button><img src="Assets\Italic.png"></button>
-                                            <button style="margin-right: 20px;"><img src="Assets\Underline.png"></button>
-                                            <button><img src="Assets\List.png"></button>
-                                            <button style="margin-right: 20px;"><img src="Assets\NumberedList.png"></button>
-                                            <button style="margin-right: 10px;"><img src="Assets\Link.png"></button>
-                                            <button><img src="Assets\Image.png"></button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-1">
                                         <p>Article</p>
                                     </div>
                                     <div class="col-sm-8">
-                                        <textarea rows="12">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis mollis elit. Phasellus scelerisque malesuada orci, id fringilla nulla interdum eu. Duis convallis egestas sollicitudin. Sed et semper turpis. Morbi rutrum pulvinar nibh, id venenatis nulla feugiat nec. Sed auctor, ipsum eu dictum sollicitudin, nisl justo mollis ligula, in finibus nisi ante vel metus. Vivamus et massa at leo laoreet facilisis. Vivamus non sollicitudin nunc. Nunc id urna et ex tincidunt lacinia. Duis varius augue at urna suscipit, finibus ullamcorper tellus rutrum. Sed ut purus ante. Cras accumsan velit sed tellus tempor, vitae rhoncus erat tristique. Proin nec finibus ipsum. Duis convallis fringilla elit in commodo. Aliquam volutpat vulputate tincidunt. Donec ut facilisis leo. Vivamus gravida tellus ipsum, sed malesuada dui dignissim non. Fusce aliquet enim eget leo pretium, sit amet auctor arcu pretium. Nullam eu condimentum nulla. Aliquam imperdiet urna a odio pharetra dapibus. Sed pellentesque neque ac sapien euismod, vitae luctus eros tempor. In hac habitasse platea dictumst. Sed a malesuada diam. Vestibulum bibendum est nunc, nec porttitor justo auctor nec.</textarea>
+                                        <div id="summernote"></div>
+                                        <script>
+                                            $('#summernote').summernote({
+                                                tabsize: 2,
+                                                height: 300
+                                            });
+                                            $('#summernote').summernote('insertText', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis mollis elit. Phasellus scelerisque malesuada orci, id fringilla nulla interdum eu. Duis convallis egestas sollicitudin. Sed et semper turpis. Morbi rutrum pulvinar nibh, id venenatis nulla feugiat nec. Sed auctor, ipsum eu dictum sollicitudin, nisl justo mollis ligula, in finibus nisi ante vel metus. Vivamus et massa at leo laoreet facilisis. Vivamus non sollicitudin nunc. Nunc id urna et ex tincidunt lacinia. Duis varius augue at urna suscipit, finibus ullamcorper tellus rutrum. Sed ut purus ante. Cras accumsan velit sed tellus tempor, vitae rhoncus erat tristique. Proin nec finibus ipsum. Duis convallis fringilla elit in commodo. Aliquam volutpat vulputate tincidunt. Donec ut facilisis leo. Vivamus gravida tellus ipsum, sed malesuada dui dignissim non. Fusce aliquet enim eget leo pretium, sit amet auctor arcu pretium. Nullam eu condimentum nulla. Aliquam imperdiet urna a odio pharetra dapibus. Sed pellentesque neque ac sapien euismod, vitae luctus eros tempor. In hac habitasse platea dictumst. Sed a malesuada diam. Vestibulum bibendum est nunc, nec porttitor justo auctor nec.');
+                                        </script>
                                     </div>
                                 </div>
                                 <div class="row">

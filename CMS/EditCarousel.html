@@ -130,6 +130,26 @@
                                 </div>
                             </div>
                         </div>
+                        <form action="login.php" method="POST">
+                            <div class="inputdata">
+                                <div class="row">
+                                    <div class="col-sm-5">
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="preview">
+                                                    <button type="button" data-toggle="modal" data-target="#CarouselModal">Preview</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="backto">
+                            <a href="Dashboard.html"><button type="button">Back</button></a>
+                        </div>
                     </div>
                     <div class="clear" style="height: 135px;"></div>
                 </div>
@@ -172,7 +192,7 @@
                 <div class="modal" id="EditCarouselModal">
                     <div class="modal-dialog modal-md modal-dialog-centered">
                         <div class="modal-content">
-                            <form action="login.php" method="POST">
+                            <form action="login.php" method="POST" style="margin: 10px;">
                             <div class="inputdata">
                                 <div class="row">
                                     <div class="col-sm-1">
@@ -182,9 +202,6 @@
                                         <input type="file">
                                         <div class="row">
                                             <div class="col-sm-6">
-                                                <div class="preview">
-                                                    <button type="button" data-toggle="modal" data-target="#CarouselModal" style="margin-bottom: 10px;">Preview</button>
-                                                </div>
                                             </div>
                                             <div class="col-sm-6">
                                                 <input type="submit" value="Save Changes" style="margin-bottom: 10px;">

@@ -6,8 +6,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="summernote/summernote-bs4.css">
         <script src="js/jquery.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
+        <script src="summernote/summernote-bs4.js"></script>
     </head>
     <body>
         <div class="container-fluid">
@@ -79,25 +82,17 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-sm-1">
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <div class="texteditor">
-                                            <button><img src="Assets\Bold.png"></button>
-                                            <button><img src="Assets\Italic.png"></button>
-                                            <button style="margin-right: 20px;"><img src="Assets\Underline.png"></button>
-                                            <button><img src="Assets\List.png"></button>
-                                            <button style="margin-right: 20px;"><img src="Assets\NumberedList.png"></button>
-                                            <button style="margin-right: 10px;"><img src="Assets\Link.png"></button>
-                                            <button><img src="Assets\Image.png"></button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-1">
                                         <p>Article</p>
                                     </div>
                                     <div class="col-sm-8">
-                                        <textarea rows="12"></textarea>
+                                        <div id="summernote"></div>
+                                        <script>
+                                            $('#summernote').summernote({
+                                                tabsize: 2,
+                                                height: 300
+                                            });
+                                        </script>
+
                                     </div>
                                 </div>
                                 <div class="row">

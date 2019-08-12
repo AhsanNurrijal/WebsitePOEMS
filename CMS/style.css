@@ -463,14 +463,16 @@ a {
   text-align: justify;
 }
 
+.note-popover .popover-content, .card-header.note-toolbar{
+  background-color: #ddd !important;
+}
+
 .card {
   display: inline-block;
   border-radius: 5px;
-  margin: 10px;
 }
 
 .card:hover {
-  box-shadow: 2px 2px 5px grey;
   background-image: linear-gradient(#eee, #fff);
 }
 
