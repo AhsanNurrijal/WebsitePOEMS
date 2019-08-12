@@ -91,14 +91,14 @@
                                             <a href="EditUsefulLinks.html" data-toggle="tooltip" title="Edit"><button><img src="Assets\Edit.png"></button></a>
                                         </div>
                                         <div class="col-sm-4">
-                                            <a href="#" data-toggle="tooltip" title="Delete"><button><img src="Assets\Delete.png"></button></a>
+                                            <a href="#" data-toggle="modal" data-target="#DeleteArticleModal"><button><img src="Assets\Delete.png"></button></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="clear" style="height: 458px;"></div>
+                    <div class="clear" style="height: 732px;"></div>
                 </div>
             </div>
             <div class="articlemodal">
@@ -123,6 +123,27 @@
                 </div>
             </div>
         </div>
+        <div class="deletearticlemodal">
+                <div class="modal" id="DeleteArticleModal">
+                    <div class="modal-dialog modal-md modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="delete">
+                                <h3>Apakah Anda Yakin Menghapus Article Ini?</h3>
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <button>No</button>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <button>Yes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         <script>
             $(document).ready(function(e) {
                 $('.has-sub').click(function() {

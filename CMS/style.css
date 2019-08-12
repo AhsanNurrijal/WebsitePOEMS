@@ -1,5 +1,6 @@
 body {
-
+  height:100%;
+  width: 100%;
 }
 
 a {
@@ -81,6 +82,7 @@ a {
 
 .navbar {
   background-color: #003466;
+  height: 100%;
 }
 
 .navbar .nav-item a {
@@ -92,6 +94,7 @@ a {
 
 .main-nav {
   background-color: #003466;
+  height: 100%;
 }
 
 .main-nav img{
@@ -109,13 +112,13 @@ a {
 .main-nav a{
   color: #FFF;
   font-family: sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   background-color: #003466;
   margin-left: -45px;
 }
 
 .main-nav a:hover{
-  padding-left: 20px;
+  padding-left: 30px;
   color: #fff;
 }
 
@@ -757,8 +760,8 @@ footer p {
   background-color: #fff;
   border: 1px solid #aaa;
   border-radius: 2px;
-  height: 38px;
-  width: 38px;
+  height: 35px;
+  width: 35px;
 }
 
 .searchbar button:hover{
@@ -768,4 +771,23 @@ footer p {
 .searchbar img{
   height: 15px;
   width: 15px;
+}
+
+.form-control{
+  font-size: 14px !important;
+}
+
+.delete{
+  margin: 10px;
+}
+
+.delete h3{
+  font-size: 16px;
+}
+
+.delete button{
+  background-color: #aaa;
+  border-radius: 5px;
+  color: #fff;
+  width: 50px;
 }

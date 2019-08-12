@@ -106,7 +106,7 @@
                                             <a href="EditCarousel.html" data-toggle="tooltip" title="Edit"><button><img src="Assets\Edit.png"></button></a>
                                         </div>
                                         <div class="col-sm-4">
-                                            <a href="#" data-toggle="tooltip" title="Delete"><button><img src="Assets\Delete.png"></button></a>
+                                            <a href="#" data-toggle="modal" data-target="#DeleteCarouselModal"><button><img src="Assets\Delete.png"></button></a>
                                         </div>
                                     </div>
                                 </div>
@@ -137,7 +137,7 @@
                                                     <a href="EditCards.html" data-toggle="tooltip" title="Edit"><button><img src="Assets\Edit.png"></button></a>
                                                 </div>
                                                 <div class="col-sm-4">
-                                                    <a href="#" data-toggle="tooltip" title="Delete"><button><img src="Assets\Delete.png"></button></a>
+                                                    <a href="#" data-toggle="modal" data-target="#DeleteServiceModal"><button><img src="Assets\Delete.png"></button></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -165,7 +165,7 @@
                                                     <a href="EditCards.html" data-toggle="tooltip" title="Edit"><button><img src="Assets\Edit.png"></button></a>
                                                 </div>
                                                 <div class="col-sm-4">
-                                                    <a href="#" data-toggle="tooltip" title="Delete"><button><img src="Assets\Delete.png"></button></a>
+                                                    <a href="#" data-toggle="modal" data-target="#DeleteServiceModal"><button><img src="Assets\Delete.png"></button></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -193,7 +193,7 @@
                                                     <a href="EditCards.html" data-toggle="tooltip" title="Edit"><button><img src="Assets\Edit.png"></button></a>
                                                 </div>
                                                 <div class="col-sm-4">
-                                                    <a href="#" data-toggle="tooltip" title="Delete"><button><img src="Assets\Delete.png"></button></a>
+                                                    <a href="#" data-toggle="modal" data-target="#DeleteServiceModal"><button><img src="Assets\Delete.png"></button></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -221,7 +221,7 @@
                                                     <a href="EditCards.html" data-toggle="tooltip" title="Edit"><button><img src="Assets\Edit.png"></button></a>
                                                 </div>
                                                 <div class="col-sm-4">
-                                                    <a href="#" data-toggle="tooltip" title="Delete"><button><img src="Assets\Delete.png"></button></a>
+                                                    <a href="#" data-toggle="modal" data-target="#DeleteServiceModal"><button><img src="Assets\Delete.png"></button></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -249,7 +249,7 @@
                                                     <a href="EditCards.html" data-toggle="tooltip" title="Edit"><button><img src="Assets\Edit.png"></button></a>
                                                 </div>
                                                 <div class="col-sm-4">
-                                                    <a href="#" data-toggle="tooltip" title="Delete"><button><img src="Assets\Delete.png"></button></a>
+                                                    <a href="#" data-toggle="modal" data-target="#DeleteServiceModal"><button><img src="Assets\Delete.png"></button></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -279,7 +279,7 @@
                                                     <a href="EditVideo.html" data-toggle="tooltip" title="Edit"><button><img src="Assets\Edit.png"></button></a>
                                                 </div>
                                                 <div class="col-sm-4">
-                                                    <a href="#" data-toggle="tooltip" title="Delete"><button><img src="Assets\Delete.png"></button></a>
+                                                    <a href="#" data-toggle="modal" data-target="#DeleteVideoModal"><button><img src="Assets\Delete.png"></button></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -306,7 +306,7 @@
                                                     <a href="EditVideo.html" data-toggle="tooltip" title="Edit"><button><img src="Assets\Edit.png"></button></a>
                                                 </div>
                                                 <div class="col-sm-4">
-                                                    <a href="#" data-toggle="tooltip" title="Delete"><button><img src="Assets\Delete.png"></button></a>
+                                                    <a href="#" data-toggle="modal" data-target="#DeleteVideoModal"><button><img src="Assets\Delete.png"></button></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -333,7 +333,7 @@
                                                     <a href="EditVideo.html" data-toggle="tooltip" title="Edit"><button><img src="Assets\Edit.png"></button></a>
                                                 </div>
                                                 <div class="col-sm-4">
-                                                    <a href="#" data-toggle="tooltip" title="Delete"><button><img src="Assets\Delete.png"></button></a>
+                                                    <a href="#" data-toggle="modal" data-target="#DeleteVideoModal"><button><img src="Assets\Delete.png"></button></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -372,6 +372,69 @@
                                 <iframe src="https://www.youtube.com/embed/videoseries?list=UUH17RC_W1JeUc8hPnwmCKVA"></iframe>
                                 <div class="title">
                                     <h4>Lorem ipsum dolor sit amet</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="deletecarouselmodal">
+                <div class="modal" id="DeleteCarouselModal">
+                    <div class="modal-dialog modal-md modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="delete">
+                                <h3>Apakah Anda Yakin Menghapus Gambar Ini?</h3>
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <button>No</button>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <button>Yes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="deleteservicemodal">
+                <div class="modal" id="DeleteServiceModal">
+                    <div class="modal-dialog modal-md modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="delete">
+                                <h3>Apakah Anda Yakin Menghapus Service Ini?</h3>
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <button>No</button>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <button>Yes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="deletevideomodal">
+                <div class="modal" id="DeleteVideoModal">
+                    <div class="modal-dialog modal-md modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="delete">
+                                <h3>Apakah Anda Yakin Menghapus Video Ini?</h3>
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <button>No</button>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <button>Yes</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
