@@ -6,8 +6,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.10.18/css/dataTables.bootstrap4.min.css">
         <script src="js/jquery.js"></script>
         <script src="js/bootstrap.min.js"></script>
+        <script src="https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdn.datatables.net/1.10.18/js/dataTables.bootstrap4.min.js"></script>
     </head>
     <body>
         <div class="container-fluid">
@@ -73,108 +76,83 @@
                             <div class="col-sm-8">
                                 <h3>Brochures</h3>
                             </div>
-                            <div class="col-sm-4">
-                                <div class="input-group">
-                                    <input type="text" class="form-control" placeholder="Search ...">
-                                    <div class="input-group-append">
-                                        <div class="searchbar">
-                                            <button type="button"><img src="Assets\Search.png"></button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                         <div class="iconbtn">
-                            <table class="table table-hover table-bordered table-striped">
+                        <table id="infotable" class="display table-hover table-bordered table-striped" style="width:100%">
+                            <thead>
                                 <tr>
-                                    <th style="width: 10px;">No</th>
-                                    <th style="width: 350px;">Title</th>
-                                    <th>Link</th>
+                                    <th rowspan="2">Title</th>
+                                    <th rowspan="2">Link</th>
                                     <th colspan="2">Option</th>
                                 </tr>
                                 <tr>
-                                    <td>1</td>
-                                    <td>Lorem ipsum dolor sit amet</td>
-                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis mollis elit.</td>
-                                    <td  style="width: 50px; text-align: center;"><a href="EditFaq.html" data-toggle="tooltip" title="Edit"><button><img src="Assets\Edit.png"></button></a></td>
+                                    <th>Edit</th>
+                                    <th>Delete</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Cerdas Berinvestasi dengan POEMS</td>
+                                    <td><a href="http://www.poems.co.id/asp/start/frontpage/brochure/Cerdas Berinvestasi dengan POEMS.pdf">http://www.poems.co.id/asp/start/frontpage/brochure/Cerdas Berinvestasi dengan POEMS.pdf</a></td>
+                                    <td  style="width: 50px; text-align: center;"><a href="EditBrochures.html" data-toggle="tooltip" title="Edit"><button><img src="Assets\Edit.png"></button></a></td>
                                     <td style="width: 50px; text-align: center;"><a href="#" data-toggle="modal" data-target="#DeleteBrochuresModal"><button><img src="Assets\Delete.png"></button></a></td>
                                 </tr>
                                 <tr>
-                                    <td>2</td>
-                                    <td>Lorem ipsum dolor sit amet</td>
-                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis mollis elit.</td>
-                                    <td  style="width: 50px; text-align: center;"><a href="EditFaq.html" data-toggle="tooltip" title="Edit"><button><img src="Assets\Edit.png"></button></a></td>
+                                    <td>Reksadana dan Sahan dalam Satu Platform</td>
+                                    <td><a href="http://www.poems.co.id/asp/start/frontpage/brochure/Brosur Saham Dan Reksadana.pdf">http://www.poems.co.id/asp/start/frontpage/brochure/Brosur Saham Dan Reksadana.pdf</a></td>
+                                    <td  style="width: 50px; text-align: center;"><a href="EditBrochures.html" data-toggle="tooltip" title="Edit"><button><img src="Assets\Edit.png"></button></a></td>
                                     <td style="width: 50px; text-align: center;"><a href="#" data-toggle="modal" data-target="#DeleteBrochuresModal"><button><img src="Assets\Delete.png"></button></a></td>
                                 </tr>
                                 <tr>
-                                    <td>3</td>
-                                    <td>Lorem ipsum dolor sit amet</td>
-                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis mollis elit.</td>
-                                    <td  style="width: 50px; text-align: center;"><a href="EditFaq.html" data-toggle="tooltip" title="Edit"><button><img src="Assets\Edit.png"></button></a></td>
+                                    <td>Margin Trading</td>
+                                    <td><a href="http://www.poems.co.id/asp/start/frontpage/brochure/Brosur_MarginTrading.pdf">http://www.poems.co.id/asp/start/frontpage/brochure/Brosur_MarginTrading.pdf</a></td>
+                                    <td  style="width: 50px; text-align: center;"><a href="EditBrochures.html" data-toggle="tooltip" title="Edit"><button><img src="Assets\Edit.png"></button></a></td>
                                     <td style="width: 50px; text-align: center;"><a href="#" data-toggle="modal" data-target="#DeleteBrochuresModal"><button><img src="Assets\Delete.png"></button></a></td>
                                 </tr>
                                 <tr>
-                                    <td>4</td>
-                                    <td>Lorem ipsum dolor sit amet</td>
-                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis mollis elit.</td>
-                                    <td  style="width: 50px; text-align: center;"><a href="EditFaq.html" data-toggle="tooltip" title="Edit"><button><img src="Assets\Edit.png"></button></a></td>
+                                    <td>POEMS "Anytime - Anywhere" Brochure</td>
+                                    <td><a href="http://www.poems.co.id/asp/start/frontpage/brochure/UserGuideProFinishRev1(210212)%20edited2.pdf">http://www.poems.co.id/asp/start/frontpage/brochure/UserGuideProFinishRev1(210212)%20edited2.pdf</a></td>
+                                    <td  style="width: 50px; text-align: center;"><a href="EditBrochures.html" data-toggle="tooltip" title="Edit"><button><img src="Assets\Edit.png"></button></a></td>
                                     <td style="width: 50px; text-align: center;"><a href="#" data-toggle="modal" data-target="#DeleteBrochuresModal"><button><img src="Assets\Delete.png"></button></a></td>
                                 </tr>
                                 <tr>
-                                    <td>5</td>
-                                    <td>Lorem ipsum dolor sit amet</td>
-                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis mollis elit.</td>
-                                    <td  style="width: 50px; text-align: center;"><a href="EditFaq.html" data-toggle="tooltip" title="Edit"><button><img src="Assets\Edit.png"></button></a></td>
+                                    <td>POEMS Family Brochure</td>
+                                    <td><a href="http://www.poems.co.id/asp/start/frontpage/brochure/BrosurPoemsFamily.pdf">http://www.poems.co.id/asp/start/frontpage/brochure/BrosurPoemsFamily.pdf</a></td>
+                                    <td  style="width: 50px; text-align: center;"><a href="EditBrochures.html" data-toggle="tooltip" title="Edit"><button><img src="Assets\Edit.png"></button></a></td>
                                     <td style="width: 50px; text-align: center;"><a href="#" data-toggle="modal" data-target="#DeleteBrochuresModal"><button><img src="Assets\Delete.png"></button></a></td>
                                 </tr>
                                 <tr>
-                                    <td>6</td>
-                                    <td>Lorem ipsum dolor sit amet</td>
-                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis mollis elit.</td>
-                                    <td  style="width: 50px; text-align: center;"><a href="EditFaq.html" data-toggle="tooltip" title="Edit"><button><img src="Assets\Edit.png"></button></a></td>
+                                    <td>POEMS ProTrader Brochure</td>
+                                    <td><a href="http://www.poems.co.id/asp/start/frontpage/brochure/BrosurProTrader.pdf">http://www.poems.co.id/asp/start/frontpage/brochure/BrosurProTrader.pdf</a></td>
+                                    <td  style="width: 50px; text-align: center;"><a href="EditBrochures.html" data-toggle="tooltip" title="Edit"><button><img src="Assets\Edit.png"></button></a></td>
                                     <td style="width: 50px; text-align: center;"><a href="#" data-toggle="modal" data-target="#DeleteBrochuresModal"><button><img src="Assets\Delete.png"></button></a></td>
                                 </tr>
                                 <tr>
-                                    <td>7</td>
-                                    <td>Lorem ipsum dolor sit amet</td>
-                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis mollis elit.</td>
-                                    <td  style="width: 50px; text-align: center;"><a href="EditFaq.html" data-toggle="tooltip" title="Edit"><button><img src="Assets\Edit.png"></button></a></td>
+                                    <td>ReksaDana Brochure</td>
+                                    <td><a href="http://www.poems.co.id/asp/start/frontpage/brochure/BrosurReksadana.pdf">http://www.poems.co.id/asp/start/frontpage/brochure/BrosurReksadana.pdf</a></td>
+                                    <td  style="width: 50px; text-align: center;"><a href="EditBrochures.html" data-toggle="tooltip" title="Edit"><button><img src="Assets\Edit.png"></button></a></td>
                                     <td style="width: 50px; text-align: center;"><a href="#" data-toggle="modal" data-target="#DeleteBrochuresModal"><button><img src="Assets\Delete.png"></button></a></td>
                                 </tr>
                                 <tr>
-                                    <td>8</td>
-                                    <td>Lorem ipsum dolor sit amet</td>
-                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis mollis elit.</td>
-                                    <td  style="width: 50px; text-align: center;"><a href="EditFaq.html" data-toggle="tooltip" title="Edit"><button><img src="Assets\Edit.png"></button></a></td>
+                                    <td>Phillip Money Market Fund Brochure</td>
+                                    <td><a href="http://www.poems.co.id/asp/start/frontpage/brochure/Brosur%20pmmf.pdf">http://www.poems.co.id/asp/start/frontpage/brochure/Brosur%20pmmf.pdf</a></td>
+                                    <td  style="width: 50px; text-align: center;"><a href="EditBrochures.html" data-toggle="tooltip" title="Edit"><button><img src="Assets\Edit.png"></button></a></td>
                                     <td style="width: 50px; text-align: center;"><a href="#" data-toggle="modal" data-target="#DeleteBrochuresModal"><button><img src="Assets\Delete.png"></button></a></td>
                                 </tr>
                                 <tr>
-                                    <td>9</td>
-                                    <td>Lorem ipsum dolor sit amet</td>
-                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis mollis elit.</td>
-                                    <td  style="width: 50px; text-align: center;"><a href="EditFaq.html" data-toggle="tooltip" title="Edit"><button><img src="Assets\Edit.png"></button></a></td>
+                                    <td>Flyer Promo Discount 50%</td>
+                                    <td><a href="http://www.poems.co.id/asp/start/frontpage/brochure/flyer-promo.pdf">http://www.poems.co.id/asp/start/frontpage/brochure/flyer-promo.pdf</a></td>
+                                    <td  style="width: 50px; text-align: center;"><a href="EditBrochures.html" data-toggle="tooltip" title="Edit"><button><img src="Assets\Edit.png"></button></a></td>
                                     <td style="width: 50px; text-align: center;"><a href="#" data-toggle="modal" data-target="#DeleteBrochuresModal"><button><img src="Assets\Delete.png"></button></a></td>
                                 </tr>
-                                <tr>
-                                    <td>10</td>
-                                    <td>Lorem ipsum dolor sit amet</td>
-                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis mollis elit.</td>
-                                    <td  style="width: 50px; text-align: center;"><a href="EditFaq.html" data-toggle="tooltip" title="Edit"><button><img src="Assets\Edit.png"></button></a></td>
-                                    <td style="width: 50px; text-align: center;"><a href="#" data-toggle="modal" data-target="#DeleteBrochuresModal"><button><img src="Assets\Delete.png"></button></a></td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div class="pagination">
-                            <a href="#">&laquo;</a>
-                            <a href="#" class="active">1</a>
-                            <a href="#">2</a>
-                            <a href="#">3</a>
-                            <a href="#">4</a>
-                            <a href="#">5</a>
-                            <a href="#">...</a>
-                            <a href="#">10</a>
-                            <a href="#">&raquo;</a>
-                        </div>
+                            </tbody>
+                        </table>
+                        <script>
+                            $(document).ready(function() {
+                                $('#infotable').DataTable();
+                            } );
+                        </script>
+                    </div>
                         <div class="clear" style="height: 200px;"></div>
                     </div>
                 </div>

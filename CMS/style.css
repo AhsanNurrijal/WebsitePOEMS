@@ -311,33 +311,6 @@ a {
     margin-top: -2px;
 }
 
-.pagination {
-  display: inline-block;
-  float: right;
-}
-
-.pagination a {
-  color: black;
-  float: left;
-  padding: 8px 16px;
-  text-decoration: none;
-  transition: background-color .3s;
-  border: 1px solid #ddd;
-  margin-top: 20px;
-  margin-bottom: 30px;
-  font-size: 14px;
-}
-
-.pagination a.active {
-  background-image: linear-gradient(#ccc, #fff);
-  color: #000;
-  border: 1px solid #aaa;
-}
-
-.pagination a:hover:not(.active) {
-  background-image: linear-gradient(#eee, #fff);
-}
-
 .dropbtn {
   background-color: #003466;
   color: white;
@@ -727,10 +700,6 @@ th {
   font-size: 14px;
   text-align: center !important;
   font-family: sans-serif;
-}
-
-td:first-child{
-  text-align: center;
 }
 
 td{

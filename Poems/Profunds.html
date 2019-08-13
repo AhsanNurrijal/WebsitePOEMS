@@ -6,8 +6,11 @@
    		<meta name="viewport" content="width=device-width, initial-scale=1">
    		<link rel="stylesheet" type="text/css" href="style.css">
    		<link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.10.18/css/dataTables.bootstrap4.min.css">
 		<script src="js/jquery.js"></script>
    		<script src="js/bootstrap.min.js"></script>
+        <script src="https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdn.datatables.net/1.10.18/js/dataTables.bootstrap4.min.js"></script>
 	</head>
 	<body>
 		<div class="container">
@@ -134,27 +137,31 @@
                                 </ul>
                                 <div class="tab-content">
                                     <div id="all" class="tab-pane active">
-                                        <table id="t05">
-                                            <tr>
-                                                <th rowspan="2">No.</th>
-                                                <th rowspan="2" style="width: 200px;">Product Name</th>
-                                                <th colspan="2">Min Investment</th>
-                                                <th colspan="2">Fee (%)</th>
-                                                <th colspan="4">Return (%)</th>
-                                                <th rowspan="2">Ccy</th>
-                                                <th rowspan="2">NAV *</th>
-                                            </tr>
-                                            <tr>
-                                                <th>New</th>
-                                                <th>Top Up</th>
-                                                <th>Subs</th>
-                                                <th>Redeem</th>
-                                                <th>1&nbsp;M</th>
-                                                <th>1&nbsp;Y</th>
-                                                <th>YTD</th>
-                                                <th>3&nbsp;Y</th>
-                                            </tr>
-                                            <tr>
+                                        <br>
+                                        <table id="infotable" class="display table-hover table-bordered table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th rowspan="2">No</th>
+                                                    <th rowspan="2" style="width: 200px;">Product Name</th>
+                                                    <th colspan="2">Min Investment</th>
+                                                    <th colspan="2">Fee (%)</th>
+                                                    <th colspan="4">Return</th>
+                                                    <th rowspan="2">Ccy</th>
+                                                    <th rowspan="2">Nav*</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>New</th>
+                                                    <th>Top Up</th>
+                                                    <th>Subs</th>
+                                                    <th>Redeem</th>
+                                                    <th>1 M</th>
+                                                    <th>1 Y</th>
+                                                    <th>YTD</th>
+                                                    <th>3 Y</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
                                                 <td>1</td>
                                                 <td><a href="#" data-toggle="modal" data-target="#detail">Aberdeen Standard Indonesia Balanced Growth Fund</a></td>
                                                 <td>100,000</td>
@@ -223,7 +230,8 @@
                                                 <td>5.71</td>
                                                 <td>IDR</td>
                                               <td>4,054.14</td>
-                                            </tr>                                        
+                                            </tr>  
+                                            </tbody>
                                         </table>
                                     </div>
                                     <div id="equity" class="tab-pane fade">
@@ -599,6 +607,13 @@
                                         </table>
                                     </div>
                                 </div>
+                                <script>
+                                    $(document).ready(function() {
+                                        $('#infotable').DataTable( {
+                                            "ordering": false,
+                                        });
+                                    } );
+                                </script>
                                 <div class="modal" id="detail">
                                     <div class="modal-dialog modal-lg modal-dialog-centered">
                                         <div class="modal-content">

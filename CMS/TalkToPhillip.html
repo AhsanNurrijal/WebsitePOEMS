@@ -6,8 +6,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.10.18/css/dataTables.bootstrap4.min.css">
         <script src="js/jquery.js"></script>
         <script src="js/bootstrap.min.js"></script>
+        <script src="https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdn.datatables.net/1.10.18/js/dataTables.bootstrap4.min.js"></script>
     </head>
     <body>
         <div class="container-fluid">
@@ -88,128 +91,316 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-4">
-                                <div class="input-group">
-                                    <input type="text" class="form-control" placeholder="Search ...">
-                                    <div class="input-group-append">
-                                        <div class="searchbar">
-                                            <button type="button"><img src="Assets\Search.png"></button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
+                        <br>
                         <div class="iconbtn">
-                            <table class="table table-hover table-bordered table-striped">
+                        <table id="infotable" class="display table-hover table-bordered table-striped" style="width:100%;">
+                            <thead>
                                 <tr>
-                                    <th style="width: 10px;">No</th>
-                                    <th style="width: 350px;">Question</th>
-                                    <th>Answer</th>
+                                    <th rowspan="2">City</th>
+                                    <th rowspan="2">Address</th>
+                                    <th rowspan="2">Telephone</th>
+                                    <th rowspan="2">Fax</th>
+                                    <th rowspan="2">Email</th>
                                     <th colspan="2">Option</th>
                                 </tr>
                                 <tr>
-                                    <td>1</td>
-                                    <td>Lorem ipsum dolor sit amet</td>
-                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis mollis elit.</td>
+                                    <th>Edit</th>
+                                    <th>Delete</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Central Office</td>
+                                    <td>ANZ Tower Level 23B Jl. Jend. Sudirman Kav. 33A, Jakarta 10220</td>
+                                    <td>(+6221) 57 900 900, 57 900 800</td>
+                                    <td>(+6221) 57 900 809</td>
+                                    <td>customercare@phillip.co.id</td>
                                     <td  style="width: 50px; text-align: center;"><a href="EditTalkToPhillip.html" data-toggle="tooltip" title="Edit"><button><img src="Assets\Edit.png"></button></a></td>
                                     <td style="width: 50px; text-align: center;"><a href="#" data-toggle="modal" data-target="#DeleteContactModal"><button><img src="Assets\Delete.png"></button></a></td>
                                 </tr>
                                 <tr>
-                                    <td>2</td>
-                                    <td>Lorem ipsum dolor sit amet</td>
-                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis mollis elit.</td>
+                                    <td>Ruko Mega Grosir Cempaka Mas</td>
+                                    <td>Jln. Let. Jend. Soeprapto Blok D No. 7 Jakarta, 10640</td>
+                                    <td>(021) 4288 5051 / 4288 5052</td>
+                                    <td>(021) 4288 5049</td>
+                                    <td></td>
                                     <td  style="width: 50px; text-align: center;"><a href="EditTalkToPhillip.html" data-toggle="tooltip" title="Edit"><button><img src="Assets\Edit.png"></button></a></td>
                                     <td style="width: 50px; text-align: center;"><a href="#" data-toggle="modal" data-target="#DeleteContactModal"><button><img src="Assets\Delete.png"></button></a></td>
                                 </tr>
                                 <tr>
-                                    <td>3</td>
-                                    <td>Lorem ipsum dolor sit amet</td>
-                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis mollis elit.</td>
+                                    <td>Puri</td>
+                                    <td>Metro Park Residence. Tower Milan LG 16 Jl. Pilar Mas Raya Kav 28 Jakarta Barat 11520</td>
+                                    <td>(021) 2258 1073</td>
+                                    <td></td>
+                                    <td></td>
                                     <td  style="width: 50px; text-align: center;"><a href="EditTalkToPhillip.html" data-toggle="tooltip" title="Edit"><button><img src="Assets\Edit.png"></button></a></td>
                                     <td style="width: 50px; text-align: center;"><a href="#" data-toggle="modal" data-target="#DeleteContactModal"><button><img src="Assets\Delete.png"></button></a></td>
                                 </tr>
                                 <tr>
-                                    <td>4</td>
-                                    <td>Lorem ipsum dolor sit amet</td>
-                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis mollis elit.</td>
+                                    <td>Pantai Indah Kapuk</td>
+                                    <td>Jl. Pantai Indah Barat Rukan Ekslusif BGM Blok B-6</td>
+                                    <td>(021) 5694 5791,5694 5792,5694 5793</td>
+                                    <td>(021) 56945790</td>
+                                    <td></td>
                                     <td  style="width: 50px; text-align: center;"><a href="EditTalkToPhillip.html" data-toggle="tooltip" title="Edit"><button><img src="Assets\Edit.png"></button></a></td>
                                     <td style="width: 50px; text-align: center;"><a href="#" data-toggle="modal" data-target="#DeleteContactModal"><button><img src="Assets\Delete.png"></button></a></td>
                                 </tr>
                                 <tr>
-                                    <td>5</td>
-                                    <td>Lorem ipsum dolor sit amet</td>
-                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis mollis elit.</td>
+                                    <td>Kelapa Gading</td>
+                                    <td>Jl. Boulevard Raya Blok WB2/27 Kelapa Gading Permai Jakarta Utara 14240</td>
+                                    <td>(021) 458 79 264</td>
+                                    <td></td>
+                                    <td>Bapak Tjandra (tjandrabuana@phillip.co.id)</td>
                                     <td  style="width: 50px; text-align: center;"><a href="EditTalkToPhillip.html" data-toggle="tooltip" title="Edit"><button><img src="Assets\Edit.png"></button></a></td>
                                     <td style="width: 50px; text-align: center;"><a href="#" data-toggle="modal" data-target="#DeleteContactModal"><button><img src="Assets\Delete.png"></button></a></td>
                                 </tr>
                                 <tr>
-                                    <td>6</td>
-                                    <td>Lorem ipsum dolor sit amet</td>
-                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis mollis elit.</td>
+                                    <td>Mangga Dua</td>
+                                    <td>Ruko Bahan Bangunan Mangga Dua Blok F1/8 Jl. Mangga Dua Selatan Jakarta 10730</td>
+                                    <td>(021) 6220 3589</td>
+                                    <td>(021) 6220 3602</td>
+                                    <td></td>
                                     <td  style="width: 50px; text-align: center;"><a href="EditTalkToPhillip.html" data-toggle="tooltip" title="Edit"><button><img src="Assets\Edit.png"></button></a></td>
                                     <td style="width: 50px; text-align: center;"><a href="#" data-toggle="modal" data-target="#DeleteContactModal"><button><img src="Assets\Delete.png"></button></a></td>
                                 </tr>
                                 <tr>
-                                    <td>7</td>
-                                    <td>Lorem ipsum dolor sit amet</td>
-                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis mollis elit.</td>
+                                    <td>Roxy</td>
+                                    <td>Pusat Niaga Roxy Mas Blok B2/2 Jl. KH. Hasyim Ashari - Jakarta Barat</td>
+                                    <td>(021) 638 68 308</td>
+                                    <td>(021) 633 34 20</td>
+                                    <td></td>
                                     <td  style="width: 50px; text-align: center;"><a href="EditTalkToPhillip.html" data-toggle="tooltip" title="Edit"><button><img src="Assets\Edit.png"></button></a></td>
                                     <td style="width: 50px; text-align: center;"><a href="#" data-toggle="modal" data-target="#DeleteContactModal"><button><img src="Assets\Delete.png"></button></a></td>
                                 </tr>
                                 <tr>
-                                    <td>8</td>
-                                    <td>Lorem ipsum dolor sit amet</td>
-                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis mollis elit.</td>
+                                    <td>Taman Palem</td>
+                                    <td>Citypark Business District Blok B2 No.12 Cengkareng - Jakarta Barat 11730</td>
+                                    <td>(021) 225221 47 /48</td>
+                                    <td>(021) 2252 2148</td>
+                                    <td>phillippalem@yahoo.com/adminpalem@phillip.co.id</td>
                                     <td  style="width: 50px; text-align: center;"><a href="EditTalkToPhillip.html" data-toggle="tooltip" title="Edit"><button><img src="Assets\Edit.png"></button></a></td>
                                     <td style="width: 50px; text-align: center;"><a href="#" data-toggle="modal" data-target="#DeleteContactModal"><button><img src="Assets\Delete.png"></button></a></td>
                                 </tr>
                                 <tr>
-                                    <td>9</td>
-                                    <td>Lorem ipsum dolor sit amet</td>
-                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis mollis elit.</td>
+                                    <td>Tanah Abang</td>
+                                    <td>PMTA (Pusat Mode Tanah Abang) Zona 3 Lt. 5 No. 001 Jl. K.H Wahid Hasyim, Tanah Abang, Jakarta Pusat 10250</td>
+                                    <td>(021) 5010 1638</td>
+                                    <td></td>
+                                    <td></td>
                                     <td  style="width: 50px; text-align: center;"><a href="EditTalkToPhillip.html" data-toggle="tooltip" title="Edit"><button><img src="Assets\Edit.png"></button></a></td>
                                     <td style="width: 50px; text-align: center;"><a href="#" data-toggle="modal" data-target="#DeleteContactModal"><button><img src="Assets\Delete.png"></button></a></td>
                                 </tr>
                                 <tr>
-                                    <td>10</td>
-                                    <td>Lorem ipsum dolor sit amet</td>
-                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis mollis elit.</td>
+                                    <td>Citra Garden 2</td>
+                                    <td>Komp. Citra Niaga Blok A/12 Kalideres - Jakarta Barat 11830</td>
+                                    <td>(021) 5437 4635</td>
+                                    <td></td>
+                                    <td></td>
                                     <td  style="width: 50px; text-align: center;"><a href="EditTalkToPhillip.html" data-toggle="tooltip" title="Edit"><button><img src="Assets\Edit.png"></button></a></td>
                                     <td style="width: 50px; text-align: center;"><a href="#" data-toggle="modal" data-target="#DeleteContactModal"><button><img src="Assets\Delete.png"></button></a></td>
                                 </tr>
-                            </table>
-                        </div>
-                        <div class="pagination">
-                            <a href="#">&laquo;</a>
-                            <a href="#" class="active">1</a>
-                            <a href="#">2</a>
-                            <a href="#">3</a>
-                            <a href="#">4</a>
-                            <a href="#">5</a>
-                            <a href="#">...</a>
-                            <a href="#">10</a>
-                            <a href="#">&raquo;</a>
-                        </div>
+                                <tr>
+                                    <td>Alam Sutera</td>
+                                    <td>Ruko Prominence Blok 38 - G No. 18 Jl. Sutra Barat Boulevard Alam Sutra 15143 Tangerang</td>
+                                    <td>(021) 3005 2589</td>
+                                    <td></td>
+                                    <td>admnserpong@phillip.co.id/agustar@phillip.co.id</td>
+                                    <td  style="width: 50px; text-align: center;"><a href="EditTalkToPhillip.html" data-toggle="tooltip" title="Edit"><button><img src="Assets\Edit.png"></button></a></td>
+                                    <td style="width: 50px; text-align: center;"><a href="#" data-toggle="modal" data-target="#DeleteContactModal"><button><img src="Assets\Delete.png"></button></a></td>
+                                </tr>
+                                <tr>
+                                    <td>Bandung</td>
+                                    <td>Ruko Paskal Hypersquare Blk D-40 Bandung</td>
+                                    <td>(022) 860 60 765/(0812) 8848 7000</td>
+                                    <td>(022) 860 61 120</td>
+                                    <td></td>
+                                    <td  style="width: 50px; text-align: center;"><a href="EditTalkToPhillip.html" data-toggle="tooltip" title="Edit"><button><img src="Assets\Edit.png"></button></a></td>
+                                    <td style="width: 50px; text-align: center;"><a href="#" data-toggle="modal" data-target="#DeleteContactModal"><button><img src="Assets\Delete.png"></button></a></td>
+                                </tr>
+                                <tr>
+                                    <td>Purwokerto</td>
+                                    <td>Jl. Perintis Kemerdekaan No. 38 Purwokerto - Jawa Tengah, 53110</td>
+                                    <td>(0281) 626 899</td>
+                                    <td>(0281) 891 150</td>
+                                    <td></td>
+                                    <td  style="width: 50px; text-align: center;"><a href="EditTalkToPhillip.html" data-toggle="tooltip" title="Edit"><button><img src="Assets\Edit.png"></button></a></td>
+                                    <td style="width: 50px; text-align: center;"><a href="#" data-toggle="modal" data-target="#DeleteContactModal"><button><img src="Assets\Delete.png"></button></a></td>
+                                </tr>
+                                <tr>
+                                    <td>Semarang</td>
+                                    <td>Jl. Karang Wulan Timur No. 2-4 Semarang, Indonesia</td>
+                                    <td>(024) 355 5959</td>
+                                    <td>(024) 351 3194</td>
+                                    <td></td>
+                                    <td  style="width: 50px; text-align: center;"><a href="EditTalkToPhillip.html" data-toggle="tooltip" title="Edit"><button><img src="Assets\Edit.png"></button></a></td>
+                                    <td style="width: 50px; text-align: center;"><a href="#" data-toggle="modal" data-target="#DeleteContactModal"><button><img src="Assets\Delete.png"></button></a></td>
+                                </tr>
+                                <tr>
+                                    <td>Solo</td>
+                                    <td>Bursa Efek Indonesia Kantor Perwakilan Jawa Tengah II Gedung Graha Prioritas (Lantai 1) Jl. Slamet Riyadi No. 302-304 Solo - Surakarta 57141</td>
+                                    <td>(+6221) 57 900 900, 57 900 800</td>
+                                    <td>(+6221) 57 900 809</td>
+                                    <td>customercare@phillip.co.id</td>
+                                    <td  style="width: 50px; text-align: center;"><a href="EditTalkToPhillip.html" data-toggle="tooltip" title="Edit"><button><img src="Assets\Edit.png"></button></a></td>
+                                    <td style="width: 50px; text-align: center;"><a href="#" data-toggle="modal" data-target="#DeleteContactModal"><button><img src="Assets\Delete.png"></button></a></td>
+                                </tr>
+                                <tr>
+                                    <td>Tegal</td>
+                                    <td>Kompleks Nirmala Square Blok C No. 7 Jl. Yos Sudarso Tegal, Jawa Tengah 52121</td>
+                                    <td>(0283) 340-774</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td  style="width: 50px; text-align: center;"><a href="EditTalkToPhillip.html" data-toggle="tooltip" title="Edit"><button><img src="Assets\Edit.png"></button></a></td>
+                                    <td style="width: 50px; text-align: center;"><a href="#" data-toggle="modal" data-target="#DeleteContactModal"><button><img src="Assets\Delete.png"></button></a></td>
+                                </tr>
+                                <tr>
+                                    <td>Yogyakarta</td>
+                                    <td>Bursa Efek Indonesia Kantor Perwakilan Yogyakarta Jl. AM Sangaji Nomor 84 Yogyakarta 55233</td>
+                                    <td>(0274) 557 367</td>
+                                    <td></td>
+                                    <td>Poems.yogyakarta@phillip.co.id</td>
+                                    <td  style="width: 50px; text-align: center;"><a href="EditTalkToPhillip.html" data-toggle="tooltip" title="Edit"><button><img src="Assets\Edit.png"></button></a></td>
+                                    <td style="width: 50px; text-align: center;"><a href="#" data-toggle="modal" data-target="#DeleteContactModal"><button><img src="Assets\Delete.png"></button></a></td>
+                                </tr>
+                                <tr>
+                                    <td>Surabaya</td>
+                                    <td>Jl. Darmokali No. 76 Surabaya, 60241</td>
+                                    <td>(031) 566 0027</td>
+                                    <td>(031) 501 0567</td>
+                                    <td></td>
+                                    <td  style="width: 50px; text-align: center;"><a href="EditTalkToPhillip.html" data-toggle="tooltip" title="Edit"><button><img src="Assets\Edit.png"></button></a></td>
+                                    <td style="width: 50px; text-align: center;"><a href="#" data-toggle="modal" data-target="#DeleteContactModal"><button><img src="Assets\Delete.png"></button></a></td>
+                                </tr>
+                                <tr>
+                                    <td>Denpasar</td>
+                                    <td>Bursa Efek Indonesia Kantor Perwakilan Bali Jl. Cok. Agung Tresna No. 168 Denpasar 80232</td>
+                                    <td>(0361) 445-8172</td>
+                                    <td></td>
+                                    <td>Poems.denpasar@phillip.co.id</td>
+                                    <td  style="width: 50px; text-align: center;"><a href="EditTalkToPhillip.html" data-toggle="tooltip" title="Edit"><button><img src="Assets\Edit.png"></button></a></td>
+                                    <td style="width: 50px; text-align: center;"><a href="#" data-toggle="modal" data-target="#DeleteContactModal"><button><img src="Assets\Delete.png"></button></a></td>
+                                </tr>
+                                <tr>
+                                    <td>Pontianak</td>
+                                    <td>Kantor Perwakilan (KP) BEI Pontianak Komplek Perkantoran Central Perdana Blok A2 - A3 Jalan Perdana Pontianak 78124</td>
+                                    <td>(0561) 810 2257</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td  style="width: 50px; text-align: center;"><a href="EditTalkToPhillip.html" data-toggle="tooltip" title="Edit"><button><img src="Assets\Edit.png"></button></a></td>
+                                    <td style="width: 50px; text-align: center;"><a href="#" data-toggle="modal" data-target="#DeleteContactModal"><button><img src="Assets\Delete.png"></button></a></td>
+                                </tr>
+                                <tr>
+                                    <td>Jambi</td>
+                                    <td>AJl. GR. Djamin Datuk Bagindo No. 56A Jambi, 36142</td>
+                                    <td>(0741) 755 5699</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td  style="width: 50px; text-align: center;"><a href="EditTalkToPhillip.html" data-toggle="tooltip" title="Edit"><button><img src="Assets\Edit.png"></button></a></td>
+                                    <td style="width: 50px; text-align: center;"><a href="#" data-toggle="modal" data-target="#DeleteContactModal"><button><img src="Assets\Delete.png"></button></a></td>
+                                </tr>
+                                <tr>
+                                    <td>Bandar Lampung</td>
+                                    <td>Jl. Pangeran Diponegoro 36A Bandar Lampung 35214</td>
+                                    <td>(0721) 474 234</td>
+                                    <td>(0721) 474 108</td>
+                                    <td></td>
+                                    <td  style="width: 50px; text-align: center;"><a href="EditTalkToPhillip.html" data-toggle="tooltip" title="Edit"><button><img src="Assets\Edit.png"></button></a></td>
+                                    <td style="width: 50px; text-align: center;"><a href="#" data-toggle="modal" data-target="#DeleteContactModal"><button><img src="Assets\Delete.png"></button></a></td>
+                                </tr>
+                                <tr>
+                                    <td>Palembang</td>
+                                    <td>Kantor Perwakilan (KP) – BEI Palembang Jl. Angkatan 45 No.13-14 Palembang 30137</td>
+                                    <td>(0711) 564 9260</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td  style="width: 50px; text-align: center;"><a href="EditTalkToPhillip.html" data-toggle="tooltip" title="Edit"><button><img src="Assets\Edit.png"></button></a></td>
+                                    <td style="width: 50px; text-align: center;"><a href="#" data-toggle="modal" data-target="#DeleteContactModal"><button><img src="Assets\Delete.png"></button></a></td>
+                                </tr>
+                                <tr>
+                                    <td>Batam</td>
+                                    <td>Kompleks Mahkota Raya Blok A No. 10 Batam Centre, Kota Batam 29456, Kepri</td>
+                                    <td>(0778) 748 3337, 748 3030, 748 3131</td>
+                                    <td>(0778) 748 3117</td>
+                                    <td></td>
+                                    <td  style="width: 50px; text-align: center;"><a href="EditTalkToPhillip.html" data-toggle="tooltip" title="Edit"><button><img src="Assets\Edit.png"></button></a></td>
+                                    <td style="width: 50px; text-align: center;"><a href="#" data-toggle="modal" data-target="#DeleteContactModal"><button><img src="Assets\Delete.png"></button></a></td>
+                                </tr>
+                                <tr>
+                                    <td>Manado</td>
+                                    <td>Kantor Perwakilan (KP) BEI Manado Ruko Mega Style, Blok 1C No. 9,Kompleks Mega Mas Jl. Piere Tendean Boulevard Manado 95000</td>
+                                    <td>(0431) 882 0390</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td  style="width: 50px; text-align: center;"><a href="EditTalkToPhillip.html" data-toggle="tooltip" title="Edit"><button><img src="Assets\Edit.png"></button></a></td>
+                                    <td style="width: 50px; text-align: center;"><a href="#" data-toggle="modal" data-target="#DeleteContactModal"><button><img src="Assets\Delete.png"></button></a></td>
+                                </tr>
+                                <tr>
+                                    <td>Jayapura</td>
+                                    <td>Kantor Perwakilan (KP)- BEI Jayapura Komplek Perkantoran Ardipura No.3 Jayapura 99112, Papua</td>
+                                    <td>(0967) 532 430</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td  style="width: 50px; text-align: center;"><a href="EditTalkToPhillip.html" data-toggle="tooltip" title="Edit"><button><img src="Assets\Edit.png"></button></a></td>
+                                    <td style="width: 50px; text-align: center;"><a href="#" data-toggle="modal" data-target="#DeleteContactModal"><button><img src="Assets\Delete.png"></button></a></td>
+                                </tr>
+                                <tr>
+                                    <td>Banjarmasin</td>
+                                    <td>Jl. A. Yani Km. 5,5 No. 2A Banjarmasin 70249</td>
+                                    <td>(0511) 6744 204</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td  style="width: 50px; text-align: center;"><a href="EditTalkToPhillip.html" data-toggle="tooltip" title="Edit"><button><img src="Assets\Edit.png"></button></a></td>
+                                    <td style="width: 50px; text-align: center;"><a href="#" data-toggle="modal" data-target="#DeleteContactModal"><button><img src="Assets\Delete.png"></button></a></td>
+                                </tr>
+                                <tr>
+                                    <td>Ambon</td>
+                                    <td>Kantor Perwakilan (KP)- BEI Ambon Jln. Philip Latumahina, No. 16, Ruko C. Kel. Honipopu, Kec. Sirimau, Ambon 97115</td>
+                                    <td>(0911) 382 3336</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td  style="width: 50px; text-align: center;"><a href="EditTalkToPhillip.html" data-toggle="tooltip" title="Edit"><button><img src="Assets\Edit.png"></button></a></td>
+                                    <td style="width: 50px; text-align: center;"><a href="#" data-toggle="modal" data-target="#DeleteContactModal"><button><img src="Assets\Delete.png"></button></a></td>
+                                </tr>
+                                <tr>
+                                    <td>Medan</td>
+                                    <td>Kompleks Multatuli Indah Jl. Multatuli Blok CC No. 5 & 6 Medan 20151</td>
+                                    <td>(061) 457 4033, 457 4055</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td  style="width: 50px; text-align: center;"><a href="EditTalkToPhillip.html" data-toggle="tooltip" title="Edit"><button><img src="Assets\Edit.png"></button></a></td>
+                                    <td style="width: 50px; text-align: center;"><a href="#" data-toggle="modal" data-target="#DeleteContactModal"><button><img src="Assets\Delete.png"></button></a></td>
+                                </tr>
+                                <tr>
+                                    <td>Mataram</td>
+                                    <td>Bursa Efek Indonesia Kantor Perwakilan Nusa Tenggara Barat Jl. Pejanggik No. 47 C Mataram 83122</td>
+                                    <td>(0370) 7504-852</td>
+                                    <td></td>
+                                    <td>Poems.mataram@phillip.co.id</td>
+                                    <td  style="width: 50px; text-align: center;"><a href="EditTalkToPhillip.html" data-toggle="tooltip" title="Edit"><button><img src="Assets\Edit.png"></button></a></td>
+                                    <td style="width: 50px; text-align: center;"><a href="#" data-toggle="modal" data-target="#DeleteContactModal"><button><img src="Assets\Delete.png"></button></a></td>
+                                </tr>
+                                <tr>
+                                    <td>Palu</td>
+                                    <td>Bursa Efek Indonesia Kantor Perwakilan Sulawesi Tengah Jl. Jendral Sudirman No. 1 Petak 5 (Kompleks Transmart Mall)Palu 94111</td>
+                                    <td>(0451) 8841-122</td>
+                                    <td></td>
+                                    <td>Poems.palu@phillip.co.id</td>
+                                    <td  style="width: 50px; text-align: center;"><a href="EditTalkToPhillip.html" data-toggle="tooltip" title="Edit"><button><img src="Assets\Edit.png"></button></a></td>
+                                    <td style="width: 50px; text-align: center;"><a href="#" data-toggle="modal" data-target="#DeleteContactModal"><button><img src="Assets\Delete.png"></button></a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <script>
+                            $(document).ready(function() {
+                                $('#infotable').DataTable();
+                            } );
+                        </script>
+                    </div>
                         <div class="clear" style="height: 200px;"></div>
                     </div>
                 </div>
             </div>
-            <script>
-                var acc = document.getElementsByClassName("accordion");
-                var i;
-                for (i = 0; i < acc.length; i++) {
-                    acc[i].addEventListener("click", function() {
-                        this.classList.toggle("active");
-                        var panel = this.nextElementSibling;
-                        if (panel.style.maxHeight){
-                            panel.style.maxHeight = null;
-                        }
-                        else {
-                                panel.style.maxHeight = panel.scrollHeight + "px";
-                        } 
-                    });
-                }
-            </script>
         </div>
         <div class="deletecontactmodal">
                 <div class="modal" id="DeleteContactModal">

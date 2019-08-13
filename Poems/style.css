@@ -601,7 +601,7 @@ section {
 
 /*--- Footer ---*/
 footer {
-	background-color:  #003466;
+	background-color: #003466;
 	clear: both;
 	margin-top: 50px;
 }
@@ -686,8 +686,8 @@ footer {
   padding: 5px;
 }
 
-.profunds table#t05, th, td {
-  border: 1px solid #eee;
+.profunds table, th, td {
+  border: 1px solid #003466 !important;
   border-collapse: collapse;
 }
 
@@ -819,18 +819,18 @@ footer {
 .profunds th, td {
   padding: 5px;
   text-align: center;
-  font-size: 12px;
+  font-size: 11px !important;
 }
 
-.profunds table#t05 tr:nth-child(even) {
+.profunds table tr:nth-child(even) {
   background-color: #ddd;
 }
 
-.profunds table#t05 tr:nth-child(odd) {
+.profunds table tr:nth-child(odd) {
  background-color: #fff;
 }
 
-.profunds table#t05 th {
+.profunds table th {
   background-color: #006DD7;
   color: white;
   font-family: sans-serif;
@@ -1628,4 +1628,27 @@ footer {
 
 .iconmedia img:hover {
   padding-bottom: 5px;
+}
+
+.profunds .dataTables_length label{
+  margin-left: 12px;
+  font-size: 12px;
+}
+
+.profunds .dataTables_filter label{
+  margin-right: 14px;
+  font-size: 12px;
+}
+
+.profunds .dataTables_wrapper .dataTables_paginate{
+  margin-right: 15px! important;
+}
+
+.profunds .dataTables_wrapper .dataTables_paginate a{
+  font-size: 12px;
+}
+
+.profunds .dataTables_info{
+  font-size: 12px;
+  margin-left: 12px;
 }
