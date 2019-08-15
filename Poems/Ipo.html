@@ -7,6 +7,7 @@
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdn.datatables.net/1.10.18/css/dataTables.bootstrap4.min.css">
+        <script src="js/script.js"></script>
 		<script src="js/jquery.js"></script>
 		<script src="js/bootstrap.min.js"></script>
         <script src="https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js"></script>
@@ -15,96 +16,82 @@
 	<body>
 		<div class="container">
 			<header>
-				<div class="row">
-					<div class=col-sm-1>
-						<div id="mySidebar" class="sidebar">
-							<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-							<a href="Profile.html"><img src="Assets\Icon\SidebarIcon1.png">&emsp;Profile</a>
-							<a href="https://www.phillip.com.sg/"><img src="Assets\Icon\SidebarIcon2.png">&emsp;Phillip Capital</a>
-							<a href="http://www.phillip.co.id/TentangKami/Karir"><img src="Assets\Icon\SidebarIcon3.png">&emsp;Career</a>
-							<a href="KnowledgeBase.html"><img src="Assets\Icon\SidebarIcon4.png">&emsp;Knowledge Base</a>
-							<a href="Download.html"><img src="Assets\Icon\SidebarIcon5.png">&emsp;Download</a>
-							<br>
-							<a>Contact Us</a>
-							<a href="https://www.facebook.com/TalkToPhillip"><img src="Assets\Icon\fb.png">&emsp;Facebook</a>
-							<a href="https://twitter.com/intent/follow?source=followbutton&variant=1.0&screen_name=TalkToPhillip"><img src="Assets\Icon\tw.png">&emsp;Twitter</a>
-							<a href="http://instagram.com/talktophillip"><img src="Assets\Icon\ig.png">&emsp;Instagram</a>
-							<a href="https://www.youtube.com/user/PhillipIndonesia?sub_confirmation=1"><img src="Assets\Icon\yt.png">&emsp;Youtube</a>
-						</div>
-						<div id="main">
-							<button class="openbtn" onclick="openNav()">☰</button>  
-						</div>
-					</div>
-					<script>
-						function openNav() {
-							document.getElementById("mySidebar").style.width = "250px";
-							document.getElementById("main").style.marginLeft = "250px";
-						}
-						function closeNav() {
-							document.getElementById("mySidebar").style.width = "0";
-							document.getElementById("main").style.marginLeft= "0";
-						}
-					</script>
-					<div class=col-sm-7>
-						<div class="img-fluid">
-							<a href="Homepage.html"><img src="Assets\logo.png"></a>
-						</div>
-					</div>
-					<div class=col-sm-2>
-						<div class=openbutton>
-							<a href="OpenAccount.html"><button type="button"><img src="Assets\Icon\OpenAccount.png">&emsp;Open an Account</button></a>
-						</div>
-					</div>
-					<div class=col-sm-2>
-						<div class=loginbutton>
-							<button type="button" data-toggle="modal" data-target="#myModal"><img src="Assets\Icon\Login.png">&emsp;Login</button>
-						</div>
-					</div>
-					<div class="modal" id="myModal">
-						<div class="modal-dialog modal-dialog-centered">
-							<div class="modal-content">
-								<div class="row">
-									<div class="col-sm-12">
-										<form action="/action_page.php">
-											<img src="Assets\loginlogo.png">
-											<input type="text" placeholder="Username"><br>
-											<input type="Password" placeholder="Password"><br>
-											<input type="text" placeholder="PIN CODE"><br>
-											<input type="submit" value="Desktop Login">
-											<p><a href="ForgotPassword.html">Forgot Password ?</a>&emsp;|&emsp;<a href="#" data-toggle="modal" data-target="#disclaimers">Disclaimer</a></p>
-											<div class="openaccount">
-												<a href="OpenAccount.html"><button type="button">Open An Account</button></a>
-											</div>
-											<p style="margin-left: 200px;"><a href="#" a href="#" data-toggle="modal" data-target="#trial">Free Trial</a></p>
-										</form>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-sm-12">
-						<nav class="navbar navbar-expand-lg">
-							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-							<span class="navbar-toggler-icon"></span>
-							</button>
-							<div class="collapse navbar-collapse" id="navbarSupportedContent">
-								<ul class="navbar-nav w-100 nav-justified">
-									<li class="nav-item"><a class="nav-link" href="Homepage.html">HOME<span class="sr-only">(current)</span></a></li>
-									<li class="nav-item"><a class="nav-link" href="TradingPlatform.html">TRADING PLATFORM</a></li>
-									<li class="nav-item"><a class="nav-link" href="Services.html">SERVICES</a></li>
-									<li class="nav-item"><a class="nav-link" href="Profunds.html">PROFUNDS</a></li>
-									<li class="nav-item"><a class="nav-link active" href="Ipo.html">IPO</a></li>
-									<li class="nav-item"><a class="nav-link" href="News-Investasi.html">NEWS</a></li>
-									<li class="nav-item"><a class="nav-link" href="Research.html">RESEARCH</a></li>
-									<li class="nav-item"><a class="nav-link" href="TalkToPhillip.html">TALK TO PHILLIP</a></li>
-								</ul>
-							</div>
-						</nav>
-					</div>
-				</div>
-			</header>
+                <div class="row">
+                    <div class="col-sm-1">
+                        <div id="mySidebar" class="sidebar">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                            <a href="Profile.html"><img src="Assets\Icon\SidebarIcon1.png">&emsp;Profile</a>
+                            <a href="https://www.phillip.com.sg/"><img src="Assets\Icon\SidebarIcon2.png">&emsp;Phillip Capital</a>
+                            <a href="http://www.phillip.co.id/TentangKami/Karir"><img src="Assets\Icon\SidebarIcon3.png">&emsp;Career</a>
+                            <a href="KnowledgeBase.html"><img src="Assets\Icon\SidebarIcon4.png">&emsp;Knowledge Base</a>
+                            <a href="Download.html"><img src="Assets\Icon\SidebarIcon5.png">&emsp;Download</a>
+                            <br>
+                            <a>Contact Us</a>
+                            <a href="https://www.facebook.com/TalkToPhillip"><img src="Assets\Icon\fb.png">&emsp;Facebook</a>
+                            <a href="https://twitter.com/intent/follow?source=followbutton&variant=1.0&screen_name=TalkToPhillip"><img src="Assets\Icon\tw.png">&emsp;Twitter</a>
+                            <a href="http://instagram.com/talktophillip"><img src="Assets\Icon\ig.png">&emsp;Instagram</a>
+                            <a href="https://www.youtube.com/user/PhillipIndonesia?sub_confirmation=1"><img src="Assets\Icon\yt.png">&emsp;Youtube</a>
+                        </div>
+                        <div id="main">
+                            <button class="openbtn" onclick="openNav()">☰</button>  
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="img-fluid">
+                            <a href="Homepage.html"><img src="Assets\logo.png"></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                    </div>
+                    <div class="col-sm-2 col 6">
+                        <div class=openbutton>
+                            <a href="OpenAccount.html"><button type="button"><img src="Assets\Icon\OpenAccount.png">&emsp;Open an Account</button></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-2 col 6">
+                        <div class=loginbutton>
+                            <button type="button" data-toggle="modal" data-target="#myModal"><img src="Assets\Icon\Login.png">&emsp;Login</button>
+                        </div>
+                    </div>
+                    <div class="modal" id="myModal">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <form action="/action_page.php">
+                                            <img src="Assets\loginlogo.png" class="center">
+                                            <input type="text" placeholder="Username"><br>
+                                            <input type="Password" placeholder="Password"><br>
+                                            <input type="text" placeholder="PIN CODE"><br>
+                                            <input type="submit" value="Desktop Login">
+                                            <p><a href="ForgotPassword.html">Forgot Password ?</a>&emsp;|&emsp;<a href="#" data-toggle="modal" data-target="#disclaimers">Disclaimer</a></p>
+                                            <div class="openaccount">
+                                                <a href="OpenAccount.html"><button type="button">Open An Account</button></a>
+                                            </div>
+                                            <p><a href="#" a href="#" data-toggle="modal" data-target="#trial">Free Trial</a></p>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="topnav" id="myTopnav">
+                            <a href="Homepage.html">HOME</a>
+                            <a href="TradingPlatform.html">TRADING PLATFORM</a>
+                            <a href="Services.html">SERVICES</a>
+                            <a href="Profunds.html">PROFUNDS</a>
+                            <a href="Ipo.html" class="active">IPO</a>
+                            <a href="News-Investasi.html">NEWS</a>
+                            <a href="Research.html">RESEARCH</a>
+                            <a href="TalkToPhillip.html">TALK TO PHILLIP</a>
+                            <a href="javascript:void(0);" class="icon" onclick="myFunction()">☰</a>
+                        </div>
+                    </div>
+                </div>
+            </header>
 			<div class="row">
 				<div class="col-sm-9">
 					<div class="articletitle">
