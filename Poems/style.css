@@ -1726,3 +1726,24 @@ footer {
 .sorting, .sorting_asc, .sorting_desc{
   padding-right: 0px !important;
 }
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 30px;
+  border: none;
+  outline: none;
+  background-color: #003466;
+  color: white;
+  cursor: pointer;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
