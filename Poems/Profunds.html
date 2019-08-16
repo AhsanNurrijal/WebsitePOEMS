@@ -1,21 +1,20 @@
-<!DOCTYPE html>
 <html>
-	<head>
-    	<title>ProFunds - POEMS - Phillip Online Electronic Mart Systems | The Best Online Trading in Indonesia</title>
-    	<meta charset="utf-8">
-   		<meta name="viewport" content="width=device-width, initial-scale=1">
-   		<link rel="stylesheet" type="text/css" href="style.css">
-   		<link rel="stylesheet" href="css/bootstrap.min.css">
+    <head>
+        <title>ProFunds - POEMS - Phillip Online Electronic Mart Systems | The Best Online Trading in Indonesia</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdn.datatables.net/1.10.18/css/dataTables.bootstrap4.min.css">
         <script src="js/script.js"></script>
-		<script src="js/jquery.js"></script>
-   		<script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
         <script src="https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js"></script>
         <script src="https://cdn.datatables.net/1.10.18/js/dataTables.bootstrap4.min.js"></script>
-	</head>
-	<body>
-		<div class="container">
-			<header>
+    </head>
+    <body>
+        <div class="container">
+            <header>
                 <div class="row">
                     <div class="col-sm-1">
                         <div id="mySidebar" class="sidebar">
@@ -28,7 +27,7 @@
                             <br>
                             <a>Contact Us</a>
                             <a href="https://www.facebook.com/TalkToPhillip"><img src="Assets\Icon\fb.png">&emsp;Facebook</a>
-                            <a href="https://twitter.com/intent/follow?source=followbutton&variant=1.0&screen_name=TalkToPhillip"><img src="Assets\Icon\tw.png">&emsp;Twitter</a>
+                            <a href="https://twitter.com/intent/follow?source=followbutton&amp;variant=1.0&amp;screen_name=TalkToPhillip"><img src="Assets\Icon\tw.png">&emsp;Twitter</a>
                             <a href="http://instagram.com/talktophillip"><img src="Assets\Icon\ig.png">&emsp;Instagram</a>
                             <a href="https://www.youtube.com/user/PhillipIndonesia?sub_confirmation=1"><img src="Assets\Icon\yt.png">&emsp;Youtube</a>
                         </div>
@@ -44,12 +43,12 @@
                     <div class="col-sm-4">
                     </div>
                     <div class="col-sm-2 col 6">
-                        <div class=openbutton>
+                        <div class="openbutton">
                             <a href="OpenAccount.html"><button type="button"><img src="Assets\Icon\OpenAccount.png">&emsp;Open an Account</button></a>
                         </div>
                     </div>
                     <div class="col-sm-2 col 6">
-                        <div class=loginbutton>
+                        <div class="loginbutton">
                             <button type="button" data-toggle="modal" data-target="#myModal"><img src="Assets\Icon\Login.png">&emsp;Login</button>
                         </div>
                     </div>
@@ -68,7 +67,7 @@
                                             <div class="openaccount">
                                                 <a href="OpenAccount.html"><button type="button">Open An Account</button></a>
                                             </div>
-                                            <p><a href="#" a href="#" data-toggle="modal" data-target="#trial">Free Trial</a></p>
+                                            <p><a href="#" a="" data-toggle="modal" data-target="#trial">Free Trial</a></p>
                                         </form>
                                     </div>
                                 </div>
@@ -76,7 +75,7 @@
                         </div>
                     </div>
                 </div>
-                <button onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
+                <button onclick="topFunction()" id="myBtn" title="Go to top" style="display: block;">↑</button>
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="topnav" id="myTopnav">
@@ -93,17 +92,17 @@
                     </div>
                 </div>
             </header>
-			<div class="row">
-				<div class="col-sm-9">
-					<div class="articletitle">
-	        			<h2>POEMS ProFunds</h2>
-	    			</div>
-				    <div class="profunds">
-				        <div class="row">
-				        	<div class="col-sm-12">
-				           		<img src="Assets\Profunds.png">
-				        	</div>
-				    	</div>
+            <div class="row">
+                <div class="col-sm-9">
+                    <div class="articletitle">
+                        <h2>POEMS ProFunds</h2>
+                    </div>
+                    <div class="profunds">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <img src="Assets\Profunds.png">
+                            </div>
+                        </div>
                         <div class="article">
                             <section>
                                 <ul class="nav nav-tabs nav-justified" role="tablist">
@@ -1120,13 +1119,13 @@
                                         $('table.display').DataTable();
                                     } );
                                 </script>
-                                <div class="modal" id="detail">
+                                <div class="modal" id="detail" style="display: none;" aria-hidden="true">
                                     <div class="modal-dialog modal-lg modal-dialog-centered">
                                         <div class="modal-content">
                                             <div class="row" style="border: 3px solid #aaa;">
                                                 <div class="col-sm-3" style="padding: 0px;">
                                                     <div class="detailprofundsmenu">
-                                                        <ul class="nav nav-tabs nav-justified flex-column" role="tablist">
+                                                        <ul class="d-none d-lg-block nav nav-tabs nav-justified flex-column" role="tablist">
                                                              <li class="nav-item">
                                                                 <a class="nav-link active" data-toggle="tab" href="#over"><img src="Assets\Icon\DetailProfunds1.png"><br><p>Overview</p></a>
                                                             </li>
@@ -1149,6 +1148,31 @@
                                                                 <a class="nav-link" data-toggle="tab" href="#compa"><img src="Assets\Icon\DetailProfunds7.png"><br><p>Compare</p></a>
                                                             </li>
                                                         </ul>
+                                                        <div class="small">
+                                                            <ul class="d-lg-none nav nav-tabs nav-justified" role="tablist">
+                                                                <li class="nav-item">
+                                                                    <a class="nav-link active" data-toggle="tab" href="#over"><img src="Assets\Icon\DetailProfunds1.png"><br><p>Overview</p></a>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a class="nav-link" data-toggle="tab" href="#propro"><img src="Assets\Icon\DetailProfunds2.png"><br><p>Product</p></a>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a class="nav-link" data-toggle="tab" href="#compro"><img src="Assets\Icon\DetailProfunds3.png"><br><p>Company</p></a>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a class="nav-link" data-toggle="tab" href="#perform"><img src="Assets\Icon\DetailProfunds4.png"><br><p>Performance</p></a>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a class="nav-link" data-toggle="tab" href="#compo"><img src="Assets\Icon\DetailProfunds5.png"><br><p>Composition</p></a>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a class="nav-link" data-toggle="tab" href="#risk"><img src="Assets\Icon\DetailProfunds6.png"><br><p>Risk Profile</p></a>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a class="nav-link" data-toggle="tab" href="#compa"><img src="Assets\Icon\DetailProfunds7.png"><br><p>Compare</p></a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-9" style="background-image: linear-gradient(to right, #fff, #eee);">
@@ -1157,11 +1181,11 @@
                                                             <div class="detailpro">
                                                                 <div class="titlepro">
                                                                     <div class="row">
-                                                                        <div class="col-sm-9">
+                                                                        <div class="col-sm-9 col-9">
                                                                             <h3>Overview</h3>
                                                                             <h2>Aberdeen Standard Indonesia Balanced Growth Fund</h2>
                                                                         </div>
-                                                                        <div class="col-sm-3">
+                                                                        <div class="col-sm-3 col-3">
                                                                             <button type="button">Subscribe</button>
                                                                         </div>
                                                                     </div>
@@ -1173,7 +1197,7 @@
                                                                 <div class="row">
                                                                     <div class="col-sm-5">
                                                                         <div class="row">
-                                                                            <div class="col-sm-6">
+                                                                            <div class="col-sm-6 col-6">
                                                                                 <div class="contentpro">
                                                                                     <h5 style="margin-right: 0px;">Rating</h5>
                                                                                     <p>★★★</p>
@@ -1183,7 +1207,7 @@
                                                                                     <p>26 Nov 2007</p>
                                                                                 </div>
                                                                             </div>
-                                                                            <div class="col-sm-6">
+                                                                            <div class="col-sm-6 col-6">
                                                                                 <div class="classection">
                                                                                     <div class="navsec">
                                                                                         <section>
@@ -1222,10 +1246,10 @@
                                                                                     <img src="Assets\Compo.png" style="width: 175px;">
                                                                                 </div>
                                                                                 <div class="col-sm-6">
-                                                                                    <div class=prosbutton>
+                                                                                    <div class="prosbutton">
                                                                                         <button type="button" style="float: right;">Prospectus</button>
                                                                                     </div>
-                                                                                    <div class=factbutton>
+                                                                                    <div class="factbutton">
                                                                                         <button type="button">Factsheet</button>
                                                                                     </div>
                                                                                 </div>
@@ -1233,10 +1257,10 @@
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                                <div class="clear" style="height: 1px;"></div>
+                                                                <div class="clear" style="height: 21px;"></div>
                                                                 <div class="footpro">
                                                                     <table id="t20">
-                                                                        <tr>
+                                                                        <tbody><tr>
                                                                             <th style="width: 200px;">Return (%)</th>
                                                                             <th>1 Day</th>
                                                                             <th>1 Month</th>
@@ -1256,7 +1280,7 @@
                                                                             <td>11.92</td>
                                                                             <td>15.76</td>
                                                                         </tr>
-                                                                    </table>
+                                                                    </tbody></table>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1264,11 +1288,11 @@
                                                             <div class="detailpro">
                                                                 <div class="titlepro">
                                                                     <div class="row">
-                                                                        <div class="col-sm-9">
+                                                                        <div class="col-sm-9 col-9">
                                                                             <h3>Product Profile</h3>
                                                                             <h2>Aberdeen Standard Indonesia Balanced Growth Fund</h2>
                                                                         </div>
-                                                                        <div class="col-sm-3">
+                                                                        <div class="col-sm-3 col-3">
                                                                             <button type="button">Subscribe</button>
                                                                         </div>
                                                                     </div>
@@ -1281,7 +1305,7 @@
                                                                                 <p>★★★</p>
                                                                             </div>
                                                                             <div class="row">
-                                                                                <div class="col-sm-6">
+                                                                                <div class="col-sm-6 col-6">
                                                                                     <div class="classection">
                                                                                         <div class="navsec">
                                                                                             <section>
@@ -1292,7 +1316,7 @@
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
-                                                                                <div class="col-sm-6">
+                                                                                <div class="col-sm-6 col-6">
                                                                                     <div class="classection">
                                                                                         <div class="aumsec">
                                                                                             <section>
@@ -1317,9 +1341,9 @@
                                                                     <div class="row">
                                                                         <div class="col-sm-5">
                                                                             <h5 style="margin-right: 0px;">Investment Manager Profile</h5>
-                                                                            <div class="tablepro"  style="height: 170px; overflow: auto;">
+                                                                            <div class="tablepro" style="height: 170px; overflow: auto;">
                                                                                 <table id="t11">
-                                                                                    <tr>
+                                                                                    <tbody><tr>
                                                                                         <td>Fund Manager</td>
                                                                                         <td>PT. Aberdeen Standard Investments Indonesia</td>
                                                                                     </tr>
@@ -1379,14 +1403,14 @@
                                                                                         <td>Valuation Factor *</td>
                                                                                         <td>55%</td>
                                                                                     </tr>
-                                                                                </table>
+                                                                                </tbody></table>
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-sm-7">
                                                                             <h5>Awards</h5>
                                                                             <div class="tablepro">
                                                                                 <table id="t11" style="width: 97%">
-                                                                                    <tr>
+                                                                                    <tbody><tr>
                                                                                     <th>Date</th>
                                                                                         <th>Award</th>
                                                                                         <th>Issuer</th>
@@ -1396,16 +1420,16 @@
                                                                                         <td></td>
                                                                                         <td></td>
                                                                                     </tr>
-                                                                                </table>
+                                                                                </tbody></table>
                                                                             </div>
                                                                             <div class="row">
-                                                                                <div class="col-sm-6">
-                                                                                    <div class=prosbutton>
+                                                                                <div class="col-sm-6 col-6">
+                                                                                    <div class="prosbutton">
                                                                                         <button type="button">Prospectus</button>
                                                                                     </div>
                                                                                 </div>
-                                                                                <div class="col-sm-6">
-                                                                                    <div class=factbutton>
+                                                                                <div class="col-sm-6 col-6">
+                                                                                    <div class="factbutton">
                                                                                         <button type="button">Factsheet</button>
                                                                                     </div>
                                                                                 </div>
@@ -1413,10 +1437,10 @@
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                                <div class="clear" style="height: 30px;"></div>
+                                                                <div class="clear" style="height: 40px;"></div>
                                                                 <div class="footpro">
                                                                     <table id="t20">
-                                                                        <tr>
+                                                                        <tbody><tr>
                                                                             <th style="width: 200px;">Return (%)</th>
                                                                             <th>1 Day</th>
                                                                             <th>1 Month</th>
@@ -1436,7 +1460,7 @@
                                                                             <td>11.92</td>
                                                                             <td>15.76</td>
                                                                         </tr>
-                                                                    </table>
+                                                                    </tbody></table>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1444,11 +1468,11 @@
                                                             <div class="detailpro">
                                                                 <div class="titlepro">
                                                                     <div class="row">
-                                                                        <div class="col-sm-9">
+                                                                        <div class="col-sm-9 col-9">
                                                                             <h3>Company Profile</h3>
                                                                             <h2>Aberdeen Standard Indonesia Balanced Growth Fund</h2>
                                                                         </div>
-                                                                        <div class="col-sm-3">
+                                                                        <div class="col-sm-3 col-3">
                                                                             <button type="button">Subscribe</button>
                                                                         </div>
                                                                     </div>
@@ -1466,7 +1490,7 @@
                                                                             <h5>Awards</h5>
                                                                             <div class="tablepro">
                                                                                 <table id="t11" style="width: 100%">
-                                                                                    <tr>
+                                                                                    <tbody><tr>
                                                                                         <th>Date</th>
                                                                                         <th>Award</th>
                                                                                         <th>Issuer</th>
@@ -1476,16 +1500,16 @@
                                                                                         <td></td>
                                                                                         <td></td>
                                                                                     </tr>
-                                                                                </table>
+                                                                                </tbody></table>
                                                                             </div>
                                                                             <div class="row">
-                                                                                <div class="col-sm-6">
-                                                                                    <div class=prosbutton>
+                                                                                <div class="col-sm-6 col-6">
+                                                                                    <div class="prosbutton">
                                                                                         <button type="button">Prospectus</button>
                                                                                     </div>
                                                                                 </div>
-                                                                                <div class="col-sm-6">
-                                                                                    <div class=factbutton>
+                                                                                <div class="col-sm-6 col-6">
+                                                                                    <div class="factbutton">
                                                                                         <button type="button">Factsheet</button>
                                                                                     </div>
                                                                                 </div>
@@ -1493,10 +1517,10 @@
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                                <div class="clear" style="height: 37px;"></div>
+                                                                <div class="clear" style="height: 60px;"></div>
                                                                 <div class="footpro">
                                                                     <table id="t20" style=" margin-top: 0px;">
-                                                                        <tr>
+                                                                        <tbody><tr>
                                                                             <th style="width: 200px;">Return (%)</th>
                                                                             <th>1 Day</th>
                                                                             <th>1 Month</th>
@@ -1516,7 +1540,7 @@
                                                                             <td>11.92</td>
                                                                             <td>15.76</td>
                                                                         </tr>
-                                                                    </table>
+                                                                    </tbody></table>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1524,11 +1548,11 @@
                                                             <div class="detailpro">
                                                                 <div class="titlepro">
                                                                     <div class="row">
-                                                                        <div class="col-sm-9">
+                                                                        <div class="col-sm-9 col-9">
                                                                             <h3>Performance</h3>
                                                                             <h2>Aberdeen Standard Indonesia Balanced Growth Fund</h2>
                                                                         </div>
-                                                                        <div class="col-sm-3">
+                                                                        <div class="col-sm-3 col-3">
                                                                             <button type="button">Subscribe</button>
                                                                         </div>
                                                                     </div>
@@ -1555,28 +1579,28 @@
                                                                             </ul>
                                                                             <div class="tab-content">
                                                                                 <div id="om" class="tab-pane active">
-                                                                                    <img src="Assets\Perform1.png" style="width: 537px; height: 225px;">
+                                                                                    <img src="Assets\Perform1.png" class="img-fluid" style="width: 97%;">
                                                                                 </div>
                                                                                 <div id="sm" class="tab-pane fade">
-                                                                                    <img src="Assets\Perform2.png" style="width: 537px; height: 225px;">
+                                                                                    <img src="Assets\Perform2.png" class="img-fluid" style="width: 97%;">
                                                                                 </div>
                                                                                 <div id="oy" class="tab-pane fade">
-                                                                                    <img src="Assets\Perform3.png" style="width: 537px; height: 225px;">
+                                                                                    <img src="Assets\Perform3.png" class="img-fluid" style="width: 97%;">
                                                                                 </div>
                                                                                 <div id="ty" class="tab-pane fade">
-                                                                                    <img src="Assets\Perform4.png" style="width: 537px; height: 225px;">
+                                                                                    <img src="Assets\Perform4.png" class="img-fluid" style="width: 97%;">
                                                                                 </div>
                                                                                 <div id="ytd" class="tab-pane fade">
-                                                                                    <img src="Assets\Perform5.png" style="width: 537px; height: 225px;">
+                                                                                    <img src="Assets\Perform5.png" class="img-fluid" style="width: 97%;">
                                                                                 </div>
                                                                             </div>
                                                                         </div>
                                                                     </section>
                                                                 </div>
-                                                                <div class="clear" style="height: 80px;"></div>
+                                                                <div class="clear" style="height: 100px;"></div>
                                                                 <div class="footpro">
                                                                     <table id="t20">
-                                                                        <tr>
+                                                                        <tbody><tr>
                                                                             <th style="width: 200px;">Return (%)</th>
                                                                             <th>1 Day</th>
                                                                             <th>1 Month</th>
@@ -1596,7 +1620,7 @@
                                                                             <td>11.92</td>
                                                                             <td>15.76</td>
                                                                         </tr>
-                                                                    </table>
+                                                                    </tbody></table>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1604,11 +1628,11 @@
                                                             <div class="detailpro">
                                                                 <div class="titlepro">
                                                                     <div class="row">
-                                                                        <div class="col-sm-9">
+                                                                        <div class="col-sm-9 col-9">
                                                                             <h3>Composition</h3>
                                                                             <h2>Aberdeen Standard Indonesia Balanced Growth Fund</h2>
                                                                         </div>
-                                                                        <div class="col-sm-3">
+                                                                        <div class="col-sm-3 col-3">
                                                                             <button type="button">Subscribe</button>
                                                                         </div>
                                                                     </div>
@@ -1618,7 +1642,7 @@
                                                                 </div>
                                                                 <div class="tablepro" style="height: 125px; overflow: auto;">
                                                                     <table id="t11">
-                                                                        <tr>
+                                                                        <tbody><tr>
                                                                             <td>ASTRA INTERNATIONAL</td>
                                                                         </tr>
                                                                         <tr>
@@ -1648,7 +1672,7 @@
                                                                         <tr>
                                                                             <td>Hanjaya Mandala Sampoerna</td>
                                                                         </tr>
-                                                                    </table>
+                                                                    </tbody></table>
                                                                 </div>
                                                                 <div class="row">
                                                                     <div class="col-sm-4">
@@ -1657,7 +1681,7 @@
                                                                         </div>
                                                                         <div class="tablepro">
                                                                             <table id="t11" style=" width:100%">
-                                                                                <tr>
+                                                                                <tbody><tr>
                                                                                     <td>Obligasi</td>
                                                                                     <td>5 - 75</td>
                                                                                 </tr>
@@ -1669,7 +1693,7 @@
                                                                                     <td>Pasar Uang</td>
                                                                                     <td>5 - 75</td>
                                                                                 </tr>
-                                                                            </table>
+                                                                            </tbody></table>
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-sm-8">
@@ -1680,10 +1704,10 @@
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                                <div class="clear" style="height: 0px;"></div>
+                                                                <div class="clear" style="height: 20px;"></div>
                                                                 <div class="footpro">
                                                                     <table id="t20">
-                                                                        <tr>
+                                                                        <tbody><tr>
                                                                             <th style="width: 200px;">Return (%)</th>
                                                                             <th>1 Day</th>
                                                                             <th>1 Month</th>
@@ -1703,7 +1727,7 @@
                                                                             <td>11.92</td>
                                                                             <td>15.76</td>
                                                                         </tr>
-                                                                    </table>
+                                                                    </tbody></table>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1711,11 +1735,11 @@
                                                             <div class="detailpro">
                                                                 <div class="titlepro">
                                                                     <div class="row">
-                                                                        <div class="col-sm-9">
+                                                                        <div class="col-sm-9 col-9">
                                                                             <h3>Risk Profile</h3>
                                                                             <h2>Aberdeen Standard Indonesia Balanced Growth Fund</h2>
                                                                         </div>
-                                                                        <div class="col-sm-3">
+                                                                        <div class="col-sm-3 col-3">
                                                                             <button type="button">Subscribe</button>
                                                                         </div>
                                                                     </div>
@@ -1725,7 +1749,7 @@
                                                                 </div>
                                                                 <div class="tablepro">
                                                                     <table id="t11">
-                                                                        <tr>
+                                                                        <tbody><tr>
                                                                             <td>Investement Horizon</td>
                                                                             <td>Price</td>
                                                                         </tr>
@@ -1749,12 +1773,12 @@
                                                                             <td>Standard Deviation</td>
                                                                             <td>-</td>
                                                                         </tr>
-                                                                    </table>
+                                                                    </tbody></table>
                                                                 </div>
-                                                                <div class="clear" style="height: 175px;"></div>
+                                                                <div class="clear" style="height: 190px;"></div>
                                                                 <div class="footpro">
                                                                     <table id="t20">
-                                                                        <tr>
+                                                                        <tbody><tr>
                                                                             <th style="width: 200px;">Return (%)</th>
                                                                             <th>1 Day</th>
                                                                             <th>1 Month</th>
@@ -1774,7 +1798,7 @@
                                                                             <td>11.92</td>
                                                                             <td>15.76</td>
                                                                         </tr>
-                                                                    </table>
+                                                                    </tbody></table>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1782,11 +1806,11 @@
                                                             <div class="detailpro">
                                                                 <div class="titlepro">
                                                                     <div class="row">
-                                                                        <div class="col-sm-9">
+                                                                        <div class="col-sm-9 col-9">
                                                                             <h3>Compare</h3>
                                                                             <h2>Aberdeen Standard Indonesia Balanced Growth Fund</h2>
                                                                         </div>
-                                                                        <div class="col-sm-3">
+                                                                        <div class="col-sm-3 col-3">
                                                                             <button type="button">Subscribe</button>
                                                                         </div>
                                                                     </div>
@@ -1830,28 +1854,28 @@
                                                                             </ul>
                                                                             <div class="tab-content">
                                                                                 <div id="oma" class="tab-pane active">
-                                                                                    <img src="Assets\Compa1.png" style="width: 537px; height: 207px;">
+                                                                                    <img src="Assets\Compa1.png" class="img-fluid" style="width: 97%;">
                                                                                 </div>
                                                                                 <div id="sma" class="tab-pane fade">
-                                                                                    <img src="Assets\Compa2.png" style="width: 537px; height: 207px;">
+                                                                                    <img src="Assets\Compa2.png" class="img-fluid" style="width: 97%;">
                                                                                 </div>
                                                                                 <div id="oya" class="tab-pane fade">
-                                                                                    <img src="Assets\Compa3.png" style="width: 537px; height: 207px;">
+                                                                                    <img src="Assets\Compa3.png" class="img-fluid" style="width: 97%;">
                                                                                 </div>
                                                                                 <div id="tya" class="tab-pane fade">
-                                                                                    <img src="Assets\Compa4.png" style="width: 537px; height: 207px;">
+                                                                                    <img src="Assets\Compa4.png" class="img-fluid" style="width: 97%;">
                                                                                 </div>
                                                                                 <div id="ytda" class="tab-pane fade">
-                                                                                    <img src="Assets\Compa5.png" style="width: 537px; height: 207px;">
+                                                                                    <img src="Assets\Compa5.png" class="img-fluid" style="width: 97%;">
                                                                                 </div>
                                                                             </div>
                                                                         </div>
                                                                     </section>
                                                                 </div>
-                                                                <div class="clear" style="height: 0px;"></div>
+                                                                <div class="clear" style="height: 20px;"></div>
                                                                 <div class="footpro">
                                                                     <table id="t20">
-                                                                        <tr>
+                                                                        <tbody><tr>
                                                                             <th style="width: 200px;">Return (%)</th>
                                                                             <th>1 Day</th>
                                                                             <th>1 Month</th>
@@ -1871,7 +1895,7 @@
                                                                             <td>11.92</td>
                                                                             <td>15.76</td>
                                                                         </tr>
-                                                                    </table>
+                                                                    </tbody></table>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1901,10 +1925,10 @@
                                 <p><i>* Investing in mutual funds contains risks and incurs charges and fees. Investors should carefully consider information contained in the prospectus, including investment objectives, risks, charges, and expenses. Past performance does not guarantee future results.</i></p><br>
                             </div>
                         </div>
-				    </div>
-				</div>
-				<div class="col-sm-3">
-					<div class="row">
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="row">
                         <div class="col-sm-12">
                             <div class="rightcolumn">
                                 <section>
@@ -1923,7 +1947,7 @@
                                     <div class="tab-content">
                                         <div id="topfreq" class="tab-pane active">
                                             <table id="t01">
-                                                <tr>
+                                                <tbody><tr>
                                                     <th>Stock</th>
                                                     <th>Price</th> 
                                                     <th>Change</th>
@@ -1931,11 +1955,11 @@
                                                 <tr>
                                                     <td colspan="3">The Service is Temporarily Unvavailable</td>
                                                 </tr>
-                                            </table>
+                                            </tbody></table>
                                         </div>
                                         <div id="topgain" class="tab-pane fade">
                                             <table id="t01">
-                                                <tr>
+                                                <tbody><tr>
                                                     <th>Stock</th>
                                                     <th>Price</th> 
                                                     <th>Change</th>
@@ -1943,11 +1967,11 @@
                                                 <tr>
                                                     <td colspan="3">The Service is Temporarily Unvavailable</td>
                                                 </tr>
-                                            </table>
+                                            </tbody></table>
                                         </div>
                                         <div id="toplos" class="tab-pane fade">
                                             <table id="t01">
-                                                <tr>
+                                                <tbody><tr>
                                                     <th>Stock</th>
                                                     <th>Price</th> 
                                                     <th>Change</th>
@@ -1955,7 +1979,7 @@
                                                 <tr>
                                                     <td colspan="3">The Service is Temporarily Unvavailable</td>
                                                 </tr>
-                                            </table>
+                                            </tbody></table>
                                         </div>
                                     </div>
                                     <ul class="nav nav-tabs nav-justified" role="tablist">
@@ -1969,7 +1993,7 @@
                                     <div class="tab-content">
                                         <div id="topval" class="tab-pane active">
                                             <table id="t01">
-                                                <tr>
+                                                <tbody><tr>
                                                     <th>Stock</th>
                                                     <th>Price</th> 
                                                     <th>Change</th>
@@ -1977,11 +2001,11 @@
                                                 <tr>
                                                     <td colspan="3">The Service is Temporarily Unvavailable</td>
                                                 </tr>
-                                            </table>
+                                            </tbody></table>
                                         </div>
                                         <div id="topvol" class="tab-pane fade">
                                             <table id="t01">
-                                                <tr>
+                                                <tbody><tr>
                                                     <th>Stock</th>
                                                     <th>Price</th> 
                                                     <th>Change</th>
@@ -1989,7 +2013,7 @@
                                                 <tr>
                                                     <td colspan="3">The Service is Temporarily Unvavailable</td>
                                                 </tr>
-                                            </table>
+                                            </tbody></table>
                                         </div>
                                     </div>
                                 </section>
@@ -2006,7 +2030,7 @@
                                     <div class="tab-content">
                                         <div id="marin" class="tab-pane active">
                                             <table id="t01">
-                                                <tr>
+                                                <tbody><tr>
                                                     <th>Index</th>
                                                     <th>Last</th> 
                                                     <th>Change</th>
@@ -2057,43 +2081,43 @@
                                                     <td>0.97</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Trade & Service</td>
+                                                    <td>Trade &amp; Service</td>
                                                     <td>816.14</td> 
                                                     <td>1.58</td>
                                                 </tr>
-                                            </table>
+                                            </tbody></table>
                                         </div>
                                         <div id="exrat" class="tab-pane fade">
                                             <table id="t01">
-                                                <tr>
+                                                <tbody><tr>
                                                     <th>Name</th>
                                                     <th>Last</th>
                                                 </tr>
                                                 <tr>
-                                                    <td>USD->IDR</td>
+                                                    <td>USD-&gt;IDR</td>
                                                     <td>Rp. 14,071</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>EUR->IDR</td>
+                                                    <td>EUR-&gt;IDR</td>
                                                     <td>Rp. 15,867.2</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>JPY->IDR</td>
+                                                    <td>JPY-&gt;IDR</td>
                                                     <td>Rp. 130.37</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>SGD->IDR</td>
+                                                    <td>SGD-&gt;IDR</td>
                                                     <td>Rp. 10,382.2</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>AUD->IDR</td>
+                                                    <td>AUD-&gt;IDR</td>
                                                     <td>Rp. 9,814.52</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>CNY->IDR</td>
+                                                    <td>CNY-&gt;IDR</td>
                                                     <td>Rp. 2,216.03</td>
                                                 </tr>
-                                            </table>
+                                            </tbody></table>
                                         </div>
                                     </div>
                                 </section>
@@ -2110,7 +2134,7 @@
                                     <div class="tab-content">
                                         <div id="pmmf" class="tab-pane active">
                                             <table id="t02">
-                                                <tr>
+                                                <tbody><tr>
                                                     <td>Fund Name</td>
                                                     <td>Phillip Money Market Fund</td>
                                                 </tr>
@@ -2150,11 +2174,11 @@
                                                     <td>1 Year Return (%)</td>
                                                     <td>5.08</td>
                                                 </tr>
-                                            </table>
+                                            </tbody></table>
                                         </div>
                                         <div id="prbf" class="tab-pane fade">
                                             <table id="t02">
-                                                <tr>
+                                                <tbody><tr>
                                                     <td>Fund Name</td>
                                                     <td>Phillip Balance Rupiah Fund</td>
                                                 </tr>
@@ -2194,7 +2218,7 @@
                                                     <td>1 Year Return (%)</td>
                                                     <td>6.61</td>
                                                 </tr>
-                                            </table>
+                                            </tbody></table>
                                         </div>
                                     </div>
                                 </section>
@@ -2211,7 +2235,7 @@
                                     <div class="tab-content">
                                         <div id="stocks" class="tab-pane active">
                                             <table id="t03">
-                                                <tr>
+                                                <tbody><tr>
                                                     <th>Stock</th>
                                                     <th>Exercise Price</th>
                                                     <th>Maturity Date</th>
@@ -2241,11 +2265,11 @@
                                                     <td>310</td>
                                                     <td>Mar 13, 2020</td>
                                                 </tr>
-                                            </table>
+                                            </tbody></table>
                                         </div>
                                         <div id="warrant" class="tab-pane fade">
                                             <table id="t03">
-                                                <tr>
+                                                <tbody><tr>
                                                     <th>Stock</th>
                                                     <th>Action</th>
                                                     <th>Cumdate</th>
@@ -2275,128 +2299,128 @@
                                                     <td>Cash Dividend</td>
                                                     <td>2 Jul 2019</td>
                                                 </tr>
-                                            </table>
+                                            </tbody></table>
                                         </div>
                                     </div>
                                 </section>
                             </div>
                         </div>
                     </div>
-				</div>
-			</div>
-		</div>
-    </body>
-    <footer>
-        <div class="container">
-            <div class="footerinfo">
-                <div class="row">
-                    <div class="col-sm-2 col-6">
-                        <h6><u><b>Accounts</b></u></h6>
-                        <p><a href="#" data-toggle="modal" data-target="#trial">Free Trial</p></a>
-                        <p><a href="OpenAccount.html">Open an Account</p></a>
-                        <div class="modal" id="trial">
-                            <div class="modal-dialog modal-xl modal-dialog-centered" style="width: 75%">
-                                <div class="modal-content">
-                                    <iframe src="https://www.poems.co.id/asp/start/frontpage/promo/promomicrosite.asp?ref=poemsdev" height="647" width="1000"></iframe>
+                </div>
+            </div>
+        </div> 
+        <footer>
+            <div class="container">
+                <div class="footerinfo">
+                    <div class="row">
+                        <div class="col-sm-2 col-6">
+                            <h6><u><b>Accounts</b></u></h6>
+                            <p><a href="#" data-toggle="modal" data-target="#trial">Free Trial</a></p>
+                            <p><a href="OpenAccount.html">Open an Account</a></p>
+                            <div class="modal" id="trial">
+                                <div class="modal-dialog modal-xl modal-dialog-centered" style="width: 75%">
+                                    <div class="modal-content">
+                                        <iframe src="https://www.poems.co.id/asp/start/frontpage/promo/promomicrosite.asp?ref=poemsdev" height="647" width="1000"></iframe>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-sm-2 col-6">
-                        <h6><u><b>Services</b></u></h6>
-                        <p><a href="Services-Stock.html">Stocks</p>
-                        <p><a href="Services-MarginTrading.html">Margin Trading</p></a>
-                        <p><a href="Services-SBL.html">SBL</p></a>
-                        <p><a href="Profunds.html">Profunds</p></a>
-                    </div>  
-                    <div class="col-sm-2 col-6">
-                        <h6><u><b>Trading Platform</b></u></h6>
-                        <p><a href="TradingPlatform-Web.html">POEMS Web-Based</p></a>
-                        <p><a href="TradingPlatform-Mobile.html">POEMS Mobile</p></a>
-                        <p><a href="TradingPlatform-Desktop.html">POEMS Desktop</p></a>
-                    </div>
-                    <div class="col-sm-2 col-6">
-                        <h6><u><b>Quicks Links</b></u></h6>
-                        <p><a href="http://www.phillip.co.id/">Phillip Sekuritas Indonesia</p></a>
-                        <p><a href="https://www.idx.co.id/">Bursa Efek Indonesia</p></a>
-                        <p><a href="http://www.ksei.co.id/">KSEI</p></a>
-                        <p><a href="https://www.ojk.go.id/Default.aspx">OJK</p></a>
-                        <p><a href="https://www.phillip.com.sg/">Phillip Capital</p></a>    
-                    </div>
-                    <div class="col-sm-2 col-6">
-                        <h6><u><b>Help & Support</b></u></h6>
-                        <p><a href="KnowledgeBase.html">Knowledge Base</p></a>
-                        <p><a href="https://www.idx.co.id/berita/jadwal-libur-bursa">IDX Calendar</p></a>
-                        <p><a href="Download.html">Download</p></a>
-                        <p><a href="#" data-toggle="modal" data-target="#disclaimers">Privacy Policy</p></a>
-                        <p><a href="#" data-toggle="modal" data-target="#disclaimers">Term of Use</p></a>
-                        <div class="modal" id="disclaimers">
-                            <div class="modal-dialog modal-lg">
-                                <div class="modal-content">
-                                    <div class="disclaimers">
-                                        <div class="content">
-                                            <h4>DISCLAIMER</h4>
-                                            <h5>setelah anda melakukan login, berarti anda telah menyetujui disclaimer di bawah ini.</h5>
-                                            <h6><u>Product</u></h6>
-                                            <p>POEMS termasuk semua fitur didalamnya (POEMS) merupakan suatu jaringan telekomunikasi dan suatu paket aplikasi yang disediakan oleh PT Phillip Sekuritas Indonesia (PTPSI) kepada nasabah untuk :</p>
-                                            <ol>
-                                                <li>Melakukan transmisi eksekusi order transaksi.</li>
-                                                <li>Melakukan aktivitas dan jasa lainnya yang disediakan oleh PTPSI dari waktu ke waktu, dan</li>
-                                                <li>Memiliki akses untuk mengetahui market indicators, charting, real-time quotes, dan informasi rekening nasabah.</li>
-                                            </ol>
-                                            <h6><u>Resiko</u></h6>
-                                            <p>Nasabah setuju bahwa sebelum menggunakan POEMS, nasabah telah memahami dan menguasai semua peraturan perdagangan saham di Bursa Efek Indonesia (BEI), serta memahami dan mengerti cara menggunakan POEMS dengan baik. Semua order yang diinput melalui POEMS menjadi tanggung jawab nasabah sepenuhnya. Nasabah setuju untuk melakukan pengecekan dan memastikan bahwa semua order sudah diterima oleh PTPSI secara benar, dan bertanggungjawab penuh bahwa tidak ada orang yang tidak terotorisasi yang diberikan hak untuk mengakses dan menggunakan POEMS melalui kode pengaman pribadinya (user id, password dan pincode). Dalam bertransaksi dengan menggunakan jaringan internet dan telekomunikasi, nasabah mengetahui dan menerima adanya resiko-resiko khusus. Beberapa resiko, tapi tidak terbatas pada hal-hal tersebut, dibawah ini:</p>
-                                            <ol>
-                                                <li>Keterlambatan atau ketidakmampuan untuk mengakses, atau menggunakan POEMS yang dikarenakan oleh kegagalan hardware, kegagalan software, kegagalan system, kegagalan koneksi, kesalahan penggunaan, keterlambatan dalam transmisi dan virus komputer.</li>
-                                                <li>Kehilangan/keterlambatan data atau informasi yang terjadi karena hal apapun, termasuk kegagalan yang dikarenakan oleh peralatan elektronik PTPSI, komputer, processor, pencatatan atau sistem komunikasi, dan</li>
-                                                <li>Kebutuhan untuk melakukan perawatan infrastruktur baik oleh pihak lain maupun sistem POEMS dari waktu ke waktu, keterlambatan, kegagalan, kesalahan, atau kehilangan transaksi yang dapat terjadi kemudian.</li>
-                                            </ol>
-                                            <h6><u>Garansi</u></h6>
-                                            <p>PTPSI tidak memberikan jaminan, garansi, atau perwakilan apapun, mengungkapkan atau menyatakan, kualitas atau kecocokan dalam setiap penggunaan tertentu atau tujuan sehubungan dengan informasi yang disajikan pada POEMS atau dalam fitur dan aspek POEMS, termasuk tidak terbatas pada nasihat investasi dan/atau akses ke informasi atau eksekusi dari rekomendasi beli atau jual dan/atau pembatalan atau perubahannya.</p>
-                                            <h6><u>Akses</u></h6>
-                                            <p>PTPSI tidak mempunyai kewajiban dan tidak akan bertanggungjawab atas semua kerugian atau ketidaknyamanan yang mungkin dialami oleh Nasabah sebagai akibat dari setiap tindakan yang dilakukan oleh Bursa Efek Indonesia dan Bapepam-LK dalam pelaksanaan peraturan atau pengawasan fungsi pada PTPSI. PTPSI dan/atau Bursa Efek Indonesia dan/atau Bapepam LK berhak untuk melakukan akses terhadap transaksi yang dilakukan oleh nasabah sehubungan dengan penyelidikan terhadap aspek yang menyangkut transaksi yang dilakukan melalui POEMS.</p>
-                                            <h6><u>Force Majeure</u></h6>
-                                            <p>PTPSI tidak mempunyai kewajiban dan tidak akan bertanggungjawab atas semua kerugian atau ketidaknyamanan yang mungkin dialami oleh Nasabah sebagai akibat dari force majeure. Hal-hal yang termasuk force majeure tetapi tidak terbatas pada kejadian kejadian diluar kuasa manusia, hukum, peraturan/kebijakan pemerintah, putusan pengadilan, pemogokan buruh, tindakan-tindakan pengalihan atau perampasan oleh negara, perang baik yang diumumkan maupun yang tidak diumumkan, kerusuhan, teroris, pemberontakan, huru-hara, kebakaran, ledakan, bencana alam, wabah penyakit dan lainnya.</p>
-                                            <h6><u>Indemnity</u></h6>
-                                            <p>PTPSI dan karyawannya dibebaskan dari segala klaim, kerugian, hutang, beban dan biaya yang timbul sehubungan dengan pemakaian POEMS .</p>
-                                            <h6><u>Penghentian</u></h6>
-                                            <p style="margin-bottom: 0px;">PTPSI sewaktu-waktu dapat menghentikan tanpa peringatan dan untuk suatu alasan apapun juga, hak Nasabah untuk mengakses dan/atau menggunakan POEMS . Dalam kejadian penghentian, PTPSI tidak dapat dibebankan oleh nasabah untuk suatu klaim, kewajiban atau kerugian (termasuk tidak terbatas pada antisipasi keuntungan/kerugian) yang mungkin dialami oleh nasabah atas penghentian tersebut.</p>
-                                            <br>
+                        <div class="col-sm-2 col-6">
+                            <h6><u><b>Services</b></u></h6>
+                            <p><a href="Services-Stock.html">Stocks</a></p><a href="Services-Stock.html">
+                            </a><p><a href="Services-Stock.html"></a><a href="Services-MarginTrading.html">Margin Trading</a></p>
+                            <p><a href="Services-SBL.html">SBL</a></p>
+                            <p><a href="Profunds.html">Profunds</a></p>
+                        </div>  
+                        <div class="col-sm-2 col-6">
+                            <h6><u><b>Trading Platform</b></u></h6>
+                            <p><a href="TradingPlatform-Web.html">POEMS Web-Based</a></p>
+                            <p><a href="TradingPlatform-Mobile.html">POEMS Mobile</a></p>
+                            <p><a href="TradingPlatform-Desktop.html">POEMS Desktop</a></p>
+                        </div>
+                        <div class="col-sm-2 col-6">
+                            <h6><u><b>Quicks Links</b></u></h6>
+                            <p><a href="http://www.phillip.co.id/">Phillip Sekuritas Indonesia</a></p>
+                            <p><a href="https://www.idx.co.id/">Bursa Efek Indonesia</a></p>
+                            <p><a href="http://www.ksei.co.id/">KSEI</a></p>
+                            <p><a href="https://www.ojk.go.id/Default.aspx">OJK</a></p>
+                            <p><a href="https://www.phillip.com.sg/">Phillip Capital</a></p>    
+                        </div>
+                        <div class="col-sm-2 col-6">
+                            <h6><u><b>Help &amp; Support</b></u></h6>
+                            <p><a href="KnowledgeBase.html">Knowledge Base</a></p>
+                            <p><a href="https://www.idx.co.id/berita/jadwal-libur-bursa">IDX Calendar</a></p>
+                            <p><a href="Download.html">Download</a></p>
+                            <p><a href="#" data-toggle="modal" data-target="#disclaimers">Privacy Policy</a></p>
+                            <p><a href="#" data-toggle="modal" data-target="#disclaimers">Term of Use</a></p>
+                            <div class="modal" id="disclaimers">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="disclaimers">
+                                            <div class="content">
+                                                <h4>DISCLAIMER</h4>
+                                                <h5>setelah anda melakukan login, berarti anda telah menyetujui disclaimer di bawah ini.</h5>
+                                                <h6><u>Product</u></h6>
+                                                <p>POEMS termasuk semua fitur didalamnya (POEMS) merupakan suatu jaringan telekomunikasi dan suatu paket aplikasi yang disediakan oleh PT Phillip Sekuritas Indonesia (PTPSI) kepada nasabah untuk :</p>
+                                                <ol>
+                                                    <li>Melakukan transmisi eksekusi order transaksi.</li>
+                                                    <li>Melakukan aktivitas dan jasa lainnya yang disediakan oleh PTPSI dari waktu ke waktu, dan</li>
+                                                    <li>Memiliki akses untuk mengetahui market indicators, charting, real-time quotes, dan informasi rekening nasabah.</li>
+                                                </ol>
+                                                <h6><u>Resiko</u></h6>
+                                                <p>Nasabah setuju bahwa sebelum menggunakan POEMS, nasabah telah memahami dan menguasai semua peraturan perdagangan saham di Bursa Efek Indonesia (BEI), serta memahami dan mengerti cara menggunakan POEMS dengan baik. Semua order yang diinput melalui POEMS menjadi tanggung jawab nasabah sepenuhnya. Nasabah setuju untuk melakukan pengecekan dan memastikan bahwa semua order sudah diterima oleh PTPSI secara benar, dan bertanggungjawab penuh bahwa tidak ada orang yang tidak terotorisasi yang diberikan hak untuk mengakses dan menggunakan POEMS melalui kode pengaman pribadinya (user id, password dan pincode). Dalam bertransaksi dengan menggunakan jaringan internet dan telekomunikasi, nasabah mengetahui dan menerima adanya resiko-resiko khusus. Beberapa resiko, tapi tidak terbatas pada hal-hal tersebut, dibawah ini:</p>
+                                                <ol>
+                                                    <li>Keterlambatan atau ketidakmampuan untuk mengakses, atau menggunakan POEMS yang dikarenakan oleh kegagalan hardware, kegagalan software, kegagalan system, kegagalan koneksi, kesalahan penggunaan, keterlambatan dalam transmisi dan virus komputer.</li>
+                                                    <li>Kehilangan/keterlambatan data atau informasi yang terjadi karena hal apapun, termasuk kegagalan yang dikarenakan oleh peralatan elektronik PTPSI, komputer, processor, pencatatan atau sistem komunikasi, dan</li>
+                                                    <li>Kebutuhan untuk melakukan perawatan infrastruktur baik oleh pihak lain maupun sistem POEMS dari waktu ke waktu, keterlambatan, kegagalan, kesalahan, atau kehilangan transaksi yang dapat terjadi kemudian.</li>
+                                                </ol>
+                                                <h6><u>Garansi</u></h6>
+                                                <p>PTPSI tidak memberikan jaminan, garansi, atau perwakilan apapun, mengungkapkan atau menyatakan, kualitas atau kecocokan dalam setiap penggunaan tertentu atau tujuan sehubungan dengan informasi yang disajikan pada POEMS atau dalam fitur dan aspek POEMS, termasuk tidak terbatas pada nasihat investasi dan/atau akses ke informasi atau eksekusi dari rekomendasi beli atau jual dan/atau pembatalan atau perubahannya.</p>
+                                                <h6><u>Akses</u></h6>
+                                                <p>PTPSI tidak mempunyai kewajiban dan tidak akan bertanggungjawab atas semua kerugian atau ketidaknyamanan yang mungkin dialami oleh Nasabah sebagai akibat dari setiap tindakan yang dilakukan oleh Bursa Efek Indonesia dan Bapepam-LK dalam pelaksanaan peraturan atau pengawasan fungsi pada PTPSI. PTPSI dan/atau Bursa Efek Indonesia dan/atau Bapepam LK berhak untuk melakukan akses terhadap transaksi yang dilakukan oleh nasabah sehubungan dengan penyelidikan terhadap aspek yang menyangkut transaksi yang dilakukan melalui POEMS.</p>
+                                                <h6><u>Force Majeure</u></h6>
+                                                <p>PTPSI tidak mempunyai kewajiban dan tidak akan bertanggungjawab atas semua kerugian atau ketidaknyamanan yang mungkin dialami oleh Nasabah sebagai akibat dari force majeure. Hal-hal yang termasuk force majeure tetapi tidak terbatas pada kejadian kejadian diluar kuasa manusia, hukum, peraturan/kebijakan pemerintah, putusan pengadilan, pemogokan buruh, tindakan-tindakan pengalihan atau perampasan oleh negara, perang baik yang diumumkan maupun yang tidak diumumkan, kerusuhan, teroris, pemberontakan, huru-hara, kebakaran, ledakan, bencana alam, wabah penyakit dan lainnya.</p>
+                                                <h6><u>Indemnity</u></h6>
+                                                <p>PTPSI dan karyawannya dibebaskan dari segala klaim, kerugian, hutang, beban dan biaya yang timbul sehubungan dengan pemakaian POEMS .</p>
+                                                <h6><u>Penghentian</u></h6>
+                                                <p style="margin-bottom: 0px;">PTPSI sewaktu-waktu dapat menghentikan tanpa peringatan dan untuk suatu alasan apapun juga, hak Nasabah untuk mengakses dan/atau menggunakan POEMS . Dalam kejadian penghentian, PTPSI tidak dapat dibebankan oleh nasabah untuk suatu klaim, kewajiban atau kerugian (termasuk tidak terbatas pada antisipasi keuntungan/kerugian) yang mungkin dialami oleh nasabah atas penghentian tersebut.</p>
+                                                <br>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-sm-2 col-6">
-                        <h6><u><b>Contact Us</b></u></h6>
-                        <img src="Assets\Cs.png" style="margin-bottom: 5px; width: 100%;">
-                        <p style="margin-bottom: 10px;"><a href="#">customercare@phillip.co.id</p></a>
-                        <div class="iconmedia">
-                            <a href="https://www.facebook.com/TalkToPhillip"><img src="Assets\Icon\fbw.png"></a>
-                            <a href="https://twitter.com/intent/follow?source=followbutton&variant=1.0&screen_name=TalkToPhillip"><img src="Assets\Icon\tww.png"></a>
-                            <a href="http://instagram.com/talktophillip"><img src="Assets\Icon\igw.png"></a>
-                            <a href="https://www.youtube.com/user/PhillipIndonesia?sub_confirmation=1"><img src="Assets\Icon\ytw.png"></a>
+                        <div class="col-sm-2 col-6">
+                            <h6><u><b>Contact Us</b></u></h6>
+                            <img src="Assets\Cs.png" style="margin-bottom: 5px; width: 100%;">
+                            <p style="margin-bottom: 10px;"><a href="#">customercare@phillip.co.id</a></p>
+                            <div class="iconmedia">
+                                <a href="https://www.facebook.com/TalkToPhillip"><img src="Assets\Icon\fbw.png"></a>
+                                <a href="https://twitter.com/intent/follow?source=followbutton&amp;variant=1.0&amp;screen_name=TalkToPhillip"><img src="Assets\Icon\tww.png"></a>
+                                <a href="http://instagram.com/talktophillip"><img src="Assets\Icon\igw.png"></a>
+                                <a href="https://www.youtube.com/user/PhillipIndonesia?sub_confirmation=1"><img src="Assets\Icon\ytw.png"></a>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="clear" style="height: 10px;"></div> 
+                <div id="disclaimer">
+                    <div class="ojk_license">
+                        POEMS copyright PT Phillip Sekuritas Indonesia, terdaftar dan diawasi oleh OJK
+                    </div>
+                    <div class="copyright2">
+                        © 2014 - 2019 POEMS All Rights Reserved
+                    </div>
+                    <div class="clear"> 
+                    </div>    
+                    <div class="diclaimerContent">
+                        <p class="bold">Disclaimer:</p>
+                        <p>"Data yang ditampikan pada halaman muka website ini terlambat 10 menit. Phillip Sekuritas Indonesia telah memiliki izin dari Bursa Efek Indonesia (BEI) untuk menyajikan data tersebut, dan kami tidak bertanggung jawab atas setiap tindakan yang diambil atau keputusan yang dibuat berdasarkan data yang ditampilkan tersebut."</p><br>
+                        <p class="engVer">"IDX market quotes on this front page are delayed by 10 minutes. Phillip Sekuritas Indonesia has obtained the approval from the Indonesia Stock Exchange (IDX) to display these quotes. Phillip Sekuritas Indonesia shall not be liable for any errors, inaccuracies, or delays in content, or for any actions taken in reliance thereon."</p>
+                    </div>
+                </div>
             </div>
-            <div class="clear" style="height: 10px;"></div> 
-            <div id="disclaimer">
-                <div class="ojk_license">
-                    POEMS copyright PT Phillip Sekuritas Indonesia, terdaftar dan diawasi oleh OJK
-                </div>
-                <div class="copyright2">
-                    © 2014 - 2019 POEMS All Rights Reserved
-                </div>
-                <div class="clear"> 
-                </div>    
-                <div class="diclaimerContent">
-                    <p class="bold">Disclaimer:</p>
-                    <p>"Data yang ditampikan pada halaman muka website ini terlambat 10 menit. Phillip Sekuritas Indonesia telah memiliki izin dari Bursa Efek Indonesia (BEI) untuk menyajikan data tersebut, dan kami tidak bertanggung jawab atas setiap tindakan yang diambil atau keputusan yang dibuat berdasarkan data yang ditampilkan tersebut."</p><br>
-                    <p class="engVer">"IDX market quotes on this front page are delayed by 10 minutes. Phillip Sekuritas Indonesia has obtained the approval from the Indonesia Stock Exchange (IDX) to display these quotes. Phillip Sekuritas Indonesia shall not be liable for any errors, inaccuracies, or delays in content, or for any actions taken in reliance thereon."</p>
-                </div>
-            </div>
-        </div>
-    </footer>
+        </footer>
+    </body>
 </html>

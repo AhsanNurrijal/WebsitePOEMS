@@ -6,9 +6,12 @@
    		<meta name="viewport" content="width=device-width, initial-scale=1">
    		<link rel="stylesheet" type="text/css" href="style.css">
    		<link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.10.18/css/dataTables.bootstrap4.min.css">
    		<script src="js/script.js"></script>
 		<script src="js/jquery.js"></script>
    		<script src="js/bootstrap.min.js"></script>
+        <script src="https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdn.datatables.net/1.10.18/js/dataTables.bootstrap4.min.js"></script>
 	</head>
 	<body>
 		<div class="container">
@@ -151,88 +154,153 @@
 	        			<h4>Recent News List</h4>
 	    			</div>
 					<div class="newschoice">
-						<a href="News-ArticleNews.html">
-						 	<section>
-						       <div class="row">
-						        	<div class="col-sm-4 col-6">
-						        		<img src="Assets\NewsList1.png">
-						        	</div>
-						        	<div class="col-sm-8 col-6">
-							            <p>22 July, 2019</p>
-							        	<h4>Harga Emas Antam Naik Tipis di Awal Pekan</h4>
-							        	<p>Harga pecahan satu gram emas Antam, Senin (227) berada di Rp 704.000.</p>
-						          	</div>
-						        </div>
-      						</section>
-		      			</a>
-		      			<a href="News-ArticleNews.html">
-						 	<section>
-						       <div class="row">
-						        	<div class="col-sm-4 col-6">
-						        		<img src="Assets\NewsList2.png">
-						        	</div>
-						        	<div class="col-sm-8 col-6">
-							            <p>22 July, 2019</p>
-							        	<h4>Harga SUN Tertahan Menjelang Lelang SBSN</h4>
-							        	<p>Harga SUN hari ini akan bergerak cenderung mendatar.</p>
-						          	</div>
-						        </div>
-      						</section>
-		      			</a>
-		      			<a href="News-ArticleNews.html">
-						 	<section>
-						       <div class="row">
-						        	<div class="col-sm-4 col-6">
-						        		<img src="Assets\NewsList3.png">
-						        	</div>
-						        	<div class="col-sm-8 col-6">
-							            <p>22 July, 2019</p>
-							        	<h4>Harga SUN Tertahan Menjelang Lelang SBSN</h4>
-							        	<p>Harga SUN hari ini akan bergerak cenderung mendatar.</p>
-						          	</div>
-						        </div>
-      						</section>
-		      			</a>
-		      			<a href="News-ArticleNews.html">
-						 	<section>
-						       <div class="row">
-						        	<div class="col-sm-4 col-6">
-						        		<img src="Assets\NewsList4.png">
-						        	</div>
-						        	<div class="col-sm-8 col-6">
-							            <p>22 July, 2019</p>
-							        	<h4>Rupiah Melemah Tipis ke Rp 13.955 per Dollar AS di Awal Perdagangan Senin (22/7)</h4>
-							        	<p>Senin (22/7) pukul 8.07 WIB, rupiah di pasar spot melemah 0,12% ke Rp 13.955 per dollar AS.</p>
-						          	</div>
-						        </div>
-      						</section>
-		      			</a>
-		      			<a href="News-ArticleNews.html">
-						 	<section>
-						       <div class="row">
-						        	<div class="col-sm-4 col-6">
-						        		<img src="Assets\NewsList5.png">
-						        	</div>
-						        	<div class="col-sm-8 col-6">
-							            <p>22 July, 2019</p>
-							        	<h4>Barito Pacific (BRPT) Akan Stock Split dengan Rasio 1:5, Begini Kata Analis</h4>
-							        	<p>Barito Pacific (BRPT) akan stock split dengan rasio 1:5, begini kata analis.</p>
-						          	</div>
-						        </div>
-      						</section>
-		      			</a>
-      				</div>
-					<div class="pagination">
-					  	<a href="#">&laquo;</a>
-					  	<a href="#" class="active">1</a>
-					 	<a href="#">2</a>
-					  	<a href="#">3</a>
-					  	<a href="#">4</a>
-						<a href="#">5</a>
-						<a href="#">...</a>
-					  	<a href="#">10</a>
-					  	<a href="#">&raquo;</a>
-				  	</div>
+						<table id="infotable" class="display table-borderless">
+	                        <thead>
+	                            <tr>
+		                            <td></td>
+		                        </tr>  
+		                    </thead>
+	                         <tbody>
+	                            <tr>
+	                                <td>
+	                                	<a href="News-ArticleNews.html">
+							 				<section>
+							       				<div class="row">
+							        				<div class="col-sm-4 col-6">
+							        					<img src="Assets\NewsList1.png">
+							        				</div>
+							        				<div class="col-sm-8 col-6">
+											            <p>16 AUGUST 2019</p>
+											        	<h4>OYO Bidik Pasar Indonesia Timur, Siap Jadi Jaringan Hotel Terdepan di Sulawesi</h4>
+											        	<p>Sebagai langkah awal dalam ekspansinya ke wilayah Indonesia Timur, OYO Hotels and Homes hadir di Kota Makassar, Palu, dan Manado.</p>
+							          				</div>
+							        			</div>
+	      									</section>
+			      						</a>
+			      					</td>
+	                            </tr>
+	                            <tr>
+	                                <td>
+	                                	<a href="News-ArticleNews.html">
+							 				<section>
+							       				<div class="row">
+							        				<div class="col-sm-4 col-6">
+							        					<img src="Assets\NewsList2.png">
+							        				</div>
+							        				<div class="col-sm-8 col-6">
+											            <p>16 AUGUST 2019</p>
+											        	<h4>PBID Setor Rp324 Miliar Pada Anak Usaha Penjual Plastik</h4>
+											        	<p>PT Mitra Adiperkasa Tbk (MAPI) pada kuartal I 2019 mencatatkan laba bersih berjalan sebesar Rp138,26 miliar atau turun 60,68% dibanding periode yang sama tahun 2018 yang mencatat laba bersih tahun berjalan sebesar Rp351,19 miliar.</p>
+							          				</div>
+							        			</div>
+	      									</section>
+			      						</a>
+			      					</td>
+	                            </tr>
+	                            <tr>
+	                                <td>
+	                                	<a href="News-ArticleNews.html">
+							 				<section>
+							       				<div class="row">
+							        				<div class="col-sm-4 col-6">
+							        					<img src="Assets\NewsList3.png">
+							        				</div>
+							        				<div class="col-sm-8 col-6">
+											            <p>16 AUGUST 2019</p>
+											        	<h4>Arus Kas Operasi MAPI Minus Rp81,29 Miliar</h4>
+											        	<p>PT Panca Budi Idaman Tbk (PBID) menambah modal anak usahanya  PT Panca Budi Pratama (PBP) sebesar Rp324 miliar, sehingga perseroan telah menyetor modal sebesar Rp344 miliar atau 99,71% kepemilikan pada PBP.</p>
+							          				</div>
+							        			</div>
+	      									</section>
+			      						</a>
+			      					</td>
+	                            </tr>
+	                            <tr>
+	                                <td>
+	                                	<a href="News-ArticleNews.html">
+							 				<section>
+							       				<div class="row">
+							        				<div class="col-sm-4 col-6">
+							        					<img src="Assets\NewsList4.png">
+							        				</div>
+							        				<div class="col-sm-8 col-6">
+											            <p>16 AUGUST 2019</p>
+											        	<h4>Emisi Obligasi dan Sukuk di BEI Hingga 16 Agustus 2019 Tembus Rp75,47 Triliun</h4>
+											        	<p>Total emisi obligasi dan sukuk yang teratat di Bursa Efek Indonesia (BEI) telah mencapai lebih dari Rp75 triliun. Nilai pastinya mencapai Rp75,47 triliun yang terdiri dari 66 emisi dari 40 emiten.</p>
+							          				</div>
+							        			</div>
+	      									</section>
+			      						</a>
+			      					</td>
+	                            </tr>
+	                            <tr>
+	                                <td>
+	                                	<a href="News-ArticleNews.html">
+							 				<section>
+							       				<div class="row">
+							        				<div class="col-sm-4 col-6">
+							        					<img src="Assets\NewsList5.png">
+							        				</div>
+							        				<div class="col-sm-8 col-6">
+											            <p>16 AUGUST 2019</p>
+											        	<h4>WSKT Kembali Suntik WTR Rp1,198 Triliun</h4>
+											        	<p>PT Waskita Karya Tbk (WSKT) kembali menyetor modal sebesar Rp1,198 triliun kepada anak usaha yang bergerak di bidang jalan tol yakni PT Waskita Tol Road (WTR).</p>
+							          				</div>
+							        			</div>
+	      									</section>
+			      						</a>
+			      					</td>
+	                            </tr>
+	                            <tr>
+	                                <td>
+	                                	<a href="News-ArticleNews.html">
+							 				<section>
+							       				<div class="row">
+							        				<div class="col-sm-4 col-6">
+							        					<img src="Assets\NewsList12.png">
+							        				</div>
+							        				<div class="col-sm-8 col-6">
+											            <p>16 AUGUST 2019</p>
+											        	<h4>Jokowi Minta Hippindo Bisa Membawa Produk Lokal Menduia</h4>
+											        	<p>Presiden Joko Widodo (Jokowi) meminta Himpunan Penyewa Pusat Perbelanjaan Indonesia (Hippindo) untuk menyeleksi merek-merek lokal yang siap dibawa ke pasar dunia</p>
+							          				</div>
+							        			</div>
+	      									</section>
+			      						</a>
+			      					</td>
+	                            </tr>
+	                            <tr>
+	                                <td>
+	                                	<a href="News-ArticleNews.html">
+							 				<section>
+							       				<div class="row">
+							        				<div class="col-sm-4 col-6">
+							        					<img src="Assets\NewsList11.png">
+							        				</div>
+							        				<div class="col-sm-8 col-6">
+											            <p>16 AUGUST 2019</p>
+											        	<h4>Pengamat : Perluasan Kebijakan Ganjil Genap Akibatkan Trafik Tol Dalam Kota Bakal Turun Drastis</h4>
+											        	<p>Kalangan operator jalan tol menilai kebijakan Pemerintah Provinsi DKI Jakarta yang memperluas penerapan sistem pelat nomor ganjil genap kendaraan yang melalui jalan protokol bakal menurunkan trafik di jalan tol.</p>
+							          				</div>
+							        			</div>
+	      									</section>
+			      						</a>
+			      					</td>
+	                            </tr>
+	                        </tbody>
+	                    </table>
+		                <script>
+		                    $(document).ready(function() {
+		                        $('#infotable').DataTable({
+		                            "ordering": false,
+	        						"info": false,
+	        						"searching": false,
+	        						"lengthChange": false,
+	        						"lengthMenu": [[5, 10, 20, -1], [10, 25, 50, "All"]]
+		                        });
+		                    } );
+		                </script>
+		            </div>
 				</div>
 				<div class="col-sm-3">
 					<div class="row">

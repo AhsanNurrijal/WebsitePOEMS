@@ -615,6 +615,7 @@ section {
   font-weight: bold;
   font-size: 14px;
   color: #003466;
+  text-align: left;
 }
 
 .newschoice p {
@@ -622,6 +623,8 @@ section {
   font-size: 10px;
   color: #000;
   margin-bottom: 5px;
+  text-align: justify;
+  margin-right: 20px;
 }
 
 .newschoice section:hover {
@@ -814,10 +817,6 @@ footer {
 
 .panel table#t05 tr:nth-child(odd) {
  background-color: #eee;
-}
-
-.panel img {
-  margin: 15px;
 }
 
 .rightcolumn section {
@@ -1181,7 +1180,6 @@ footer {
 }
 
 .faq .nav .nav-item a {
-  margin-top: 20px;
   padding: 10px;
   background: #ddd;
   color: #000;
@@ -1208,6 +1206,10 @@ footer {
   font-weight: bold;
   border-bottom: 1px solid #eee;
   height: 100%;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 0px;
 }
 
 .faq .tab-content>.active {
@@ -1430,7 +1432,7 @@ footer {
   background-image: linear-gradient(#5BB95B, #5CCD00);
   border-radius: 15px;
   padding: 5px;
-  width: 100px;
+  width: 100%;
   margin-top: 10px;
   margin-left: 15px;
 }
@@ -1449,7 +1451,7 @@ footer {
 }
 
 .tablepro table {
-  width: 100%;
+  width: 100% !important;
   margin: 0px;
 }
 
@@ -1483,7 +1485,10 @@ footer {
 }
 
 .footpro table {
-  width: 98%;
+  margin-left: 0px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100% !important;
   background-image: radial-gradient(#fff, #eee);
 }
 
@@ -1550,11 +1555,11 @@ footer {
 .detailpro .contentpro img {
   margin-left: 0px;
   width: 100%;
-  height: 100%;
 }
 
 
 .comparisonn p {
+  text-align: left;
   margin-bottom: 5px;
   font-size: 10px;
   font-family: sans-serif;
@@ -1628,6 +1633,7 @@ footer {
 }
 
 .classection section {
+  margin-top: 20px;
   border: 1px solid #003466;
   height: 67px;
   width: 80px;
@@ -1742,7 +1748,7 @@ footer {
   font-size: 30px;
   border: none;
   outline: none;
-  background-color: #003466;
+  background-color: #006DD7;
   color: white;
   cursor: pointer;
   padding-right: 20px;
@@ -1752,4 +1758,69 @@ footer {
 
 #myBtn:hover {
   color: #FF9501;
+}
+
+.newschoice section{
+  margin-bottom: 0px;
+}
+
+.newschoice td{
+  border: none !important;
+}
+
+.small .nav {
+  background-color: #eee;
+  margin-top: 0px;
+}
+
+.small .nav .nav-item a {
+  color: #000;
+  background-color: #eee;
+  border-radius: 0px;
+  border-right: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  padding: 10px;
+  height: 100%;
+}
+
+.small .nav .nav-item a:link,
+.small .nav .nav-item a:visited {
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.small .nav .nav-item a:hover,
+.small .nav .nav-item a:active {
+  color: #fff;
+  transition: 0.5s;
+  font-weight: bold;
+  background-image: linear-gradient(#eee, #fff);
+  border-radius: 0px;
+  border-right: none;
+  height: 100%;
+}
+
+.small .nav-tabs .nav-link.active, .nav-tabs .show>.nav-link {
+  background-image: linear-gradient(#eee, #fff);
+  font-weight: bold;
+  border-right: none;
+  border-radius: 0px;
+  height: 100%
+  color: #fff;
+}
+
+.small p {
+  margin-bottom: 0px;
+  margin-left: 0px;
+  border-bottom: none;
+  font-size: 14px;
+  color: #000;
+}
+
+.small img {
+  width: 25px;
+  height: 25px;
+  margin-bottom: 8px;
+  margin-left: 0px;
+  box-shadow: none;
 }
