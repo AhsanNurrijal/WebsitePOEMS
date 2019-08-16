@@ -1187,6 +1187,7 @@ footer {
   color: #000;
   font-size: 14px;
   border: 1px solid #bbb;
+  height: 100%;
 }
 
 .faq .nav .nav-item a:link,
@@ -1206,6 +1207,7 @@ footer {
   color: #000;
   font-weight: bold;
   border-bottom: 1px solid #eee;
+  height: 100%;
 }
 
 .faq .tab-content>.active {
