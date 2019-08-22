@@ -312,7 +312,7 @@ html {
 
 .topnav a:hover {
   font-weight: bold;
-  color: #FFA722
+  color: #FFA722;
 }
 
 .topnav a.active {
@@ -676,7 +676,7 @@ footer {
 }
 
 .footerinfo a:hover {
-  color: #aaa;
+  color: #FFA722;
 }
 
 #disclaimer {
@@ -1055,6 +1055,13 @@ footer {
   background-image: linear-gradient(#eee, #fff);
 }
 
+.faq .accordion p{
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
 .faq .panel {
   background-color: #fff;
   border: 1px solid #ddd;
@@ -1153,7 +1160,6 @@ footer {
   border-right: 1px solid #eee;
   border-left: 1px solid #eee;
   border-top: 1px solid #eee;
-  height: 100%;
 }
 
 .profunds .nav .nav-item a:link,
@@ -1172,7 +1178,6 @@ footer {
   background-image: linear-gradient(#ddd, #eee);
   font-weight: bold;
   border-bottom: 1px solid #eee;
-  height: 100%;
 }
 
 .faq .nav {
@@ -1258,7 +1263,7 @@ footer {
 }
 
 .glossary .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-  background-image: linear-gradient(#aaa, #fff);
+  background-color: #ccc;
   color: #000;
   font-weight: bold;
 }
@@ -1823,4 +1828,24 @@ footer {
   margin-bottom: 8px;
   margin-left: 0px;
   box-shadow: none;
+}
+
+.glossary td{
+  border: none !important;
+}
+
+.glossary p{
+  text-align: justify;
+  margin-bottom: 0px;
+}
+
+.glossary li{
+  margin-left: 0px;
+  text-align: justify;
+}
+
+.glossary .dataTables_filter label{
+  margin-top: 15px;
+  margin-bottom: 0px;
+  font-size: 12px;
 }
