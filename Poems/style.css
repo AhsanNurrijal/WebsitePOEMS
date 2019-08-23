@@ -57,9 +57,9 @@ html {
 }
 
 .sidebar a:hover {
-  color: #006DD7;
+  color: #000;
   font-weight: bold;
-  padding-left: 50px;
+  padding-left: 40px;
 }
 
 .sidebar .closebtn {
@@ -69,7 +69,7 @@ html {
   font-size: 20px;
 }
 
-.sidebar img{
+.sidebar img {
   width: 20px;
   height: 20px;
 }
@@ -101,7 +101,7 @@ html {
   }
 }
 
-.img-fluid img{
+.img-fluid img {
   width: 100%;
 }
 
@@ -324,7 +324,7 @@ html {
   display: none;
 }
 
-.topnav img{
+.topnav img {
   height: 20px;
 }
 
@@ -862,7 +862,7 @@ footer {
   margin-top: 12px;
 }
 
-.profunds th{
+.profunds th {
   padding-left: 5px;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -870,7 +870,7 @@ footer {
   font-size: 11px !important;
 }
 
-.profunds td{
+.profunds td {
   padding: 5px;
   text-align: center;
   font-size: 11px !important;
@@ -1055,7 +1055,7 @@ footer {
   background-image: linear-gradient(#eee, #fff);
 }
 
-.faq .accordion p{
+.faq .accordion p {
   margin-left: 10px;
   margin-right: 10px;
   margin-top: 0px;
@@ -1701,46 +1701,46 @@ footer {
   padding-bottom: 5px;
 }
 
-.profunds .dataTables_length label{
+.profunds .dataTables_length label {
   margin-left: 12px;
   font-size: 12px;
 }
 
-.profunds .dataTables_filter label{
+.profunds .dataTables_filter label {
   margin-right: 14px;
   font-size: 12px;
 }
 
-.profunds .dataTables_wrapper .dataTables_paginate{
+.profunds .dataTables_wrapper .dataTables_paginate {
   margin-right: 15px;
 }
 
-.profunds .dataTables_wrapper .dataTables_paginate a{
+.profunds .dataTables_wrapper .dataTables_paginate a {
   font-size: 12px;
 }
 
-.profunds .dataTables_info{
+.profunds .dataTables_info {
   font-size: 12px;
   margin-left: 12px;
 }
 
-.cashdiv .dataTables_length label{
+.cashdiv .dataTables_length label {
   font-size: 12px;
 }
 
-.cashdiv .dataTables_filter label{
+.cashdiv .dataTables_filter label {
   font-size: 12px;
 }
 
-.cashdiv .dataTables_wrapper .dataTables_paginate a{
+.cashdiv .dataTables_wrapper .dataTables_paginate a {
   font-size: 12px;
 }
 
-.cashdiv .dataTables_info{
+.cashdiv .dataTables_info {
   font-size: 12px;
 }
 
-.sorting, .sorting_asc, .sorting_desc{
+.sorting, .sorting_asc, .sorting_desc {
   padding-right: 0px !important;
 }
 
@@ -1765,11 +1765,11 @@ footer {
   color: #FF9501;
 }
 
-.newschoice section{
+.newschoice section {
   margin-bottom: 0px;
 }
 
-.newschoice td{
+.newschoice td {
   border: none !important;
 }
 
@@ -1830,21 +1830,21 @@ footer {
   box-shadow: none;
 }
 
-.glossary td{
+.glossary td {
   border: none !important;
 }
 
-.glossary p{
+.glossary p {
   text-align: justify;
   margin-bottom: 0px;
 }
 
-.glossary li{
+.glossary li {
   margin-left: 0px;
   text-align: justify;
 }
 
-.glossary .dataTables_filter label{
+.glossary .dataTables_filter label {
   margin-top: 15px;
   margin-bottom: 0px;
   font-size: 12px;
