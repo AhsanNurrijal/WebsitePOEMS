@@ -195,8 +195,8 @@ a {
 }
 
 .contentlist img {
-  width: 100px;
-  height: 70px;
+  width: 100%;
+  height: auto;
   margin: 10px;
 }
 
@@ -206,7 +206,6 @@ a {
   font-size: 14px;
   color: #003466;
   margin-top: 10px;
-  margin-left: 10px;
 }
 
 .contentlist p {
@@ -214,7 +213,6 @@ a {
   color: #000;
   font-family: sans-serif;
   margin-top: 10px;
-  margin-left: 10px;
 }
 
 .contentlist section {
@@ -358,11 +356,11 @@ a {
 }
 
 .inputdata .row{
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .inputdata p{
-    font-size: 14px;
+  font-size: 14px;
 }
 
 .inputdata input[type=text], input[type=tel], input[type=email], input[type=password]{
